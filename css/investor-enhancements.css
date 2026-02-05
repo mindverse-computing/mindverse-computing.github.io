@@ -1,0 +1,686 @@
+/*
+ * Mindverse Computing - Investor Enhancement Styles
+ * Premium design system for investor-grade presentation
+ */
+
+/* ===== DESIGN TOKENS ===== */
+:root {
+  /* Quantum-theme color palette */
+  --quantum-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --quantum-secondary: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  --neural-accent: #00f2fe;
+  --consciousness-dark: #0a0e27;
+  --consciousness-darker: #05070f;
+  --quantum-glow: rgba(102, 126, 234, 0.5);
+  --neural-glow: rgba(0, 242, 254, 0.4);
+
+  /* Enhanced spacing */
+  --section-padding: 120px;
+  --section-padding-mobile: 60px;
+
+  /* Animation timings */
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ===== PREMIUM HERO SECTION ===== */
+.hero-enhanced {
+  background: var(--consciousness-dark);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.1) 0%, transparent 50%);
+  z-index: 0;
+}
+
+/* Animated particle background */
+.quantum-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--neural-accent) 0%, transparent 70%);
+  opacity: 0.3;
+  animation: float-particle 20s infinite ease-in-out;
+}
+
+@keyframes float-particle {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+
+  25% {
+    transform: translate(50px, -100px) scale(1.2);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-30px, -200px) scale(0.8);
+    opacity: 0.2;
+  }
+
+  75% {
+    transform: translate(80px, -150px) scale(1.1);
+    opacity: 0.4;
+  }
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 200px 0 120px;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a8c8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--neural-accent);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 20px var(--neural-glow);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 650px;
+  margin-bottom: 3rem;
+}
+
+/* Glowing CTA Button */
+.cta-primary-glow {
+  padding: 18px 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  background: var(--quantum-primary);
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+}
+
+.cta-primary-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta-primary-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 50px rgba(102, 126, 234, 0.6);
+}
+
+.cta-primary-glow:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.cta-primary-glow:active {
+  transform: translateY(-1px);
+}
+
+.cta-secondary {
+  padding: 18px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid var(--neural-accent);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--neural-accent);
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.cta-secondary:hover {
+  background: var(--neural-accent);
+  color: var(--consciousness-dark);
+  box-shadow: 0 10px 30px rgba(0, 242, 254, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Pulsing animation for urgency */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 15px 60px rgba(102, 126, 234, 0.7);
+  }
+}
+
+.cta-primary-glow.pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+/* ===== MARKET OPPORTUNITY SECTION ===== */
+.market-opportunity-section {
+  background: linear-gradient(180deg, var(--consciousness-dark) 0%, var(--consciousness-darker) 100%);
+  padding: var(--section-padding) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .market-opportunity-section {
+    padding: var(--section-padding-mobile) 0;
+  }
+}
+
+.market-opportunity-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.section-title-glow {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  /* Fallback color */
+  background: linear-gradient(135deg, #ffffff 0%, var(--neural-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  opacity: 1 !important;
+  /* Force visible */
+  transform: none !important;
+  /* Force no transform */
+  visibility: visible !important;
+  /* Force visibility */
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--quantum-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+}
+
+.glass-card:hover::before {
+  transform: scaleX(1);
+}
+
+.glass-card-icon {
+  font-size: 3rem;
+  color: var(--neural-accent);
+  margin-bottom: 1.5rem;
+  display: block;
+  filter: drop-shadow(0 0 20px var(--neural-glow));
+}
+
+.glass-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.glass-card-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00f2fe;
+  /* Fallback color */
+  background: var(--quantum-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.glass-card-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+/* Stats counters */
+.stat-number {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #667eea;
+  /* Fallback color */
+  background: var(--quantum-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* ===== ENHANCED INVESTOR SECTION ===== */
+.investor-section-premium {
+  background: var(--consciousness-darker);
+  padding: var(--section-padding) 0;
+  position: relative;
+}
+
+.investor-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 4rem 0;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 15px;
+  padding: 35px;
+  text-align: center;
+  transition: var(--transition-bounce);
+  position: relative;
+  opacity: 1 !important;
+  /* Force visible */
+  transform: none !important;
+  /* Force no transform */
+  visibility: visible !important;
+  /* Force visibility */
+}
+
+.highlight-card::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--quantum-primary);
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.highlight-card:hover {
+  transform: scale(1.05);
+  border-color: transparent;
+}
+
+.highlight-card:hover::after {
+  opacity: 1;
+}
+
+.highlight-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--neural-accent);
+  display: block;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px var(--neural-glow);
+}
+
+.highlight-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-description {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+
+/* ===== RESEARCH NODES ===== */
+.research-node {
+  background: rgba(10, 14, 39, 0.6);
+  border: 1px solid rgba(0, 242, 254, 0.1);
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-node:hover {
+  border-color: var(--neural-accent);
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.15);
+  transform: translateY(-5px);
+}
+
+.research-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.research-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.research-node:hover .research-image-container img {
+  transform: scale(1.1);
+}
+
+.research-content {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.research-icon {
+  color: var(--neural-accent);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.research-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.research-list li {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.research-list li::before {
+  content: '›';
+  color: var(--neural-accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ===== INTERACTIVE ELEMENTS ===== */
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Scroll reveal animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SECTION FLOW & DEPTH ===== */
+/* Zone 1: Launch (Top) */
+/* Zone 1: Launch (Top) */
+.bg-dark-base {
+  background: linear-gradient(180deg, #0B1026 0%, #1B264F 100%) !important;
+  /* Deep Navy Gradient */
+  background-image: linear-gradient(180deg, #0B1026 0%, #1B264F 100%) !important;
+}
+
+.bg-dark-depth {
+  background: linear-gradient(135deg, #16103a 0%, #3a1c52 100%) !important;
+  /* Nebula: Indigo to Plum */
+  background-image: linear-gradient(135deg, #16103a 0%, #3a1c52 100%) !important;
+}
+
+/* Zone 2: Nebula (Middle) */
+.bg-bridge-indigo {
+  background: linear-gradient(180deg, #0B1026 0%, #1f1140 100%) !important;
+  /* Bridges Base -> Pink Core */
+  background-image: linear-gradient(180deg, #0B1026 0%, #1f1140 100%) !important;
+}
+
+.bg-core-pink {
+  background: linear-gradient(135deg, #1f1140 0%, #5a1e50 100%) !important;
+  /* The "Pinkish" Peak */
+  background-image: linear-gradient(135deg, #1f1140 0%, #5a1e50 100%) !important;
+}
+
+/* Zone 3: The Deep (Bottom) */
+.bg-bridge-plum {
+  background: linear-gradient(180deg, #5a1e50 0%, #2d0b30 100%) !important;
+  /* Bridges Pink -> Magenta */
+  background-image: linear-gradient(180deg, #5a1e50 0%, #2d0b30 100%) !important;
+}
+
+.bg-magenta-finish {
+  background: linear-gradient(135deg, #2d0b30 0%, #0d1b38 100%) !important;
+  /* Magenta into Deep Blue */
+  background-image: linear-gradient(135deg, #2d0b30 0%, #0d1b38 100%) !important;
+}
+
+.bg-void-magenta {
+  background: linear-gradient(135deg, #4a0e2e 0%, #0a0e27 100%) !important;
+  /* Rich Magenta-Red to Deep Navy */
+  background-image: linear-gradient(135deg, #4a0e2e 0%, #0a0e27 100%) !important;
+}
+
+.bg-none {
+  background-image: none !important;
+}
+
+/* ===== SOCIAL ICONS GLOW ===== */
+.site-footer .social li a span {
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 0 0 10px currentColor;
+  /* Permanent Glow */
+}
+
+.site-footer .social li a span:hover {
+  text-shadow: 0 0 20px currentColor;
+  /* Intense Glow on Hover */
+  transform: scale(1.2);
+}
+
+/* Brand Colors for Icons */
+.icon-instagram {
+  color: #E1306C !important;
+}
+
+.icon-twitter {
+  color: #1DA1F2 !important;
+}
+
+.icon-linkedin {
+  color: #0077B5 !important;
+}
+
+.icon-youtube {
+  color: #FF0000 !important;
+}
+
+.icon-atom {
+  color: var(--neural-accent) !important;
+}
+
+
+/* Ensure no legacy overlays interfere */
+.overlay {
+  background: none !important;
+}
+
+.overlay:before {
+  display: none !important;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-gradient-quantum {
+  background: var(--quantum-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-neural {
+  background: var(--quantum-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-effect {
+  box-shadow: 0 0 40px var(--quantum-glow);
+}
+
+.border-gradient {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--consciousness-dark), var(--consciousness-dark)) padding-box,
+    var(--quantum-primary) border-box;
+  border-radius: 20px;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 767px) {
+  .hero-content {
+    padding: 150px 0 80px;
+  }
+
+  .cta-secondary {
+    margin-left: 0;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .cta-primary-glow {
+    width: 100%;
+  }
+
+  .investor-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
