@@ -23,25 +23,221 @@
   --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* ===== PREMIUM HERO SECTION ===== */
-.hero-enhanced {
-  background: var(--consciousness-dark);
+/* ===== FRESH HERO SECTION (Recreated) ===== */
+.fresh-hero {
+  /* Strictly defined Navy Gradient - No Black Box */
+  background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%) !important;
   position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+  /* Standard modern hero height, not distorted */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  z-index: 1;
 }
 
-.hero-enhanced::before {
-  content: '';
+/* Typography mirroring standard theme but ensuring visibility */
+.fresh-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3.5rem;
+  /* Large size */
+  font-weight: 800;
+  letter-spacing: .1rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.fresh-slogan {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00f2fe;
+  /* Cyan Base */
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(0, 242, 254, 0.4);
+  /* Glowing Effect */
+}
+
+.fresh-hero .fresh-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== HOME VISUAL RIGHT COLUMN ===== */
+.home-visual-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* --- TOY BRAIN NETWORK --- */
+.brain-network-visual {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 40px;
+  /* Visual container for the brain network */
+}
+
+.brain-glow-center {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.1) 0%, transparent 50%);
-  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.4) 0%, transparent 70%);
+  filter: blur(20px);
+  animation: pulse-brain 4s infinite ease-in-out;
+}
+
+/* Dynamically generated nodes */
+.dynamic-node {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 242, 254, 0.2);
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.dynamic-node.active-pulse {
+  background: #fff;
+  transform: scale(1.4);
+  box-shadow: 0 0 15px #00f2fe, 0 0 30px #00f2fe;
+}
+
+/* Dynamic Edges (SVG Lines) */
+.brain-edge-dynamic {
+  transition: opacity 0.5s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.8));
+}
+
+/* Legacy static lines removed for dynamic JS network */
+
+/* n1 -> n3 */
+.l3 {
+  top: 33%;
+  left: 62%;
+  width: 70px;
+  transform: rotate(45deg);
+}
+
+/* n2 -> n4 */
+.l4 {
+  top: 53%;
+  left: 23%;
+  width: 80px;
+  transform: rotate(30deg);
+}
+
+/* n3 -> n5 */
+.l5 {
+  top: 53%;
+  left: 82%;
+  width: 80px;
+  transform: rotate(150deg);
+}
+
+/* n4 -> n6 */
+
+@keyframes pulse-brain {
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* --- HORIZONTAL GLOWING WORKFLOW --- */
+.workflow-diagram-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.workflow-node-circle {
+  width: 60px;
+  height: 60px;
+  background: rgba(11, 16, 38, 0.9);
+  border: 3px solid #00f2fe;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.workflow-node-circle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.8);
+  background: #00f2fe;
+}
+
+.workflow-node-circle:hover .node-icon-small {
+  color: #000;
+}
+
+.node-icon-small {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* Tooltip for labels since nodes are small */
+.node-tooltip {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0.8;
+  border: 1px solid #00f2fe;
+}
+
+.workflow-line-horizontal {
+  height: 6px;
+  /* Thick Line */
+  width: 50px;
+  background: #00f2fe;
+  box-shadow: 0 0 10px #00f2fe, 0 0 20px rgba(0, 242, 254, 0.5);
+  margin: 0 -2px;
+  /* Overlap slightly to prevent gaps */
+  z-index: 1;
+}
+
+/* Ensure no inherited pseudo-elements create black boxes */
+.fresh-hero::before,
+.fresh-hero::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Animated particle background */
