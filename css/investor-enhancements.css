@@ -80,11 +80,13 @@
 /* --- TOY BRAIN NETWORK --- */
 .brain-network-visual {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 350px;
   margin-bottom: 40px;
   /* Visual container for the brain network */
 }
+
+/* Groove styles removed */
 
 .brain-glow-center {
   position: absolute;
@@ -101,25 +103,36 @@
 /* Dynamically generated nodes */
 .dynamic-node {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 3px;
+  height: 3px;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 242, 254, 0.2);
+  /* No shadow by default for clean "tiny dot" look */
   z-index: 2;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .dynamic-node.active-pulse {
   background: #fff;
-  transform: scale(1.4);
-  box-shadow: 0 0 15px #00f2fe, 0 0 30px #00f2fe;
+  transform: scale(2.5);
+  opacity: 1;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #00f2fe;
 }
 
 /* Dynamic Edges (SVG Lines) */
 .brain-edge-dynamic {
   transition: opacity 0.5s ease;
   filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.8));
+}
+
+/* Signal Path Animation */
+.brain-signal-path {
+  stroke: #ffffff;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 8px #ffffff);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 10;
 }
 
 /* Legacy static lines removed for dynamic JS network */
