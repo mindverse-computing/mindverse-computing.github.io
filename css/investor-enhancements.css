@@ -792,8 +792,138 @@
   background-image: linear-gradient(135deg, #4a0e2e 0%, #0a0e27 100%) !important;
 }
 
+/* ===== LIGHT THEME ALTERNATIVES (Tinted/Transparent Effect) ===== */
+
+/* Zone A: Market (Light Navy Tint) - Matches Hero */
+.bg-light-navy {
+  background: #EBEFFC !important;
+  background-image: linear-gradient(180deg, #EBEFFC 0%, #E3E8FA 100%) !important;
+}
+
+/* Zone B: Research (Light Indigo Tint) - Matches Tech */
+.bg-light-indigo {
+  background: #EFEEF9 !important;
+  background-image: linear-gradient(180deg, #EFEEF9 0%, #E8E6F5 100%) !important;
+}
+
+/* Zone C: Footer Strip (Light Plum Tint) - Matches Services */
+.bg-light-plum {
+  background: #F9ECF5 !important;
+  background-image: linear-gradient(180deg, #F9ECF5 0%, #F5E0EF 100%) !important;
+}
+
+/* Zone D: About Us (Light Magenta Tint) - Matches Invest */
+.bg-light-magenta {
+  background: #EBF0FA !important;
+  /* Slightly cool tint to balance magenta warmth or just pale magenta */
+  background-image: linear-gradient(180deg, #F5E6F5 0%, #EBEFFC 100%) !important;
+}
+
+
 .bg-none {
   background-image: none !important;
+}
+
+/* --- Section Light Modifier --- */
+/* Apply .section-light to the container to flip text colors */
+
+.section-light .section-title-glow {
+  /* Darker gradient for text */
+  background: linear-gradient(135deg, #151b3b 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.section-light .section-subtitle {
+  color: #4a5568;
+  /* Slate gray */
+}
+
+/* Cards in Light Mode */
+.section-light .glass-card {
+  background: #ffffff;
+  border: 1px solid rgba(10, 14, 39, 0.08);
+  /* Faint dark border */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  /* Soft shadow */
+}
+
+.section-light .glass-card:hover {
+  background: #ffffff;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(10, 14, 39, 0.1);
+}
+
+.section-light .glass-card-title {
+  color: #151b3b;
+  /* Dark Navy */
+}
+
+.section-light .glass-card-description {
+  color: #5a6679;
+  /* Muted gray */
+}
+
+.section-light .glass-card-value {
+  /* Keep the gradient or make it distinct? Keep distinct but maybe darker base? */
+  /* Check contrast. Cyan on white is hard to read. */
+  /* Let's try a darker gradient for the value */
+  background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Research Nodes on Light */
+.section-light .research-node {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-light .research-node:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.section-light .research-title {
+  color: #151b3b;
+}
+
+.section-light .research-list li {
+  color: #5a6679;
+}
+
+/* Blue Strip on Light */
+.section-light .text-white {
+  color: #151b3b !important;
+}
+
+/* General Text in Light Section */
+.section-light {
+  color: #5a6679;
+}
+
+.section-light p {
+  color: #5a6679;
+}
+
+.section-light .ul-check li {
+  color: #5a6679;
+}
+
+.section-light h3,
+.section-light h4,
+.section-light h5 {
+  color: #151b3b;
+}
+
+/* Ensure form input looks good on light background */
+.section-light input.form-control {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #000;
 }
 
 /* ===== SOCIAL ICONS GLOW ===== */
