@@ -542,6 +542,19 @@
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.glass-card-title {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+.glass-card-value {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
 }
 
 /* Stats counters */
