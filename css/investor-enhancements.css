@@ -53,11 +53,8 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #00f2fe;
-  /* Cyan Base */
   line-height: 1.2;
   margin-bottom: 30px;
-  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(0, 242, 254, 0.4);
-  /* Glowing Effect */
 }
 
 .fresh-hero .fresh-description {
@@ -1035,4 +1032,137 @@
   .stat-number {
     font-size: 2.5rem;
   }
+}
+
+/* ===== QUANTUM DIGITAL TWIN DOMAIN STYLES ===== */
+
+/* Domain accent colors */
+:root {
+  --bci-accent:     #00f2fe;   /* Cyan   — BCI / Mind  */
+  --omics-accent:   #00e676;   /* Green  — Omics / Cell */
+  --finance-accent: #ffd740;   /* Gold   — Finance / Market */
+}
+
+/* ── Hero domain badges ── */
+.hero-domain-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.domain-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  transition: var(--transition-smooth);
+}
+
+.domain-badge:hover { transform: translateY(-2px); }
+
+.bci-badge     { border-color: var(--bci-accent);     color: var(--bci-accent); }
+.omics-badge   { border-color: var(--omics-accent);   color: var(--omics-accent); }
+.finance-badge { border-color: var(--finance-accent); color: var(--finance-accent); }
+
+/* ── Domain Cards (Three-Domain Showcase) ── */
+.domain-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 36px 32px;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.domain-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--bci-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-smooth);
+}
+
+.domain-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.25);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.domain-card:hover::before  { transform: scaleX(1); }
+
+.omics-domain::before   { background: var(--omics-accent); }
+.finance-domain::before { background: var(--finance-accent); }
+
+.domain-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.domain-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.domain-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--bci-accent);
+}
+
+.omics-domain   .domain-label { color: var(--omics-accent); }
+.finance-domain .domain-label { color: var(--finance-accent); }
+
+.domain-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.domain-twin-tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: rgba(0,242,254,0.15);
+  color: var(--bci-accent);
+  border: 1px solid var(--bci-accent);
+  margin-bottom: 18px;
+}
+
+.domain-twin-tag.omics-tag {
+  background: rgba(0,230,118,0.12);
+  color: var(--omics-accent);
+  border-color: var(--omics-accent);
+}
+
+.domain-twin-tag.finance-tag {
+  background: rgba(255,215,64,0.12);
+  color: var(--finance-accent);
+  border-color: var(--finance-accent);
+}
+
+/* Responsive fixes */
+@media (max-width: 767px) {
+  .hero-domain-badges { gap: 8px; }
+  .domain-card { padding: 24px 20px; }
+  .fresh-title { font-size: 2.2rem; }
+  .fresh-slogan { font-size: 1.2rem; }
 }
