@@ -585,9 +585,21 @@
 
 .investor-highlights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin: 4rem 0;
+}
+
+@media (max-width: 991px) {
+  .investor-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .investor-highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .highlight-card {
@@ -1161,8 +1173,56 @@
 
 /* Responsive fixes */
 @media (max-width: 767px) {
-  .hero-domain-badges { gap: 8px; }
   .domain-card { padding: 24px 20px; }
   .fresh-title { font-size: 2.2rem; }
   .fresh-slogan { font-size: 1.2rem; }
+}
+
+/* ===== FULL-WIDTH EDGE-TO-EDGE LAYOUT ===== */
+
+/* Remove the large nav bottom margin */
+nav.site-nav.mb-5 {
+  margin-bottom: 0 !important;
+}
+
+/* Every section fills the full width — no side gaps */
+.investor-section-premium,
+.market-opportunity-section,
+.fresh-hero,
+.site-footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Inner containers: readable centered max-width */
+.investor-section-premium .container,
+.market-opportunity-section .container,
+.fresh-hero .container,
+#about .container,
+.site-footer .container {
+  max-width: 1320px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Footer grid row fills the container */
+.site-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Footer copyright bar spacing */
+.site-footer .row.mt-5.pt-4 {
+  margin-bottom: 0;
+  padding-bottom: 24px;
 }

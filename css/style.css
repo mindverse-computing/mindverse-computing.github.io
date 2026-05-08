@@ -9,13 +9,21 @@
 * Pinterest: https://pinterest.com/Untree_co/
 */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;
+  background-color: #09090f;
   overflow-x: hidden;
   font-size: 16px;
   color: #666; }
+
   body:before {
     content: "";
     position: fixed;
