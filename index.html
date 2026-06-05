@@ -14,14 +14,14 @@
   <link rel="shortcut icon" href="images/logo/newlogo.png">
 
   <meta name="description"
-    content="Mindverse Computing: a Quantum Digital Twin development platform. Building quantum digital twins of the human mind (QVM), the biological cell (QVO), and financial markets (QVF) — from BCI streams, omics data, and market indicators." />
+    content="Mindverse Computing: Research and development of Quantum Digital Twin platforms for neuroscience, computational biology, and quantitative finance. Experimental proof-of-concept quantum simulation technologies." />
   <meta name="keywords"
-    content="quantum digital twin, QDT, quantum virtual mind, QVM, quantum virtual omics, QVO, quantum virtual finance, QVF, brain-computer interface, BCI, omics, drug discovery, quantitative finance, portfolio optimisation, Quantum Omics Foundation, mental state tensor, cellular state tensor, market state tensor" />
+    content="quantum digital twin research, QDT, quantum simulation platform, neuroscience research, computational biology, quantitative finance research, BCI research, quantum computing, systems modeling, proof-of-concept" />
 
   <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Mindverse Computing — Quantum Digital Twin Development Platform" />
+  <meta property="og:title" content="Mindverse Computing — Quantum Digital Twin Research Platform" />
   <meta property="og:description"
-    content="Quantum digital twins of the human mind, the biological cell, and financial markets — built on a proprietary quantum simulation platform by Mindverse Computing." />
+    content="Research and development of experimental quantum digital twin platforms for neuroscience, computational biology, and quantitative finance applications." />
   <meta property="og:image" content="https://www.mindversecomputing.com/images/logo/newlogo.png" />
   <meta property="og:url" content="https://www.mindversecomputing.com" />
 
@@ -48,6 +48,117 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/investor-enhancements.css">
+
+  <style>
+    /* Home page domain preview card hover effects */
+    .domain-preview-card {
+      transition: all 0.4s ease;
+    }
+
+    .domain-preview-card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Domain-specific hover glows - Three Domains Preview Section */
+    .domain-preview-card:has(.uil-brain):hover {
+      box-shadow: 0 25px 80px rgba(0, 242, 254, 0.7);
+      border-color: rgba(0, 242, 254, 0.8) !important;
+      background: rgba(0, 242, 254, 0.1) !important;
+    }
+
+    .domain-preview-card:has(.uil-dna):hover {
+      box-shadow: 0 25px 80px rgba(0, 230, 118, 0.7);
+      border-color: rgba(0, 230, 118, 0.8) !important;
+      background: rgba(0, 230, 118, 0.1) !important;
+    }
+
+    .domain-preview-card:has(.uil-chart-line):hover {
+      box-shadow: 0 25px 80px rgba(217, 245, 0, 0.7);
+      border-color: rgba(217, 245, 0, 0.8) !important;
+      background: rgba(217, 245, 0, 0.1) !important;
+    }
+
+    /* Real-World Impact cards hover effects */
+    .impact-card-cyan {
+      transition: all 0.4s ease;
+    }
+
+    .impact-card-cyan:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(0, 242, 254, 0.7);
+      border-color: rgba(0, 242, 254, 0.8) !important;
+      background: rgba(0, 242, 254, 0.1) !important;
+    }
+
+    .impact-card-green {
+      transition: all 0.4s ease;
+    }
+
+    .impact-card-green:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(0, 230, 118, 0.7);
+      border-color: rgba(0, 230, 118, 0.8) !important;
+      background: rgba(0, 230, 118, 0.1) !important;
+    }
+
+    .impact-card-lime {
+      transition: all 0.4s ease;
+    }
+
+    .impact-card-lime:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(217, 245, 0, 0.7);
+      border-color: rgba(217, 245, 0, 0.8) !important;
+      background: rgba(217, 245, 0, 0.1) !important;
+    }
+
+    .impact-card-magenta {
+      transition: all 0.4s ease;
+    }
+
+    .impact-card-magenta:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(255, 0, 255, 0.7);
+      border-color: rgba(255, 0, 255, 0.8) !important;
+      background: rgba(255, 0, 255, 0.1) !important;
+    }
+
+    /* Technology Foundation card hover */
+    .tech-foundation-card {
+      transition: all 0.4s ease;
+    }
+
+    .tech-foundation-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(255, 0, 255, 0.7);
+      border-color: rgba(255, 0, 255, 0.8) !important;
+      background: rgba(255, 0, 255, 0.1) !important;
+    }
+
+    /* Button hover effects */
+    .domain-preview-card .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 30px rgba(139, 92, 246, 0.5);
+    }
+
+    /* CTA button enhanced glow */
+    .cta-primary-glow:hover {
+      box-shadow: 0 15px 50px rgba(139, 92, 246, 0.8);
+      transform: translateY(-3px);
+    }
+
+    /* Why Quantum Digital Twins - Key Advantages card hover */
+    .why-qdt-card {
+      transition: all 0.4s ease;
+    }
+
+    .why-qdt-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(139, 92, 246, 0.7);
+      border-color: rgba(139, 92, 246, 0.8) !important;
+      background: rgba(139, 92, 246, 0.1) !important;
+    }
+  </style>
 
   <title>Mindverse Computing — Quantum Digital Twin Development Platform</title>
 
@@ -141,39 +252,22 @@
     <div class="sticky-nav js-sticky-header">
       <div class="container position-relative">
         <div class="site-navigation text-center">
-          <a href="#" class="logo menu-absolute m-0">
+          <a href="index.html" class="logo menu-absolute m-0">
             <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
               height="50" />
           </a>
 
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
-            <li class="active"><a href="#home">HOME</a></li>
-            <li><a href="#market">MARKET</a></li>
-            <li><a href="#tech">PRODUCTS</a></li>
-            <li><a href="#research">DOMAINS</a></li>
-            <li><a href="#services">PLATFORM</a></li>
-            <li><a href="#invest">INVEST</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <!--media dropdown-->
-            <li class="has-children">
-              <a href="#">MEDIA</a>
-              <ul class="dropdown">
-                <li><a href="https://posts.mindversecomputing.com" target="_blank">Medium</a></li>
-                <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank">LinkedIn</a></li>
-                <li><a href="https://x.com/MindverseCom" target="_blank">X (Twitter)</a></li>
-                <li><a href="https://www.facebook.com/mindversecomputing/" target="_blank">Facebook</a></li>
-                <li><a href="https://youtube.com/@mindversecomputing" target="_blank">YouTube</a></li>
-                <li><a href="https://huggingface.co/mindversecomputing" target="_blank">Hugging Face</a></li>
-                <li><a href="https://www.kaggle.com/organizations/mindverse-computing" target="_blank">Kaggle</a></li>
-              </ul>
-            </li>
-          </ul>
-
-
-          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
-            data-toggle="collapse" data-target="#main-navbar">
-            <span></span>
-          </a>
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="workshops.html">WORKSHOPS</a></li>
+            <li><a href="platform.html">PLATFORM</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="market.html">MARKET</a></li>
+            <li><a href="invest.html">INVEST</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul> 
 
         </div>
       </div>
@@ -196,11 +290,9 @@
           </h2>
 
           <p class="fresh-description lead text-white" data-aos="fade-right" data-aos-delay="300">
-            Mindverse Computing develops <strong>Quantum Digital Twins (QDT)</strong> of complex dynamical systems
-            &mdash; from BCI, multiomics, and financial markets to smart cities, energy grids, and satellite networks.
-            Powered by our <strong>proprietary quantum simulation engine</strong>, our platform
-            ingests real-world data streams and returns an executable quantum state model
-            that can be queried, perturbed, and inverted to drive real decisions.
+            We develop Quantum Digital Twins of the human mind (QVM), the biological cell (QVO), and financial markets (QVF)
+            &mdash; powered by proprietary <strong>integrated quantum-classical simulation technology</strong>.
+            Our mission is to revolutionize how we model, understand, and interact with complex systems.
           </p>
 
 
@@ -209,31 +301,78 @@
         <!-- RIGHT HALF: GLOWING DIAGRAM -->
         <div class="col-lg-6">
           <div class="home-visual-column" data-aos="fade-left" data-aos-delay="400">
-            <!-- GLOWING BRAIN NETWORK (TOP) -->
+            <!-- GLOWING BRAIN NETWORK -->
             <div class="brain-network-visual" id="brain-network-container">
               <div class="brain-glow-center"></div>
             </div>
-            <!-- HORIZONTAL WORKFLOW DIAGRAM (BOTTOM) -->
-            <div class="workflow-diagram-container-horizontal">
-              <div class="workflow-node-circle">
-                <div class="node-icon-small">&#x1F4E1;</div>
-                <div class="node-tooltip">Live Data</div>
-              </div>
-              <div class="workflow-line-horizontal"></div>
-              <div class="workflow-node-circle">
-                <div class="node-icon-small">&#x269B;&#xFE0F;</div>
-                <div class="node-tooltip">QDT Engine</div>
-              </div>
-              <div class="workflow-line-horizontal"></div>
-              <div class="workflow-node-circle">
-                <div class="node-icon-small">&#x1F52E;</div>
-                <div class="node-tooltip">Digital Twin</div>
-              </div>
-              <div class="workflow-line-horizontal"></div>
-              <div class="workflow-node-circle">
-                <div class="node-icon-small">&#x1F3AF;</div>
-                <div class="node-tooltip">Deployment</div>
-              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------Three Domains Preview Section--------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">Our Quantum Digital Twins</h2>
+        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 800px; margin: 0 auto;">
+          Three breakthrough platforms powered by integrated quantum-classical simulation — transforming BCI, biology, and finance
+        </p>
+      </div>
+
+      <div class="row mt-5">
+        <!-- QVM Card -->
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="domain-preview-card" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(0, 242, 254, 0.8), rgba(139, 92, 246, 0.8));"></div>
+            <div class="text-center mb-4">
+              <i class="uil uil-brain" style="font-size: 4rem; color: rgba(0, 242, 254, 1);"></i>
+            </div>
+            <h3 style="color: rgba(0, 242, 254, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Mind</h3>
+            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Neural State Digital Twin</p>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
+              Research platform for integrated quantum-classical simulation of neural dynamics from BCI and biosensor data. Enables proof-of-concept studies in neurofeedback, cognitive modeling, and brain-computer interface development.
+            </p>
+            <div class="text-center">
+              <a href="platform.html" class="btn" style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 10px 30px; border-radius: 50px; border: 1px solid rgba(0, 242, 254, 0.3); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">Explore QVM →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- QVO Card -->
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="domain-preview-card" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(0, 230, 118, 0.8), rgba(139, 92, 246, 0.8));"></div>
+            <div class="text-center mb-4">
+              <i class="uil uil-dna" style="font-size: 4rem; color: rgba(0, 230, 118, 1);"></i>
+            </div>
+            <h3 style="color: rgba(0, 230, 118, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Omics</h3>
+            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Cellular State Digital Twin</p>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
+              Research platform for quantum simulation of cellular state from multiomics data. Supports computational biology studies, molecular modeling research, and in-silico experimental design.
+            </p>
+            <div class="text-center">
+              <a href="platform.html" class="btn" style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 10px 30px; border-radius: 50px; border: 1px solid rgba(0, 230, 118, 0.3); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">Explore QVO →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- QVF Card -->
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="domain-preview-card" style="background: rgba(217, 245, 0, 0.05); border: 1px solid rgba(217, 245, 0, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(217, 245, 0, 0.8), rgba(139, 92, 246, 0.8));"></div>
+            <div class="text-center mb-4">
+              <i class="uil uil-chart-line" style="font-size: 4rem; color: rgba(217, 245, 0, 1);"></i>
+            </div>
+            <h3 style="color: rgba(217, 245, 0, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Finance</h3>
+            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Market State Digital Twin</p>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
+              Research platform for quantum simulation of market dynamics from financial indicators. Supports quantitative finance research, market behavior modeling, and computational economics studies.
+            </p>
+            <div class="text-center">
+              <a href="platform.html" class="btn" style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 10px 30px; border-radius: 50px; border: 1px solid rgba(217, 245, 0, 0.3); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">Explore QVF →</a>
             </div>
           </div>
         </div>
@@ -241,624 +380,236 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-  <!------------Market Opportunity Section----------------------------------------------->
-
-  <div class="market-opportunity-section bg-light-navy section-light" id="market">
+  <!------------Why Quantum Digital Twins Section--------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10 text-center">
-          <h2 class="section-title-glow mb-4">A Multi-Frontier Market Opportunity</h2>
-          <p class="section-subtitle">The convergence of Quantum Computing, AI, and real-world data across Neuroscience, Genomics &amp; Drug Discovery, and Quantitative Finance</p>
-        </div>
-      </div>
-
-      <!-- Market Stats Grid -->
-      <div class="row mb-5 align-items-stretch">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="glass-card text-center h-100">
-            <span class="glass-card-icon">&#x1F4C8;</span>
-            <div class="glass-card-value">&#36;200B+</div>
-            <h3 class="glass-card-title">Total Addressable Market</h3>
-            <p class="glass-card-description">
-              Neurotech (&#36;8B by 2027), Genomics AI (&#36;50B by 2030), and Quant Finance (&#36;140B+) &mdash; all accessible through one unified quantum digital twin platform
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="glass-card text-center h-100">
-            <span class="glass-card-icon">&#x1F680;</span>
-            <div class="glass-card-value">Any Domain</div>
-            <h3 class="glass-card-title">One Unified Framework</h3>
-            <p class="glass-card-description">
-              BCI, Omics, and Finance are our current active domains &mdash; with smart cities, energy grids, and satellite systems on the horizon. One proprietary core engine, unlimited applications.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="glass-card text-center h-100">
-            <span class="glass-card-icon">&#x1F3AF;</span>
-            <div class="glass-card-value">First Mover</div>
-            <h3 class="glass-card-title">Competitive Advantage</h3>
-            <p class="glass-card-description">
-              The only platform delivering quantum digital twins across biology, mind, and markets from a single peer-reviewed theoretical foundation
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Value Propositions -->
-      <div class="row align-items-stretch">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="glass-card h-100">
-            <h4 class="glass-card-title" style="font-size: 1.3rem;">&#x1F9E0; Neuroscience &amp; BCI</h4>
-            <p class="glass-card-description">
-              Mental health diagnostics, closed-loop neuromodulation, cognitive enhancement, BCI decoding
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="glass-card h-100">
-            <h4 class="glass-card-title" style="font-size: 1.3rem;">&#x1F9EC; Drug Discovery</h4>
-            <p class="glass-card-description">
-              Quantum virtual cell models for cancer, rare diseases, ADMET profiling, and combination therapy design
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="glass-card h-100">
-            <h4 class="glass-card-title" style="font-size: 1.3rem;">&#x1F4B9; Quantitative Finance</h4>
-            <p class="glass-card-description">
-              Portfolio inversion, regime detection, quantum market state analysis, systemic risk modeling
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="glass-card h-100">
-            <h4 class="glass-card-title" style="font-size: 1.3rem;">&#x1F916; Quantum AI Systems</h4>
-            <p class="glass-card-description">
-              Multi-agent Hamiltonian design, agentic quantum simulation, HAHD orchestration pipeline
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <!------------Three-Domain Digital Twin Showcase----------------------------------------------->
-
-  <div class="investor-section-premium bg-bridge-indigo" id="tech">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10 text-center">
-          <h2 class="section-title-glow mb-4">Active Development Domains</h2>
-          <p class="section-subtitle">
-            Our platform is domain-agnostic: any complex system with measurable state can become
-            a Quantum Digital Twin. Below are our three active development areas &mdash;
-            with more domains in the pipeline.
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+          <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 2rem;">Why Quantum Digital Twins?</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
+            Classical machine learning models <em>approximate patterns</em> in data. Our quantum approach captures the fundamental <strong>quantum coherence and entanglement</strong> present in complex systems — from neural dynamics to cellular processes to market correlations.
           </p>
+          <div style="background: rgba(139, 92, 246, 0.05); border-left: 3px solid rgba(139, 92, 246, 1); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.1rem; margin-bottom: 1rem;">Beyond Classical AI</h4>
+            <p style="color: rgba(255,255,255,0.75); margin: 0;">
+              Quantum digital twins leverage superposition and entanglement to model the true dynamics of complex systems — delivering unprecedented predictive fidelity where classical models fail.
+            </p>
+          </div>
+          <div style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid rgba(0, 242, 254, 1); padding: 1.5rem; border-radius: 8px;">
+            <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.1rem; margin-bottom: 1rem;">Real-Time Simulation</h4>
+            <p style="color: rgba(255,255,255,0.75); margin: 0;">
+              Our research platform continuously ingests live data streams and updates the quantum state model in real-time — enabling dynamic simulation, prediction, and experimental analysis.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="why-qdt-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 16px; padding: 2.5rem;">
+            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.3rem; margin-bottom: 2rem;">Key Advantages</h4>
+            <div class="mb-4">
+              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                <div style="min-width: 40px; height: 40px; background: rgba(0, 242, 254, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <span style="color: rgba(0, 242, 254, 1); font-size: 1.3rem;">⚡</span>
+                </div>
+                <div>
+                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Exponential Scalability</h5>
+                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Quantum states scale exponentially with system size — modeling complexity classical computers can't reach</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                <div style="min-width: 40px; height: 40px; background: rgba(0, 230, 118, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <span style="color: rgba(0, 230, 118, 1); font-size: 1.3rem;">🎯</span>
+                </div>
+                <div>
+                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Higher Fidelity</h5>
+                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Captures quantum coherence in neural, cellular, and market dynamics that classical models miss</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: start;">
+                <div style="min-width: 40px; height: 40px; background: rgba(217, 245, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <span style="color: rgba(217, 245, 0, 1); font-size: 1.3rem;">🔄</span>
+                </div>
+                <div>
+                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Bidirectional Inference</h5>
+                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Invert the model to explore optimal parameters — from neurofeedback research to molecular simulation to market modeling studies</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Active Domain Cards + expansion note -->
-      <div class="row align-items-stretch">
+  <!------------Real-World Impact Section--------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">Research Applications</h2>
+        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 900px; margin: 0 auto;">
+          Exploring proof-of-concept quantum digital twin applications across neuroscience, computational biology, and quantitative finance research
+        </p>
+      </div>
 
-        <!-- BCI / QVM -->
-        <div class="col-lg-4 mb-4">
-          <div class="domain-card bci-domain h-100">
-            <div class="domain-card-header">
-              <span class="domain-icon">&#x1F9E0;</span>
-              <span class="domain-label">BCI &amp; Neuroscience</span>
+      <div class="row mt-5">
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <div style="width: 60px; height: 60px; background: rgba(0, 242, 254, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                <i class="uil uil-brain" style="font-size: 2rem; color: rgba(0, 242, 254, 1);"></i>
+              </div>
+              <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.3rem; margin: 0;">Neuroscience & BCI Research</h4>
             </div>
-            <h3 class="domain-title">Quantum Virtual Mind</h3>
-            <div class="domain-twin-tag">QVM</div>
-            <p class="glass-card-description">
-              A personalised quantum model of the human brain, built continuously from
-              live neural signals. The <strong>Mental State Tensor</strong> delivers a
-              real-time, high-fidelity signature of cognitive state that classical AI
-              cannot replicate &mdash; enabling true mind-aware applications.
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
+              Experimental platform for neurofeedback research, cognitive modeling studies, and brain-computer interface development. Supports academic and research collaborations exploring neural dynamics.
             </p>
-            <ul class="research-list">
-              <li>Real-time cognitive &amp; emotional state monitoring</li>
-              <li>Personalised mental health &amp; wellness record (Q-NEHR)</li>
-              <li>Closed-loop therapeutic intervention design</li>
-              <li>Motor imagery &amp; intent decoding for BCIs</li>
-              <li>NISQ-hardware ready today</li>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Neurofeedback Research</span>
+              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Cognitive Modeling</span>
+              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">BCI Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="impact-card-green" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <div style="width: 60px; height: 60px; background: rgba(0, 230, 118, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                <i class="uil uil-dna" style="font-size: 2rem; color: rgba(0, 230, 118, 1);"></i>
+              </div>
+              <h4 style="color: rgba(0, 230, 118, 1); font-size: 1.3rem; margin: 0;">Computational Biology Research</h4>
+            </div>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
+              Research tools for in-silico molecular modeling, compound screening simulation, and cellular response analysis. Supports academic partnerships in computational biology and systems biomedicine.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Molecular Simulation</span>
+              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Cellular Modeling</span>
+              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Systems Biology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="impact-card-lime" style="background: rgba(217, 245, 0, 0.05); border: 1px solid rgba(217, 245, 0, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <div style="width: 60px; height: 60px; background: rgba(217, 245, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                <i class="uil uil-chart-line" style="font-size: 2rem; color: rgba(217, 245, 0, 1);"></i>
+              </div>
+              <h4 style="color: rgba(217, 245, 0, 1); font-size: 1.3rem; margin: 0;">Quantitative Finance Research</h4>
+            </div>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
+              Research platform for market behavior modeling, quantitative analysis simulation, and computational economics studies. Educational and academic tool for exploring quantum approaches to financial modeling.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Market Modeling</span>
+              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Risk Simulation</span>
+              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Regime Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="impact-card-magenta" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <div style="width: 60px; height: 60px; background: rgba(255, 0, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
+                <span style="font-size: 2rem; color: rgba(255, 0, 255, 1);">⚙️</span>
+              </div>
+              <h4 style="color: rgba(255, 0, 255, 1); font-size: 1.3rem; margin: 0;">Complex Systems Engineering</h4>
+            </div>
+            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
+              Model and optimize smart cities, energy grids, supply chains, and satellite networks with quantum fidelity — predicting failures before they cascade.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Smart Cities</span>
+              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Energy Grids</span>
+              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Infrastructure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------Technology Foundation Section--------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="tech-foundation-card" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2.5rem;">
+            <div class="text-center mb-4">
+              <span style="font-size: 4rem;">⚛️</span>
+            </div>
+            <h4 style="color: rgba(255, 0, 255, 1); font-size: 1.3rem; margin-bottom: 1.5rem; text-align: center;">Our Technology Stack</h4>
+            <ul class="feature-list" style="font-size: 1rem;">
+              <li>High-fidelity quantum state reconstruction from classical data</li>
+              <li>Real-time tensor network optimization on NISQ hardware</li>
+              <li>Scalable variational quantum eigensolver (VQE) pipelines</li>
+              <li>Hybrid quantum-classical inference loops</li>
+              <li>Multi-scale tensor renormalization</li>
+              <li>Error mitigation and noise-aware simulation</li>
+              <li>Cross-platform quantum hardware abstraction</li>
             </ul>
-          </div>
-        </div>
-
-        <!-- Omics / QVO -->
-        <div class="col-lg-4 mb-4">
-          <div class="domain-card omics-domain h-100">
-            <div class="domain-card-header">
-              <span class="domain-icon">&#x1F9EC;</span>
-              <span class="domain-label">Genomics &amp; Omics</span>
+            <div class="mt-4 pt-4" style="border-top: 1px solid rgba(255, 0, 255, 0.2);">
+              <h5 style="color: rgba(255,255,255,0.7); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; text-align: center;">Deployment Targets</h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+                <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">IBM Quantum</span>
+                <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">IonQ</span>
+                <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Google Cirq</span>
+                <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">AWS Braket</span>
+              </div>
             </div>
-            <h3 class="domain-title">Quantum Virtual Omics</h3>
-            <div class="domain-twin-tag omics-tag">QVO</div>
-            <p class="glass-card-description">
-              A quantum model of the living cell that captures healthy biology and
-              identifies the precise signature of disease. The <strong>Cellular State
-              Tensor</strong> powers virtual drug screening, dramatically cutting
-              the cost and time of bringing new therapies to patients.
-            </p>
-            <ul class="research-list">
-              <li>Quantum-powered cell &amp; tissue modelling</li>
-              <li>Personalised molecular health record (Q-EHR)</li>
-              <li>In-silico drug screening &amp; ADMET profiling</li>
-              <li>Combination therapy &amp; resistance prediction</li>
-              <li>Precision oncology &amp; rare disease applications</li>
-            </ul>
           </div>
         </div>
 
-        <!-- Finance / QVF -->
-        <div class="col-lg-4 mb-4">
-          <div class="domain-card finance-domain h-100">
-            <div class="domain-card-header">
-              <span class="domain-icon">&#x1F4C8;</span>
-              <span class="domain-label">Quantitative Finance</span>
-            </div>
-            <h3 class="domain-title">Quantum Virtual Finance</h3>
-            <div class="domain-twin-tag finance-tag">QVF</div>
-            <p class="glass-card-description">
-              A quantum model of financial markets that continuously tracks regime
-              transitions and systemic risk. The <strong>Market State Tensor</strong>
-              gives portfolio managers a real-time early warning system and an
-              AI-driven hedging engine unavailable to classical quant models.
-            </p>
-            <ul class="research-list">
-              <li>Real-time market regime &amp; risk classification</li>
-              <li>Quantum-native portfolio optimisation &amp; hedging</li>
-              <li>Systemic risk early warning system</li>
-              <li>Quantum market health record (Q-MEHR)</li>
-              <li>Alpha generation beyond classical factor models</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-    </div> <!-- /.container -->
-  </div> <!-- /.tech section -->
-
-
-
-
-
-
-
-
-
-
-  <!-----------------Start Research --------------------------------------------------->
-
-  <div class="investor-section-premium bg-light-indigo section-light" id="research">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-          <h2 class="section-title-glow mb-4">Active Development Areas</h2>
-          <p class="section-subtitle">
-            Our current active domains demonstrate our platform in three distinct
-            sectors of complex systems science. Each produces a practical QDT product today &mdash;
-            and the same engine is extensible to any measurable dynamical system.
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 2rem;">Proprietary QDT Engine</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
+            Our core quantum simulation engine builds high-fidelity digital twin models of any complex real-world system from live data. <strong>Runs on today's quantum hardware</strong> and scales seamlessly as the technology matures — protecting your investment long-term.
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="row align-items-stretch">
-
-          <!-- Node 1: QVM -->
-          <div class="col-lg-4 mb-4 d-flex">
-            <div class="research-node">
-              <div class="research-image-container">
-                <img src="images/classes/sm-neuroscience-class.jpg" alt="Quantum Virtual Mind">
-              </div>
-              <div class="research-content">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="research-icon uil uil-brain"></span>
-                  <span class="text-uppercase"
-                    style="color: #00f2fe; font-weight: 600; letter-spacing: 1px; font-size: 0.8rem;">BCI &amp; Neuroscience</span>
-                </div>
-                <h3 class="research-title">Quantum Virtual Mind (QVM)</h3>
-                <p class="glass-card-description" style="font-size: 0.95rem;">
-                  A continuously learning quantum model of the human mind, personalised
-                  from live neural signals. QVM delivers a validated, high-fidelity
-                  cognitive signature that powers next-generation mental health
-                  diagnostics, therapeutic intervention, and brain-computer interfaces.
-                </p>
-                <ul class="research-list">
-                  <li>Real-time cognitive state monitoring &amp; decoding</li>
-                  <li>Personalised mental health record (Q-NEHR)</li>
-                  <li>Closed-loop therapeutic intervention design</li>
-                  <li>Consumer BCI &amp; clinical neurology applications</li>
-                  <li>Quantum-native, deployable on today's hardware</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Node 2: QVO -->
-          <div class="col-lg-4 mb-4 d-flex">
-            <div class="research-node">
-              <div class="research-image-container">
-                <img src="images/classes/quantum-computing-class.jpg" alt="Quantum Virtual Omics">
-              </div>
-              <div class="research-content">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="research-icon uil uil-dna"></span>
-                  <span class="text-uppercase"
-                    style="color: #00e676; font-weight: 600; letter-spacing: 1px; font-size: 0.8rem;">Genomics &amp; Omics</span>
-                </div>
-                <h3 class="research-title">Quantum Virtual Omics (QVO)</h3>
-                <p class="glass-card-description" style="font-size: 0.95rem;">
-                  A quantum model of the living cell that captures healthy biology and
-                  identifies disease with precision. QVO enables virtual drug screening
-                  at a scale and resolution impossible with classical simulation &mdash;
-                  accelerating the path from discovery to clinical trial.
-                </p>
-                <ul class="research-list">
-                  <li>Quantum cell &amp; tissue modelling platform</li>
-                  <li>In-silico drug screening &amp; ADMET profiling</li>
-                  <li>Personalised molecular health record (Q-EHR)</li>
-                  <li>Precision oncology &amp; rare disease applications</li>
-                  <li>Quantum-native, deployable on today's hardware</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Node 3: QVF -->
-          <div class="col-lg-4 mb-4 d-flex">
-            <div class="research-node">
-              <div class="research-image-container">
-                <img src="images/classes/quantum-biology-class.jpg" alt="Quantum Virtual Finance">
-              </div>
-              <div class="research-content">
-                <div class="d-flex align-items-center mb-3">
-                  <span class="research-icon uil uil-chart-line"></span>
-                  <span class="text-uppercase"
-                    style="color: #ffd740; font-weight: 600; letter-spacing: 1px; font-size: 0.8rem;">Quantitative Finance</span>
-                </div>
-                <h3 class="research-title">Quantum Virtual Finance (QVF)</h3>
-                <p class="glass-card-description" style="font-size: 0.95rem;">
-                  A quantum model of financial markets that tracks regime transitions
-                  and systemic risk in real time. QVF delivers an early warning
-                  system and AI-driven hedging engine that operates at a level of
-                  precision classical quant models cannot match.
-                </p>
-                <ul class="research-list">
-                  <li>Real-time market regime &amp; risk classification</li>
-                  <li>Quantum-native portfolio optimisation &amp; hedging</li>
-                  <li>Systemic risk early warning system</li>
-                  <li>Quantum market health record (Q-MEHR)</li>
-                  <li>Quantum-native, deployable on today's hardware</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!------------------------END Research-------------------------------------------------->
-
-
-
-
-  <!------------Platform Capabilities / Services--------------------------------------------->
-
-
-  <div class="investor-section-premium bg-bridge-plum" id="services">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-          <h2 class="section-title-glow mb-4">Platform Capabilities</h2>
-          <p class="section-subtitle">
-            One integrated platform. Three production-ready product lines.
-            Designed for enterprise deployment from day one.
-          </p>
-        </div>
-      </div>
-      <div class="row align-items-stretch">
-
-        <div class="col-lg-4 mb-4">
-          <div class="glass-card text-left h-100">
-            <span class="glass-card-icon uil uil-atom"></span>
-            <h3 class="glass-card-title">Proprietary QDT Engine</h3>
-            <p class="glass-card-description">
-              Our core quantum simulation engine builds high-fidelity digital twin
-              models of any complex real-world system from live data. Runs on
-              today's quantum hardware and scales seamlessly as the technology matures
-              &mdash; protecting your investment long-term.
+          <div style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid rgba(0, 242, 254, 1); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+            <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.1rem; margin-bottom: 1rem;">Production-Ready Today</h4>
+            <p style="color: rgba(255,255,255,0.75); margin: 0;">
+              Deploy quantum digital twins on current NISQ devices with error mitigation and noise-aware simulation — then upgrade to fault-tolerant quantum computers as they become available.
             </p>
           </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="glass-card text-left h-100">
-            <span class="glass-card-icon uil uil-layer-group"></span>
-            <h3 class="glass-card-title">Digital Twin Builder</h3>
-            <p class="glass-card-description">
-              A turnkey pipeline that ingests domain-specific data streams, builds a
-              validated quantum digital twin, and delivers actionable insights &mdash;
-              from personalised therapy recommendations and drug candidates to
-              optimal portfolio allocations.
+          <div style="background: rgba(0, 230, 118, 0.05); border-left: 3px solid rgba(0, 230, 118, 1); padding: 1.5rem; border-radius: 8px;">
+            <h4 style="color: rgba(0, 230, 118, 1); font-size: 1.1rem; margin-bottom: 1rem;">Future-Proof Architecture</h4>
+            <p style="color: rgba(255,255,255,0.75); margin: 0;">
+              Hardware-agnostic design works across IBM Quantum, IonQ, Google Cirq, AWS Braket, and emerging platforms — ensuring your digital twins evolve with the quantum ecosystem.
             </p>
           </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="glass-card text-left h-100">
-            <span class="glass-card-icon uil uil-robot"></span>
-            <h3 class="glass-card-title">AI Orchestration Layer</h3>
-            <p class="glass-card-description">
-              An intelligent multi-agent system that automates the construction,
-              validation, and continuous updating of quantum digital twins across
-              all domains &mdash; enabling scalable enterprise deployment with
-              minimal human-in-the-loop overhead.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
-        <div class="col-lg-8 text-center">
-          <p>We are continuously expanding our platform. <a href="https://mindversecomputing.com">Stay tuned</a>
-            for new domains and deployment targets.</p>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-  <!-------------------------Enhanced Investor Section----------------------------------------------->
-
-  <div class="investor-section-premium bg-magenta-finish" id="invest">
+  <!------------Get Started CTA Section--------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-
-      <!-- Section Header -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10 text-center" data-aos="fade-up" data-aos-delay="0">
-          <h2 class="section-title-glow mb-4">Investment Opportunity</h2>
-          <p class="section-subtitle" style="font-size: 1.5rem; color: var(--neural-accent);">
-            The Quantum Digital Twin Revolution
-          </p>
-          <p class="section-subtitle">
-            Building the universal quantum attractor engine for real-world complex systems.
-            From biology and finance to infrastructure and beyond &mdash; one framework, unlimited applications.
-          </p>
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Explore Our Research Platform</h2>
+        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 800px; margin: 0 auto 2.5rem;">
+          Join our educational workshops or collaborate with us on quantum digital twin research and proof-of-concept development
+        </p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="workshops.html" class="cta-primary-glow" style="padding: 15px 40px; font-size: 1.1rem; text-decoration: none; border-radius: 50px; display: inline-block;">Explore Workshops</a>
+          <a href="contact.html" class="btn" style="background: rgba(255, 255, 255, 0.1); color: white; padding: 15px 40px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.3); text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block;">Contact Us</a>
         </div>
-      </div>
-
-      <!-- Investment Highlights Grid -->
-      <div class="investor-highlights-grid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="highlight-card">
-          <span class="highlight-number">&#36;200B+</span>
-          <h3 class="highlight-title">Market Opportunity</h3>
-          <p class="highlight-description">
-            Neurotech, Genomics AI, and Quant Finance are our active entry points &mdash; with smart cities, energy grids, and satellite systems as near-term expansion targets
-          </p>
-        </div>
-
-        <div class="highlight-card">
-          <span class="highlight-number">3</span>
-          <h3 class="highlight-title">Quantum Digital Twins</h3>
-          <p class="highlight-description">
-            QVM, QVO, and QVF are our first three deployments &mdash; built on a single proprietary engine that scales to any complex system
-          </p>
-        </div>
-
-        <div class="highlight-card">
-          <span class="highlight-number">1st</span>
-          <h3 class="highlight-title">First-Mover Advantage</h3>
-          <p class="highlight-description">
-            The only platform delivering peer-reviewed quantum digital twins across biology, mind, and markets simultaneously
-          </p>
-        </div>
-
-        <div class="highlight-card">
-          <span class="highlight-number">9+</span>
-          <h3 class="highlight-title">Revenue Streams</h3>
-          <p class="highlight-description">
-            Cloud APIs, health records, drug discovery licensing, portfolio analytics, enterprise AI, and quantum simulation
-          </p>
-        </div>
-
-        <div class="highlight-card">
-          <span class="highlight-number">3</span>
-          <h3 class="highlight-title">Growing Domain Portfolio</h3>
-          <p class="highlight-description">
-            Active development across Neuroscience, Genomics, and Finance &mdash; with an extensible platform designed for new domains
-          </p>
-        </div>
-
-        <div class="highlight-card">
-          <span class="highlight-number">Global</span>
-          <h3 class="highlight-title">Scalable Platform</h3>
-          <p class="highlight-description">
-            Cloud-native quantum simulation engine deployable on IBM Quantum, NVIDIA CUDA-Q, and classical simulators worldwide
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Why Invest Now -->
-      <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-6 mb-4">
-          <div class="glass-card">
-            <h3 class="glass-card-title">&#x1F3AF; Why Invest Now?</h3>
-            <ul class="glass-card-description" style="list-style: none; padding-left: 0;">
-              <li style="margin-bottom: 1rem;">&#x2713; Quantum computers reaching commercial utility (IBM, Google, NVIDIA)</li>
-              <li style="margin-bottom: 1rem;">&#x2713; BCI devices entering consumer market (Neuralink, OpenBCI, Emotiv)</li>
-              <li style="margin-bottom: 1rem;">&#x2713; AI-driven drug discovery market exceeding $50B by 2030</li>
-              <li style="margin-bottom: 1rem;">&#x2713; Quantitative finance demanding quantum-native risk models</li>
-              <li style="margin-bottom: 1rem;">&#x2713; First-mover window open across multiple converging markets simultaneously</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mb-4">
-          <div class="glass-card">
-            <h3 class="glass-card-title">💰 Use of Funds</h3>
-            <div style="margin-top: 1.5rem;">
-              <div style="margin-bottom: 1.5rem;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                  <span class="glass-card-description">R&D & Engineering</span>
-                  <span style="color: var(--neural-accent); font-weight: 700;">40%</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                  <div style="width: 40%; height: 100%; background: var(--quantum-primary); border-radius: 10px;"></div>
-                </div>
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                  <span class="glass-card-description">Sales & Marketing</span>
-                  <span style="color: var(--neural-accent); font-weight: 700;">30%</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                  <div style="width: 30%; height: 100%; background: var(--quantum-secondary); border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                  <span class="glass-card-description">Infrastructure & Cloud</span>
-                  <span style="color: var(--neural-accent); font-weight: 700;">20%</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                  <div style="width: 20%; height: 100%; background: var(--quantum-primary); border-radius: 10px;"></div>
-                </div>
-              </div>
-              <div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                  <span class="glass-card-description">Operations & Legal</span>
-                  <span style="color: var(--neural-accent); font-weight: 700;">10%</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                  <div style="width: 10%; height: 100%; background: var(--quantum-secondary); border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA Section -->
-      <div class="row mt-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="col-12 text-center">
-          <p class="section-subtitle mb-4">
-            Ready to back the world&#39;s first multi-domain Quantum Digital Twin platform?
-          </p>
-          <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            <a href="mailto:contact.mindversecomputing@gmail.com?subject=Investment%20Inquiry" class="cta-primary-glow">
-              Schedule a Meeting
-            </a>
-            <a href="#about" class="cta-secondary">
-              Learn More About Us
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <!------------About Us--------------------------------------------->
-
-  <div class="investor-section-premium bg-light-magenta section-light" id="about">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-lg-5 mb-5">
-          <h2 class="section-title-glow text-left mb-4" style="text-align: left;">About Us</h2>
-          <p class="section-subtitle text-left" style="text-align: left; margin-bottom: 2rem;">
-            Quantum Digital Twins for any complex real-world system &mdash; from biology and finance
-            to infrastructure, energy, and beyond.
-          </p>
-          <p style="font-size: 1.1rem; line-height: 1.8;">
-            Mindverse Computing operationalises a <strong>proprietary quantum simulation framework</strong>
-            framework developed with the <a href="https://quantumomics.org" target="_blank"
-              rel="noopener">Quantum Omics Foundation</a>: a universal quantum attractor engine
-            that transforms live data streams into executable digital twin models of any
-            complex dynamical system. <strong>Disease, dysfunction, and systemic failures are
-            precise mechanistic perturbations; intervention and stabilization are their
-            quantum inversions.</strong>
-          </p>
-          <ul class="list-unstyled ul-check mb-5 primary">
-            <li>QVM &mdash; Quantum Virtual Mind (BCI &amp; Neuroscience)</li>
-            <li>QVO &mdash; Quantum Virtual Omics (Genomics &amp; Drug Discovery)</li>
-            <li>QVF &mdash; Quantum Virtual Finance (Quantitative Finance)</li>
-            <li>Smart cities, energy grids, satellite systems &mdash; coming soon</li>
-          </ul>
-
-          <p>
-            <a href="#" class="cta-primary-glow" style="padding: 15px 40px; font-size: 0.9rem;">Get Started</a>
-            <a href="#" class="cta-secondary" style="padding: 13px 30px; font-size: 0.9rem;">Learn More</a>
-          </p>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="research-node" style="height: auto;">
-            <div class="research-image-container" style="height: 400px;">
-              <img src="images/about-us.jpg" alt="About Mindverse" style="object-fit: cover;">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 mt-5 text-center">
-          <h3 class="mb-4">Connect with Us</h3>
-          <ul class="list-unstyled social d-flex justify-content-center">
-            <li><a href="https://x.com/MindverseCom" target="_blank" class="mx-2"><span class="icon-twitter"
-                  style="color: var(--neural-accent); font-size: 1.5rem;"></span></a></li>
-            <li><a href="https://www.facebook.com/mindversecomputing/" target="_blank" class="mx-2"><span
-                  class="icon-facebook" style="color: var(--neural-accent); font-size: 1.5rem;"></span></a></li>
-            <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" class="mx-2"><span
-                  class="icon-linkedin" style="color: var(--neural-accent); font-size: 1.5rem;"></span></a></li>
-            <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" class="mx-2"><span
-                  class="icon-youtube" style="color: var(--neural-accent); font-size: 1.5rem;"></span></a></li>
-            <li><a href="https://huggingface.co/mindversecomputing" target="_blank" class="mx-2"><span class="icon-atom"
-                  style="color: var(--neural-accent); font-size: 1.5rem;"></span></a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </div>
-
-
-
-
+  <!------------Disclaimer Section----------------------------------------------->
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 60px 0; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+    <div class="container">
+      <div class="text-center" style="max-width: 1000px; margin: 0 auto;">
+        <h3 style="color: rgba(139, 92, 246, 0.9); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 600;">Research & Development Notice</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.8; text-align: left;">
+          <strong>Mindverse Computing</strong> is a research and development company focused on advancing quantum digital twin technologies. Our platforms (QVM, QVO, QVF) are experimental research tools designed for academic collaboration, proof-of-concept studies, and educational purposes. <strong>We do not provide medical diagnoses, treatments, therapeutic interventions, healthcare services, financial advice, investment recommendations, or any regulated services.</strong> All applications described on this website represent future research directions and proof-of-concept explorations. Any use of our platforms should be conducted in appropriate research settings with proper oversight, regulatory compliance, and ethical review. Data handling must comply with applicable privacy regulations including HIPAA, GDPR, and institutional review board requirements. For research collaborations or partnership inquiries, please contact us directly.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!------------Footer--------------------------------------------->
   <div class="site-footer bg-void-magenta"
@@ -870,7 +621,7 @@
         <div class="col-lg-3">
           <div class="widget mb-4">
             <h3 style="color: white;">About Us</h3>
-            <p style="line-height: 1.7;">Quantum Digital Twins of the human mind (QVM), the biological cell (QVO), and financial markets (QVF) &mdash; powered by Mindverse Computing's proprietary quantum simulation platform.</p>
+            <p style="line-height: 1.7;">Quantum Digital Twins of the human mind (QVM), the biological cell (QVO), and financial markets (QVF) &mdash; powered by Mindverse Computing's proprietary integrated quantum-classical simulation technology.</p>
           </div>
           <div class="widget">
             <h3 style="color: white;">Connect</h3>
@@ -881,7 +632,7 @@
                     class="icon-linkedin" style="color: var(--neural-accent);"></span></a></li>
               <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank"><span class="icon-youtube"
                     style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://huggingface.co/mindversecomputing" target="_blank"><span class="icon-atom"
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank"><span class="icon-facebook"
                     style="color: var(--neural-accent);"></span></a></li>
             </ul>
           </div>
@@ -896,8 +647,8 @@
             <form id="subscribe-form">
               <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
                 <input name="email" id="email-input" placeholder="Enter your email" required type="email"
-                  class="form-control" style="flex: 1; min-width: 200px; background-color: rgba(255,255,255,0.08);
-                  color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 10px 20px;">
+                  class="form-control" style="flex: 1; min-width: 200px; background-color: white;
+                  color: #333; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 10px 20px;">
                 <button type="submit" class="cta-primary-glow"
                   style="padding: 10px 24px; border-radius: 50px; white-space: nowrap;">Subscribe</button>
               </div>
@@ -911,11 +662,13 @@
           <div class="widget">
             <h3 style="color: white;">Quick Links</h3>
             <ul class="list-unstyled links">
-              <li><a href="#tech" style="color: rgba(255,255,255,0.6);">QVM &mdash; Mind</a></li>
-              <li><a href="#tech" style="color: rgba(255,255,255,0.6);">QVO &mdash; Cell</a></li>
-              <li><a href="#tech" style="color: rgba(255,255,255,0.6);">QVF &mdash; Markets</a></li>
-              <li><a href="#services" style="color: rgba(255,255,255,0.6);">Platform</a></li>
-              <li><a href="#invest" style="color: rgba(255,255,255,0.6);">Invest</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVM &mdash; Mind</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVO &mdash; Cell</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVF &mdash; Markets</a></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">Platform</a></li>
+              <li><a href="workshops.html" style="color: rgba(255,255,255,0.6);">Workshops</a></li>
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="invest.html" style="color: rgba(255,255,255,0.6);">Invest</a></li>
             </ul>
           </div>
         </div>
@@ -926,8 +679,8 @@
             <h3 style="color: white;">Contact</h3>
             <address style="font-style: normal; line-height: 1.8; color: rgba(255,255,255,0.6);">Lynnwood, WA-98087, USA</address>
             <ul class="list-unstyled links">
-              <li><a href="mailto:contact.mindversecomputing@gmail.com"
-                  style="color: var(--neural-accent); word-break: break-word;">contact.mindversecomputing<br>@gmail.com</a></li>
+              <li><a href="mailto:contact@mindversecomputing.com"
+                  style="color: var(--neural-accent);">Email Us</a></li>
             </ul>
           </div>
         </div>

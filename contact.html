@@ -1,0 +1,638 @@
+<!-- /*
+* Template Name: Learner
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Mindverse Computing">
+  <link rel="shortcut icon" href="images/logo/newlogo.png">
+
+  <meta name="description"
+    content="Contact Mindverse Computing - Get in touch for partnerships, workshops, or quantum digital twin consultations." />
+  <meta name="keywords"
+    content="contact mindverse computing, integrated quantum-classical computing, QDT consultation, partnership inquiry" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Contact Us — Mindverse Computing" />
+  <meta property="og:description"
+    content="Get in touch with Mindverse Computing for partnerships, workshops, and quantum digital twin solutions." />
+  <meta property="og:image" content="https://www.mindversecomputing.com/images/logo/newlogo.png" />
+  <meta property="og:url" content="https://www.mindversecomputing.com/contact.html" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us — Mindverse Computing" />
+  <meta name="twitter:description"
+    content="Get in touch with Mindverse Computing for quantum digital twin solutions." />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/investor-enhancements.css">
+
+  <title>Contact Us — Mindverse Computing</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
+  <script>
+    function consentGrantedAdStorage() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    }
+  </script>
+
+  <style>
+    .contact-header {
+      padding: 100px 0 50px;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 242, 254, 0.05));
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      padding: 2.5rem;
+      transition: all 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+
+    .contact-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(139, 92, 246, 0.6);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(139, 92, 246, 0.4);
+    }
+
+    .contact-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(0, 242, 254, 0.2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--neural-accent);
+    }
+
+    .contact-card h3 {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .contact-card p {
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .contact-card a {
+      color: var(--neural-accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card a:hover {
+      color: var(--quantum-primary);
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      padding: 3rem;
+    }
+
+    .form-group label {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .form-control {
+      background: #ffffff;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 10px;
+      padding: 12px 20px;
+      color: #000000;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-control:focus {
+      background: #ffffff;
+      border-color: var(--neural-accent);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+    }
+
+    .form-control::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .office-location {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .office-location h3 {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--neural-accent);
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: var(--neural-accent);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-------------------------Navigation--------------------------------------------->
+
+  <nav class="site-nav mb-5">
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="index.html" class="logo menu-absolute m-0">
+            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
+              height="50" />
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="workshops.html">WORKSHOPS</a></li>
+            <li><a href="platform.html">PLATFORM</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="market.html">MARKET</a></li>
+            <li><a href="invest.html">INVEST</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!------------Contact Header----------------------------------------------->
+
+  <div class="contact-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h1 class="section-title-glow mb-4">Get In Touch</h1>
+          <p class="section-subtitle">
+            Have a question about Quantum Digital Twins? Want to partner with us? 
+            We'd love to hear from you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------Contact Cards Section----------------------------------------------->
+
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding-top: 60px; padding-bottom: 40px;">
+    <div class="container">
+      
+      <div class="row mb-5">
+        
+        <!-- Email Contact -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us an email and we'll get back to you within 24 hours.</p>
+            <a href="mailto:contact@mindversecomputing.com" class="btn" style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 10px 30px; border-radius: 50px; border: 1px solid rgba(0, 242, 254, 0.3); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Send Email</a>
+          </div>
+        </div>
+
+        <!-- General Inquiries -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-comment-alt-lines"></i>
+            </div>
+            <h3>General Inquiries</h3>
+            <p>For general questions about our platform and services.</p>
+            <a href="mailto:contact@mindversecomputing.com" class="btn" style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 10px 30px; border-radius: 50px; border: 1px solid rgba(0, 242, 254, 0.3); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Workshop Inquiries -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-presentation-edit"></i>
+            </div>
+            <h3>Workshop Registration</h3>
+            <p>Interested in our Quantum Digital Twin workshops?</p>
+            <a href="mailto:contact@mindversecomputing.com?subject=Workshop%20Inquiry">Register for Workshops</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        
+        <!-- Partnership Opportunities -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-users-alt"></i>
+            </div>
+            <h3>Partnerships</h3>
+            <p>Explore collaboration opportunities with our team.</p>
+            <a href="mailto:contact@mindversecomputing.com?subject=Partnership%20Inquiry">Discuss Partnership</a>
+          </div>
+        </div>
+
+        <!-- Research Collaboration -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-microscope"></i>
+            </div>
+            <h3>Research Collaboration</h3>
+            <p>Academic and research partnership opportunities.</p>
+            <a href="mailto:contact@mindversecomputing.com?subject=Research%20Collaboration">Collaborate with Us</a>
+          </div>
+        </div>
+
+        <!-- Careers -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="uil uil-briefcase"></i>
+            </div>
+            <h3>Careers</h3>
+            <p>Join our team building the future of integrated quantum-classical computing.</p>
+            <a href="mailto:contact@mindversecomputing.com?subject=Career%20Inquiry">Explore Opportunities</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!------------Contact Form Section----------------------------------------------->
+
+  <div class="investor-section-premium bg-void-magenta" style="padding-top: 60px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title-glow mb-3">Send Us a Message</h2>
+            <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem;">
+              Fill out the form below and we'll respond as soon as possible.
+            </p>
+          </div>
+
+          <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="What is this regarding?" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell us more about your inquiry..." required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="cta-primary-glow" style="padding: 12px 40px;">
+                  Send Message
+                </button>
+              </div>
+            </form>
+            <div id="form-message" style="margin-top: 20px; text-align: center; color: rgba(255,255,255,0.7);"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Office Location -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="office-location" data-aos="fade-up">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h3>Our Location</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.8; font-size: 1.1rem;">
+                  <i class="uil uil-map-marker" style="color: var(--neural-accent); margin-right: 10px;"></i>
+                  Lynnwood, WA-98087, USA
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.6); line-height: 1.7; margin-top: 1rem;">
+                  We're building the future of Quantum Digital Twins from the Pacific Northwest, 
+                  working with partners and researchers worldwide.
+                </p>
+              </div>
+              <div class="col-lg-6 text-center">
+                <h3 style="color: white; margin-bottom: 1rem;">Connect With Us</h3>
+                <div class="social-links">
+                  <a href="https://x.com/MindverseCom" target="_blank" title="Twitter/X">
+                    <span class="icon-twitter"></span>
+                  </a>
+                  <a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" title="LinkedIn">
+                    <span class="icon-linkedin"></span>
+                  </a>
+                  <a href="https://www.youtube.com/@mindversecomputing" target="_blank" title="YouTube">
+                    <span class="icon-youtube"></span>
+                  </a>
+                  <a href="https://www.facebook.com/MindverseComputing" target="_blank" title="Facebook">
+                    <span class="icon-facebook"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="text-center" style="background: rgba(255, 255, 255, 0.03); padding: 3rem; border-radius: 20px; border: 1px solid rgba(139, 92, 246, 0.2);">
+            <h2 class="section-title-glow mb-3">About Mindverse Computing</h2>
+            <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.8;">
+              We develop Quantum Digital Twins of the human mind (QVM), the biological cell (QVO), 
+              and financial markets (QVF) — powered by proprietary integrated quantum-classical simulation technology. 
+              Our mission is to revolutionize how we model, understand, and interact with complex systems.
+            </p>
+            <p style="color: rgba(255, 255, 255, 0.6); font-size: 1rem; max-width: 700px; margin: 0 auto;">
+              Partner with <a href="https://quantumomics.org" target="_blank" style="color: var(--neural-accent); text-decoration: none; font-weight: 600;">Quantum Omics Foundation</a> 
+              to advance integrated quantum-classical computing in healthcare and beyond.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!------------Footer--------------------------------------------->
+  <div class="site-footer bg-void-magenta"
+    style="border-top: 1px solid rgba(139, 92, 246, 0.2); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- About and Social -->
+        <div class="col-lg-3">
+          <div class="widget mb-4">
+            <h3 style="color: white;">About Us</h3>
+            <p style="line-height: 1.7;">Quantum Digital Twins of the human mind (QVM), the biological cell (QVO), and financial markets (QVF) &mdash; powered by Mindverse Computing's proprietary integrated quantum-classical simulation technology.</p>
+          </div>
+          <div class="widget">
+            <h3 style="color: white;">Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://x.com/MindverseCom" target="_blank"><span class="icon-twitter"
+                    style="color: var(--neural-accent);"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank"><span
+                    class="icon-linkedin" style="color: var(--neural-accent);"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank"><span class="icon-youtube"
+                    style="color: var(--neural-accent);"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank"><span class="icon-facebook"
+                    style="color: var(--neural-accent);"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="col-lg-5 col-md-12">
+          <div class="widget mb-4">
+            <h3 class="mb-3" style="color: white;">Join Our Newsletter</h3>
+            <p style="line-height: 1.7;">Stay updated with our latest research and breakthroughs.</p>
+
+            <form id="subscribe-form">
+              <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <input name="email" id="email-input" placeholder="Enter your email" required type="email"
+                  class="form-control" style="flex: 1; min-width: 200px; background-color: white;
+                  color: #333; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 10px 20px;">
+                <button type="submit" class="cta-primary-glow"
+                  style="padding: 10px 24px; border-radius: 50px; white-space: nowrap;">Subscribe</button>
+              </div>
+            </form>
+            <div id="subscribe-message" style="margin-top: 10px; color: rgba(255,255,255,0.7); font-size: 0.9rem;"></div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <div class="widget">
+            <h3 style="color: white;">Quick Links</h3>
+            <ul class="list-unstyled links">
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVM &mdash; Mind</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVO &mdash; Cell</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">QVF &mdash; Markets</a></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">Platform</a></li>
+              <li><a href="workshops.html" style="color: rgba(255,255,255,0.6);">Workshops</a></li>
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="invest.html" style="color: rgba(255,255,255,0.6);">Invest</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-2 col-md-6">
+          <div class="widget">
+            <h3 style="color: white;">Contact</h3>
+            <address style="font-style: normal; line-height: 1.8; color: rgba(255,255,255,0.6);">Lynnwood, WA-98087, USA</address>
+            <ul class="list-unstyled links">
+              <li><a href="mailto:contact@mindversecomputing.com"
+                  style="color: var(--neural-accent);">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-12 text-center">
+          <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin: 0;">
+            &copy; <script>document.write(new Date().getFullYear());</script> Mindverse Computing. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Script -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+      
+      // Create mailto link with form data
+      const mailtoLink = `mailto:contact@mindversecomputing.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+      
+      // Open mailto link
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      document.getElementById("form-message").innerText = "Your default email client should open. If not, please use the Email Us button in the contact cards above.";
+      
+      // Reset form
+      document.getElementById("contact-form").reset();
+    });
+  </script>
+
+  <!-- Newsletter Script for Google Sheets -->
+  <script>
+    document.getElementById("subscribe-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email-input").value;
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec";
+      const formData = new FormData();
+      formData.append("email", email);
+
+      fetch(scriptURL, { method: "POST", body: formData })
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("subscribe-message").innerText = "Subscription successful!";
+          document.getElementById("email-input").value = "";
+        })
+        .catch(error => {
+          document.getElementById("subscribe-message").innerText = "Error. Try again.";
+          console.error("Error!", error.message);
+        });
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/investor-effects.js"></script>
+
+</body>
+
+</html>
