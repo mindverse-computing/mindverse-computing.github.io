@@ -419,11 +419,11 @@
 
       <!-- Timeline Container -->
       <div class="timeline-container" style="position: relative; max-width: 1200px; margin: 60px auto; padding: 0 20px;">
-        <!-- Timeline Base Line -->
+        <!-- Timeline Base Line (Permanent Thin Line) -->
         <div class="timeline-line" style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: rgba(139, 92, 246, 0.2); transform: translateY(-50%); z-index: 1;"></div>
         
-        <!-- Animated Light Pulse -->
-        <div class="timeline-pulse" id="timeline-pulse" style="position: absolute; top: 50%; left: 0; width: 20px; height: 20px; background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(139, 92, 246, 0.8) 50%, transparent 100%); border-radius: 50%; transform: translate(-50%, -50%); z-index: 3; opacity: 0; box-shadow: 0 0 30px rgba(139, 92, 246, 1), 0 0 60px rgba(139, 92, 246, 0.8);"></div>
+        <!-- Animated Thick Glowing Line -->
+        <div class="timeline-glow-line" id="timeline-glow-line" style="position: absolute; top: 50%; left: 0; width: 0; height: 6px; background: linear-gradient(90deg, rgba(139, 92, 246, 0.9), rgba(255, 255, 255, 0.9)); transform: translateY(-50%); z-index: 2; box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 40px rgba(139, 92, 246, 0.6); border-radius: 3px; transition: width 2s ease-in-out;"></div>
 
         <!-- Timeline Nodes -->
         <div class="timeline-nodes" style="display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2;">
@@ -478,16 +478,18 @@
       <!-- Timeline Animation Script -->
       <script>
         (function() {
-          const pulse = document.getElementById('timeline-pulse');
+          const glowLine = document.getElementById('timeline-glow-line');
           const nodes = document.querySelectorAll('.timeline-node');
           const nodeCircles = document.querySelectorAll('.node-circle');
           const nodeGlows = document.querySelectorAll('.node-glow');
           
-          if (!pulse || nodes.length === 0) return;
+          if (!glowLine || nodes.length === 0) return;
 
-          let currentIndex = 0;
+          let currentSegment = 0;
           const animationDuration = 2000; // 2 seconds per segment
           const pauseDuration = 800; // 0.8 seconds pause at each node
+          const totalSegments = nodes.length; // 4 nodes total (2027, 2028, 2030, 2032)
+          const resetDelay = 2000; // 2 seconds pause before restarting
 
           // Hover effects
           nodeCircles.forEach((circle, index) => {
@@ -503,57 +505,70 @@
             });
           });
 
-          function animatePulse() {
-            const totalNodes = nodes.length;
-            const startNode = nodes[currentIndex];
-            const endNode = nodes[(currentIndex + 1) % totalNodes];
+          function resetAnimation() {
+            // Reset all node states
+            nodeGlows.forEach((glow) => glow.style.opacity = '0');
+            nodeCircles.forEach((circle) => circle.style.transform = 'scale(1)');
             
-            const startRect = startNode.getBoundingClientRect();
-            const endRect = endNode.getBoundingClientRect();
-            const containerRect = pulse.parentElement.getBoundingClientRect();
+            // Reset glowing line to start
+            glowLine.style.transition = 'none';
+            glowLine.style.width = '0';
             
-            const startX = startRect.left + startRect.width / 2 - containerRect.left;
-            const endX = endRect.left + endRect.width / 2 - containerRect.left;
+            // Reset segment counter
+            currentSegment = 0;
             
-            // Show pulse at start position
-            pulse.style.left = startX + 'px';
-            pulse.style.opacity = '1';
-            
-            // Activate start node glow
-            nodeGlows[currentIndex].style.opacity = '1';
-            nodeCircles[currentIndex].style.transform = 'scale(1.1)';
-            
-            // Animate to end position
+            // Restart animation
             setTimeout(() => {
-              pulse.style.transition = `left ${animationDuration}ms linear`;
-              pulse.style.left = endX + 'px';
+              glowLine.style.transition = 'width 2s ease-in-out';
+              animateGlowLine();
+            }, 100);
+          }
+
+          function animateGlowLine() {
+            if (currentSegment >= totalSegments) {
+              // Animation complete - reset and loop
+              setTimeout(resetAnimation, resetDelay);
+              return;
+            }
+
+            const targetNode = nodes[currentSegment];
+            const containerRect = glowLine.parentElement.getBoundingClientRect();
+            const targetRect = targetNode.getBoundingClientRect();
+            
+            let targetWidth;
+            
+            // For the last node, extend to the right edge of the container
+            if (currentSegment === totalSegments - 1) {
+              targetWidth = containerRect.width;
+            } else {
+              // Calculate the width to reach the center of the target node
+              targetWidth = targetRect.left + targetRect.width / 2 - containerRect.left;
+            }
+            
+            // Activate current node glow
+            nodeGlows[currentSegment].style.opacity = '1';
+            nodeCircles[currentSegment].style.transform = 'scale(1.1)';
+            
+            // Animate the glowing line to the target width
+            setTimeout(() => {
+              glowLine.style.width = targetWidth + 'px';
             }, 50);
             
-            // Deactivate start node, activate end node
+            // After animation, pause and prepare for next segment
             setTimeout(() => {
-              nodeGlows[currentIndex].style.opacity = '0';
-              nodeCircles[currentIndex].style.transform = 'scale(1)';
+              nodeGlows[currentSegment].style.opacity = '0';
+              nodeCircles[currentSegment].style.transform = 'scale(1)';
               
-              const nextIndex = (currentIndex + 1) % totalNodes;
-              nodeGlows[nextIndex].style.opacity = '1';
-              nodeCircles[nextIndex].style.transform = 'scale(1.1)';
-            }, animationDuration / 2);
-            
-            // Prepare for next segment
-            setTimeout(() => {
-              nodeGlows[(currentIndex + 1) % totalNodes].style.opacity = '0';
-              nodeCircles[(currentIndex + 1) % totalNodes].style.transform = 'scale(1)';
-              pulse.style.transition = 'none';
-              currentIndex = (currentIndex + 1) % totalNodes;
+              currentSegment++;
               
-              // Restart animation after pause
-              setTimeout(animatePulse, pauseDuration);
+              // Continue to next segment
+              setTimeout(animateGlowLine, pauseDuration);
             }, animationDuration + pauseDuration);
           }
 
           // Start animation after page load
           setTimeout(() => {
-            animatePulse();
+            animateGlowLine();
           }, 1000);
         })();
       </script>
@@ -574,7 +589,7 @@
             right: auto !important;
             transform: translateX(-50%) !important;
           }
-          .timeline-pulse {
+          .timeline-glow-line {
             display: none !important;
           }
           .timeline-node {
