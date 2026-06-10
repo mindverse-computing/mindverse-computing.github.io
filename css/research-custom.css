@@ -1,0 +1,35 @@
+.research-section-card {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.research-section-card:hover {
+  transform: translateY(-8px);
+}
+
+.research-section-card-purple:hover,
+.research-section-card-magenta:hover {
+  box-shadow: 0 15px 50px rgba(255, 0, 255, 0.4);
+  border-color: rgba(255, 0, 255, 0.6) !important;
+  background: rgba(255, 0, 255, 0.08) !important;
+}
+
+.research-section-card-magenta .section-title-glow {
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 0, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 18px rgba(255, 0, 255, 0.45);
+}
+
+.research-section-card-cyan:hover {
+  box-shadow: 0 15px 50px rgba(0, 242, 254, 0.4);
+  border-color: rgba(0, 242, 254, 0.6) !important;
+  background: rgba(0, 242, 254, 0.08) !important;
+}
+
+.research-section-card-green:hover {
+  box-shadow: 0 15px 50px rgba(0, 230, 118, 0.4);
+  border-color: rgba(0, 230, 118, 0.6) !important;
+  background: rgba(0, 230, 118, 0.08) !important;
+}
