@@ -1,3 +1,49 @@
+/* Harmonized navbar height so the 50px logo sits inside the fixed bar. */
+.site-nav,
+.site-nav .sticky-nav,
+#sticky-wrapper .sticky-nav,
+#sticky-wrapper.is-sticky .sticky-nav {
+  min-height: 78px !important;
+}
+
+.site-nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.site-nav .site-navigation {
+  min-height: 78px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.site-nav .logo.menu-absolute {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .logo img {
+  display: block;
+  max-height: 56px;
+  width: auto;
+}
+
+.site-nav .site-menu-toggle {
+  position: absolute !important;
+  right: 15px;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.site-nav .site-navigation .site-menu > li > a {
+  line-height: 1.2 !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
 /*
 * Template Name: Learner
 * Template Author: Untree.co
