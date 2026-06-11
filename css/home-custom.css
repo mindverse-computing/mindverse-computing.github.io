@@ -67,6 +67,17 @@
       background: rgba(217, 245, 0, 0.1) !important;
     }
 
+    .impact-card-orange {
+      transition: all 0.4s ease;
+    }
+
+    .impact-card-orange:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 80px rgba(255, 107, 53, 0.7);
+      border-color: rgba(255, 107, 53, 0.8) !important;
+      background: rgba(255, 107, 53, 0.1) !important;
+    }
+
     .impact-card-magenta {
       transition: all 0.4s ease;
     }
