@@ -28,9 +28,9 @@
     }
 
     .domain-preview-card:has(.uil-atom):hover {
-      box-shadow: 0 25px 80px rgba(255, 107, 53, 0.7);
-      border-color: rgba(255, 107, 53, 0.8) !important;
-      background: rgba(255, 107, 53, 0.1) !important;
+      box-shadow: 0 25px 80px rgba(255, 0, 255, 0.7);
+      border-color: rgba(255, 0, 255, 0.8) !important;
+      background: rgba(255, 0, 255, 0.1) !important;
     }
 
     /* Real-World Impact cards hover effects */
@@ -73,9 +73,9 @@
 
     .impact-card-orange:hover {
       transform: translateY(-8px);
-      box-shadow: 0 25px 80px rgba(255, 107, 53, 0.7);
-      border-color: rgba(255, 107, 53, 0.8) !important;
-      background: rgba(255, 107, 53, 0.1) !important;
+      box-shadow: 0 25px 80px rgba(255, 0, 255, 0.7);
+      border-color: rgba(255, 0, 255, 0.8) !important;
+      background: rgba(255, 0, 255, 0.1) !important;
     }
 
     .impact-card-magenta {
