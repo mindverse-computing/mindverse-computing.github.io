@@ -1,3 +1,6 @@
+:root { font-size: 87.5%; } /* 1rem = 14px — proportional font scale */
+body { font-size: 14px; } /* override style.css 16px */
+
 /* Block 1 from index.html */
 /* Home page domain preview card hover effects */
     .domain-preview-card {

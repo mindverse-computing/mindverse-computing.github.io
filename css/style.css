@@ -1,9 +1,9 @@
-/* Harmonized navbar height so the 50px logo sits inside the fixed bar. */
+/* Harmonized navbar height so the logo sits inside the fixed bar. */
 .site-nav,
 .site-nav .sticky-nav,
 #sticky-wrapper .sticky-nav,
 #sticky-wrapper.is-sticky .sticky-nav {
-  min-height: 78px !important;
+  min-height: 60px !important;
 }
 
 .site-nav {
@@ -12,7 +12,7 @@
 }
 
 .site-nav .site-navigation {
-  min-height: 78px !important;
+  min-height: 60px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
 
 .site-nav .logo img {
   display: block;
-  max-height: 56px;
+  max-height: 40px;
   width: auto;
 }
 
@@ -41,8 +41,8 @@
 
 .site-nav .site-navigation .site-menu > li > a {
   line-height: 1.2 !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }
 /*
 * Template Name: Learner
