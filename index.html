@@ -195,26 +195,36 @@
 
   <div class="fresh-hero" id="home">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-stretch" style="min-height: calc(100vh - 48px);">
         <!-- LEFT HALF: TEXT CONTENT -->
-        <div class="col-lg-6 text-left">
+        <div class="col-lg-6 text-left d-flex flex-column justify-content-center" style="padding: 60px 0;">
           <h1 class="fresh-title" data-aos="fade-right" data-aos-delay="100">MINDVERSE COMPUTING</h1>
 
           <h2 class="fresh-slogan" data-aos="fade-right" data-aos-delay="200">
             Building Quantum Digital Twins (QDT)<br>for Complex Real-World Systems
-
           </h2>
 
-          <p class="fresh-description lead text-white" data-aos="fade-right" data-aos-delay="300">
-            Mindverse Computing develops <strong>Quantum Digital Twins (QDT)</strong> of complex dynamical systems — from finance, quantum matter, multiomics, BCI to surveillance systems, supply chains, energy grids, and satellite networks — powered by proprietary <strong>integrated quantum-classical simulation technology</strong>. Our platform ingests real-world data streams and returns an executable quantum state model that can be queried, perturbed, and inverted to drive real decisions.
+          <p class="fresh-description lead text-white" data-aos="fade-right" data-aos-delay="300" style="margin-bottom: 1.4rem;">
+            Mindverse Computing develops <strong>Quantum Digital Twins (QDT)</strong> of complex dynamical systems — from finance, quantum matter, multiomics and BCI to surveillance systems, supply chains, energy grids, and satellite networks — powered by proprietary <strong>integrated quantum-classical simulation technology</strong>.
           </p>
 
+          <p class="fresh-description text-white" data-aos="fade-right" data-aos-delay="380" style="margin-bottom: 2rem; color: rgba(255,255,255,0.82) !important; font-size: 1rem; line-height: 1.7;">
+            Our platform ingests real-world data streams and returns an <strong>executable quantum state model</strong> that can be queried, perturbed, and inverted to drive real decisions — across every domain where complex system dynamics matter.
+          </p>
 
+          <div class="fresh-domain-tags" data-aos="fade-right" data-aos-delay="460">
+            <span class="fdomain-tag" style="--dc:#d9f500;">Quantum Finance</span>
+            <span class="fdomain-tag" style="--dc:#ff00ff;">Quantum Matter</span>
+            <span class="fdomain-tag" style="--dc:#00e676;">Quantum Omics</span>
+            <span class="fdomain-tag" style="--dc:#00f2fe;">Quantum Mind</span>
+            <span class="fdomain-tag" style="--dc:#ff6b35;">Energy Grids</span>
+            <span class="fdomain-tag" style="--dc:#b026ff;">Supply Chains</span>
+          </div>
         </div>
 
         <!-- RIGHT HALF: GLOWING DIAGRAM -->
-        <div class="col-lg-6">
-          <div class="home-visual-column" data-aos="fade-left" data-aos-delay="400">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="home-visual-column" data-aos="fade-left" data-aos-delay="400" style="width:100%; height:100%;">
             <!-- GLOWING BRAIN NETWORK -->
             <div class="brain-network-visual" id="brain-network-container">
               <div class="brain-glow-center"></div>

@@ -28,12 +28,12 @@
   /* Strictly defined Navy Gradient - No Black Box */
   background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%) !important;
   position: relative;
-  /* Standard modern hero height, not distorted */
-  min-height: 80vh;
+  /* Full-viewport hero height */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 120px 0 100px;
   z-index: 1;
 }
 
@@ -71,6 +71,24 @@
   line-height: 1.6;
 }
 
+.fresh-domain-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fdomain-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid color-mix(in srgb, var(--dc) 50%, transparent);
+  background: color-mix(in srgb, var(--dc) 10%, transparent);
+  color: var(--dc);
+}
+
 /* ===== HOME VISUAL RIGHT COLUMN ===== */
 .home-visual-column {
   display: flex;
@@ -78,14 +96,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100%;
 }
 
 /* --- TOY BRAIN NETWORK --- */
 .brain-network-visual {
   position: relative;
-  width: 500px;
-  height: 350px;
-  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+  height: 520px;
+  margin-bottom: 0;
   /* Visual container for the brain network */
 }
 
