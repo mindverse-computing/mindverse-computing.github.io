@@ -1,6 +1,73 @@
 :root { font-size: 87.5%; } /* 1rem = 14px — proportional font scale */
 body { font-size: 14px; } /* override style.css 16px */
 
+.site-nav .logo .nav-brand-text {
+  margin-left: 10px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+
+.fresh-hero {
+  padding: 40px 0 100px !important;
+}
+
+.fresh-hero .fresh-title {
+  text-transform: none;
+  font-size: clamp(2.8rem, 6.2vw, 4.8rem);
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+}
+
+.fresh-hero .fresh-description {
+  font-size: 1.15rem !important;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-explore-qdt {
+  background: linear-gradient(135deg, #00f2fe 0%, #0fa3e8 100%);
+  color: #ffffff;
+}
+
+.btn-explore-qdt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.4);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-applications {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-applications:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 242, 254, 0.8);
+  color: #00f2fe;
+  text-decoration: none;
+}
+
 /* Block 1 from index.html */
 /* Home page domain preview card hover effects */
     .domain-preview-card {
