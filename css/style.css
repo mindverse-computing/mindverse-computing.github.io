@@ -1736,3 +1736,45 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         color: #ffffff; }
   .site-footer .copyright {
     color: rgba(255, 255, 255, 0.5); }
+
+/* Mindverse unified navigation sizing */
+.site-nav .logo.menu-absolute {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px;
+}
+
+.site-nav .logo img {
+  max-height: 34px !important;
+  width: auto !important;
+}
+
+.site-nav .logo .nav-brand-text {
+  margin-left: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+
+.site-nav .site-navigation .site-menu > li > a {
+  font-size: 16px !important;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+@media (min-width: 992px) {
+  .site-nav .site-navigation {
+    justify-content: flex-start;
+  }
+
+  .site-nav .site-navigation .site-menu {
+    margin-left: 290px;
+    white-space: nowrap;
+  }
+}

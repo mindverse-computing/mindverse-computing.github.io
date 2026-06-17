@@ -2,12 +2,33 @@
 body { font-size: 14px; } /* override style.css 16px */
 
 .site-nav .logo .nav-brand-text {
-  margin-left: 10px;
-  font-size: 0.85rem;
+  margin-left: 0;
+  font-size: 18px;
   letter-spacing: 0.08em;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.92);
+  line-height: 1.2;
   white-space: nowrap;
+}
+
+.site-nav .site-navigation .site-menu > li > a {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+@media (min-width: 992px) {
+  .site-nav .site-navigation {
+    justify-content: flex-start;
+  }
+
+  .site-nav .site-navigation .site-menu {
+    margin-left: 290px;
+    white-space: nowrap;
+  }
 }
 
 .fresh-hero {
