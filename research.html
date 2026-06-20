@@ -83,21 +83,27 @@
       line-height: 1.7;
     }
     .research-list li::before {
-      content: '→';
+      content: '✓';
       position: absolute;
       left: 0;
       color: inherit;
-      opacity: 0.7;
+      opacity: 0.8;
+      font-weight: 700;
     }
 
     /* ── Status chips ────────────────────────────────── */
     .status-chip {
       display: inline-block;
-      padding: 5px 14px;
+      padding: 4px 13px;
       border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin: 3px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+    /* Ensure product-desc and chip stack vertically inside li */
+    .research-list .product-desc {
+      display: block;
+      margin-bottom: 4px;
     }
 
     /* ── Section domain label ────────────────────────── */
@@ -343,30 +349,26 @@
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
             <ul class="research-list" style="color: #D9F500;">
               <li>
-                <span class="product-name" style="color: #D9F500;">Market Connectivity Map</span>
-                <span class="product-desc">Tracks how assets and market sectors are linked and how those connections shift over time. Powers early-warning signals for regime changes.</span>
+                <span class="product-name" style="color: #D9F500;">Finatom — Financial Connectome &amp; Market State Indicators</span>
+                <span class="product-desc">A network-based representation of global market connectivity that maps how assets, sectors, and macro signals are dynamically coupled. Continuously updated as market conditions evolve, it surfaces regime transitions and risk concentrations before they appear in conventional price indicators.</span>
+                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #D9F500;">Portfolio Optimisation Engine</span>
-                <span class="product-desc">Finds allocations that balance risk and return under stressed conditions that conventional models miss.</span>
+                <span class="product-name" style="color: #D9F500;">Quantum Portfolio Optimisation (QPO)</span>
+                <span class="product-desc">A next-generation portfolio allocation engine that goes beyond classical mean-variance methods. QPO finds risk-return balanced portfolios under stressed, non-linear market conditions — capturing tail dependencies and correlation breakdowns that conventional optimisers overlook.</span>
+                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #D9F500;">High-Frequency Signal System</span>
-                <span class="product-desc">Detects micro-structural market transitions in real time and generates execution signals at the moment of change.</span>
+                <span class="product-name" style="color: #D9F500;">Quantum High-Frequency Trading (QHFT) Signal System</span>
+                <span class="product-desc">An ultra-low-latency market state tracking system that detects micro-structural transitions in real time. QHFT generates execution signals at the precise moment market structure begins to shift — enabling positioning ahead of moves that slower models miss entirely.</span>
+                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #D9F500;">Monthly Market Intelligence Report</span>
-                <span class="product-desc">A monthly quantitative briefing covering market connectivity, risk regimes, and sector dynamics. For institutional investors and systematic funds.</span>
+                <span class="product-name" style="color: #D9F500;">Market State Report (MSR) — Monthly Intelligence Briefing</span>
+                <span class="product-desc">A monthly quantitative briefing for institutional investors and systematic funds. Each edition covers market connectivity maps, sector coupling heatmaps, volatility regime assessments, and risk-adjusted signal rankings — all through the QVF lens.</span>
+                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">Coming Soon</span>
               </li>
             </ul>
-
-            <div class="chips-row">
-              <p class="chips-label">Status</p>
-              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">Coming Soon</span>
-              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">Coming Soon</span>
-            </div>
           </div>
         </div>
       </div>
@@ -402,25 +404,21 @@
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
             <ul class="research-list" style="color: #FF00FF;">
               <li>
-                <span class="product-name" style="color: #FF00FF;">ChemSphere</span>
-                <span class="product-desc">A searchable database of chemical reactions encoded as interconnected networks. Researchers can query reaction pathways, compare molecular fingerprints, and identify known routes to target molecules.</span>
+                <span class="product-name" style="color: #FF00FF;">ChemSphere — Quantum Chemical Reaction Database</span>
+                <span class="product-desc">A searchable, graph-structured database of chemical reactions built for quantum chemistry research. Researchers can query reaction pathways, compare molecular fingerprints across chemical space, identify known synthesis routes, and profile reaction intermediates and transition states — all within a single connected knowledge base.</span>
+                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #FF00FF;">Intelligent Molecular Design (HAHD)</span>
-                <span class="product-desc">A design framework that breaks complex molecular systems into layers — electronic, structural, environmental — and uses specialist agents to simulate each layer independently and then together.</span>
+                <span class="product-name" style="color: #FF00FF;">Hierarchical Agentic Hamiltonian Design (HAHD) — Molecular Design Framework</span>
+                <span class="product-desc">A multi-agent design framework for building complex molecular and material systems from the ground up. HAHD decomposes a target into interacting layers — electronic structure, atomic geometry, vibrational modes, and environmental coupling — each managed by a specialist AI agent. The agents collaborate to produce an accurate, composite simulation of the full system, enabling design of materials and drug candidates at scales beyond classical tools.</span>
+                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #FF00FF;">Synthesis Planner</span>
-                <span class="product-desc">An intelligent planning tool: given a target material or molecule, it proposes which precursors, conditions, and reaction steps are most likely to produce it — then ranks and scores each candidate route.</span>
+                <span class="product-name" style="color: #FF00FF;">Synthesis Planner — Inverse Material Design &amp; Route Planning</span>
+                <span class="product-desc">An intelligent synthesis planning tool powered by HAHD simulations and the ChemSphere reaction database. Given a target material or molecule, it proposes which precursors, reaction conditions, and synthesis steps are most likely to succeed — then ranks each candidate route by predicted yield and confidence, dramatically compressing the time from idea to validated synthesis path.</span>
+                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">Coming Soon</span>
               </li>
             </ul>
-
-            <div class="chips-row">
-              <p class="chips-label">Status</p>
-              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">Coming Soon</span>
-            </div>
           </div>
         </div>
       </div>
@@ -456,30 +454,26 @@
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
             <ul class="research-list" style="color: #00e676;">
               <li>
-                <span class="product-name" style="color: #00e676;">Biological State Modelling</span>
-                <span class="product-desc">Integrates data from genomics, proteomics, and metabolomics into a unified model of how a cell or patient is functioning — and how that state changes under disease or treatment.</span>
+                <span class="product-name" style="color: #00e676;">Omics-HAHD — Hierarchical Agentic Hamiltonian Design for Multi-Omics Biology</span>
+                <span class="product-desc">Applies the HAHD framework to multi-omics data — integrating genomic, transcriptomic, proteomic, and metabolomic layers into a unified model of biological state. Each molecular layer is handled by a specialist agent, enabling the system to identify which biological disruptions drive disease, and which molecular targets are most likely to restore healthy cellular function.</span>
+                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00e676;">Target Discovery Engine</span>
-                <span class="product-desc">Identifies which molecular disruptions are driving a disease state and ranks potential interventions — small molecules, biologics, or gene-level edits — by how effectively they restore healthy function.</span>
+                <span class="product-name" style="color: #00e676;">Perturbation &amp; Inversion Analysis — Therapeutic Target Discovery Engine</span>
+                <span class="product-desc">A systematic method for identifying what is going wrong inside a diseased cell and what can fix it. The engine classifies the type of biological disruption, then works backwards to find which interventions — small molecules, gene edits, or biologics — are most likely to reverse it. Candidates are ranked by their predicted ability to restore the healthy biological state, with full mechanistic reasoning.</span>
+                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00e676;">Quantum Health Record (Q-EHR)</span>
-                <span class="product-desc">A new approach to patient records that captures the dynamic biological state of a patient — not just a diagnosis label — enabling quantitative tracking of disease progression and treatment response over time.</span>
+                <span class="product-name" style="color: #00e676;">Quantum Electronic Health Record (Q-EHR) — Dynamic Biological Patient Record</span>
+                <span class="product-desc">A new kind of patient record that replaces static diagnosis codes with a quantitative model of how a patient's biology is actually functioning. Q-EHR tracks changes in biological state over time — under disease, treatment, and recovery — enabling personalised monitoring and more precise clinical decisions than today's ICD-based systems allow.</span>
+                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">Research Preview</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00e676;">Cell State Atlas</span>
-                <span class="product-desc">A reference library of biological states across tissues, disease conditions, and treatment contexts. Used for comparing patient data, predicting drug response, and identifying disease biomarkers.</span>
+                <span class="product-name" style="color: #00e676;">Cell State Atlas — Biological Attractor Reference Library</span>
+                <span class="product-desc">A reference library of biological states built from large-scale single-cell datasets across tissues, disease conditions, and treatment contexts. Researchers use the atlas to compare a patient's biological state against known healthy and disease references, predict how they will respond to a given drug, and identify biomarkers for clinical stratification.</span>
+                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">Coming Soon</span>
               </li>
             </ul>
-
-            <div class="chips-row">
-              <p class="chips-label">Status</p>
-              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">Research Preview</span>
-              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">Coming Soon</span>
-            </div>
           </div>
         </div>
       </div>
@@ -515,30 +509,26 @@
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
             <ul class="research-list" style="color: #00f2fe;">
               <li>
-                <span class="product-name" style="color: #00f2fe;">Neurological Condition Atlas</span>
-                <span class="product-desc">A reference library of 27 neurological and psychiatric conditions, each described by its brain-state signature. Enables early detection, comparison, and prediction of which intervention best restores healthy brain function.</span>
+                <span class="product-name" style="color: #00f2fe;">Neural Perturbation Atlas — 27-Condition Neurological Reference Library</span>
+                <span class="product-desc">A comprehensive reference atlas covering 27 neurological and psychiatric conditions — including epilepsy, depression, Parkinson's disease, schizophrenia, ADHD, TBI, and Alzheimer's — each characterised by its specific brain-state signature and the type of neural disruption it represents. The atlas enables early detection of conditions, comparison of a patient's state against known profiles, and prediction of which brain stimulation approach is most likely to restore healthy function.</span>
+                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00f2fe;">Neural Health Record (Q-NEHR)</span>
-                <span class="product-desc">A dynamic record of a patient's brain health state — not just a symptom checklist — that tracks cognitive changes over time and supports personalised therapy decisions.</span>
+                <span class="product-name" style="color: #00f2fe;">Quantum Neural Electronic Health Record (Q-NEHR) — Dynamic Brain Health Record</span>
+                <span class="product-desc">A dynamic patient record that captures the full state of a patient's brain health — not just a list of symptoms or diagnosis codes. Q-NEHR stores a quantitative model of healthy brain function for each patient, together with how that state has shifted under their specific condition. It tracks cognitive changes over time, supports personalised therapy planning, and provides measurable biomarkers for mental health and neurological care that go far beyond today's assessment tools.</span>
+                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">Research Preview</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00f2fe;">Closed-Loop Brain Stimulation</span>
-                <span class="product-desc">An autonomous six-step system that continuously monitors brain state, compares it against a healthy reference, selects the optimal stimulation approach, applies it, and measures the recovery response.</span>
+                <span class="product-name" style="color: #00f2fe;">Closed-Loop Brain Stimulation — Autonomous Neuromodulation Therapy System</span>
+                <span class="product-desc">An autonomous six-step therapy system that operates continuously: it reads live brain signals, builds a real-time model of the patient's current brain state, compares it against their healthy reference, selects the optimal stimulation approach from a library of candidate protocols (tDCS, tACS, TMS, or DBS), applies the chosen stimulation, and then measures how much the brain state has moved toward recovery. The loop runs adaptively — tightening or shifting its parameters as the patient responds.</span>
+                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">In Development</span>
               </li>
               <li>
-                <span class="product-name" style="color: #00f2fe;">Brain State Library</span>
-                <span class="product-desc">A catalogue of 25 distinct brain states — spanning sleep, focus, emotion, and neurological conditions — that can be used to classify EEG signals and design brain-computer interface decoders.</span>
+                <span class="product-name" style="color: #00f2fe;">Cortical State Library — 25-State Brain State Atlas for EEG Decoding</span>
+                <span class="product-desc">A reference catalogue of 25 distinct brain states organised across five functional tiers: arousal and baseline states (including deep sleep, REM, and meditation), sensorimotor states (motor imagery, visual evoked responses), cognitive states (working memory, language processing, attention), affective and social states (fear, reward, empathy), and pathological states (seizure, Parkinson's tremor, depression, coma). Researchers and BCI engineers use the library to classify EEG signals, design neural decoders, and benchmark brain-computer interface systems.</span>
+                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">Coming Soon</span>
               </li>
             </ul>
-
-            <div class="chips-row">
-              <p class="chips-label">Status</p>
-              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">Research Preview</span>
-              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">In Development</span>
-              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">Coming Soon</span>
-            </div>
           </div>
         </div>
       </div>
