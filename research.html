@@ -57,86 +57,109 @@
     })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
 
   <style>
-    :root { --qvf: #D9F500; --qvma: #FF00FF; --qvo: #00e676; --qvm: #00f2fe; --purple: #8b5cf6; --navy: #151b3b; --navy2: #1B264F; }
+    :root {
+      --qvf: #D9F500;
+      --qvma: #FF00FF;
+      --qvo: #00e676;
+      --qvm: #00f2fe;
+      --purple: #8b5cf6;
+      --navy: #151b3b;
+      --navy2: #1B264F;
+    }
+
     body { font-family: 'Inter', sans-serif; background: var(--navy); }
 
-    /* ── Product card ──────────────────────────────── */
-    .prod-card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 20px;
-      padding: 2rem;
-      height: 100%;
+    /* ── Research feature list ───────────────────────── */
+    .research-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .research-list li {
+      padding: 6px 0;
+      padding-left: 1.5rem;
       position: relative;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
     }
-    .prod-card:hover { transform: translateY(-6px); }
-    /* Domain-specific glow on hover — set via inline data-glow attribute */
-    .prod-card.glow-qvf:hover  { border-color: rgba(217,245,0,0.6)   !important; box-shadow: 0 0 28px rgba(217,245,0,0.18),  0 12px 40px rgba(217,245,0,0.10); }
-    .prod-card.glow-qvma:hover { border-color: rgba(255,0,255,0.6)    !important; box-shadow: 0 0 28px rgba(255,0,255,0.18),   0 12px 40px rgba(255,0,255,0.10); }
-    .prod-card.glow-qvo:hover  { border-color: rgba(0,230,118,0.6)    !important; box-shadow: 0 0 28px rgba(0,230,118,0.18),   0 12px 40px rgba(0,230,118,0.10); }
-    .prod-card.glow-qvm:hover  { border-color: rgba(0,242,254,0.6)    !important; box-shadow: 0 0 28px rgba(0,242,254,0.18),   0 12px 40px rgba(0,242,254,0.10); }
-    .prod-card.glow-pub:hover  { border-color: rgba(139,92,246,0.6)   !important; box-shadow: 0 0 28px rgba(139,92,246,0.18),  0 12px 40px rgba(139,92,246,0.10); }
-    .prod-card .top-bar {
-      position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      border-radius: 20px 20px 0 0;
-    }
-    .prod-card .prod-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-    .prod-card .prod-name { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.4rem; }
-    .prod-card .prod-sub { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1rem; opacity: 0.7; }
-    .prod-card p { font-size: 0.93rem; line-height: 1.75; color: rgba(255,255,255,0.78); margin-bottom: 1.25rem; }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
-    .tag { padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
-    .badge-pill {
-      display: inline-block; padding: 4px 14px; border-radius: 20px;
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px;
-      background: rgba(255,200,0,0.2); color: #ffd600;
-      border: 1px solid rgba(255,200,0,0.4); margin-bottom: 0.75rem;
+    .research-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: inherit;
+      opacity: 0.7;
     }
 
-    /* ── Section accent bar (like platform.html 4px top stripe) ── */
-    .section-accent-bar {
-      position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    /* ── Status chips ────────────────────────────────── */
+    .status-chip {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 3px;
     }
 
-    /* ── Section header ────────────────────────────── */
-    .domain-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
-    .section-label {
-      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 3px;
-      font-weight: 600; opacity: 0.6; margin-bottom: 0.5rem;
+    /* ── Section domain label ────────────────────────── */
+    .domain-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 600;
+      opacity: 0.7;
+      margin-bottom: 0.75rem;
     }
-    .section-title { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem; }
-    .section-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-bottom: 2.5rem; }
 
-    /* ── Hero pills ────────────────────────────────── */
-    .hero-pill {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 10px 22px; border-radius: 30px; font-weight: 600;
-      font-size: 0.9rem; border: 1px solid;
-      transition: transform 0.2s, box-shadow 0.3s;
-      text-decoration: none;
+    /* ── Domain tag badge (pill) ─────────────────────── */
+    .domain-tag {
+      display: inline-block;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 1.25rem;
     }
-    .hero-pill:hover { transform: translateY(-2px); text-decoration: none; }
-    .hero-pill.qvf:hover  { box-shadow: 0 4px 20px rgba(217,245,0,0.3); }
-    .hero-pill.qvma:hover { box-shadow: 0 4px 20px rgba(255,0,255,0.3); }
-    .hero-pill.qvo:hover  { box-shadow: 0 4px 20px rgba(0,230,118,0.3); }
-    .hero-pill.qvm:hover  { box-shadow: 0 4px 20px rgba(0,242,254,0.3); }
 
-    /* ── Pub card ──────────────────────────────────── */
-    .pub-card {
-      background: rgba(139,92,246,0.05);
-      border: 1px solid rgba(139,92,246,0.25);
-      border-radius: 20px; padding: 2rem; height: 100%;
-      transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+    /* ── "What We're Building" accent box ───────────── */
+    .building-box {
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      background: rgba(255,255,255,0.03);
+      margin-top: 1.5rem;
     }
-    .pub-card:hover { transform: translateY(-4px); border-color: rgba(139,92,246,0.55); box-shadow: 0 0 28px rgba(139,92,246,0.18), 0 12px 40px rgba(139,92,246,0.10); }
+    .building-box p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.8);
+    }
+    .building-box .building-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      opacity: 0.6;
+    }
 
-    /* ── CTA section ───────────────────────────────── */
-    .future-pill {
-      display: inline-block; padding: 10px 24px; border-radius: 30px;
-      font-weight: 600; font-size: 0.9rem; margin: 6px;
+    /* ── Section title glow ─────────────────────────── */
+    .section-title-glow {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.2;
     }
+
+    /* ── Section subtitle ───────────────────────────── */
+    .section-subtitle {
+      color: rgba(255,255,255,0.68);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* ── CTA buttons ─────────────────────────────────── */
     .btn-primary-grad {
       background: linear-gradient(135deg, #8b5cf6, #00f2fe);
       color: #fff; font-weight: 700; padding: 14px 40px;
@@ -151,6 +174,82 @@
       transition: all 0.3s; display: inline-block; text-decoration: none;
     }
     .btn-outline-light-r:hover { border-color: rgba(255,255,255,0.7); color: #fff; transform: translateY(-2px); }
+
+    /* ── Product name in list ────────────────────────── */
+    .research-list .product-name {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .research-list .product-desc {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      display: block;
+      padding-left: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Status chips row ────────────────────────────── */
+    .chips-row {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .chips-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    /* ── Subscribe form in publications ──────────────── */
+    .pub-subscribe-form {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+    .pub-subscribe-form input[type="email"] {
+      flex: 1;
+      min-width: 160px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      border: 1px solid rgba(139,92,246,0.4);
+      border-radius: 50px;
+      padding: 9px 18px;
+      font-size: 0.88rem;
+      outline: none;
+    }
+    .pub-subscribe-form input[type="email"]::placeholder { color: rgba(255,255,255,0.4); }
+    .pub-subscribe-form button {
+      background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 9px 22px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .pub-subscribe-form button:hover { opacity: 0.85; }
+
+    /* ── Hero domain pills ───────────────────────────── */
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 22px; border-radius: 30px; font-weight: 600;
+      font-size: 0.9rem; border: 1px solid;
+      transition: transform 0.2s, box-shadow 0.3s;
+      text-decoration: none;
+    }
+    .hero-pill:hover { transform: translateY(-2px); text-decoration: none; }
+    .hero-pill.qvf:hover  { box-shadow: 0 4px 20px rgba(217,245,0,0.3); }
+    .hero-pill.qvma:hover { box-shadow: 0 4px 20px rgba(255,0,255,0.3); }
+    .hero-pill.qvo:hover  { box-shadow: 0 4px 20px rgba(0,230,118,0.3); }
+    .hero-pill.qvm:hover  { box-shadow: 0 4px 20px rgba(0,242,254,0.3); }
   </style>
 </head>
 
@@ -191,25 +290,24 @@
   </nav>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       HERO
+       HERO — Research Portfolio Intro
   ═══════════════════════════════════════════════════════════════ -->
-  <div style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0 70px; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #8b5cf6, #00f2fe);"></div>
+  <div class="investor-section-premium" id="research-intro" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 120px 0;">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-10 text-center" data-aos="fade-up">
-          <p class="section-label" style="color: var(--purple);">RESEARCH PORTFOLIO</p>
-          <h1 style="font-size: 3.4rem; font-weight: 800; background: linear-gradient(135deg, #8b5cf6, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; line-height: 1.15;">
-            Research Products
-          </h1>
-          <p style="font-size: 1.15rem; line-height: 1.85; color: rgba(255,255,255,0.78); max-width: 820px; margin: 0 auto 3rem;">
-            Mindverse Computing develops scientific research tools at the frontier of quantum simulation, agentic AI, and complex systems science. Our products are being built today to become the computational foundation for <strong style="color: #fff;">personalised medicine</strong>, <strong style="color: #fff;">intelligent material synthesis</strong>, <strong style="color: #fff;">autonomous trading</strong>, and <strong style="color: #fff;">next-generation brain-computer interfaces</strong>.
+        <div class="col-lg-10 text-center">
+          <h2 class="section-title-glow mb-4" data-aos="fade-up" style="font-size: 3rem;">Research Portfolio</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.1rem; line-height: 1.8;">
+            Mindverse Computing is building a new generation of intelligent simulation tools for finance, materials science, cell biology, and neuroscience. Each research product is designed to be the computational foundation for a specific high-value application — from personalised medicine to autonomous trading to closed-loop brain therapies.
           </p>
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 2rem;">
-            <a href="#qvf"  class="hero-pill qvf"  style="background: rgba(217,245,0,0.1); border-color: rgba(217,245,0,0.4);  color: #D9F500;">⚡ QVF &mdash; Finance</a>
-            <a href="#qvma" class="hero-pill qvma" style="background: rgba(255,0,255,0.1);   border-color: rgba(255,0,255,0.4);   color: #FF00FF;">⚛️ QVMa &mdash; Matter</a>
-            <a href="#qvo"  class="hero-pill qvo"  style="background: rgba(0,230,118,0.1);   border-color: rgba(0,230,118,0.4);   color: #00e676;">🧬 QVO &mdash; Omics</a>
-            <a href="#qvm"  class="hero-pill qvm"  style="background: rgba(0,242,254,0.1);   border-color: rgba(0,242,254,0.4);   color: #00f2fe;">🧠 QVM &mdash; Mind</a>
+          <div class="mt-4" data-aos="fade-up" data-aos-delay="150" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+            <a href="#qvf-research"  class="hero-pill qvf"  style="background: rgba(217,245,0,0.1); border-color: rgba(217,245,0,0.4);  color: #D9F500;">⚡ QVF &mdash; Finance</a>
+            <a href="#qvma-research" class="hero-pill qvma" style="background: rgba(255,0,255,0.1);   border-color: rgba(255,0,255,0.4);   color: #FF00FF;">⚛️ QVMa &mdash; Matter</a>
+            <a href="#qvo-research"  class="hero-pill qvo"  style="background: rgba(0,230,118,0.1);   border-color: rgba(0,230,118,0.4);   color: #00e676;">🧬 QVO &mdash; Omics</a>
+            <a href="#qvm-research"  class="hero-pill qvm"  style="background: rgba(0,242,254,0.1);   border-color: rgba(0,242,254,0.4);   color: #00f2fe;">🧠 QVM &mdash; Mind</a>
+          </div>
+          <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 2px;">Scroll to explore research by domain ↓</p>
           </div>
         </div>
       </div>
@@ -219,82 +317,55 @@
   <!-- ═══════════════════════════════════════════════════════════════
        QVF — QUANTUM VIRTUAL FINANCE
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="qvf" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 90px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #D9F500, rgba(139,92,246,0.8));"></div>
+  <div class="investor-section-premium" id="qvf-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5" data-aos="fade-up">
-        <div class="col-lg-10">
-          <p class="section-label" style="color: var(--qvf);">QUANTUM VIRTUAL FINANCE</p>
-          <div class="section-title">⚡ QVF Research Products</div>
-          <p class="section-sub">Quantum tools and research instruments for intelligent financial markets</p>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Finatom -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="prod-card glow-qvf" style="border-color: rgba(217,245,0,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #D9F500, rgba(217,245,0,0.2));"></div>
-            <span class="prod-icon">🕸️</span>
-            <div class="prod-name" style="color: #D9F500;">Finatom</div>
-            <div class="prod-sub" style="color: #D9F500;">Financial Connectome &amp; Trading Algorithms</div>
-            <div class="badge-pill" style="background:rgba(217,245,0,0.12);color:#D9F500;border-color:rgba(217,245,0,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A graph-theoretic network representation of global financial market connectivity. Finatom maps how assets, sectors, and macro variables are dynamically coupled — building a living connectome of capital flows. Built on QVF's phasor-encoded indicators, Finatom powers proprietary trading algorithms that detect regime transitions before they appear in conventional price indicators.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Graph Networks</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Indicator Design</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Regime Detection</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Trading Signals</span>
+      <div style="background: rgba(217,245,0,0.05); border: 1px solid rgba(217,245,0,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
+        <!-- 4px top accent bar INSIDE card -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #D9F500, rgba(139,92,246,0.8));"></div>
+
+        <div class="row align-items-start">
+          <!-- Left column -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color: #D9F500;">QUANTITATIVE FINANCE</p>
+            <h2 class="section-title-glow">Quantum Virtual Finance — Research</h2>
+            <span class="domain-tag" style="background: rgba(217,245,0,0.15); color: #D9F500; border: 1px solid rgba(217,245,0,0.35);">QVF</span>
+            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
+              Our finance research develops next-generation tools for understanding how markets move, how risk concentrates, and how portfolios can be managed with greater intelligence. These tools are built on our QVF platform and target systematic trading, risk management, and market intelligence.
+            </p>
+            <div class="building-box" style="border-left: 3px solid #D9F500;">
+              <p class="building-label" style="color: #D9F500;">What We're Building</p>
+              <p>We are developing market connectivity mapping tools, automated trading signal systems, and portfolio optimisation methods that detect regime changes faster than conventional approaches — and a monthly market intelligence report for institutional investors.</p>
             </div>
           </div>
-        </div>
-        <!-- QPO -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80">
-          <div class="prod-card glow-qvf" style="border-color: rgba(217,245,0,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #D9F500, rgba(217,245,0,0.2));"></div>
-            <span class="prod-icon">📊</span>
-            <div class="prod-name" style="color: #D9F500;">Quantum Portfolio Optimisation (QPO)</div>
-            <div class="prod-sub" style="color: #D9F500;">Beyond Markowitz &amp; Black-Litterman</div>
-            <div class="badge-pill" style="background:rgba(217,245,0,0.12);color:#D9F500;border-color:rgba(217,245,0,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A quantum Hamiltonian formulation of the portfolio allocation problem. QPO encodes asset weights as quantum degrees of freedom and uses Measurement-Induced Non-Linear (MINL) dynamics to find allocations that minimise risk at target return — capturing correlated stress regimes and tail dependencies that classical optimisers miss.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Portfolio Theory</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Risk Management</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">MINL Optimisation</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Multi-asset</span>
-            </div>
-          </div>
-        </div>
-        <!-- QHFT -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160">
-          <div class="prod-card glow-qvf" style="border-color: rgba(217,245,0,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #D9F500, rgba(217,245,0,0.2));"></div>
-            <span class="prod-icon">⚡</span>
-            <div class="prod-name" style="color: #D9F500;">Quantum High-Frequency Trading (QHFT)</div>
-            <div class="prod-sub" style="color: #D9F500;">Phase-Boundary Execution Signals</div>
-            <div class="badge-pill" style="background:rgba(217,245,0,0.12);color:#D9F500;border-color:rgba(217,245,0,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>Ultra-low-latency market state tracking using the QVF phasor indicator system. QHFT continuously reconstructs the Hamiltonian of order book dynamics and triggers execution signals when the market state crosses MIPT phase boundaries — enabling sub-second positioning ahead of micro-structural regime shifts.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">HFT</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Order Book Dynamics</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Phase Detection</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Execution Signals</span>
-            </div>
-          </div>
-        </div>
-        <!-- MSR -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="240">
-          <div class="prod-card glow-qvf" style="border-color: rgba(217,245,0,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #D9F500, rgba(217,245,0,0.2));"></div>
-            <span class="prod-icon">📰</span>
-            <div class="prod-name" style="color: #D9F500;">Market State Report (MSR)</div>
-            <div class="prod-sub" style="color: #D9F500;">Monthly Quantitative Intelligence</div>
-            <div class="badge-pill">📅 COMING SOON — Monthly Publication</div>
-            <p>A monthly quantitative report tracking global financial market regimes through the QVF lens. Each edition covers: Finatom connectivity maps, MIPT phase readings for major indices, sector coupling heatmaps, volatility regime forecasts, and risk-adjusted signal rankings. Targeted at institutional investors, quant researchers, and systematic funds.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Monthly Report</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Market Intelligence</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Institutional</span>
-              <span class="tag" style="background: rgba(217,245,0,0.12); color: #D9F500;">Quantitative Research</span>
+
+          <!-- Right column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
+            <ul class="research-list" style="color: #D9F500;">
+              <li>
+                <span class="product-name" style="color: #D9F500;">Market Connectivity Map</span>
+                <span class="product-desc">Tracks how assets and market sectors are linked and how those connections shift over time. Powers early-warning signals for regime changes.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #D9F500;">Portfolio Optimisation Engine</span>
+                <span class="product-desc">Finds allocations that balance risk and return under stressed conditions that conventional models miss.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #D9F500;">High-Frequency Signal System</span>
+                <span class="product-desc">Detects micro-structural market transitions in real time and generates execution signals at the moment of change.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #D9F500;">Monthly Market Intelligence Report</span>
+                <span class="product-desc">A monthly quantitative briefing covering market connectivity, risk regimes, and sector dynamics. For institutional investors and systematic funds.</span>
+              </li>
+            </ul>
+
+            <div class="chips-row">
+              <p class="chips-label">Status</p>
+              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">Coming Soon</span>
+              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">Coming Soon</span>
             </div>
           </div>
         </div>
@@ -305,65 +376,50 @@
   <!-- ═══════════════════════════════════════════════════════════════
        QVMa — QUANTUM VIRTUAL MATTER
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="qvma" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 90px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #FF00FF, rgba(139,92,246,0.8));"></div>
+  <div class="investor-section-premium" id="qvma-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5" data-aos="fade-up">
-        <div class="col-lg-10">
-          <p class="section-label" style="color: var(--qvma);">QUANTUM VIRTUAL MATTER</p>
-          <div class="section-title">⚛️ QVMa Research Products</div>
-          <p class="section-sub">Quantum tools for materials science, chemistry, and molecular simulation</p>
-        </div>
-      </div>
-      <div class="row">
-        <!-- ChemSphere -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="prod-card glow-qvma" style="border-color: rgba(255,0,255,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #FF00FF, rgba(255,0,255,0.2));"></div>
-            <span class="prod-icon">🔮</span>
-            <div class="prod-name" style="color: #FF00FF;">ChemSphere</div>
-            <div class="prod-sub" style="color: #FF00FF;">Quantum Reaction Database</div>
-            <div class="badge-pill" style="background:rgba(255,0,255,0.1);color:#FF00FF;border-color:rgba(255,0,255,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A quantum-native graph database of chemical reactions. ChemSphere encodes molecular structures and reaction pathways as Hamiltonian-coupled networks — enabling quantum chemistry profiling of reaction intermediates, transition states, and catalytic mechanisms. Reaction fingerprints are searchable and comparable across chemical space, providing a living atlas of quantum chemistry knowledge.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Graph Database</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Quantum Chemistry</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Reaction Profiling</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Chemical Space</span>
+      <div style="background: rgba(255,0,255,0.05); border: 1px solid rgba(255,0,255,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
+        <!-- 4px top accent bar INSIDE card -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #FF00FF, rgba(139,92,246,0.8));"></div>
+
+        <div class="row align-items-start">
+          <!-- Left column -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color: #FF00FF;">QUANTUM CHEMISTRY &amp; MATERIALS SCIENCE</p>
+            <h2 class="section-title-glow">Quantum Virtual Matter — Research</h2>
+            <span class="domain-tag" style="background: rgba(255,0,255,0.12); color: #FF00FF; border: 1px solid rgba(255,0,255,0.35);">QVMa</span>
+            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
+              Our materials research builds simulation tools that predict how molecules and materials behave at the atomic level — going beyond what classical chemistry software can model. We are creating databases, design frameworks, and planning tools for chemistry, energy, and drug discovery.
+            </p>
+            <div class="building-box" style="border-left: 3px solid #FF00FF;">
+              <p class="building-label" style="color: #FF00FF;">What We're Building</p>
+              <p>We are building a searchable database of chemical reactions, a framework for designing complex molecular systems layer by layer, and an intelligent tool that proposes how to synthesise a target material from first principles.</p>
             </div>
           </div>
-        </div>
-        <!-- HAHD -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="80">
-          <div class="prod-card glow-qvma" style="border-color: rgba(255,0,255,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #FF00FF, rgba(255,0,255,0.2));"></div>
-            <span class="prod-icon">🏗️</span>
-            <div class="prod-name" style="color: #FF00FF;">HAHD</div>
-            <div class="prod-sub" style="color: #FF00FF;">Hierarchical Agentic Hamiltonian Design</div>
-            <div class="badge-pill" style="background:rgba(255,0,255,0.1);color:#FF00FF;border-color:rgba(255,0,255,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A multi-agent framework for building composite Hamiltonians for complex molecular and material systems. HAHD decomposes a target system into interacting sub-Hamiltonians — electronic, vibrational, spin, and environmental layers — each managed by a specialist AI agent. Enables quantum simulation of material synthesis pathways, drug-receptor interactions, and catalytic cycles at scales previously inaccessible.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Hamiltonian Design</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Multi-agent AI</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Material Synthesis</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Quantum Simulation</span>
-            </div>
-          </div>
-        </div>
-        <!-- Synthesis Planner -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="160">
-          <div class="prod-card glow-qvma" style="border-color: rgba(255,0,255,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #FF00FF, rgba(255,0,255,0.2));"></div>
-            <span class="prod-icon">🔬</span>
-            <div class="prod-name" style="color: #FF00FF;">Material Synthesis Planner</div>
-            <div class="prod-sub" style="color: #FF00FF;">Inverse Design &amp; Route Planning</div>
-            <div class="badge-pill" style="background:rgba(255,0,255,0.1);color:#FF00FF;border-color:rgba(255,0,255,0.35);">📅 COMING SOON</div>
-            <p>An agentic research tool that designs synthesis routes for target materials using HAHD-generated Hamiltonians and perturbation inversion. Given a target property profile, the planner identifies which precursors, conditions, and reaction sequences are most likely to yield the desired structure — validated against ChemSphere's reaction database and ranked by confidence score.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Synthesis Planning</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Material Discovery</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Inverse Design</span>
-              <span class="tag" style="background: rgba(255,0,255,0.12); color: #FF00FF;">Drug Discovery</span>
+
+          <!-- Right column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
+            <ul class="research-list" style="color: #FF00FF;">
+              <li>
+                <span class="product-name" style="color: #FF00FF;">ChemSphere</span>
+                <span class="product-desc">A searchable database of chemical reactions encoded as interconnected networks. Researchers can query reaction pathways, compare molecular fingerprints, and identify known routes to target molecules.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #FF00FF;">Intelligent Molecular Design (HAHD)</span>
+                <span class="product-desc">A design framework that breaks complex molecular systems into layers — electronic, structural, environmental — and uses specialist agents to simulate each layer independently and then together.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #FF00FF;">Synthesis Planner</span>
+                <span class="product-desc">An intelligent planning tool: given a target material or molecule, it proposes which precursors, conditions, and reaction steps are most likely to produce it — then ranks and scores each candidate route.</span>
+              </li>
+            </ul>
+
+            <div class="chips-row">
+              <p class="chips-label">Status</p>
+              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">Coming Soon</span>
             </div>
           </div>
         </div>
@@ -374,82 +430,55 @@
   <!-- ═══════════════════════════════════════════════════════════════
        QVO — QUANTUM VIRTUAL OMICS
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="qvo" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 90px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #00e676, rgba(139,92,246,0.8));"></div>
+  <div class="investor-section-premium" id="qvo-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5" data-aos="fade-up">
-        <div class="col-lg-10">
-          <p class="section-label" style="color: var(--qvo);">QUANTUM VIRTUAL OMICS</p>
-          <div class="section-title">🧬 QVO Research Products</div>
-          <p class="section-sub">Quantum tools for cell biology, genomics, and precision medicine</p>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Omics HAHD -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="prod-card glow-qvo" style="border-color: rgba(0,230,118,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00e676, rgba(0,230,118,0.2));"></div>
-            <span class="prod-icon">🧬</span>
-            <div class="prod-name" style="color: #00e676;">Omics-HAHD</div>
-            <div class="prod-sub" style="color: #00e676;">Biological Hamiltonian Design</div>
-            <div class="badge-pill" style="background:rgba(0,230,118,0.1);color:#00e676;border-color:rgba(0,230,118,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>HAHD applied to multi-omics data: genomic, transcriptomic, proteomic, and metabolomic layers are encoded as coupled quantum systems. Each molecular species is a phasor; regulatory interactions form the Heisenberg coupling tensor. Omics-HAHD identifies which biological perturbations drive disease and which molecular targets can restore cellular homeostasis.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Multi-omics</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Gene Regulation</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Disease Modelling</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Systems Biology</span>
+      <div style="background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
+        <!-- 4px top accent bar INSIDE card -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #00e676, rgba(139,92,246,0.8));"></div>
+
+        <div class="row align-items-start">
+          <!-- Left column -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color: #00e676;">GENOMICS &amp; CELL BIOLOGY</p>
+            <h2 class="section-title-glow">Quantum Virtual Omics — Research</h2>
+            <span class="domain-tag" style="background: rgba(0,230,118,0.12); color: #00e676; border: 1px solid rgba(0,230,118,0.35);">QVO</span>
+            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
+              Our omics research translates complex biological data — from genes and proteins to metabolites and clinical signals — into dynamic models of how cells and patients function. These tools support drug discovery, personalised medicine, and the design of smarter clinical trials.
+            </p>
+            <div class="building-box" style="border-left: 3px solid #00e676;">
+              <p class="building-label" style="color: #00e676;">What We're Building</p>
+              <p>We are building tools that model biological state from multi-omics data, identify the molecular signatures of disease, rank potential therapeutic interventions by their predicted recovery effect, and create a new kind of patient health record that goes beyond static diagnostic codes.</p>
             </div>
           </div>
-        </div>
-        <!-- Perturbation & Inversion -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80">
-          <div class="prod-card glow-qvo" style="border-color: rgba(0,230,118,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00e676, rgba(0,230,118,0.2));"></div>
-            <span class="prod-icon">🔄</span>
-            <div class="prod-name" style="color: #00e676;">Perturbation &amp; Inversion Analysis</div>
-            <div class="prod-sub" style="color: #00e676;">Therapeutic Target Discovery</div>
-            <div class="badge-pill" style="background:rgba(0,230,118,0.1);color:#00e676;border-color:rgba(0,230,118,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A seven-class taxonomy of biological perturbations mapped to Pauli operator signatures. The Hamiltonian inversion method identifies which molecular interventions — small molecules, gene edits, biologics — minimise the inversion objective and produce the best restoration of the healthy cellular attractor. Candidate strategies are ranked by Neural/Biological Restoration Score with explainable confidence metrics.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Drug Targets</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Perturbation Theory</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Therapeutic Design</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Precision Oncology</span>
-            </div>
-          </div>
-        </div>
-        <!-- Q-EHR -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160">
-          <div class="prod-card glow-qvo" style="border-color: rgba(0,230,118,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00e676, rgba(0,230,118,0.2));"></div>
-            <span class="prod-icon">🏥</span>
-            <div class="prod-name" style="color: #00e676;">Quantum Electronic Health Record (Q-EHR)</div>
-            <div class="prod-sub" style="color: #00e676;">Beyond ICD Codes</div>
-            <div class="badge-pill">🔬 RESEARCH PREVIEW</div>
-            <p>A next-generation patient record that encodes clinical state as a quantum triple: healthy baseline H⁰, disease perturbation δH, and displaced attractor A_dis. Unlike ICD-10/11 codes which label diagnoses as static categories, Q-EHR encodes the patient's dynamic biological state — enabling quantitative tracking of disease progression, treatment response, and individual trajectories that ICD codes cannot represent.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Health Records</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Personalised Medicine</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Beyond ICD Codes</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Clinical AI</span>
-            </div>
-          </div>
-        </div>
-        <!-- Cell State Atlas -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="240">
-          <div class="prod-card glow-qvo" style="border-color: rgba(0,230,118,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00e676, rgba(0,230,118,0.2));"></div>
-            <span class="prod-icon">🗺️</span>
-            <div class="prod-name" style="color: #00e676;">Cell State Atlas</div>
-            <div class="prod-sub" style="color: #00e676;">Biological Attractor Reference Library</div>
-            <div class="badge-pill" style="background:rgba(0,230,118,0.1);color:#00e676;border-color:rgba(0,230,118,0.35);">📅 COMING SOON</div>
-            <p>A quantum phasor atlas of cell states across tissues, disease contexts, and therapeutic conditions. Built by running QVO simulations across large single-cell RNA-seq datasets, the Cell State Atlas maps how biological attractors shift under disease and treatment — providing a reference library for drug response prediction, biomarker discovery, and clinical stratification.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Single-cell</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Cell States</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Drug Response</span>
-              <span class="tag" style="background: rgba(0,230,118,0.12); color: #00e676;">Biomarker Discovery</span>
+
+          <!-- Right column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
+            <ul class="research-list" style="color: #00e676;">
+              <li>
+                <span class="product-name" style="color: #00e676;">Biological State Modelling</span>
+                <span class="product-desc">Integrates data from genomics, proteomics, and metabolomics into a unified model of how a cell or patient is functioning — and how that state changes under disease or treatment.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00e676;">Target Discovery Engine</span>
+                <span class="product-desc">Identifies which molecular disruptions are driving a disease state and ranks potential interventions — small molecules, biologics, or gene-level edits — by how effectively they restore healthy function.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00e676;">Quantum Health Record (Q-EHR)</span>
+                <span class="product-desc">A new approach to patient records that captures the dynamic biological state of a patient — not just a diagnosis label — enabling quantitative tracking of disease progression and treatment response over time.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00e676;">Cell State Atlas</span>
+                <span class="product-desc">A reference library of biological states across tissues, disease conditions, and treatment contexts. Used for comparing patient data, predicting drug response, and identifying disease biomarkers.</span>
+              </li>
+            </ul>
+
+            <div class="chips-row">
+              <p class="chips-label">Status</p>
+              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">Research Preview</span>
+              <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">Coming Soon</span>
             </div>
           </div>
         </div>
@@ -460,82 +489,55 @@
   <!-- ═══════════════════════════════════════════════════════════════
        QVM — QUANTUM VIRTUAL MIND
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="qvm" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 90px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #00f2fe, rgba(139,92,246,0.8));"></div>
+  <div class="investor-section-premium" id="qvm-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5" data-aos="fade-up">
-        <div class="col-lg-10">
-          <p class="section-label" style="color: var(--qvm);">QUANTUM VIRTUAL MIND</p>
-          <div class="section-title">🧠 QVM Research Products</div>
-          <p class="section-sub">Quantum tools for neuroscience, mental health, and brain-computer interfaces</p>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Neural Perturbation Atlas -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="prod-card glow-qvm" style="border-color: rgba(0,242,254,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00f2fe, rgba(0,242,254,0.2));"></div>
-            <span class="prod-icon">🗂️</span>
-            <div class="prod-name" style="color: #00f2fe;">Neural Perturbation Atlas</div>
-            <div class="prod-sub" style="color: #00f2fe;">27-Disorder Pauli Fingerprint Library</div>
-            <div class="badge-pill" style="background:rgba(0,242,254,0.1);color:#00f2fe;border-color:rgba(0,242,254,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A 27-disorder atlas of neurological conditions mapped to seven Pauli perturbation classes. Each disorder is characterised by a Pauli fingerprint — a precise mathematical signature in the brain's Heisenberg Hamiltonian. The atlas enables quantitative diagnosis of neural state deviations and predicts which neuromodulation strategy (tDCS, tACS, TMS, DBS, pharmacological) offers the highest Neural Restoration Score.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Neurological Disorders</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">EEG Analysis</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Neuromodulation</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Clinical BCI</span>
+      <div style="background: rgba(0,242,254,0.05); border: 1px solid rgba(0,242,254,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
+        <!-- 4px top accent bar INSIDE card -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #00f2fe, rgba(139,92,246,0.8));"></div>
+
+        <div class="row align-items-start">
+          <!-- Left column -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color: #00f2fe;">BCI &amp; NEUROSCIENCE</p>
+            <h2 class="section-title-glow">Quantum Virtual Mind — Research</h2>
+            <span class="domain-tag" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.35);">QVM</span>
+            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
+              Our neuroscience research builds tools for understanding brain state, detecting neurological conditions early, and designing targeted brain stimulation therapies. These tools are for researchers, clinicians, and companies building the next generation of brain-computer interfaces.
+            </p>
+            <div class="building-box" style="border-left: 3px solid #00f2fe;">
+              <p class="building-label" style="color: #00f2fe;">What We're Building</p>
+              <p>We are building a reference atlas of neurological conditions with their brain-state signatures, a new kind of neural health record, an autonomous closed-loop brain stimulation system, and a library of brain states for EEG-based decoding.</p>
             </div>
           </div>
-        </div>
-        <!-- Q-NEHR -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80">
-          <div class="prod-card glow-qvm" style="border-color: rgba(0,242,254,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00f2fe, rgba(0,242,254,0.2));"></div>
-            <span class="prod-icon">🧾</span>
-            <div class="prod-name" style="color: #00f2fe;">Quantum Neural EHR (Q-NEHR)</div>
-            <div class="prod-sub" style="color: #00f2fe;">Dynamic Brain Health Record</div>
-            <div class="badge-pill">🔬 RESEARCH PREVIEW</div>
-            <p>The brain-specific instantiation of Q-EHR. Each patient record stores: the healthy Heisenberg Hamiltonian H_healthy, the disease perturbation δH, and the displaced attractor A_dis — encoding the full neural health state mathematically. Q-NEHR tracks cognitive state longitudinally, supports closed-loop neuromodulation, and provides quantitative biomarkers for mental health conditions far beyond symptom checklists.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Neural Health Record</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Cognitive Tracking</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Mental Health</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">BCI</span>
-            </div>
-          </div>
-        </div>
-        <!-- Closed-Loop BCI -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160">
-          <div class="prod-card glow-qvm" style="border-color: rgba(0,242,254,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00f2fe, rgba(0,242,254,0.2));"></div>
-            <span class="prod-icon">🔁</span>
-            <div class="prod-name" style="color: #00f2fe;">Closed-Loop BCI Therapy</div>
-            <div class="prod-sub" style="color: #00f2fe;">Autonomous Neuromodulation Protocol</div>
-            <div class="badge-pill" style="background:rgba(0,242,254,0.1);color:#00f2fe;border-color:rgba(0,242,254,0.35);">🚀 IN DEVELOPMENT</div>
-            <p>A 6-step autonomous neuromodulation loop: <strong style="color: rgba(255,255,255,0.9);">Sense EEG → Build Hamiltonian → Compare to healthy baseline → Screen stimulation candidates → Apply optimal therapy → Evaluate Neural Restoration Score.</strong> The loop runs continuously, adapting stimulation parameters in real time to guide the brain back toward its healthy attractor state with auditable reasoning at every step.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Closed-Loop</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Neurostimulation</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Real-time Adaptive</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Therapy</span>
-            </div>
-          </div>
-        </div>
-        <!-- Cortical State Atlas -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="240">
-          <div class="prod-card glow-qvm" style="border-color: rgba(0,242,254,0.25);">
-            <div class="top-bar" style="background: linear-gradient(90deg, #00f2fe, rgba(0,242,254,0.2));"></div>
-            <span class="prod-icon">🗺️</span>
-            <div class="prod-name" style="color: #00f2fe;">Cortical State Atlas</div>
-            <div class="prod-sub" style="color: #00f2fe;">25-Agent Brain State Library</div>
-            <div class="badge-pill" style="background:rgba(0,242,254,0.1);color:#00f2fe;border-color:rgba(0,242,254,0.35);">📅 COMING SOON</div>
-            <p>A 25-agent atlas of cortical brain states organised in 5 functional tiers: Arousal &amp; Baseline, Sensorimotor, Cognitive, Affective, and Pathological. Each agent maps to a specific brain-state Hamiltonian (slow-wave sleep, working memory, seizure, depression, coma, etc.). The atlas enables brain-state classification directly from EEG and serves as the reference library for BCI decoder design.</p>
-            <div class="tag-row">
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Brain States</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">EEG Decoding</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">Cognitive Neuroscience</span>
-              <span class="tag" style="background: rgba(0,242,254,0.12); color: #00f2fe;">BCI Design</span>
+
+          <!-- Right column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
+            <ul class="research-list" style="color: #00f2fe;">
+              <li>
+                <span class="product-name" style="color: #00f2fe;">Neurological Condition Atlas</span>
+                <span class="product-desc">A reference library of 27 neurological and psychiatric conditions, each described by its brain-state signature. Enables early detection, comparison, and prediction of which intervention best restores healthy brain function.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00f2fe;">Neural Health Record (Q-NEHR)</span>
+                <span class="product-desc">A dynamic record of a patient's brain health state — not just a symptom checklist — that tracks cognitive changes over time and supports personalised therapy decisions.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00f2fe;">Closed-Loop Brain Stimulation</span>
+                <span class="product-desc">An autonomous six-step system that continuously monitors brain state, compares it against a healthy reference, selects the optimal stimulation approach, applies it, and measures the recovery response.</span>
+              </li>
+              <li>
+                <span class="product-name" style="color: #00f2fe;">Brain State Library</span>
+                <span class="product-desc">A catalogue of 25 distinct brain states — spanning sleep, focus, emotion, and neurological conditions — that can be used to classify EEG signals and design brain-computer interface decoders.</span>
+              </li>
+            </ul>
+
+            <div class="chips-row">
+              <p class="chips-label">Status</p>
+              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">Research Preview</span>
+              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">In Development</span>
+              <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">Coming Soon</span>
             </div>
           </div>
         </div>
@@ -546,78 +548,51 @@
   <!-- ═══════════════════════════════════════════════════════════════
        PUBLICATIONS & KNOWLEDGE
   ═══════════════════════════════════════════════════════════════ -->
-  <div id="publications" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 90px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, #8b5cf6, rgba(0,242,254,0.8));"></div>
+  <div class="investor-section-premium" id="publications-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
-      <div class="row justify-content-center mb-5" data-aos="fade-up">
-        <div class="col-lg-9 text-center">
-          <p class="section-label" style="color: var(--purple);">KNOWLEDGE PRODUCTS</p>
-          <div class="section-title">📚 Publications &amp; Knowledge</div>
-          <p class="section-sub">Open research, monthly intelligence reports, and educational resources from Mindverse Computing</p>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Monthly Finance Report -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="pub-card">
-            <div style="font-size: 2.5rem; margin-bottom: 1rem;">📈</div>
-            <div class="badge-pill" style="background: rgba(217,245,0,0.15); color: #D9F500; border-color: rgba(217,245,0,0.35);">📅 COMING SOON</div>
-            <h4 style="color: #D9F500; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">Monthly Finance Report</h4>
-            <p style="color: rgba(255,255,255,0.75); font-size: 0.93rem; line-height: 1.75;">A monthly quantitative market intelligence report powered by QVF analytics. Each edition covers: Finatom connectivity maps, sector coupling heatmaps, MIPT phase readings for major indices, volatility regime forecasts, and risk-adjusted signal rankings.</p>
-            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(217,245,0,0.15);">
-              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">
-                <span style="margin-right: 1rem;">📅 Monthly</span>
-                <span>📄 PDF + Dashboard</span>
-              </div>
+      <div style="background: rgba(139,92,246,0.05); border: 1px solid rgba(139,92,246,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
+        <!-- 4px top accent bar INSIDE card -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #8b5cf6, rgba(0,242,254,0.8));"></div>
+
+        <div class="row align-items-start">
+          <!-- Left column -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color: #8b5cf6;">PUBLICATIONS &amp; KNOWLEDGE</p>
+            <h2 class="section-title-glow">Research Reports &amp; Publications</h2>
+            <span class="domain-tag" style="background: rgba(139,92,246,0.15); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.35);">Knowledge</span>
+            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
+              We publish our findings through monthly market intelligence reports, a research newsletter, and planned technical textbooks. Our publications are written for researchers, investors, and technology leaders — not just specialists.
+            </p>
+            <div class="building-box" style="border-left: 3px solid #8b5cf6;">
+              <p class="building-label" style="color: #8b5cf6;">What We're Publishing</p>
+              <p>Our first regular publication is a monthly finance market report. A research newsletter across all four domains follows. In-depth technical books on our methods are in preparation.</p>
             </div>
           </div>
-        </div>
-        <!-- Research Newsletter -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="pub-card">
-            <div style="font-size: 2.5rem; margin-bottom: 1rem;">✉️</div>
-            <h4 style="color: #8b5cf6; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">Research Newsletter</h4>
-            <p style="color: rgba(255,255,255,0.75); font-size: 0.93rem; line-height: 1.75; margin-bottom: 1.25rem;">Monthly coverage of Mindverse Computing's research progress — new platform capabilities, scientific findings, benchmark results, open-source releases, and upcoming workshops. For researchers, investors, and technology leaders.</p>
-            <form id="subscribe-form" style="margin-top: 1rem;">
-              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <input name="email" id="email-input" placeholder="Enter your email" required type="email"
-                  style="flex: 1; min-width: 160px; background: rgba(255,255,255,0.08); color: #fff;
-                  border: 1px solid rgba(139,92,246,0.4); border-radius: 50px; padding: 10px 18px; font-size: 0.9rem;">
-                <button type="submit"
-                  style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: #fff; border: none;
-                  border-radius: 50px; padding: 10px 22px; font-weight: 600; font-size: 0.9rem; cursor: pointer; white-space: nowrap;">
-                  Subscribe
-                </button>
-              </div>
-            </form>
-            <div id="subscribe-message" style="margin-top: 8px; color: rgba(255,255,255,0.6); font-size: 0.85rem;"></div>
-            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(139,92,246,0.15);">
-              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">
-                <span style="margin-right: 1rem;">📅 Monthly</span>
-                <span>📧 Email + Web</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Textbooks -->
-        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="pub-card">
-            <div style="font-size: 2.5rem; margin-bottom: 1rem;">📖</div>
-            <div class="badge-pill" style="background: rgba(0,242,254,0.12); color: #00f2fe; border-color: rgba(0,242,254,0.3);">✍️ IN PREPARATION</div>
-            <h4 style="color: #00f2fe; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">Textbooks &amp; Monographs</h4>
-            <p style="color: rgba(255,255,255,0.75); font-size: 0.93rem; line-height: 1.75; margin-bottom: 1rem;">In-depth technical monographs covering the mathematics and methodology of quantum digital twins. Planned titles:</p>
-            <ul style="color: rgba(255,255,255,0.65); font-size: 0.88rem; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-              <li>Quantum Phasor Methods for Financial Markets</li>
-              <li>Hierarchical Agentic Hamiltonian Design</li>
-              <li>The Quantum Electronic Health Record</li>
-              <li>Brain as a Quantum System: Theory &amp; Clinical Application</li>
+
+          <!-- Right column -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Publications</p>
+            <ul class="research-list" style="color: #8b5cf6;">
+              <li>
+                <span class="product-name" style="color: #8b5cf6;">Monthly Market Report</span>
+                <span class="product-desc">A monthly quantitative briefing covering market connectivity, regime shifts, sector dynamics, and risk signals. Designed for institutional investors and systematic funds.</span>
+                <span class="status-chip" style="background: rgba(139,92,246,0.12); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.3); font-size: 0.75rem; padding: 3px 10px; margin-top: 4px;">Coming Soon</span>
+              </li>
+              <li style="margin-top: 0.5rem;">
+                <span class="product-name" style="color: #8b5cf6;">Research Newsletter</span>
+                <span class="product-desc">Monthly updates on progress across all four platform domains — new results, releases, and upcoming events. For researchers, investors, and technology leaders.</span>
+                <form id="subscribe-form" class="pub-subscribe-form">
+                  <input type="email" name="email" id="email-input" placeholder="Your email" required>
+                  <button type="submit">Subscribe</button>
+                </form>
+                <div id="subscribe-message" style="margin-top: 6px; color: rgba(255,255,255,0.55); font-size: 0.82rem;"></div>
+              </li>
+              <li style="margin-top: 0.5rem;">
+                <span class="product-name" style="color: #8b5cf6;">Technical Textbooks</span>
+                <span class="product-desc">In-depth books covering the science and methodology behind each platform. Four titles planned.</span>
+                <span class="status-chip" style="background: rgba(139,92,246,0.12); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.3); font-size: 0.75rem; padding: 3px 10px; margin-top: 4px;">In Preparation</span>
+              </li>
             </ul>
-            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,242,254,0.15);">
-              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">
-                <span style="margin-right: 1rem;">📅 Annual</span>
-                <span>📄 PDF + Print-on-Demand</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -625,30 +600,25 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════════
-       FUTURE ROADMAP CTA
+       ROADMAP CTA
   ═══════════════════════════════════════════════════════════════ -->
-  <div style="background: linear-gradient(180deg, #1B264F 0%, #151b3b 100%); padding: 100px 0; position: relative;">
-    <div class="section-accent-bar" style="background: linear-gradient(90deg, rgba(139,92,246,0.6), rgba(0,242,254,0.4));"></div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 80px 0;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-9 text-center" data-aos="fade-up">
-          <p class="section-label" style="color: var(--purple);">ROADMAP</p>
-          <h2 style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 1.5rem;">Shaping the Future of Quantum Science</h2>
-          <p style="font-size: 1.1rem; line-height: 1.85; color: rgba(255,255,255,0.72); max-width: 760px; margin: 0 auto 2.5rem;">
-            Our research products are not theoretical — they are being built today, grounded in rigorous mathematics and validated against real-world datasets. As quantum hardware matures, each product will move seamlessly from classical simulation to native quantum execution.
+          <h2 class="section-title-glow mb-4">Shaping the Future of Intelligent Simulation</h2>
+          <p style="font-size: 1.05rem; line-height: 1.85; color: rgba(255,255,255,0.68); max-width: 720px; margin: 0 auto 2.5rem;">
+            Our research products are not theoretical — they are being built today, grounded in rigorous science and validated against real-world datasets. Each product will move from current development into live deployment as our platform matures.
           </p>
-          <div style="margin-bottom: 3rem;">
-            <span class="future-pill" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">⚡ Personalised Trading</span>
-            <span class="future-pill" style="background: rgba(255,0,255,0.12); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">⚛️ Intelligent Material Synthesis</span>
-            <span class="future-pill" style="background: rgba(0,230,118,0.12); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">🧬 Precision Medicine</span>
-            <span class="future-pill" style="background: rgba(0,242,254,0.12); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">🧠 Closed-Loop BCI Therapy</span>
+          <div style="margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">⚡ Personalised Trading</span>
+            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(255,0,255,0.12); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">⚛️ Intelligent Material Synthesis</span>
+            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(0,230,118,0.12); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">🧬 Precision Medicine</span>
+            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(0,242,254,0.12); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">🧠 Closed-Loop BCI Therapy</span>
           </div>
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
             <a href="https://www.mindversecomputing.com/platform.html" class="btn-primary-grad">Explore Platform</a>
             <a href="https://www.mindversecomputing.com/services.html" class="btn-outline-light-r">View Services</a>
-          </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="https://www.mindversecomputing.com/contact.html" style="color: rgba(255,255,255,0.45); font-size: 0.9rem; text-decoration: underline;">Contact the Research Team →</a>
           </div>
         </div>
       </div>
