@@ -223,38 +223,6 @@
     }
 
     /* ── Subscribe form in publications ──────────────── */
-    .pub-subscribe-form {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 0.75rem;
-    }
-    .pub-subscribe-form input[type="email"] {
-      flex: 1;
-      min-width: 160px;
-      background: rgba(255,255,255,0.08);
-      color: #fff;
-      border: 1px solid rgba(139,92,246,0.4);
-      border-radius: 50px;
-      padding: 9px 18px;
-      font-size: 0.88rem;
-      outline: none;
-    }
-    .pub-subscribe-form input[type="email"]::placeholder { color: rgba(255,255,255,0.4); }
-    .pub-subscribe-form button {
-      background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-      color: #fff;
-      border: none;
-      border-radius: 50px;
-      padding: 9px 22px;
-      font-weight: 600;
-      font-size: 0.88rem;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: opacity 0.2s;
-    }
-    .pub-subscribe-form button:hover { opacity: 0.85; }
-
     /* ── Hero domain pills ───────────────────────────── */
     .hero-pill {
       display: inline-flex; align-items: center; gap: 6px;
@@ -716,7 +684,6 @@
           .catch(() => { document.getElementById(msgId).innerText = "Error. Please try again."; });
       });
     }
-    setupSubscribe("subscribe-form", "email-input", "subscribe-message");
     setupSubscribe("footer-subscribe-form", "footer-email-input", "footer-subscribe-message");
   </script>
 
