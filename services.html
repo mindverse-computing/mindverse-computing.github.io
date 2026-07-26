@@ -1,7 +1,3 @@
-<!-- /*
- * Mindverse Computing — Services Page
- * Research Products across Quantum Finance, Matter, Omics, and Mind
- */ -->
 <!doctype html>
 <html lang="en">
 
@@ -12,692 +8,223 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png">
 
-  <meta name="description"
-    content="Mindverse Computing research products: ChemSphere, Finatom, HAHD, Q-EHR, Q-NEHR, Quantum Portfolio Optimisation, and more — building the tools for personalised medicine, material synthesis, autonomous trading, and BCI therapy." />
-  <meta name="keywords"
-    content="ChemSphere, Finatom, HAHD, Q-EHR, Q-NEHR, quantum research, quantum digital twin, financial connectome, quantum portfolio optimisation, material synthesis, precision medicine, BCI, Mindverse Computing" />
+  <link rel="canonical" href="https://www.mindversecomputing.com/services.html">
+  <meta name="description" content="Our proposed research programme in two directions: Superlearning for healthy change and neurological perturbation studies for clinical change, plus an honest account of where the evidence stands." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://www.mindversecomputing.com/services.html" />
 
   <meta property="og:title" content="Services — Mindverse Computing" />
-  <meta property="og:description"
-    content="Domain-specific quantum research products: ChemSphere, Finatom, HAHD, Q-EHR, Q-NEHR, Quantum HFT, Closed-Loop BCI and more." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.mindversecomputing.com/images/newlogo.png" />
+  <meta property="og:description" content="Our proposed research programme in two directions: Superlearning for healthy change and neurological perturbation studies for clinical change, plus an honest account of where the evidence stands." />
   <meta property="og:url" content="https://www.mindversecomputing.com/services.html" />
+  <meta property="og:site_name" content="Mindverse Computing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/newlogo.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Services — Mindverse Computing" />
-  <meta name="twitter:description"
-    content="ChemSphere, Finatom, HAHD, Q-EHR, and more — quantum research products for finance, materials, omics, and neuroscience." />
+  <meta name="twitter:description" content="Our proposed research programme in two directions: Superlearning for healthy change and neurological perturbation studies for clinical change, plus an honest account of where the evidence stands." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/investor-enhancements.css">
-
+  <link rel="stylesheet" href="css/home-custom.css">
+  <link rel="stylesheet" href="css/site-additions.css">
 
   <title>Services — Mindverse Computing</title>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'GT-K8DQBD5J');
-  </script>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
-
-  <style>
-    :root {
-      --qvf: #D9F500;
-      --qvma: #FF00FF;
-      --qvo: #00e676;
-      --qvm: #00f2fe;
-      --purple: #8b5cf6;
-      --navy: #151b3b;
-      --navy2: #1B264F;
-    }
-
-    body { font-family: 'Inter', sans-serif; background: var(--navy); }
-
-    /* ── Research feature list ───────────────────────── */
-    .research-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .research-list li {
-      padding: 6px 0;
-      padding-left: 1.5rem;
-      position: relative;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.7;
-    }
-    .research-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: inherit;
-      opacity: 0.8;
-      font-weight: 700;
-    }
-
-    /* ── Status chips ────────────────────────────────── */
-    .status-chip {
-      display: inline-block;
-      padding: 4px 13px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.4px;
-    }
-    /* Ensure product-desc and chip stack vertically inside li */
-    .research-list .product-desc {
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    /* ── Domain card hover glow (matches platform-custom.css) ── */
-    .research-card {
-      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
-      cursor: default;
-    }
-    .research-card:hover { transform: translateY(-6px); }
-    .research-card-qvf:hover  { box-shadow: 0 15px 50px rgba(217,245,0,0.35);  border-color: rgba(217,245,0,0.6)  !important; background: rgba(217,245,0,0.08)  !important; }
-    .research-card-qvma:hover { box-shadow: 0 15px 50px rgba(255,0,255,0.35);  border-color: rgba(255,0,255,0.6)  !important; background: rgba(255,0,255,0.08)  !important; }
-    .research-card-qvo:hover  { box-shadow: 0 15px 50px rgba(0,230,118,0.35);  border-color: rgba(0,230,118,0.6)  !important; background: rgba(0,230,118,0.08)  !important; }
-    .research-card-qvm:hover  { box-shadow: 0 15px 50px rgba(0,242,254,0.35);  border-color: rgba(0,242,254,0.6)  !important; background: rgba(0,242,254,0.08)  !important; }
-    .research-card-pub:hover  { box-shadow: 0 15px 50px rgba(139,92,246,0.35); border-color: rgba(139,92,246,0.6) !important; background: rgba(139,92,246,0.08) !important; }
-
-    /* ── Section domain label ────────────────────────── */
-    .domain-label {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 600;
-      opacity: 0.7;
-      margin-bottom: 0.75rem;
-    }
-
-    /* ── Domain tag badge (pill) ─────────────────────── */
-    .domain-tag {
-      display: inline-block;
-      padding: 4px 16px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 1.25rem;
-    }
-
-    /* ── "What We're Building" accent box ───────────── */
-    .building-box {
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      background: rgba(255,255,255,0.03);
-      margin-top: 1.5rem;
-    }
-    .building-box p {
-      margin: 0;
-      font-size: 0.95rem;
-      line-height: 1.75;
-      color: rgba(255,255,255,0.8);
-    }
-    .building-box .building-label {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 700;
-      margin-bottom: 0.6rem;
-      opacity: 0.6;
-    }
-
-    /* ── Section title glow ─────────────────────────── */
-    .section-title-glow {
-      font-size: 2.1rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
-
-    /* ── Section subtitle ───────────────────────────── */
-    .section-subtitle {
-      color: rgba(255,255,255,0.68);
-      max-width: 780px;
-      margin: 0 auto;
-    }
-
-    /* ── CTA buttons ─────────────────────────────────── */
-    .btn-primary-grad {
-      background: linear-gradient(135deg, #8b5cf6, #00f2fe);
-      color: #fff; font-weight: 700; padding: 14px 40px;
-      border-radius: 50px; border: none; font-size: 1rem;
-      transition: all 0.3s; display: inline-block; text-decoration: none;
-    }
-    .btn-primary-grad:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(139,92,246,0.4); color: #fff; }
-    .btn-outline-light-r {
-      background: transparent; color: rgba(255,255,255,0.85);
-      border: 1px solid rgba(255,255,255,0.3); font-weight: 600;
-      padding: 14px 40px; border-radius: 50px; font-size: 1rem;
-      transition: all 0.3s; display: inline-block; text-decoration: none;
-    }
-    .btn-outline-light-r:hover { border-color: rgba(255,255,255,0.7); color: #fff; transform: translateY(-2px); }
-
-    /* ── Product name in list ────────────────────────── */
-    .research-list .product-name {
-      font-weight: 700;
-      display: block;
-      margin-bottom: 2px;
-    }
-    .research-list .product-desc {
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.65);
-      display: block;
-      padding-left: 0;
-      margin-bottom: 0.5rem;
-    }
-
-    /* ── Status chips row ────────────────────────────── */
-    .chips-row {
-      margin-top: 2rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-    .chips-label {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: rgba(255,255,255,0.4);
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-    }
-
-    /* ── Subscribe form in publications ──────────────── */
-    /* ── Hero domain pills ───────────────────────────── */
-    .hero-pill {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 10px 22px; border-radius: 30px; font-weight: 600;
-      font-size: 0.9rem; border: 1px solid;
-      transition: transform 0.2s, box-shadow 0.3s;
-      text-decoration: none;
-    }
-    .hero-pill:hover { transform: translateY(-2px); text-decoration: none; }
-    .hero-pill.qvf:hover  { box-shadow: 0 4px 20px rgba(217,245,0,0.3); }
-    .hero-pill.qvma:hover { box-shadow: 0 4px 20px rgba(255,0,255,0.3); }
-    .hero-pill.qvo:hover  { box-shadow: 0 4px 20px rgba(0,230,118,0.3); }
-    .hero-pill.qvm:hover  { box-shadow: 0 4px 20px rgba(0,242,254,0.3); }
-  </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598520753358252"
-     crossorigin="anonymous"></script>
 </head>
 
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <div class="site-mobile-menu">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
-
-  <!-- Navigation -->
   <nav class="site-nav mb-5">
+
     <div class="sticky-nav js-sticky-header">
       <div class="container position-relative">
         <div class="site-navigation text-center">
-          <a href="https://mindversecomputing.com" class="logo menu-absolute m-0">
-            <img src="images/newlogo.png" alt="Mindverse Computing Logo" width="50" height="50" />
+          <a href="index.html" class="logo menu-absolute m-0">
+            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
+              height="50" />
             <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
           </a>
-          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.mindversecomputing.com/platform.html">Platform</a></li>
-            <li class="active"><a href="https://www.mindversecomputing.com/services.html">Services</a></li>
-            <li><a href="https://www.mindversecomputing.com/market.html">Market</a></li>
-            <li><a href="https://www.mindversecomputing.com/investors.html">Invest</a></li>
-            <li><a href="https://www.mindversecomputing.com/contact.html">Contact</a></li>
-          </ul>
-          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar"><span></span></a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li class="active"><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a> 
+
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════════════════════════
-       HERO — Research Portfolio Intro
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="research-intro" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 120px 0;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 text-center">
-          <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Services — Mindverse Computing</h1>
-          <h2 class="section-title-glow mb-4" data-aos="fade-up" style="font-size: 3rem;">Services</h2>
-          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.1rem; line-height: 1.8;">
-            Mindverse Computing is building a new generation of intelligent simulation tools for finance, materials science, cell biology, and neuroscience. Each research product is designed to be the computational foundation for a specific high-value application — from personalised medicine to autonomous trading to closed-loop brain therapies.
-          </p>
-          <div class="mt-4" data-aos="fade-up" data-aos-delay="150" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
-            <a href="#qvf-research"  class="hero-pill qvf"  style="background: rgba(217,245,0,0.1); border-color: rgba(217,245,0,0.4);  color: #D9F500;">⚡ QVF &mdash; Finance</a>
-            <a href="#qvma-research" class="hero-pill qvma" style="background: rgba(255,0,255,0.1);   border-color: rgba(255,0,255,0.4);   color: #FF00FF;">⚛️ QVMa &mdash; Matter</a>
-            <a href="#qvo-research"  class="hero-pill qvo"  style="background: rgba(0,230,118,0.1);   border-color: rgba(0,230,118,0.4);   color: #00e676;">🧬 QVO &mdash; Omics</a>
-            <a href="#qvm-research"  class="hero-pill qvm"  style="background: rgba(0,242,254,0.1);   border-color: rgba(0,242,254,0.4);   color: #00f2fe;">🧠 QVM &mdash; Mind</a>
-          </div>
-          <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
-            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 2px;">Scroll to explore research by domain ↓</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       QVF — QUANTUM VIRTUAL FINANCE
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="qvf-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="research-card research-card-qvf" style="background: rgba(217,245,0,0.05); border: 1px solid rgba(217,245,0,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
-        <!-- 4px top accent bar INSIDE card -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #D9F500, rgba(139,92,246,0.8));"></div>
-
-        <div class="row align-items-start">
-          <!-- Left column -->
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <p class="domain-label" style="color: #D9F500;">QUANTITATIVE FINANCE</p>
-            <h2 class="section-title-glow">Quantum Virtual Finance — Research</h2>
-            <span class="domain-tag" style="background: rgba(217,245,0,0.15); color: #D9F500; border: 1px solid rgba(217,245,0,0.35);">QVF</span>
-            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
-              Our finance research develops next-generation tools for understanding how markets move, how risk concentrates, and how portfolios can be managed with greater intelligence. These tools are built on our QVF platform and target systematic trading, risk management, and market intelligence.
-            </p>
-            <div class="building-box" style="border-left: 3px solid #D9F500;">
-              <p class="building-label" style="color: #D9F500;">What We're Building</p>
-              <p>We are developing market connectivity mapping tools, automated trading signal systems, and portfolio optimisation methods that detect regime changes faster than conventional approaches — and a monthly market intelligence report for institutional investors.</p>
-            </div>
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
-            <ul class="research-list" style="color: #D9F500;">
-              <li>
-                <span class="product-name" style="color: #D9F500;">Finatom</span>
-                <span class="product-desc">A network-based representation of global market connectivity that maps how assets, sectors, and macro signals are dynamically coupled. Continuously updated as market conditions evolve, it surfaces regime transitions and risk concentrations before they appear in conventional price indicators.</span>
-                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #D9F500;">Quantum Portfolio Optimisation (QPO)</span>
-                <span class="product-desc">A next-generation portfolio allocation engine that goes beyond classical mean-variance methods. QPO finds risk-return balanced portfolios under stressed, non-linear market conditions — capturing tail dependencies and correlation breakdowns that conventional optimisers overlook.</span>
-                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #D9F500;">Quantum High-Frequency Trading (QHFT)</span>
-                <span class="product-desc">An ultra-low-latency market state tracking system that detects micro-structural transitions in real time. QHFT generates execution signals at the precise moment market structure begins to shift — enabling positioning ahead of moves that slower models miss entirely.</span>
-                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #D9F500;">Market State Report (MSR)</span>
-                <span class="product-desc">A monthly quantitative briefing for institutional investors and systematic funds. Each edition covers market connectivity maps, sector coupling heatmaps, volatility regime assessments, and risk-adjusted signal rankings — all through the QVF lens.</span>
-                <span class="status-chip" style="background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3); margin-top: 6px;">Coming Soon</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       QVMa — QUANTUM VIRTUAL MATTER
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="qvma-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="research-card research-card-qvma" style="background: rgba(255,0,255,0.05); border: 1px solid rgba(255,0,255,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
-        <!-- 4px top accent bar INSIDE card -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #FF00FF, rgba(139,92,246,0.8));"></div>
-
-        <div class="row align-items-start">
-          <!-- Left column -->
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <p class="domain-label" style="color: #FF00FF;">QUANTUM CHEMISTRY &amp; MATERIALS SCIENCE</p>
-            <h2 class="section-title-glow">Quantum Virtual Matter — Research</h2>
-            <span class="domain-tag" style="background: rgba(255,0,255,0.12); color: #FF00FF; border: 1px solid rgba(255,0,255,0.35);">QVMa</span>
-            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
-              Our materials research builds simulation tools that predict how molecules and materials behave at the atomic level — going beyond what classical chemistry software can model. We are creating databases, design frameworks, and planning tools for chemistry, energy, and drug discovery.
-            </p>
-            <div class="building-box" style="border-left: 3px solid #FF00FF;">
-              <p class="building-label" style="color: #FF00FF;">What We're Building</p>
-              <p>We are building a searchable database of chemical reactions, a framework for designing complex molecular systems layer by layer, and an intelligent tool that proposes how to synthesise a target material from first principles.</p>
-            </div>
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
-            <ul class="research-list" style="color: #FF00FF;">
-              <li>
-                <span class="product-name" style="color: #FF00FF;">ChemSphere</span>
-                <span class="product-desc">A searchable, graph-structured database of chemical reactions built for quantum chemistry research. Researchers can query reaction pathways, compare molecular fingerprints across chemical space, identify known synthesis routes, and profile reaction intermediates and transition states — all within a single connected knowledge base.</span>
-                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #FF00FF;">Hierarchical Agentic Hamiltonian Design (HAHD)</span>
-                <span class="product-desc">A multi-agent design framework for building complex molecular and material systems from the ground up. HAHD decomposes a target into interacting layers — electronic structure, atomic geometry, vibrational modes, and environmental coupling — each managed by a specialist AI agent. The agents collaborate to produce an accurate, composite simulation of the full system, enabling design of materials and drug candidates at scales beyond classical tools.</span>
-                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #FF00FF;">Synthesis Planner</span>
-                <span class="product-desc">An intelligent synthesis planning tool powered by HAHD simulations and the ChemSphere reaction database. Given a target material or molecule, it proposes which precursors, reaction conditions, and synthesis steps are most likely to succeed — then ranks each candidate route by predicted yield and confidence, dramatically compressing the time from idea to validated synthesis path.</span>
-                <span class="status-chip" style="background: rgba(255,0,255,0.1); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3); margin-top: 6px;">Coming Soon</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       QVO — QUANTUM VIRTUAL OMICS
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="qvo-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="research-card research-card-qvo" style="background: rgba(0,230,118,0.05); border: 1px solid rgba(0,230,118,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
-        <!-- 4px top accent bar INSIDE card -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #00e676, rgba(139,92,246,0.8));"></div>
-
-        <div class="row align-items-start">
-          <!-- Left column -->
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <p class="domain-label" style="color: #00e676;">GENOMICS &amp; CELL BIOLOGY</p>
-            <h2 class="section-title-glow">Quantum Virtual Omics — Research</h2>
-            <span class="domain-tag" style="background: rgba(0,230,118,0.12); color: #00e676; border: 1px solid rgba(0,230,118,0.35);">QVO</span>
-            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
-              Our omics research translates complex biological data — from genes and proteins to metabolites and clinical signals — into dynamic models of how cells and patients function. These tools support drug discovery, personalised medicine, and the design of smarter clinical trials.
-            </p>
-            <div class="building-box" style="border-left: 3px solid #00e676;">
-              <p class="building-label" style="color: #00e676;">What We're Building</p>
-              <p>We are building tools that model biological state from multi-omics data, identify the molecular signatures of disease, rank potential therapeutic interventions by their predicted recovery effect, and create a new kind of patient health record that goes beyond static diagnostic codes.</p>
-            </div>
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
-            <ul class="research-list" style="color: #00e676;">
-              <li>
-                <span class="product-name" style="color: #00e676;">Omics-HAHD</span>
-                <span class="product-desc">Applies the Hierarchical Agentic Hamiltonian Design (HAHD) framework to multi-omics biology — integrating genomic, transcriptomic, proteomic, and metabolomic layers into a unified model of biological state. Each molecular layer is handled by a specialist agent, enabling the system to identify which biological disruptions drive disease, and which molecular targets are most likely to restore healthy cellular function.</span>
-                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00e676;">Perturbation &amp; Inversion Analysis</span>
-                <span class="product-desc">A systematic method for identifying what is going wrong inside a diseased cell and what can fix it. The engine classifies the type of biological disruption, then works backwards to find which interventions — small molecules, gene edits, or biologics — are most likely to reverse it. Candidates are ranked by their predicted ability to restore the healthy biological state, with full mechanistic reasoning.</span>
-                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00e676;">Quantum Electronic Health Record (Q-EHR)</span>
-                <span class="product-desc">A new kind of patient record that replaces static diagnosis codes with a quantitative model of how a patient's biology is actually functioning. Q-EHR tracks changes in biological state over time — under disease, treatment, and recovery — enabling personalised monitoring and more precise clinical decisions than today's ICD-based systems allow.</span>
-                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">Research Preview</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00e676;">Cell State Atlas</span>
-                <span class="product-desc">A reference library of biological states built from large-scale single-cell datasets across tissues, disease conditions, and treatment contexts. Researchers use the atlas to compare a patient's biological state against known healthy and disease references, predict how they will respond to a given drug, and identify biomarkers for clinical stratification.</span>
-                <span class="status-chip" style="background: rgba(0,230,118,0.1); color: #00e676; border: 1px solid rgba(0,230,118,0.3); margin-top: 6px;">Coming Soon</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       QVM — QUANTUM VIRTUAL MIND
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="qvm-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="research-card research-card-qvm" style="background: rgba(0,242,254,0.05); border: 1px solid rgba(0,242,254,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
-        <!-- 4px top accent bar INSIDE card -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #00f2fe, rgba(139,92,246,0.8));"></div>
-
-        <div class="row align-items-start">
-          <!-- Left column -->
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <p class="domain-label" style="color: #00f2fe;">BCI &amp; NEUROSCIENCE</p>
-            <h2 class="section-title-glow">Quantum Virtual Mind — Research</h2>
-            <span class="domain-tag" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.35);">QVM</span>
-            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
-              Our neuroscience research builds tools for understanding brain state, detecting neurological conditions early, and designing targeted brain stimulation therapies. These tools are for researchers, clinicians, and companies building the next generation of brain-computer interfaces.
-            </p>
-            <div class="building-box" style="border-left: 3px solid #00f2fe;">
-              <p class="building-label" style="color: #00f2fe;">What We're Building</p>
-              <p>We are building a reference atlas of neurological conditions with their brain-state signatures, a new kind of neural health record, an autonomous closed-loop brain stimulation system, and a library of brain states for EEG-based decoding.</p>
-            </div>
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Research Products</p>
-            <ul class="research-list" style="color: #00f2fe;">
-              <li>
-                <span class="product-name" style="color: #00f2fe;">Neural Perturbation Atlas</span>
-                <span class="product-desc">A comprehensive reference library covering a wide range of neurological and psychiatric conditions — including epilepsy, depression, Parkinson's disease, schizophrenia, ADHD, TBI, and Alzheimer's — each characterised by its specific brain-state signature. The atlas enables early detection, comparison of a patient's state against known profiles, and prediction of which brain stimulation approach is most likely to restore healthy function.</span>
-                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00f2fe;">Quantum Neural Electronic Health Record (Q-NEHR)</span>
-                <span class="product-desc">A dynamic patient record that captures the full state of a patient's brain health — not just a list of symptoms or diagnosis codes. Q-NEHR stores a quantitative model of healthy brain function for each patient, together with how that state has shifted under their specific condition. It tracks cognitive changes over time, supports personalised therapy planning, and provides measurable biomarkers for mental health and neurological care.</span>
-                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">Research Preview</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00f2fe;">Closed-Loop Brain Stimulation</span>
-                <span class="product-desc">An autonomous therapy system that operates continuously: it reads live brain signals, builds a real-time model of the patient's current brain state, compares it against their healthy reference, selects the optimal stimulation approach from a library of candidate protocols (tDCS, tACS, TMS, or DBS), applies the chosen stimulation, and then measures how much the brain state has moved toward recovery. The loop runs adaptively — tightening or shifting its parameters as the patient responds.</span>
-                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">In Development</span>
-              </li>
-              <li>
-                <span class="product-name" style="color: #00f2fe;">Cortical State Library</span>
-                <span class="product-desc">A reference catalogue of distinct brain states organised across functional tiers: arousal and baseline (deep sleep, REM, meditation), sensorimotor (motor imagery, visual evoked responses), cognitive (working memory, language, attention), affective and social (fear, reward, empathy), and pathological (seizure, Parkinson's tremor, depression, coma). Researchers and BCI engineers use the library to classify EEG signals, design neural decoders, and benchmark brain-computer interface systems.</span>
-                <span class="status-chip" style="background: rgba(0,242,254,0.1); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3); margin-top: 6px;">Coming Soon</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       PUBLICATIONS & KNOWLEDGE
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" id="publications-research" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="research-card research-card-pub" style="background: rgba(139,92,246,0.05); border: 1px solid rgba(139,92,246,0.3); border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;" data-aos="fade-up">
-        <!-- 4px top accent bar INSIDE card -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #8b5cf6, rgba(0,242,254,0.8));"></div>
-
-        <div class="row align-items-start">
-          <!-- Left column -->
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-            <p class="domain-label" style="color: #8b5cf6;">PUBLICATIONS &amp; KNOWLEDGE</p>
-            <h2 class="section-title-glow">Research Reports &amp; Publications</h2>
-            <span class="domain-tag" style="background: rgba(139,92,246,0.15); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.35);">Knowledge</span>
-            <p style="color: rgba(255,255,255,0.72); line-height: 1.8; font-size: 0.97rem;">
-              We publish our findings through monthly market intelligence reports, a research newsletter, and planned technical textbooks. Our publications are written for researchers, investors, and technology leaders — not just specialists.
-            </p>
-            <div class="building-box" style="border-left: 3px solid #8b5cf6;">
-              <p class="building-label" style="color: #8b5cf6;">What We're Publishing</p>
-              <p>Our first regular publication is a monthly finance market report. A research newsletter across all four domains follows. In-depth technical books on our methods are in preparation.</p>
-            </div>
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.45); margin-bottom: 1rem; font-weight: 600;">Publications</p>
-            <ul class="research-list" style="color: #8b5cf6;">
-              <li>
-                <span class="product-name" style="color: #8b5cf6;">Monthly Market Report</span>
-                <span class="product-desc">A monthly quantitative briefing covering market connectivity, regime shifts, sector dynamics, and risk signals. Designed for institutional investors and systematic funds.</span>
-                <span class="status-chip" style="background: rgba(139,92,246,0.12); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.3); font-size: 0.75rem; padding: 3px 10px; margin-top: 4px;">Coming Soon</span>
-              </li>
-              <li style="margin-top: 0.5rem;">
-                <span class="product-name" style="color: #8b5cf6;">Research Newsletter</span>
-                <span class="product-desc">Monthly updates on progress across all four platform domains — new results, releases, and upcoming events. For researchers, investors, and technology leaders. Subscribe using the form in the footer below.</span>
-                <span class="status-chip" style="background: rgba(139,92,246,0.12); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.3); font-size: 0.75rem; padding: 3px 10px; margin-top: 4px;">Coming Soon</span>
-              </li>
-              <li style="margin-top: 0.5rem;">
-                <span class="product-name" style="color: #8b5cf6;">Technical Textbooks</span>
-                <span class="product-desc">In-depth books covering the science and methodology behind each platform. Four titles planned.</span>
-                <span class="status-chip" style="background: rgba(139,92,246,0.12); color: #8b5cf6; border: 1px solid rgba(139,92,246,0.3); font-size: 0.75rem; padding: 3px 10px; margin-top: 4px;">In Preparation</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       ROADMAP CTA
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 80px 0;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-9 text-center" data-aos="fade-up">
-          <h2 class="section-title-glow mb-4">Shaping the Future of Intelligent Simulation</h2>
-          <p style="font-size: 1.05rem; line-height: 1.85; color: rgba(255,255,255,0.68); max-width: 720px; margin: 0 auto 2.5rem;">
-            Our research products are not theoretical — they are being built today, grounded in rigorous science and validated against real-world datasets. Each product will move from current development into live deployment as our platform matures.
-          </p>
-          <div style="margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(217,245,0,0.12); color: #D9F500; border: 1px solid rgba(217,245,0,0.3);">⚡ Personalised Trading</span>
-            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(255,0,255,0.12); color: #FF00FF; border: 1px solid rgba(255,0,255,0.3);">⚛️ Intelligent Material Synthesis</span>
-            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(0,230,118,0.12); color: #00e676; border: 1px solid rgba(0,230,118,0.3);">🧬 Precision Medicine</span>
-            <span style="display: inline-block; padding: 10px 24px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; background: rgba(0,242,254,0.12); color: #00f2fe; border: 1px solid rgba(0,242,254,0.3);">🧠 Closed-Loop BCI Therapy</span>
-          </div>
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-            <a href="https://www.mindversecomputing.com/platform.html" class="btn-primary-grad">Explore Platform</a>
-            <a href="https://www.mindversecomputing.com/contact.html" class="btn-outline-light-r">Get in Touch</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════════════════════ -->
-  <div class="site-footer bg-void-magenta"
-    style="border-top: 1px solid rgba(139, 92, 246, 0.2); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+  
+  <div class="investor-section-premium page-head" id="home"
+    style="background: #151b3b; padding: 130px 0 56px;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <div class="widget mb-4">
-            <h3 style="color: white;">About Us</h3>
-            <p style="line-height: 1.7;">Agentic quantum digital twins for matter (QVMa), financial markets (QVF), the biological cell (QVO), and the human mind (QVM) &mdash; powered by Mindverse Computing's integrated quantum-classical simulation and recommendation workflow technology.</p>
-          </div>
-          <div class="widget">
-            <h3 style="color: white;">Connect</h3>
-            <ul class="list-unstyled social">
-              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer"><span class="icon-twitter" style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer"><span class="icon-linkedin" style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer"><span class="icon-youtube" style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer"><span class="icon-facebook" style="color: var(--neural-accent);"></span></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-12">
-          <div class="widget mb-4">
-            <h3 class="mb-3" style="color: white;">Join Our Newsletter</h3>
-            <p style="line-height: 1.7;">Subscribe to our research newsletter for monthly updates on platform releases, scientific findings, and publications.</p>
-            <form id="footer-subscribe-form">
-              <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <input name="email" id="footer-email-input" placeholder="Enter your email" required type="email"
-                  class="form-control" style="flex: 1; min-width: 200px; background-color: white;
-                  color: #333; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 10px 20px;">
-                <button type="submit" class="cta-primary-glow"
-                  style="padding: 10px 24px; border-radius: 50px; white-space: nowrap;">Subscribe</button>
-              </div>
-            </form>
-            <div id="footer-subscribe-message" style="margin-top: 10px; color: rgba(255,255,255,0.7); font-size: 0.9rem;"></div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6">
-          <div class="widget">
-            <h3 style="color: white;">Quick Links</h3>
-            <ul class="list-unstyled links">
-              <li><a href="https://finance.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">QVF &mdash; Markets</a></li>
-              <li><a href="https://matter.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">QVMa &mdash; Matter</a></li>
-              <li><a href="https://omics.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">QVO &mdash; Cell</a></li>
-              <li><a href="https://bci.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">QVM &mdash; Mind</a></li>
-              <li><a href="https://www.mindversecomputing.com/services.html" style="color: rgba(255,255,255,0.6);">Services</a></li>
-              <li><a href="https://learning.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">Learning Hub</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6">
-          <div class="widget">
-            <h3 style="color: white;">Explore</h3>
-            <ul class="list-unstyled links">
-              <li><a href="https://finance.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">Finance Workspace</a></li>
-              <li><a href="https://matter.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">Matter Workspace</a></li>
-              <li><a href="https://omics.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">Omics Workspace</a></li>
-              <li><a href="https://bci.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank">BCI Workspace</a></li>
-              <li><a href="https://www.mindversecomputing.com/market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
-              <li><a href="https://www.mindversecomputing.com/investors.html" style="color: rgba(255,255,255,0.6);">Invest</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
-        <div class="col-12 text-center">
-          <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin: 0;">
-            &copy; <script>document.write(new Date().getFullYear());</script> Mindverse Computing. All Rights Reserved.
-          </p>
+        <div class="col-lg-9">
+          <h1 class="fresh-title page-title" data-aos="fade-up">Services</h1>
+          <p class="page-sub" data-aos="fade-up" data-aos-delay="120">What we are proposing to build on the platform &mdash; for learning and for neurological research &mdash; and an honest account of how far each idea has got.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Newsletter Scripts -->
-  <script>
-    function setupSubscribe(formId, inputId, msgId) {
-      document.getElementById(formId).addEventListener("submit", function(e) {
-        e.preventDefault();
-        const email = document.getElementById(inputId).value;
-        const scriptURL = "https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec";
-        const formData = new FormData();
-        formData.append("email", email);
-        fetch(scriptURL, { method: "POST", body: formData })
-          .then(r => r.text())
-          .then(() => { document.getElementById(msgId).innerText = "Subscribed successfully!"; document.getElementById(inputId).value = ""; })
-          .catch(() => { document.getElementById(msgId).innerText = "Error. Please try again."; });
-      });
-    }
-    setupSubscribe("footer-subscribe-form", "footer-email-input", "footer-subscribe-message");
-  </script>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
+      <h2 class="section-title-glow" style="font-size:2.2rem;margin-bottom:1.2rem;">What we are proposing to build</h2>
+      <p style="color:rgba(255,255,255,0.8);font-size:1.02rem;">Our proposed research runs in two directions from a
+      single state model: how healthy brains learn, and how conditions move a brain away from its own baseline.</p>
+      </div></div>
+      <div class="row justify-content-center mt-4"><div class="col-lg-9"><div class="building-box" style="background: rgba(255, 255, 255, 0.06); border-left: 3px solid rgba(255,255,255,0.6); border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: rgba(255,255,255,0.6); font-size: 0.86rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem;">Read the status labels</p><p style="margin:0; color: rgba(255,255,255,0.8); line-height:1.7;">Almost everything below is a proposal. The state model is built and benchmarked; the applications are research directions we have specified and are now developing.</p></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" id="superlearning" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+    <div class="container"><div class="row">
+      <div class="col-lg-6 mb-4" data-aos="fade-right">
+        <p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:#00e676;font-weight:700;margin-bottom:0.9rem;">HEALTHY DIRECTION</p>
+        <h2 class="section-title-glow" style="font-size:2rem;text-align:left;margin-bottom:1.1rem;">Superlearning &mdash; Proposed research</h2>
+        <p style="color:rgba(255,255,255,0.75);">Today&rsquo;s adaptive learning tools watch answers. That tells you what a student has already failed to learn &mdash; too late, and it cannot distinguish a learner who is stretched from one who stopped absorbing twenty minutes ago.</p><p style="color:rgba(255,255,255,0.75);">Reading state directly could. Whether it does is the research question, not a claim.</p><div class="building-box" style="background: rgba(0, 230, 118, 0.06); border-left: 3px solid #00e676; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00e676; font-size: 0.86rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem;">What we would need to show</p><p style="margin:0; color: rgba(255,255,255,0.8); line-height:1.7;">That a state model built from a learner&rsquo;s own recordings predicts readiness better than their answer history does. No such study has been run.</p></div></div>
+      <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.45);margin-bottom:1.2rem;font-weight:600;">Research Products</p><ul class="research-list list-green" style="margin-top:0;"><li style="margin-bottom:1.4rem;"><span style="color:#00e676;font-weight:700;font-size:1.18rem;">Superlearning Mind Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">A map of healthy variation in the dynamics a BCI can see &mdash; between people, and within one person as they learn. A learner would be a position on the map; learning a path through it.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#00e676;font-weight:700;font-size:1.18rem;">Learning Track Designer</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">Would turn a learner&rsquo;s position into a sequence: what to study next, at what difficulty, and when to stop for the day. Designed to sit behind an existing platform.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#00e676;font-weight:700;font-size:1.18rem;">Cortical State Library</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">A reference catalogue of distinct states across arousal, sensorimotor, cognitive and affective tiers. Specified and scheduled.</p></li></ul></div>
+      </div></div>
+  </div>
+  <div class="investor-section-premium" id="clinical" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container"><div class="row">
+      <div class="col-lg-6 mb-4" data-aos="fade-right">
+        <p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:#FF00FF;font-weight:700;margin-bottom:0.9rem;">CLINICAL DIRECTION</p>
+        <h2 class="section-title-glow" style="font-size:2rem;text-align:left;margin-bottom:1.1rem;">Neurological Perturbation Studies</h2>
+        <p style="color:rgba(255,255,255,0.75);">Neurological conditions unfold over months and years, but the measurements taken along the way sit in unconnected documents.</p><p style="color:rgba(255,255,255,0.75);">Our proposed clinical research studies how a condition moves a person away from their own healthy baseline &mdash; measured against themselves rather than a population average.</p><div class="building-box" style="background: rgba(255, 0, 255, 0.06); border-left: 3px solid #FF00FF; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #FF66FF; font-size: 0.86rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem;">Not a medical device</p><p style="margin:0; color: rgba(255,255,255,0.8); line-height:1.7;">Nothing in this programme diagnoses, prescribes, or is used in patient care. Any future clinical application would require regulatory approval, ethical review, and clinical validation. No patient data has been fitted.</p></div></div>
+      <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.45);margin-bottom:1.2rem;font-weight:600;">Research Products</p><ul class="research-list list-magenta" style="margin-top:0;"><li style="margin-bottom:1.4rem;"><span style="color:#FF00FF;font-weight:700;font-size:1.18rem;">Longitudinal Neural State Record</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">Would hold a quantitative model of the person&rsquo;s healthy brain function alongside how far their condition has moved them from it, tracking change rather than storing a diagnosis code.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#FF00FF;font-weight:700;font-size:1.18rem;">Neural Perturbation Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">A reference library of neurological and psychiatric conditions, each characterised by its signature in the recorded dynamics. Specified in draft.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#FF00FF;font-weight:700;font-size:1.18rem;">Closed-Loop Neuromodulation Research</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">Would read live signals, compare against the healthy reference, and rank candidate stimulation approaches <strong>for researchers to evaluate</strong> &mdash; never an instruction to administer.</p></li></ul></div>
+      </div></div>
+  </div>
+  <div class="investor-section-premium" id="evidence" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+    <div class="container"><div class="text-center mb-5" data-aos="fade-up">
+      <p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.45);font-weight:700;">Evidence</p>
+      <h2 class="section-title-glow" style="font-size:2.2rem;margin:0.8rem 0 1rem;">Where the evidence stands</h2>
+      <p style="color:rgba(255,255,255,0.75);max-width:760px;margin:0 auto;">We benchmark our approach against established methods on public data and write up everything we find. Three manuscripts are in preparation, and we are glad to walk collaborators through the current drafts.</p></div>
+      <div class="row">
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <div class="glass-card" style="padding:2.25rem;">
+            <p style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;margin-bottom:1.25rem;">
+              Early benchmark &mdash; in-house</p>
+            <div class="stat-row"><span class="k">Recovering real physical wiring</span><span class="v win">Ours leads</span></div>
+            <div class="stat-row"><span class="k">Staying physically consistent</span><span class="v win">Both, exactly</span></div>
+            <div class="stat-row"><span class="k">Internal energy bookkeeping</span><span class="v win">Ours leads</span></div>
+            <div class="stat-row"><span class="k">Short-term signal prediction</span><span class="v lose">Conventional leads</span></div>
+            <div class="stat-row"><span class="k">Fine-grained rhythm detail</span><span class="v lose">Conventional leads</span></div>
+            <div class="stat-row"><span class="k">A control test we set ourselves</span><span class="v lose">Neither passed</span></div>
+          </div></div>
+        <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.78rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.45);margin-bottom:1.2rem;font-weight:600;">Research Products</p><ul class="research-list list-magenta" style="margin-top:0;"><li style="margin-bottom:1.4rem;"><span style="color:#00f2fe;font-weight:700;font-size:1.18rem;">The state model</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">Describes the modelling approach for brain&ndash;computer interfaces and reports the early comparison shown here.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#00f2fe;font-weight:700;font-size:1.18rem;">The Mind Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">A proposal for how a shared baseline could be specialised into an individual. First draft; validation study designed and scheduled.</p></li><li style="margin-bottom:1.4rem;"><span style="color:#00f2fe;font-weight:700;font-size:1.18rem;">Neural state records</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.6;">A proposal for representing a neurological state as a working model. First draft; no patient data fitted.</p></li></ul><a href="contact.html" style="color:#00f2fe;font-weight:600;">Ask about the current drafts &rarr;</a></div></div><div class="row justify-content-center mt-4"><div class="col-lg-10"><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size: 0.86rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem;">What comes next</p><p style="margin:0; color: rgba(255,255,255,0.8); line-height:1.7;">These are early in-house results and an encouraging signal. Our approach is not better at everything &mdash; conventional methods still lead on short-horizon prediction, and quantum speed-up is not part of our claim. Larger cohorts and independent replication are the next milestones, and that work is underway.</p></div></div></div></div>
+  </div>
+
+  <!------------Footer--------------------------------------------->
+  <div class="site-footer"
+    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- About and Social -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size: 1.22rem;">Mindverse Computing</h3>
+            <p style="line-height: 1.7; font-size: 0.93rem;">The agentic quantum digital twin learned from
+            BCI&nbsp;data &mdash; an executable quantum-classical state model, routed into agentic workflows.
+            An early-stage research company; everything here is research, not a medical device.</p>
+          </div>
+          <div class="widget">
+            <h3 style="color: white; font-size: 1.22rem;">Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- The platform -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size: 1.22rem;">The platform</h3>
+            <ul class="list-unstyled links">
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
+              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
+              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
+              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research directions -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size: 1.22rem;">Research directions</h3>
+            <ul class="list-unstyled links">
+              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
+                <span style="color: rgba(255,255,255,0.35); font-size: 0.78rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
+                <span style="color: rgba(255,255,255,0.35); font-size: 0.78rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size: 1.22rem;">Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-lg-8">
+          <p style="color: rgba(255,255,255,0.55); font-size: 0.82rem; margin: 0; line-height: 1.7;">
+            Research and development notice: our platforms are experimental research tools for academic
+            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
+            regulated service. Three manuscripts are currently in preparation.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <p style="color: rgba(255,255,255,0.55); font-size: 0.85rem; margin: 0;">
+            &copy; 2026 Mindverse Computing. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/investor-effects.js"></script>
-  <script>AOS.init({ duration: 700, once: true });</script>
-
 </body>
+
 </html>

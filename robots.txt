@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /_strategy/
+Disallow: /README.md
 
 Sitemap: https://www.mindversecomputing.com/sitemap.xml

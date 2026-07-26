@@ -1,9 +1,3 @@
-<!-- /*
-* Template Name: Learner
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 
@@ -14,26 +8,20 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png">
 
-  <meta name="description"
-    content="Mindverse Computing: Research and development of agentic quantum digital twin platforms for quantitative finance, quantum matter, computational omics, and neuroscience (BCI), combining quantum-classical simulation with hypothesis and recommendation workflows." />
-  <meta name="keywords"
-    content="agentic quantum digital twin research, QDT, quantum-classical simulation platform, agentic workflows, recommendation systems, neuroscience research, computational biology, quantitative finance research, quantum chemistry, materials science research, BCI research, quantum computing, systems modeling, proof-of-concept" />
+  <link rel="canonical" href="https://www.mindversecomputing.com/">
+  <meta name="description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://www.mindversecomputing.com/" />
 
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Mindverse Computing — Agentic Quantum Digital Twin Platform" />
-  <meta property="og:description"
-    content="Research and development of experimental agentic quantum digital twin platforms that reconstruct system states with quantum-classical simulation and support hypothesis, triage, and recommendation workflows." />
+  <meta property="og:title" content="Mindverse Computing — The agentic quantum digital twin learned from BCI data" />
+  <meta property="og:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
+  <meta property="og:url" content="https://www.mindversecomputing.com/" />
+  <meta property="og:site_name" content="Mindverse Computing" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.mindversecomputing.com/images/newlogo.png" />
-  <meta property="og:url" content="https://www.mindversecomputing.com" />
+  <meta property="og:image" content="images/newlogo.png" />
 
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mindverse Computing — Agentic Quantum Digital Twin Platform" />
-  <meta name="twitter:description"
-    content="Agentic Quantum Digital Twins: Quantum Virtual Finance, Matter, Omics, and Mind — powered by integrated quantum-classical simulation and recommendation workflows." />
+  <meta name="twitter:title" content="Mindverse Computing — The agentic quantum digital twin learned from BCI data" />
+  <meta name="twitter:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
@@ -53,136 +41,25 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/investor-enhancements.css">
   <link rel="stylesheet" href="css/home-custom.css">
+  <link rel="stylesheet" href="css/site-additions.css">
 
-  <title>Mindverse Computing — Agentic Quantum Digital Twin Platform</title>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Mindverse Computing",
-      "url": "https://www.mindversecomputing.com/",
-      "logo": "https://www.mindversecomputing.com/images/newlogo.png",
-      "sameAs": [
-        "https://x.com/MindverseCom",
-        "https://www.linkedin.com/company/mindverse-computing",
-        "https://www.youtube.com/@mindversecomputing",
-        "https://www.facebook.com/MindverseComputing"
-      ]
-    }
-  </script>
-
-  <!-- MathJax for inline LaTeX rendering. We deliberately omit `$...$` as an inline
-       delimiter so that dollar amounts in the page (e.g. $50B) are not parsed as math. -->
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'GT-K8DQBD5J');
-  </script>
-
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
-  <!-- End Google Tag Manager -->
-
-
-
-
-  <script>
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-
-    // Set default consent to 'denied' as a placeholder
-    // Determine actual values based on your own requirements
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
-
-
-  <!-- Create one update function for each consent parameter -->
-  <script>
-    function consentGrantedAdStorage() {
-      gtag('consent', 'update', {
-        'ad_storage': 'granted'
-      });
-    }
-  </script>
-
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598520753358252"
-     crossorigin="anonymous"></script>
+  <title>Mindverse Computing — The agentic quantum digital twin learned from BCI data</title>
 </head>
 
 <body>
-
-  <!-- <button onclick="consentGrantedAdStorage()">Yes</button> -->
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-
-  <div class="site-mobile-menu">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
-
-  <!-------------------------Navigation--------------------------------------------->
 
   <nav class="site-nav mb-5">
 
     <div class="sticky-nav js-sticky-header">
       <div class="container position-relative">
         <div class="site-navigation text-center">
-          <a href="https://mindversecomputing.com" class="logo menu-absolute m-0">
+          <a href="index.html" class="logo menu-absolute m-0">
             <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
               height="50" />
             <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
           </a>
 
-          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="https://www.mindversecomputing.com/platform.html">Platform</a></li>
-            <li><a href="https://www.mindversecomputing.com/services.html">Services</a></li>
-            
-            <li><a href="https://www.mindversecomputing.com/market.html">Market</a></li>
-            <li><a href="https://www.mindversecomputing.com/investors.html">Investors</a></li>
-            <!-- <li><a href="https://workshops.mindversecomputing.com" target="_blank" rel="noopener noreferrer">Workshops</a></li>
-            <li><a href="https://learning.mindversecomputing.com" target="_blank" rel="noopener noreferrer">Learning Hub</a></li>
-            <li><a href="https://blogs.mindversecomputing.com" target="_blank" rel="noopener noreferrer">Blogs</a></li>
-            <li><a href="https://community.mindversecomputing.com" target="_blank" rel="noopener noreferrer">Community</a></li>-->
-            <li><a href="https://www.mindversecomputing.com/contact.html">Contact</a></li> 
-          </ul>
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li class="active"><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
 
           <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
             <span></span>
@@ -193,31 +70,20 @@
     </div>
   </nav>
 
-
-  <!-- -------------------------Enhanced Hero Section--------------------------------------- -->
-
+  
   <div class="fresh-hero" id="home">
     <div class="container">
       <div class="row align-items-stretch" style="min-height: calc(100vh - 48px);">
-        <!-- LEFT HALF: TEXT CONTENT -->
         <div class="col-lg-6 text-left d-flex flex-column justify-content-center" style="padding: 60px 0;">
-          <h1 class="fresh-title" data-aos="fade-right" data-aos-delay="100">The tech stack<br>for the agentic <br>quantum digital twin</h1>
-
-          <p class="fresh-description text-white" data-aos="fade-right" data-aos-delay="220" style="margin-bottom: 2rem; color: rgba(255,255,255,0.82) !important; font-size: 1.02rem; line-height: 1.7; max-width: 760px;">
-            Build on the full-stack platform that ingests real-world data streams, reconstructs an <strong>executable quantum-classical state model</strong>, and routes that state into agentic workflows that generate hypotheses, triage risks, and recommend next actions across every domain where complex system dynamics matter.
+          <h1 class="fresh-title" data-aos="fade-right" data-aos-delay="100">The agentic quantum<br>digital twin<br>learned from BCI data</h1>
+          <p class="fresh-description text-white" data-aos="fade-right" data-aos-delay="220"
+            style="margin-bottom: 2rem; color: rgba(255,255,255,0.82) !important; font-size: 1.02rem; line-height: 1.7; max-width: 760px;">
+            Build on the full-stack platform that ingests brain&ndash;computer interface data streams, reconstructs an <strong>executable quantum-classical state model</strong>, and routes that state into agentic workflows that generate hypotheses, triage risks, and recommend next actions &mdash; for learning, and for neurological disorder research.
           </p>
-
-          <!-- CTA Buttons -->
-          <div class="hero-buttons" data-aos="fade-right" data-aos-delay="300">
-            <a href="#qdt" class="btn btn-primary btn-explore-qdt">Explore QDT</a>
-            <a href="#applications" class="btn btn-secondary btn-applications">Applications</a>
-          </div>
+          <div class="hero-buttons" data-aos="fade-right" data-aos-delay="300"><a href="platform.html" class="btn btn-primary btn-explore-qdt">Explore the platform</a><a href="services.html" class="btn btn-secondary btn-applications">Research products</a></div>
         </div>
-
-        <!-- RIGHT HALF: GLOWING DIAGRAM -->
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
           <div class="home-visual-column" data-aos="fade-left" data-aos-delay="400" style="width:100%; height:100%;">
-            <!-- GLOWING BRAIN NETWORK -->
             <div class="brain-network-visual" id="brain-network-container">
               <div class="brain-glow-center"></div>
             </div>
@@ -226,613 +92,143 @@
       </div>
     </div>
   </div>
-
-
-  <!------------Four Domains Preview Section--------------------------------------------->
-  <div class="investor-section-premium" id="qdt" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">Our Agentic Quantum Digital Twins</h2>
-        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 900px; margin: 0 auto;">
-          Four breakthrough platforms powered by integrated quantum-classical simulation and agentic orchestration — transforming finance, materials science, omics, neuroscience, and beyond. Each platform reconstructs a domain state model, simulates its dynamics, and activates recommendation workflows that help researchers move from state understanding to hypothesis, triage, and action.
-        </p>
-      </div>
-
-      <div class="row mt-5">
-        <!-- QVF Card -->
-        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="domain-preview-card" style="background: rgba(217, 245, 0, 0.05); border: 1px solid rgba(217, 245, 0, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(217, 245, 0, 0.8), rgba(139, 92, 246, 0.8));"></div>
-            <div class="text-center mb-4">
-              <i class="uil uil-chart-line" style="font-size: 4rem; color: rgba(217, 245, 0, 1);"></i>
-            </div>
-            <h3 style="color: rgba(217, 245, 0, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Finance</h3>
-            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Agentic Market State Twin</p>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
-              Research platform for quantum-classical simulation of market dynamics from financial indicators, with agentic workflows for anomaly ranking, regime hypotheses, and hedge or allocation triage.
-            </p>
-            <div class="text-center">
-              <a href="https://www.mindversecomputing.com/platform.html#qvf-section" class="btn" style="background: linear-gradient(135deg, #d9f500 0%, #e4f34d 100%); color: #000; font-weight: 700; padding: 10px 30px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; border: none; box-shadow: 0 8px 25px rgba(217, 245, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(217, 245, 0, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(217, 245, 0, 0.3)';">Explore QVF →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- QVMa Card -->
-        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="domain-preview-card" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(255, 0, 255, 0.8), rgba(139, 92, 246, 0.8));"></div>
-            <div class="text-center mb-4">
-              <i class="uil uil-atom" style="font-size: 4rem; color: rgba(255, 0, 255, 1);"></i>
-            </div>
-            <h3 style="color: rgba(255, 0, 255, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Matter</h3>
-            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Agentic Material State Twin</p>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
-              Research platform for quantum-classical simulation of molecular and materials systems, with agentic orchestration for experiment design, hypothesis refinement, and candidate prioritization.
-            </p>
-            <div class="text-center">
-              <a href="https://www.mindversecomputing.com/platform.html#qvma-section" class="btn" style="background: linear-gradient(135deg, #FF00FF 0%, #C800C8 100%); color: #fff; font-weight: 700; padding: 10px 30px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; border: none; box-shadow: 0 8px 25px rgba(255, 0, 255, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(255, 0, 255, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(255, 0, 255, 0.3)';">Explore QVMa →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- QVO Card -->
-        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="domain-preview-card" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(0, 230, 118, 0.8), rgba(139, 92, 246, 0.8));"></div>
-            <div class="text-center mb-4">
-              <i class="uil uil-dna" style="font-size: 4rem; color: rgba(0, 230, 118, 1);"></i>
-            </div>
-            <h3 style="color: rgba(0, 230, 118, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Omics</h3>
-            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Agentic Cellular State Twin</p>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
-              Research platform for quantum-classical simulation of cellular state from multiomics data, with agentic workflows for pathway hypotheses, biomarker triage, and intervention design research.
-            </p>
-            <div class="text-center">
-              <a href="https://www.mindversecomputing.com/platform.html#qvo-section" class="btn" style="background: linear-gradient(135deg, #00e676 0%, #4ade80 100%); color: #000; font-weight: 700; padding: 10px 30px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; border: none; box-shadow: 0 8px 25px rgba(0, 230, 118, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0, 230, 118, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 230, 118, 0.3)';">Explore QVO →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- QVM Card -->
-        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="domain-preview-card" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 24px; padding: 2.5rem; position: relative; overflow: hidden; transition: all 0.4s ease; height: 100%;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, rgba(0, 242, 254, 0.8), rgba(139, 92, 246, 0.8));"></div>
-            <div class="text-center mb-4">
-              <i class="uil uil-brain" style="font-size: 4rem; color: rgba(0, 242, 254, 1);"></i>
-            </div>
-            <h3 style="color: rgba(0, 242, 254, 1); font-size: 1.8rem; text-align: center; margin-bottom: 1rem;">Quantum Virtual Mind</h3>
-            <p style="color: rgba(255,255,255,0.7); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Agentic Neural State Twin</p>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1.5rem;">
-              Research platform for integrated quantum-classical simulation of neural dynamics from BCI and biosensor data, with agentic triage for cognitive-state hypotheses, stress hubs, and intervention strategy research.
-            </p>
-            <div class="text-center">
-              <a href="https://www.mindversecomputing.com/platform.html#qvm-section" class="btn" style="background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); color: #000; font-weight: 700; padding: 10px 30px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; border: none; box-shadow: 0 8px 25px rgba(0, 242, 254, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0, 242, 254, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 242, 254, 0.3)';">Explore QVM →</a>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- Close row -->
-    </div> <!-- Close container -->
-  </div> <!-- Close Four Domains Preview Section -->
-
-        <!------------QDT Development Timeline Section--------------------------------------------->
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0; overflow: hidden;">
+        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">One state model. Two directions.</h2>
+        <p style="font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 760px; margin: 0 auto;">The Quantum Virtual Mind learns the dynamics in a person&rsquo;s BCI recordings. Everything else is a question about how those dynamics depart from their own baseline &mdash; upward into learning, or downward into disorder.</p>
+      </div><div class="row"><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="glass-card h-100" style="border-color: rgba(0, 242, 254,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00f2fe,rgba(0, 242, 254,0.25));"></div><i class="uil uil-brain" style="font-size:2.2rem;color:#00f2fe;margin-bottom:1rem;display:block;"></i><div style="color:#00f2fe;font-weight:700;font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">The core &middot; in development</div><h4 class="glass-card-title" style="font-size:1.35rem;margin-bottom:0.75rem;">Quantum Virtual Mind</h4><p class="glass-card-description">An executable state model of the dynamics a brain&ndash;computer interface can see, wrapped in a layer of specialist AI agents.</p><a href="platform.html" style="color:#00f2fe;font-weight:600;font-size:0.92rem;">See the platform &rarr;</a></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="glass-card h-100" style="border-color: rgba(0, 230, 118,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,rgba(0, 230, 118,0.25));"></div><i class="uil uil-graduation-cap" style="font-size:2.2rem;color:#00e676;margin-bottom:1rem;display:block;"></i><div style="color:#00e676;font-weight:700;font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.35rem;margin-bottom:0.75rem;">Superlearning</h4><p class="glass-card-description">A proposed approach to reading where a learner currently sits, and what they might be ready for next. Not yet built or tested.</p><a href="services.html#superlearning" style="color:#00e676;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(255, 0, 255,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF00FF,rgba(255, 0, 255,0.25));"></div><i class="uil uil-stethoscope" style="font-size:2.2rem;color:#FF00FF;margin-bottom:1rem;display:block;"></i><div style="color:#FF00FF;font-weight:700;font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Clinical direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.35rem;margin-bottom:0.75rem;">Neurological Perturbation Studies</h4><p class="glass-card-description">A proposed approach to measuring how a condition moves a person away from their own healthy baseline. A research direction, not a result.</p><a href="services.html#clinical" style="color:#FF00FF;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">Development Roadmap</h2>
-        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 800px; margin: 0 auto;">
-          Progressive deployment of agentic quantum digital twin platforms across critical domains
-        </p>
-      </div>
-
-      <!-- Timeline Container -->
-      <div class="timeline-container" style="position: relative; max-width: 1200px; margin: 60px auto; padding: 0 20px;">
-        <!-- Timeline Base Line (Permanent Thin Line) -->
-        <div class="timeline-line" style="position: absolute; top: 98px; left: 0; right: 0; height: 2px; background: rgba(139, 92, 246, 0.2); transform: translateY(-50%); z-index: 1;"></div>
+        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">What the state model is, and is not</h2>
         
-        <!-- Animated Thick Glowing Line -->
-        <div class="timeline-glow-line" id="timeline-glow-line" style="position: absolute; top: 98px; left: 0; width: 0; height: 6px; background: linear-gradient(90deg, rgba(139, 92, 246, 0.9), rgba(255, 255, 255, 0.9)); transform: translateY(-50%); z-index: 2; box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 40px rgba(139, 92, 246, 0.6); border-radius: 3px; transition: width 2s ease-in-out;"></div>
-
-        <!-- Timeline Nodes -->
-        <div class="timeline-nodes" style="display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2;">
-          
-          <!-- 2027 - Quantum Virtual Finance -->
-          <div class="timeline-node" data-year="2027" data-aos="fade-up" data-aos-delay="100" style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative;">
-            <div class="node-circle" style="width: 80px; height: 80px; background: rgba(217, 245, 0, 0.1); border: 3px solid rgba(217, 245, 0, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: all 0.4s ease; cursor: pointer; box-shadow: 0 0 30px rgba(217, 245, 0, 0.4);">
-              <i class="uil uil-chart-line" style="font-size: 2.5rem; color: rgba(217, 245, 0, 1);"></i>
-              <div class="node-glow" style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(217, 245, 0, 0.3); filter: blur(20px); opacity: 0; transition: opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top: 34px; font-size: 2rem; font-weight: 700; color: rgba(217, 245, 0, 1); text-shadow: 0 0 20px rgba(217, 245, 0, 0.6);">2027</div>
-            <div class="node-label" style="margin-top: 10px; font-size: 1rem; font-weight: 600; color: rgba(217, 245, 0, 1); text-align: center;">Quantum Virtual<br>Finance</div>
-            <div class="node-subtitle" style="margin-top: 5px; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Market Dynamics</div>
-          </div>
-
-          <!-- 2028 - Quantum Virtual Matter -->
-          <div class="timeline-node" data-year="2028" data-aos="fade-up" data-aos-delay="200" style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative;">
-            <div class="node-circle" style="width: 80px; height: 80px; background: rgba(255, 0, 255, 0.1); border: 3px solid rgba(255, 0, 255, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: all 0.4s ease; cursor: pointer; box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);">
-              <i class="uil uil-atom" style="font-size: 2.5rem; color: rgba(255, 0, 255, 1);"></i>
-              <div class="node-glow" style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(255, 0, 255, 0.3); filter: blur(20px); opacity: 0; transition: opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top: 34px; font-size: 2rem; font-weight: 700; color: rgba(255, 0, 255, 1); text-shadow: 0 0 20px rgba(255, 0, 255, 0.6);">2028</div>
-            <div class="node-label" style="margin-top: 10px; font-size: 1rem; font-weight: 600; color: rgba(255, 0, 255, 1); text-align: center;">Quantum Virtual<br>Matter</div>
-            <div class="node-subtitle" style="margin-top: 5px; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Materials Science</div>
-          </div>
-
-          <!-- 2030 - Quantum Virtual Omics -->
-          <div class="timeline-node" data-year="2030" data-aos="fade-up" data-aos-delay="300" style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative;">
-            <div class="node-circle" style="width: 80px; height: 80px; background: rgba(0, 230, 118, 0.1); border: 3px solid rgba(0, 230, 118, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: all 0.4s ease; cursor: pointer; box-shadow: 0 0 30px rgba(0, 230, 118, 0.4);">
-              <i class="uil uil-dna" style="font-size: 2.5rem; color: rgba(0, 230, 118, 1);"></i>
-              <div class="node-glow" style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(0, 230, 118, 0.3); filter: blur(20px); opacity: 0; transition: opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top: 34px; font-size: 2rem; font-weight: 700; color: rgba(0, 230, 118, 1); text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);">2030</div>
-            <div class="node-label" style="margin-top: 10px; font-size: 1rem; font-weight: 600; color: rgba(0, 230, 118, 1); text-align: center;">Quantum Virtual<br>Omics</div>
-            <div class="node-subtitle" style="margin-top: 5px; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Cellular Biology</div>
-          </div>
-
-          <!-- 2032 - Quantum Virtual Mind -->
-          <div class="timeline-node" data-year="2032" data-aos="fade-up" data-aos-delay="400" style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative;">
-            <div class="node-circle" style="width: 80px; height: 80px; background: rgba(0, 242, 254, 0.1); border: 3px solid rgba(0, 242, 254, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; transition: all 0.4s ease; cursor: pointer; box-shadow: 0 0 30px rgba(0, 242, 254, 0.4);">
-              <i class="uil uil-brain" style="font-size: 2.5rem; color: rgba(0, 242, 254, 1);"></i>
-              <div class="node-glow" style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(0, 242, 254, 0.3); filter: blur(20px); opacity: 0; transition: opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top: 34px; font-size: 2rem; font-weight: 700; color: rgba(0, 242, 254, 1); text-shadow: 0 0 20px rgba(0, 242, 254, 0.6);">2032</div>
-            <div class="node-label" style="margin-top: 10px; font-size: 1rem; font-weight: 600; color: rgba(0, 242, 254, 1); text-align: center;">Quantum Virtual<br>Mind</div>
-            <div class="node-subtitle" style="margin-top: 5px; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center;">Neural Systems</div>
-          </div>
-
-        </div>
       </div>
-
-      <!-- Timeline Animation Script -->
-      <script>
-        (function() {
-          const glowLine = document.getElementById('timeline-glow-line');
-          const nodes = document.querySelectorAll('.timeline-node');
-          const nodeCircles = document.querySelectorAll('.node-circle');
-          const nodeGlows = document.querySelectorAll('.node-glow');
-          
-          if (!glowLine || nodes.length === 0) return;
-
-          let currentSegment = 0;
-          const animationDuration = 2000; // 2 seconds per segment
-          const pauseDuration = 800; // 0.8 seconds pause at each node
-          const totalSegments = nodes.length; // 4 nodes total (2027, 2028, 2030, 2032)
-          const resetDelay = 2000; // 2 seconds pause before restarting
-
-          // Hover effects
-          nodeCircles.forEach((circle, index) => {
-            circle.addEventListener('mouseenter', function() {
-              this.style.transform = 'scale(1.15)';
-              this.style.borderWidth = '4px';
-              nodeGlows[index].style.opacity = '1';
-            });
-            circle.addEventListener('mouseleave', function() {
-              this.style.transform = 'scale(1)';
-              this.style.borderWidth = '3px';
-              nodeGlows[index].style.opacity = '0';
-            });
-          });
-
-          function resetAnimation() {
-            // Reset all node states
-            nodeGlows.forEach((glow) => glow.style.opacity = '0');
-            nodeCircles.forEach((circle) => circle.style.transform = 'scale(1)');
-            
-            // Reset glowing line to start
-            glowLine.style.transition = 'none';
-            glowLine.style.width = '0';
-            
-            // Reset segment counter
-            currentSegment = 0;
-            
-            // Restart animation
-            setTimeout(() => {
-              glowLine.style.transition = 'width 2s ease-in-out';
-              animateGlowLine();
-            }, 100);
-          }
-
-          function animateGlowLine() {
-            if (currentSegment >= totalSegments) {
-              // Animation complete - reset and loop
-              setTimeout(resetAnimation, resetDelay);
-              return;
-            }
-
-            const targetNode = nodes[currentSegment];
-            const containerRect = glowLine.parentElement.getBoundingClientRect();
-            const targetRect = targetNode.getBoundingClientRect();
-            
-            let targetWidth;
-            
-            // For the last node, extend to the right edge of the container
-            if (currentSegment === totalSegments - 1) {
-              targetWidth = containerRect.width;
-            } else {
-              // Calculate the width to reach the center of the target node
-              targetWidth = targetRect.left + targetRect.width / 2 - containerRect.left;
-            }
-            
-            // Activate current node glow
-            nodeGlows[currentSegment].style.opacity = '1';
-            nodeCircles[currentSegment].style.transform = 'scale(1.1)';
-            
-            // Animate the glowing line to the target width
-            setTimeout(() => {
-              glowLine.style.width = targetWidth + 'px';
-            }, 50);
-            
-            // After animation, pause and prepare for next segment
-            setTimeout(() => {
-              nodeGlows[currentSegment].style.opacity = '0';
-              nodeCircles[currentSegment].style.transform = 'scale(1)';
-              
-              currentSegment++;
-              
-              // Continue to next segment
-              setTimeout(animateGlowLine, pauseDuration);
-            }, animationDuration + pauseDuration);
-          }
-
-          // Start animation after page load
-          setTimeout(() => {
-            animateGlowLine();
-          }, 1000);
-        })();
-      </script>
-
-      <!-- Responsive Timeline for Mobile -->
-    </div>
-  </div>
-
-  <!------------Why Agentic Quantum Digital Twins Section--------------------------------------------->
-  <div class="investor-section-premium" id="applications" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-          <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 2rem;">Why Agentic Quantum Digital Twins?</h2>
-          <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
-            Classical machine learning models <em>approximate patterns</em> in data. Our approach uses integrated quantum-classical simulation to reconstruct the system state, then uses an agentic layer to interpret that state, generate hypotheses, and recommend research actions across market correlations, material synthesis, cellular processes, and neural dynamics.
-          </p>
-          <div style="background: rgba(139, 92, 246, 0.05); border-left: 3px solid rgba(139, 92, 246, 1); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
-            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.1rem; margin-bottom: 1rem;">Beyond Classical AI</h4>
-            <p style="color: rgba(255,255,255,0.75); margin: 0;">
-              Agentic quantum digital twins combine quantum state modeling with workflow agents that reason over simulated dynamics — moving beyond prediction toward ranked hypotheses, anomaly triage, and decision support.
-            </p>
-          </div>
-          <div style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid rgba(0, 242, 254, 1); padding: 1.5rem; border-radius: 8px;">
-            <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.1rem; margin-bottom: 1rem;">Real-Time Simulation</h4>
-            <p style="color: rgba(255,255,255,0.75); margin: 0;">
-              Our research platform continuously ingests live data streams and updates the quantum-classical state model in real time. Agentic workflows then evaluate state shifts, surface anomalies, and recommend the next simulation, experiment, or review step.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="why-qdt-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 16px; padding: 2.5rem;">
-            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.3rem; margin-bottom: 2rem;">Key Advantages</h4>
-            <div class="mb-4">
-              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
-                <div style="min-width: 40px; height: 40px; background: rgba(0, 242, 254, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <span style="color: rgba(0, 242, 254, 1); font-size: 1.3rem;">⚡</span>
-                </div>
-                <div>
-                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Exponential Scalability</h5>
-                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Quantum states scale exponentially with system size — modeling complexity classical computers can't reach</p>
-                </div>
-              </div>
-              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
-                <div style="min-width: 40px; height: 40px; background: rgba(0, 230, 118, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <span style="color: rgba(0, 230, 118, 1); font-size: 1.3rem;">🎯</span>
-                </div>
-                <div>
-                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Higher Fidelity</h5>
-                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Captures quantum coherence in market dynamics, material interactions, cellular mechanisms, and neural processes that classical models miss</p>
-                </div>
-              </div>
-              <div style="display: flex; align-items: start;">
-                <div style="min-width: 40px; height: 40px; background: rgba(217, 245, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <span style="color: rgba(217, 245, 0, 1); font-size: 1.3rem;">🔄</span>
-                </div>
-                <div>
-                  <h5 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 0.5rem;">Agentic Recommendation Loop</h5>
-                  <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem;">Invert the model to explore optimal parameters, then let agentic workflows rank hypotheses and recommend next actions across market modeling, material synthesis, molecular simulation, neurofeedback research, and beyond.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4" data-aos="fade-right"><div style="background: rgba(0, 242, 254, 0.06); border: 1px solid rgba(0, 242, 254, 0.28); border-radius: 16px; padding: 2.25rem;"><h4 style="color: #00f2fe; font-size: 1.32rem; margin-bottom: 1.25rem;">What it is</h4><ul class="research-list" style="font-size: 0.97rem; margin-top: 0;"><li>A model learned from brain&ndash;computer interface recordings</li><li>A twin of the dynamics those recordings contain</li><li>Physically consistent by construction</li><li>Something you can question, not just read</li></ul></div></div>
+        <div class="col-lg-6 mb-4" data-aos="fade-left"><div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 16px; padding: 2.25rem;"><h4 style="color: rgba(255,255,255,0.75); font-size: 1.32rem; margin-bottom: 1.25rem;">What it is not</h4><ul class="research-list" style="font-size: 0.97rem; margin-top: 0;"><li>Not a replica of a biological brain</li><li>Not a model of neurons or consciousness</li><li>Not a medical device or diagnostic tool</li><li>Not a demonstrated quantum speed-up</li></ul></div></div>
       </div>
-    </div>
+      <div class="text-center mt-4"><a href="platform.html" class="btn btn-secondary">How it works</a></div></div>
   </div>
-
-  <!------------Real-World Impact Section--------------------------------------------->
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1rem;">Research Applications</h2>
-        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 900px; margin: 0 auto;">
-          Exploring proof-of-concept agentic quantum digital twin applications across finance, quantum materials science, computational omics, and neuroscience (BCI).
-        </p>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="impact-card-lime" style="background: rgba(217, 245, 0, 0.05); border: 1px solid rgba(217, 245, 0, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <div style="width: 60px; height: 60px; background: rgba(217, 245, 0, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
-                <i class="uil uil-chart-line" style="font-size: 2rem; color: rgba(217, 245, 0, 1);"></i>
-              </div>
-              <h4 style="color: rgba(217, 245, 0, 1); font-size: 1.3rem; margin: 0;">Quantitative Finance Research</h4>
-            </div>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
-              Research platform for market behavior modeling, quantitative analysis simulation, and computational economics studies. Agentic workflows interpret market state tensors to rank anomalies, generate regime hypotheses, and recommend hedge or portfolio triage scenarios for research review.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Market Modeling</span>
-              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Risk Simulation</span>
-              <span style="background: rgba(217, 245, 0, 0.15); color: rgba(217, 245, 0, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Regime Analysis</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="impact-card-orange" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <div style="width: 60px; height: 60px; background: rgba(255, 0, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
-                <i class="uil uil-atom" style="font-size: 2rem; color: rgba(255, 0, 255, 1);"></i>
-              </div>
-              <h4 style="color: rgba(255, 0, 255, 1); font-size: 1.3rem; margin: 0;">Quantum Matter Research</h4>
-            </div>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
-              Research platform for quantum chemistry, materials science, and molecular dynamics simulation. Agentic orchestration links simulated matter states to experiment design, candidate prioritization, and hypothesis refinement for academic collaboration.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Quantum Chemistry</span>
-              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Materials Science</span>
-              <span style="background: rgba(255, 0, 255, 0.15); color: rgba(255, 0, 255, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Molecular Dynamics</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="impact-card-green" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <div style="width: 60px; height: 60px; background: rgba(0, 230, 118, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
-                <i class="uil uil-dna" style="font-size: 2rem; color: rgba(0, 230, 118, 1);"></i>
-              </div>
-              <h4 style="color: rgba(0, 230, 118, 1); font-size: 1.3rem; margin: 0;">Computational Biology Research</h4>
-            </div>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
-              Research tools for in-silico molecular modeling, compound screening simulation, and cellular response analysis. Agentic workflows connect biological state tensors to pathway hypotheses, biomarker triage, and intervention-design research.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Molecular Simulation</span>
-              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Cellular Modeling</span>
-              <span style="background: rgba(0, 230, 118, 0.15); color: rgba(0, 230, 118, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Systems Biology</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <div style="width: 60px; height: 60px; background: rgba(0, 242, 254, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem;">
-                <i class="uil uil-brain" style="font-size: 2rem; color: rgba(0, 242, 254, 1);"></i>
-              </div>
-              <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.3rem; margin: 0;">Neuroscience & BCI Research</h4>
-            </div>
-            <p style="color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 1rem;">
-              Experimental platform for neurofeedback research, cognitive modeling studies, and brain-computer interface development. Agentic workflows analyze neural state shifts, identify stress hubs, and recommend cognitive-state hypotheses or intervention strategies for research validation.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Neurofeedback Research</span>
-              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Cognitive Modeling</span>
-              <span style="background: rgba(0, 242, 254, 0.15); color: rgba(0, 242, 254, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">BCI Development</span>
-            </div>
-          </div>
+    <div class="container"><div class="row align-items-center">
+      <div class="col-lg-6 mb-4" data-aos="fade-right">
+        <div class="glass-card" style="padding:2.25rem;">
+          <p style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;margin-bottom:1.25rem;">
+            Early benchmark &mdash; in-house</p>
+          <div class="stat-row"><span class="k">Recovering real physical wiring</span><span class="v win">Ours leads</span></div>
+          <div class="stat-row"><span class="k">Physical consistency</span><span class="v win">Both, exactly</span></div>
+          <div class="stat-row"><span class="k">Short-term signal prediction</span><span class="v lose">Conventional leads</span></div>
+          <div class="stat-row"><span class="k">Fine-grained rhythm detail</span><span class="v lose">Conventional leads</span></div>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,.5);margin:1.25rem 0 0;">Public brain-recording data. Full detail in the manuscripts, in preparation.</p>
         </div>
       </div>
-    </div>
+      <div class="col-lg-6 mb-4" data-aos="fade-left">
+        <h2 class="section-title-glow" style="font-size:1.9rem;text-align:left;margin-bottom:1rem;">
+          Early results, and what we are building on them</h2>
+        <p style="color:rgba(255,255,255,0.75);">We put the state model head to head with a conventional method on public
+        brain-recording data. It recovered real physical structure markedly better, and held physical consistency
+        exactly &mdash; while conventional methods still lead on short-horizon signal prediction.</p><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size: 0.86rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem;">Where this sits</p><p style="margin:0; color: rgba(255,255,255,0.8); line-height:1.7;">This is an early in-house benchmark and the first of a planned series. Three manuscripts are in preparation, and independent replication on larger cohorts is the next milestone.</p></div>
+        <a href="services.html#evidence" style="color:#00f2fe; font-weight:600;">See where the work stands &rarr;</a>
+      </div></div></div>
   </div>
-
-  <!------------Technology Foundation Section--------------------------------------------->
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-          <div class="tech-foundation-card" style="background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 16px; padding: 2.5rem;">
-            <div class="text-center mb-4">
-              <span style="font-size: 4rem;">⚛️</span>
-            </div>
-            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.3rem; margin-bottom: 1.5rem; text-align: center;">Our Technology Stack</h4>
-            <ul class="feature-list" style="font-size: 1rem;">
-              <li>High-fidelity quantum state reconstruction from classical data</li>
-              <li>Real-time tensor network optimization on NISQ hardware</li>
-              <li>Scalable variational quantum eigensolver (VQE) pipelines</li>
-              <li>Hybrid quantum-classical inference loops</li>
-              <li>Agentic hypothesis, triage, and recommendation workflows</li>
-              <li>Multi-scale tensor renormalization</li>
-              <li>Error mitigation and noise-aware simulation</li>
-              <li>Cross-platform quantum hardware abstraction</li>
-            </ul>
-            <div class="mt-4 pt-4" style="border-top: 1px solid rgba(139, 92, 246, 0.2);">
-              <h5 style="color: rgba(255,255,255,0.7); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; text-align: center;">Deployment Targets</h5>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
-                <span style="background: rgba(139, 92, 246, 0.15); color: rgba(139, 92, 246, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">IBM Quantum</span>
-                <span style="background: rgba(139, 92, 246, 0.15); color: rgba(139, 92, 246, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">IonQ</span>
-                <span style="background: rgba(139, 92, 246, 0.15); color: rgba(139, 92, 246, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">Google Cirq</span>
-                <span style="background: rgba(139, 92, 246, 0.15); color: rgba(139, 92, 246, 1); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem;">AWS Braket</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-left">
-          <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 2rem;">Proprietary QDT Engine</h2>
-          <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
-            Our core engine builds high-fidelity agentic quantum digital twin models of complex real-world systems from live data. Integrated quantum-classical simulation reconstructs the system state, while agentic workflows translate that state into hypotheses, risk triage, and recommended research actions. <strong>Runs on today's quantum hardware</strong> and scales seamlessly as the technology matures.
-          </p>
-          <div style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid rgba(0, 242, 254, 1); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
-            <h4 style="color: rgba(0, 242, 254, 1); font-size: 1.1rem; margin-bottom: 1rem;">Production-Ready Today</h4>
-            <p style="color: rgba(255,255,255,0.75); margin: 0;">
-              Deploy agentic quantum digital twins on current NISQ devices with error mitigation and noise-aware simulation, while software agents coordinate analysis workflows and recommendation logic around the evolving state model.
-            </p>
-          </div>
-          <div style="background: rgba(139, 92, 246, 0.05); border-left: 3px solid rgba(139, 92, 246, 1); padding: 1.5rem; border-radius: 8px;">
-            <h4 style="color: rgba(139, 92, 246, 1); font-size: 1.1rem; margin-bottom: 1rem;">Future-Proof Architecture</h4>
-            <p style="color: rgba(255,255,255,0.75); margin: 0;">
-              Hardware-agnostic design works across IBM Quantum, IonQ, Google Cirq, AWS Braket, and emerging platforms — ensuring your state models and agentic recommendation workflows evolve with the quantum ecosystem.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------------Get Started CTA Section--------------------------------------------->
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Explore Our Research Platform</h2>
-        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 800px; margin: 0 auto 2.5rem;">
-          Join our educational workshops or collaborate with us on agentic quantum digital twin research and proof-of-concept development
-        </p>
-        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-          <a href="https://workshops.mindversecomputing.com" class="cta-primary-glow" style="padding: 15px 40px; font-size: 1.1rem; text-decoration: none; border-radius: 50px; display: inline-block;" target="_blank" rel="noopener noreferrer">Explore Workshops</a>
-          <a href="https://www.mindversecomputing.com/contact.html" class="btn" style="background: rgba(255, 255, 255, 0.1); color: white; padding: 15px 40px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.3); text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block;">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!------------Disclaimer Section----------------------------------------------->
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 60px 0; border-top: 1px solid rgba(139, 92, 246, 0.2);">
-    <div class="container">
-      <div class="text-center" style="max-width: 1000px; margin: 0 auto;">
-        <h3 style="color: rgba(139, 92, 246, 0.9); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 600;">Research & Development Notice</h3>
-        <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.8; text-align: left;">
-          <strong>Mindverse Computing</strong> is a research and development company focused on advancing agentic quantum digital twin technologies. Our platforms (QVMa, QVF, QVO, QVM) are experimental research tools designed for academic collaboration, proof-of-concept studies, and educational purposes. They combine integrated quantum-classical simulation with agentic workflows for hypothesis generation, anomaly triage, and research recommendation support. <strong>All prototypes and proof-of-concept models are developed and demonstrated using synthetic data, simulated datasets, and anonymized research data</strong> to ensure regulatory compliance and ethical standards. <strong>We do not provide medical diagnoses, treatments, therapeutic interventions, healthcare services, financial advice, investment recommendations, or any regulated services.</strong> All applications described on this website represent future research directions and proof-of-concept explorations. Any use of our platforms should be conducted in appropriate research settings with proper oversight, regulatory compliance, and ethical review. Data handling must comply with applicable privacy regulations including HIPAA, GDPR, and institutional review board requirements. For research collaborations or partnership inquiries, please contact us directly.
-        </p>
-      </div>
-    </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 90px 0;">
+    <div class="container"><div class="text-center" data-aos="fade-up">
+      <h2 class="section-title-glow" style="font-size:2.2rem;margin-bottom:1rem;">Working on brains, learning, or neurological care?</h2>
+      <p style="color:rgba(255,255,255,0.75);max-width:620px;margin:0 auto 2rem;">We are looking for research
+      collaborators, a first education pilot partner, and investors who want to look closely at the science.</p>
+      <div class="hero-buttons" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="investors.html" class="btn btn-secondary">Investment case</a>
+      </div></div></div>
   </div>
 
   <!------------Footer--------------------------------------------->
-  <div class="site-footer bg-void-magenta"
-    style="border-top: 1px solid rgba(139, 92, 246, 0.2); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+  <div class="site-footer"
+    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
     <div class="container">
       <div class="row">
 
         <!-- About and Social -->
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="widget mb-4">
-            <h3 style="color: white;">About Us</h3>
-            <p style="line-height: 1.7;">Agentic quantum digital twins for finance (QVF), matter (QVMa), omics (QVO), and mind (QVM) &mdash; powered by Mindverse Computing's integrated quantum-classical simulation and recommendation workflow technology.</p>
+            <h3 style="color: white; font-size: 1.22rem;">Mindverse Computing</h3>
+            <p style="line-height: 1.7; font-size: 0.93rem;">The agentic quantum digital twin learned from
+            BCI&nbsp;data &mdash; an executable quantum-classical state model, routed into agentic workflows.
+            An early-stage research company; everything here is research, not a medical device.</p>
           </div>
           <div class="widget">
-            <h3 style="color: white;">Connect</h3>
+            <h3 style="color: white; font-size: 1.22rem;">Connect</h3>
             <ul class="list-unstyled social">
-              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer"><span class="icon-twitter"
-                    style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer"><span
-                    class="icon-linkedin" style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer"><span class="icon-youtube"
-                    style="color: var(--neural-accent);"></span></a></li>
-              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer"><span class="icon-facebook"
-                    style="color: var(--neural-accent);"></span></a></li>
+              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Newsletter Subscription -->
-        <div class="col-lg-5 col-md-12">
-          <div class="widget mb-4">
-            <h3 class="mb-3" style="color: white;">Join Our Newsletter</h3>
-            <p style="line-height: 1.7;">Stay updated with our latest research and breakthroughs.</p>
-
-            <form id="footer-subscribe-form">
-              <div class="form-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <label for="footer-email-input" class="sr-only visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
-                <input name="email" id="footer-email-input" placeholder="Enter your email" required type="email"
-                  class="form-control" style="flex: 1; min-width: 200px; background-color: white;
-                  color: #333; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 10px 20px;">
-                <button type="submit" class="cta-primary-glow"
-                  style="padding: 10px 24px; border-radius: 50px; white-space: nowrap;">Subscribe</button>
-              </div>
-            </form>
-            <div id="subscribe-message" style="margin-top: 10px; color: rgba(255,255,255,0.7); font-size: 0.9rem;"></div>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-lg-2 col-md-6">
+        <!-- The platform -->
+        <div class="col-lg-3 col-md-6 mb-4">
           <div class="widget">
-            <h3 style="color: white;">Quick Links</h3>
+            <h3 style="color: white; font-size: 1.22rem;">The platform</h3>
             <ul class="list-unstyled links">
-              <li><a href="https://finance.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">QVF &mdash; Markets</a></li>
-              <li><a href="https://matter.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">QVMa &mdash; Matter</a></li>
-              <li><a href="https://omics.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">QVO &mdash; Cell</a></li>
-              <li><a href="https://bci.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">QVM &mdash; Mind</a></li>
-              <li><a href="https://www.mindversecomputing.com/services.html" style="color: rgba(255,255,255,0.6);">Services</a></li>
-              <li><a href="https://learning.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">Learning Hub</a></li>
-              <li><a href="https://community.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">Community</a></li>
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
+              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
+              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
+              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Workspaces -->
-        <div class="col-lg-2 col-md-6">
+        <!-- Research directions -->
+        <div class="col-lg-3 col-md-6 mb-4">
           <div class="widget">
-            <h3 style="color: white;">Explore</h3>
+            <h3 style="color: white; font-size: 1.22rem;">Research directions</h3>
             <ul class="list-unstyled links">
-              <li><a href="https://finance.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">Finance Workspace</a></li>
-              <li><a href="https://matter.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">Matter Workspace</a></li>
-              <li><a href="https://omics.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">Omics Workspace</a></li>
-              <li><a href="https://bci.mindversecomputing.com" style="color: rgba(255,255,255,0.6);" target="_blank" rel="noopener noreferrer">BCI Workspace</a></li>
-              <li><a href="https://www.mindversecomputing.com/market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
-              <li><a href="https://www.mindversecomputing.com/investors.html" style="color: rgba(255,255,255,0.6);">Invest</a></li>
+              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
+                <span style="color: rgba(255,255,255,0.35); font-size: 0.78rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
+                <span style="color: rgba(255,255,255,0.35); font-size: 0.78rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
             </ul>
           </div>
         </div>
 
-        
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size: 1.22rem;">Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
+            </ul>
+          </div>
+        </div>
 
       </div>
 
       <!-- Footer Bottom -->
-      <div class="row mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
-        <div class="col-12 text-center">
-          <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin: 0;">
-            &copy; <script>document.write(new Date().getFullYear());</script> Mindverse Computing. All Rights Reserved.
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-lg-8">
+          <p style="color: rgba(255,255,255,0.55); font-size: 0.82rem; margin: 0; line-height: 1.7;">
+            Research and development notice: our platforms are experimental research tools for academic
+            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
+            regulated service. Three manuscripts are currently in preparation.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <p style="color: rgba(255,255,255,0.55); font-size: 0.85rem; margin: 0;">
+            &copy; 2026 Mindverse Computing. All Rights Reserved.
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Newsletter Script for Google Sheets -->
-  <script>
-    document.getElementById("footer-subscribe-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const email = document.getElementById("footer-email-input").value;
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec";
-      const formData = new FormData();
-      formData.append("email", email);
-
-      fetch(scriptURL, { method: "POST", body: formData })
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById("subscribe-message").innerText = "Subscription successful!";
-          document.getElementById("footer-email-input").value = "";
-        })
-        .catch(error => {
-          document.getElementById("subscribe-message").innerText = "Error. Try again.";
-          console.error("Error!", error.message);
-        });
-    });
-  </script>
-
-  <!-- Scripts -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -845,7 +241,6 @@
   <script src="js/custom.js"></script>
   <script src="js/investor-effects.js"></script>
   <script src="js/brain-network.js"></script>
-
 </body>
 
 </html>
