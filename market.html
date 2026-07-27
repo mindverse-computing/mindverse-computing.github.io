@@ -69,25 +69,11 @@
       </div>
     </div>
   </nav>
-
-  
-  <div class="investor-section-premium page-head" id="home"
-    style="background: #151b3b; padding: 130px 0 56px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <h1 class="fresh-title page-title" data-aos="fade-up">Market</h1>
-          <p class="page-sub" data-aos="fade-up" data-aos-delay="120">Neuroscience research tools first, education second, clinical research third &mdash; sequenced by difficulty, and all selling the same state model to people working with the same recordings.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 100px;">
     <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
-      <h2 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">One market, entered in three places</h2>
+      <h1 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">One market, entered in three places</h1>
       <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">We are not spreading across unrelated industries. Every
-      route below sells the same state model to people who work with the same recordings.</p></div></div></div>
+      route below sells the same stack &mdash; the Quantum Virtual Mind (QVM) and its agent layer &mdash; to people who work with the same recordings.</p></div></div></div>
   </div>
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
     <div class="container">
@@ -130,11 +116,12 @@
       <div class="row">
 
         <!-- About and Social -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4">
           <div class="widget mb-4">
             <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
-            <p style="line-height:1.75; font-size:0.977rem;">The agentic quantum digital twin learned from
-            BCI&nbsp;data &mdash; an executable quantum-classical state model, routed into agentic workflows.
+            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
+            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
+            state model &mdash; wrapped in agentic workflows.
             An early-stage research company; everything here is research, not a medical device.</p>
           </div>
           <div class="widget">
@@ -147,9 +134,31 @@
             </ul>
           </div>
         </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
+            and what we publish. No marketing.</p>
+            <form id="footer-subscribe-form" novalidate>
+              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
+                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+                <input name="email" id="footer-email-input" type="email" required
+                  placeholder="Enter your email" autocomplete="email"
+                  style="flex:1; min-width:190px; background:#fff; color:#222;
+                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
+                  padding:10px 20px; font-size:0.977rem;">
+                <button type="submit" class="btn btn-primary"
+                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
+              </div>
+            </form>
+            <div id="subscribe-message" role="status" aria-live="polite"
+              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
+          </div>
+        </div>
+
 
         <!-- The platform -->
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-2 col-md-6 mb-4">
           <div class="widget">
             <h3 style="color: white; font-size:1.11rem;">The platform</h3>
             <ul class="list-unstyled links">
@@ -162,7 +171,7 @@
         </div>
 
         <!-- Research directions -->
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-2 col-md-6 mb-4">
           <div class="widget">
             <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
             <ul class="list-unstyled links">
@@ -219,6 +228,39 @@
   <script src="js/aos.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/investor-effects.js"></script>
+
+<script>
+(function () {
+  var form = document.getElementById("footer-subscribe-form");
+  if (!form) return;
+  var input = document.getElementById("footer-email-input");
+  var note  = document.getElementById("subscribe-message");
+  var btn   = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = (input.value || "").trim();
+    if (!email || email.indexOf("@") < 1) {
+      note.innerText = "Please enter a valid email address.";
+      return;
+    }
+    btn.disabled = true;
+    note.innerText = "Subscribing\u2026";
+    var data = new FormData();
+    data.append("email", email);
+    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
+      .then(function (r) { return r.text(); })
+      .then(function () {
+        note.innerText = "Thanks \u2014 you are subscribed.";
+        input.value = "";
+      })
+      .catch(function (err) {
+        note.innerText = "Something went wrong. Email contact@mindversecomputing.com instead.";
+        console.error(err);
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
 </body>
 
 </html>
