@@ -19,8 +19,8 @@
   padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
 .stat-row:last-child{border-bottom:0;padding-bottom:0}
 .stat-row:first-of-type{padding-top:0}
-.stat-row .k{font-size:.93rem;color:rgba(255,255,255,.78)}
-.stat-row .v{font-weight:700;font-size:.9rem;text-align:right;flex:none;color:#fff}
+.stat-row .k{font-size:.95rem;color:rgba(255,255,255,.78)}
+.stat-row .v{font-weight:700;font-size:.95rem;text-align:right;flex:none;color:#fff}
 .stat-row .v.win{color:#00f2fe}
 .stat-row .v.lose{color:rgba(255,255,255,.58)}
 
@@ -33,7 +33,7 @@
 .s-live{background:rgba(0,230,118,.13);color:#00e676;border:1px solid rgba(0,230,118,.3)}
 
 /* harmonisation matrix */
-.matrix{width:100%;border-collapse:separate;border-spacing:0;font-size:.92rem;
+.matrix{width:100%;border-collapse:separate;border-spacing:0;font-size:.97rem;
   background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
   border-radius:20px;overflow:hidden}
 .matrix th,.matrix td{padding:16px 20px;text-align:left;vertical-align:top;
@@ -55,10 +55,10 @@
 
 /* contact form fields */
 .field{margin-bottom:18px}
-.field label{display:block;font-size:.85rem;color:rgba(255,255,255,.8);margin-bottom:7px;font-weight:500}
+.field label{display:block;font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:7px;font-weight:500}
 .field input,.field textarea,.field select{width:100%;padding:12px 15px;border-radius:10px;
   background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#fff;
-  font-family:inherit;font-size:.94rem}
+  font-family:inherit;font-size:1rem}
 .field input:focus,.field textarea:focus,.field select:focus{outline:0;border-color:#00f2fe;
   background:rgba(255,255,255,.08)}
 .field textarea{min-height:130px;resize:vertical}
@@ -86,4 +86,17 @@
   .page-head{padding:104px 0 40px !important}
   .page-head .page-title{font-size:1.7rem}
   .page-head .page-sub{font-size:.99rem}
+}
+
+
+/* ── Readability floor (root is now 16px) ─────────────────────────────────────
+   Body copy inherits a comfortable measure and leading. Inline sizes in the
+   markup override where a specific block needs to differ. */
+p, li { line-height: 1.75; }
+.container p, .section p { max-width: 68ch; }
+.container .text-center p, .section .text-center p,
+.center p, .lede { max-width: 72ch; margin-left: auto; margin-right: auto; }
+@media (max-width: 767px) {
+  :root { font-size: 100%; }
+  p, li { font-size: 1rem; line-height: 1.7; }
 }

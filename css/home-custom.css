@@ -1,5 +1,5 @@
-:root { font-size: 87.5%; } /* 1rem = 14px — proportional font scale */
-body { font-size: 14px; } /* override style.css 16px */
+:root { font-size: 100%; } /* 1rem = 16px — readable base */
+body { font-size: 16px; line-height: 1.7; }
 
 .site-nav .logo .nav-brand-text {
   margin-left: 0;
