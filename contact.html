@@ -117,7 +117,7 @@
       <div class="col-lg-5 mb-4" data-aos="fade-right">
         <h2 class="section-title-glow" style="font-size:1.775rem;text-align:left;margin-bottom:1rem;">Tell us what you are working on</h2>
         <p style="color:rgba(255,255,255,0.82); line-height:1.75">The more context you give us, the more useful our reply will be. If you
-        have recording data, tell us what kind and roughly how much.</p><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-envelope" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Email</h4></div><p style="margin:0 0 1.4rem;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;"><span data-cloak-email="link" data-cloak-color="#00f2fe"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-map-marker" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Location</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Lynnwood, WA-98087, USA<br><span style="font-size:0.866rem;color:rgba(255,255,255,.55);">We work with partners and researchers worldwide.</span></p></div></div></div>
+        have recording data, tell us what kind and roughly how much.</p><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-envelope" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Email</h4></div><p style="margin:0 0 1.4rem;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;"><span data-cloak-email="link" data-cloak-color="#00f2fe" data-cloak-text="Write to us &rarr;"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-map-marker" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Location</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Lynnwood, WA-98087, USA<br><span style="font-size:0.866rem;color:rgba(255,255,255,.55);">We work with partners and researchers worldwide.</span></p></div></div></div>
       <div class="col-lg-7 mb-4" data-aos="fade-left"><div class="glass-card" style="padding:2.25rem;">
         <form id="contact-form" novalidate>
           <div class="field"><label for="cf-name">Full name</label>
@@ -136,7 +136,7 @@
           <div id="form-message" role="status" aria-live="polite"
             style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;"></div>
           <p style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;">
-            Prefer email? Write to <span data-cloak-email="link" data-cloak-color="#00f2fe"><noscript>the address on our contact card</noscript></span>.</p>
+            Prefer email? <span data-cloak-email="link" data-cloak-color="#00f2fe" data-cloak-text="Open your mail client &rarr;"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p>
         </form></div></div></div></div>
   </div>
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 70px 0;">
@@ -327,8 +327,8 @@
       })
       .catch(function (err) {
         var a = 'contact' + String.fromCharCode(64) + 'mindversecomputing.com';
-        note.innerHTML = 'Something went wrong. Please try again, or write to ' +
-          '<a href="mail' + 'to:' + a + '" style="color:#00f2fe;">' + a + '</a>.';
+        note.innerHTML = 'Something went wrong. Please try again, or ' +
+          '<a href="mail' + 'to:' + a + '" style="color:#00f2fe;">email us directly</a>.';
         console.error(err);
       })
       .finally(function () { btn.disabled = false; });
@@ -337,23 +337,21 @@
 </script>
 
 <script>
-// Assemble the contact address at runtime so it is not present as plain text
-// in the served HTML. Elements opt in with data-cloak-email.
+// The contact address is never written into the page as readable text and never
+// appears in the served HTML. A mailto: link is assembled at runtime so clicking
+// "Email us" opens the visitor's mail client pre-addressed, while the address
+// itself stays out of the page for scrapers and casual readers alike.
 (function () {
   var u = 'contact', d = 'mindversecomputing' + '.' + 'com';
   var addr = u + String.fromCharCode(64) + d;
   document.querySelectorAll('[data-cloak-email]').forEach(function (el) {
-    var mode = el.getAttribute('data-cloak-email');
-    if (mode === 'link') {
-      var a = document.createElement('a');
-      a.href = 'mail' + 'to:' + addr;
-      a.textContent = addr;
-      a.style.color = el.getAttribute('data-cloak-color') || '#00f2fe';
-      el.textContent = '';
-      el.appendChild(a);
-    } else {
-      el.textContent = addr;
-    }
+    var a = document.createElement('a');
+    a.href = 'mail' + 'to:' + addr;
+    a.textContent = el.getAttribute('data-cloak-text') || 'Email us';
+    a.style.color = el.getAttribute('data-cloak-color') || '#00f2fe';
+    a.setAttribute('aria-label', 'Open your email client to write to us');
+    el.textContent = '';
+    el.appendChild(a);
   });
 })();
 </script>
