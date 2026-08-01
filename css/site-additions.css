@@ -100,3 +100,60 @@ p, li { line-height: 1.75; }
   :root { font-size: 100%; }
   p, li { font-size: 1rem; line-height: 1.7; }
 }
+
+/* ── Research-card components ─────────────────────────────────────────────────
+   Ported from samples/mindverse-0.1, whose definitions lived in an inline
+   <style> block rather than a stylesheet. Values copied verbatim; only the
+   hover shadow is parameterised so each product can carry its own accent. */
+
+.research-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+  cursor: default;
+}
+.research-card:hover { transform: translateY(-4px); }
+
+.domain-tag {
+  display: inline-block; padding: 4px 16px; border-radius: 20px;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem;
+}
+.status-chip {
+  display: inline-block; padding: 4px 13px; border-radius: 20px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.4px;
+}
+.product-name { font-weight: 700; display: block; margin-bottom: 2px; }
+.product-desc { display: block; margin-bottom: 4px; color: rgba(255,255,255,0.72); line-height: 1.75; }
+.building-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 2px;
+  font-weight: 700; margin-bottom: 0.6rem; opacity: 0.75;
+}
+.research-card .research-list li { margin-bottom: 1.35rem; }
+
+@media (max-width: 767px) {
+  .research-card { padding: 1.75rem !important; }
+}
+
+/* Third application column in the lifecycle matrix. Violet #A78BFA is the
+   restoration accent — 5.37:1 on the navy panels, where the sample's #8B5CF6
+   measured 3.45 and failed AA. */
+.matrix th.rest { color:#A78BFA; }
+
+/* ── Email cloaking ───────────────────────────────────────────────────────────
+   The address is never written as plain text in the markup. It is assembled at
+   runtime from user/domain parts, so a scraper reading the HTML source finds
+   nothing to harvest, while a person sees a normal mailto link. Falls back to a
+   readable instruction if JavaScript is off. */
+.cloak { unicode-bidi: bidi-override; direction: ltr; }
+
+/* ── Roadmap timeline ─────────────────────────────────────────────────────────
+   Five nodes in a flex row. Below the lg breakpoint the horizontal line stops
+   making sense, so the nodes stack and the line is hidden rather than left
+   floating across a vertical list. */
+@media (max-width: 991px) {
+  .timeline-nodes { flex-wrap: wrap; justify-content: center !important; gap: 32px !important; }
+  .timeline-node { flex: 0 0 45% !important; }
+  .timeline-line, .timeline-glow-line { display: none !important; }
+  .node-year { margin-top: 16px !important; }
+}
+@media (max-width: 575px) {
+  .timeline-node { flex: 0 0 100% !important; }
+}

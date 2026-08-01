@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /_strategy/
+
+# Not part of the public site
 Disallow: /README.md
 
 Sitemap: https://www.mindversecomputing.com/sitemap.xml

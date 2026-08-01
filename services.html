@@ -3,7 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Mindverse Computing">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png">
@@ -47,6 +78,11 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
   <nav class="site-nav mb-5">
 
@@ -69,53 +105,188 @@
       </div>
     </div>
   </nav>
-  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 100px;">
-    <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
-      <h1 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">What we are proposing to build</h1>
-      <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">Our proposed research runs in two directions from a
-      single state model: how healthy brains learn, and how conditions move a brain away from its own baseline.</p>
-      </div></div>
-      <div class="row justify-content-center mt-4"><div class="col-lg-9"><div class="building-box" style="background: rgba(255, 255, 255, 0.06); border-left: 3px solid rgba(255,255,255,0.6); border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: rgba(255,255,255,0.82); font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Read the status labels</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Almost everything below is a proposal. The QVM is built and benchmarked; the applications are research directions we have specified and are now developing.</p></div></div></div></div>
-  </div>
-  <div class="investor-section-premium" id="superlearning" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
-    <div class="container"><div class="row">
-      <div class="col-lg-6 mb-4" data-aos="fade-right">
-        <p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:#00e676;font-weight:700;margin-bottom:0.9rem; line-height:1.75">HEALTHY DIRECTION</p>
-        <h2 class="section-title-glow" style="font-size:1.82rem;text-align:left;margin-bottom:1.1rem;">Superlearning &mdash; Proposed research</h2>
-        <p style="color:rgba(255,255,255,0.82); line-height:1.75">Today&rsquo;s adaptive learning tools watch answers. That tells you what a student has already failed to learn &mdash; too late, and it cannot distinguish a learner who is stretched from one who stopped absorbing twenty minutes ago.</p><p style="color:rgba(255,255,255,0.82); line-height:1.75">Reading state directly could. Whether it does is the research question, not a claim.</p><div class="building-box" style="background: rgba(0, 230, 118, 0.06); border-left: 3px solid #00e676; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00e676; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">What we would need to show</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">That a state model built from a learner&rsquo;s own recordings predicts readiness better than their answer history does. No such study has been run.</p></div></div>
-      <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.82);margin-bottom:1.2rem;font-weight:600; line-height:1.75">Research Products</p><ul class="research-list list-green" style="margin-top:0;"><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00e676;font-weight:700;font-size:1.136rem;">Superlearning Mind Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">A map of healthy variation in the dynamics a BCI can see &mdash; between people, and within one person as they learn. A learner would be a position on the map; learning a path through it.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00e676;font-weight:700;font-size:1.136rem;">Learning Track Designer</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">Would turn a learner&rsquo;s position into a sequence: what to study next, at what difficulty, and when to stop for the day. Designed to sit behind an existing platform.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00e676;font-weight:700;font-size:1.136rem;">Cortical State Library</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">A reference catalogue of distinct states across arousal, sensorimotor, cognitive and affective tiers. Specified and scheduled.</p></li></ul></div>
-      </div></div>
-  </div>
-  <div class="investor-section-premium" id="clinical" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container"><div class="row">
-      <div class="col-lg-6 mb-4" data-aos="fade-right">
-        <p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:#FF00FF;font-weight:700;margin-bottom:0.9rem; line-height:1.75">CLINICAL DIRECTION</p>
-        <h2 class="section-title-glow" style="font-size:1.82rem;text-align:left;margin-bottom:1.1rem;">Neurological Perturbation Studies</h2>
-        <p style="color:rgba(255,255,255,0.82); line-height:1.75">Neurological conditions unfold over months and years, but the measurements taken along the way sit in unconnected documents.</p><p style="color:rgba(255,255,255,0.82); line-height:1.75">Our proposed clinical research studies how a condition moves a person away from their own healthy baseline &mdash; measured against themselves rather than a population average.</p><div class="building-box" style="background: rgba(255, 0, 255, 0.06); border-left: 3px solid #FF00FF; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #FF66FF; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Not a medical device</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Nothing in this programme diagnoses, prescribes, or is used in patient care. Any future clinical application would require regulatory approval, ethical review, and clinical validation. No patient data has been fitted.</p></div></div>
-      <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.82);margin-bottom:1.2rem;font-weight:600; line-height:1.75">Research Products</p><ul class="research-list list-magenta" style="margin-top:0;"><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#FF00FF;font-weight:700;font-size:1.136rem;">Longitudinal Neural State Record</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">Would hold a quantitative model of the person&rsquo;s healthy brain function alongside how far their condition has moved them from it, tracking change rather than storing a diagnosis code.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#FF00FF;font-weight:700;font-size:1.136rem;">Neural Perturbation Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">A reference library of neurological and psychiatric conditions, each characterised by its signature in the recorded dynamics. Specified in draft.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#FF00FF;font-weight:700;font-size:1.136rem;">Closed-Loop Neuromodulation Research</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">Proposed</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">Would read live signals, compare against the healthy reference, and rank candidate stimulation approaches <strong>for researchers to evaluate</strong> &mdash; never an instruction to administer.</p></li></ul></div>
-      </div></div>
-  </div>
-  <div class="investor-section-premium" id="evidence" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
-    <div class="container"><div class="text-center mb-5" data-aos="fade-up">
-      <p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.82);font-weight:700; line-height:1.75">Evidence</p>
-      <h2 class="section-title-glow" style="font-size:2.002rem;margin:0.8rem 0 1rem;">Where the evidence stands</h2>
-      <p style="color:rgba(255,255,255,0.82);max-width:760px;margin:0 auto; line-height:1.75">We benchmark our approach against established methods on public data and write up everything we find. Three manuscripts are in preparation, and we are glad to walk collaborators through the current drafts.</p></div>
-      <div class="row">
-        <div class="col-lg-6 mb-4" data-aos="fade-right">
-          <div class="glass-card" style="padding:2.25rem;">
-            <p style="font-size:0.938rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;margin-bottom:1.25rem; line-height:1.75">
-              Early benchmark &mdash; in-house</p>
-            <div class="stat-row"><span class="k">Recovering real physical wiring</span><span class="v win">Ours leads</span></div>
-            <div class="stat-row"><span class="k">Staying physically consistent</span><span class="v win">Both, exactly</span></div>
-            <div class="stat-row"><span class="k">Internal energy bookkeeping</span><span class="v win">Ours leads</span></div>
-            <div class="stat-row"><span class="k">Short-term signal prediction</span><span class="v lose">Conventional leads</span></div>
-            <div class="stat-row"><span class="k">Fine-grained rhythm detail</span><span class="v lose">Conventional leads</span></div>
-            <div class="stat-row"><span class="k">A control test we set ourselves</span><span class="v lose">Neither passed</span></div>
-          </div></div>
-        <div class="col-lg-6 mb-4" data-aos="fade-left"><p style="font-size:0.938rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.82);margin-bottom:1.2rem;font-weight:600; line-height:1.75">Research Products</p><ul class="research-list list-magenta" style="margin-top:0;"><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00f2fe;font-weight:700;font-size:1.136rem;">The state model</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">Describes the modelling approach for brain&ndash;computer interfaces and reports the early comparison shown here.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00f2fe;font-weight:700;font-size:1.136rem;">The Mind Atlas</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">A proposal for how a shared baseline could be specialised into an individual. First draft; validation study designed and scheduled.</p></li><li style="margin-bottom:1.4rem; line-height:1.75"><span style="color:#00f2fe;font-weight:700;font-size:1.136rem;">Neural state records</span> <span class="status s-soon" style="margin-left:0.5rem;vertical-align:middle;">In preparation</span><p style="margin:0.45rem 0 0;color:rgba(255,255,255,0.82);font-size:0.997rem;line-height:1.75;">A proposal for representing a neurological state as a working model. First draft; no patient data fitted.</p></li></ul><a href="contact.html" style="color:#00f2fe;font-weight:600;">Ask about the current drafts &rarr;</a></div></div><div class="row justify-content-center mt-4"><div class="col-lg-10"><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">What comes next</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">These are early in-house results and an encouraging signal. Our approach is not better at everything &mdash; conventional methods still lead on short-horizon prediction, and quantum speed-up is not part of our claim. Larger cohorts and independent replication are the next milestones, and that work is underway.</p></div></div></div></div>
-  </div>
+  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 64px;">
 
-  <!------------Footer--------------------------------------------->
+      <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
+        <p class="domain-label" style="color:#00f2fe;">RESEARCH PROGRAMME</p>
+        <h1 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">One core, three applications</h1>
+        <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">The Quantum Virtual Mind is the model. Everything else asks the same question of it &mdash; where is this
+        person relative to their own baseline, and in which direction &mdash; and acts on the answer differently.
+        Learning pushes toward the edge of capacity; restoration moves back from it; clinical research tracks
+        departures that persist. Each card below carries its own status.</p>
+      </div></div></div>
+      </div>
+
+      <div class="investor-section-premium" style="background:#1B264F; padding: 20px 0 80px;">
+        <div class="container">
+
+      <div class="research-card" data-aos="fade-up"
+        style="background: rgba(0, 242, 254,0.05); border: 1px solid rgba(0, 242, 254,0.3);
+               border-radius: 24px; padding: 3rem; position: relative; overflow: hidden; margin-bottom: 2.25rem;">
+        <div style="position:absolute; top:0; left:0; right:0; height:4px;
+             background: linear-gradient(90deg, #00f2fe, rgba(255,255,255,0.15));"></div>
+        <div class="row align-items-start">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color:#00f2fe;">THE CORE</p>
+            <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.75rem; line-height:1.3;">Quantum Virtual Mind</h2>
+            <span class="domain-tag" style="background:rgba(0, 242, 254,0.15); color:#00f2fe;
+              border:1px solid rgba(0, 242, 254,0.35);">QVM</span>
+            <p style="color:rgba(255,255,255,0.82); line-height:1.8; font-size:1rem;">The QVM learns a model of the dynamics in a person&rsquo;s brain&ndash;computer interface recordings &mdash; not a pattern-matcher over those recordings, but a model of the system producing them. It answers which component of the dynamics changed rather than only that something changed, and it compares a person against their own baseline rather than a population average.</p>
+            <div class="building-box" style="border-left:3px solid #00f2fe; background:rgba(255,255,255,0.04);
+                 padding:1.25rem 1.4rem; border-radius:0 10px 10px 0; margin-top:1.5rem;">
+              <p class="building-label" style="color:#00f2fe;">What we are building</p>
+              <p style="margin:0; color:rgba(255,255,255,0.82); font-size:0.97rem; line-height:1.75;">The state model, benchmarked in house against a classical baseline on public EEG data, and the agent layer that surrounds it &mdash; specialists that handle data access, model development, perturbation studies, and turning results into recommendations.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:2px;
+               color:rgba(255,255,255,0.45); margin-bottom:1rem; font-weight:600;">Research products</p>
+            <ul class="research-list" style="color:#00f2fe;"><li><span class="product-name" style="color:#00f2fe;">Cortical State Model</span><span class="product-desc">An executable quantum&ndash;classical model of the dynamics a BCI can see. Physical consistency holds by construction, so it cannot produce a state the underlying system could not reach.</span><span class="status-chip" style="background:rgba(0, 242, 254,0.12); color:#00f2fe; border:1px solid rgba(0, 242, 254,0.3); margin-top:6px;">Built &amp; benchmarked</span></li><li><span class="product-name" style="color:#00f2fe;">Agent Layer</span><span class="product-desc">Eight specialist agents across the lifecycle, from finding and preparing recordings through to designing what to do next. They advise; people decide.</span><span class="status-chip" style="background:rgba(0, 242, 254,0.12); color:#00f2fe; border:1px solid rgba(0, 242, 254,0.3); margin-top:6px;">In development</span></li><li><span class="product-name" style="color:#00f2fe;">Perturbation Engine</span><span class="product-desc">The shared operation underneath both applications: measure how far a state has moved from a personal baseline, and in which direction.</span><span class="status-chip" style="background:rgba(0, 242, 254,0.12); color:#00f2fe; border:1px solid rgba(0, 242, 254,0.3); margin-top:6px;">In development</span></li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card" data-aos="fade-up"
+        style="background: rgba(0, 230, 118,0.05); border: 1px solid rgba(0, 230, 118,0.3);
+               border-radius: 24px; padding: 3rem; position: relative; overflow: hidden; margin-bottom: 2.25rem;">
+        <div style="position:absolute; top:0; left:0; right:0; height:4px;
+             background: linear-gradient(90deg, #00e676, rgba(255,255,255,0.15));"></div>
+        <div class="row align-items-start">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color:#00e676;">HEALTHY DIRECTION &middot; PERFORMANCE</p>
+            <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.75rem; line-height:1.3;">Superlearning</h2>
+            <span class="domain-tag" style="background:rgba(0, 230, 118,0.15); color:#00e676;
+              border:1px solid rgba(0, 230, 118,0.35);">QVM &rarr; LEARNING</span>
+            <p style="color:rgba(255,255,255,0.82); line-height:1.8; font-size:1rem;">Adaptive learning tools watch answers, which tells you what a learner has already failed to grasp &mdash; after the fact, and without distinguishing someone who is productively stretched from someone who stopped absorbing twenty minutes ago. Reading cortical state directly addresses both gaps. Establishing that it does is our research question.</p>
+            <div class="building-box" style="border-left:3px solid #00e676; background:rgba(255,255,255,0.04);
+                 padding:1.25rem 1.4rem; border-radius:0 10px 10px 0; margin-top:1.5rem;">
+              <p class="building-label" style="color:#00e676;">The question we are answering</p>
+              <p style="margin:0; color:rgba(255,255,255,0.82); font-size:0.97rem; line-height:1.75;">Whether a state model built from a learner&rsquo;s own recordings predicts readiness better than their answer history does. That study has not been run yet; designing it is the current work.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:2px;
+               color:rgba(255,255,255,0.45); margin-bottom:1rem; font-weight:600;">Research products</p>
+            <ul class="research-list" style="color:#00e676;"><li><span class="product-name" style="color:#00e676;">Superlearning Mind Atlas</span><span class="product-desc">A map of healthy variation in the dynamics a BCI can see &mdash; between people, and within one person as they learn. A learner is a position on the map; learning is a path through it.</span><span class="status-chip" style="background:rgba(0, 230, 118,0.12); color:#00e676; border:1px solid rgba(0, 230, 118,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#00e676;">Learning Track Designer</span><span class="product-desc">Turns a learner&rsquo;s position into a sequence: what to study next, at what difficulty, and when to stop for the day. Designed to sit behind an existing learning platform rather than replace it.</span><span class="status-chip" style="background:rgba(0, 230, 118,0.12); color:#00e676; border:1px solid rgba(0, 230, 118,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#00e676;">Cortical State Library</span><span class="product-desc">A reference catalogue of distinct states across arousal, sensorimotor, cognitive and affective tiers &mdash; the vocabulary the other two products are written in.</span><span class="status-chip" style="background:rgba(0, 230, 118,0.12); color:#00e676; border:1px solid rgba(0, 230, 118,0.3); margin-top:6px;">Specified</span></li></ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="research-card" data-aos="fade-up"
+        style="background: rgba(167, 139, 250,0.05); border: 1px solid rgba(167, 139, 250,0.3);
+               border-radius: 24px; padding: 3rem; position: relative; overflow: hidden; margin-bottom: 2.25rem;">
+        <div style="position:absolute; top:0; left:0; right:0; height:4px;
+             background: linear-gradient(90deg, #A78BFA, rgba(255,255,255,0.15));"></div>
+        <div class="row align-items-start">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color:#A78BFA;">HEALTHY DIRECTION &middot; RECOVERY</p>
+            <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.75rem; line-height:1.3;">Restoration &amp; State Regulation</h2>
+            <span class="domain-tag" style="background:rgba(167, 139, 250,0.15); color:#A78BFA;
+              border:1px solid rgba(167, 139, 250,0.35);">QVM &rarr; WELLBEING</span>
+            <p style="color:rgba(255,255,255,0.82); line-height:1.8; font-size:1rem;">Guided meditation, sleep audio, and stress-regulation tools are delivered open-loop today: the same session for everyone, adjusted by self-report at best. The state a person is actually in goes unmeasured, so the content cannot respond to it. Reading arousal and affective state directly closes that loop.</p>
+            <div class="building-box" style="border-left:3px solid #A78BFA; background:rgba(255,255,255,0.04);
+                 padding:1.25rem 1.4rem; border-radius:0 10px 10px 0; margin-top:1.5rem;">
+              <p class="building-label" style="color:#A78BFA;">The question we are answering</p>
+              <p style="margin:0; color:rgba(255,255,255,0.82); font-size:0.97rem; line-height:1.75;">Whether guidance selected from a person&rsquo;s measured state outperforms a fixed programme, on time to settle and on how long the settled state holds. That study has not been run.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:2px;
+               color:rgba(255,255,255,0.45); margin-bottom:1rem; font-weight:600;">Research products</p>
+            <ul class="research-list" style="color:#A78BFA;"><li><span class="product-name" style="color:#A78BFA;">Adaptive Session Engine</span><span class="product-desc">Selects and paces guided audio from where a person&rsquo;s arousal actually sits, rather than from a preset track order &mdash; slowing when they are settling, changing approach when they are not.</span><span class="status-chip" style="background:rgba(167, 139, 250,0.12); color:#A78BFA; border:1px solid rgba(167, 139, 250,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#A78BFA;">Sleep-Onset Guidance</span><span class="product-desc">Uses the descent through arousal states that precedes sleep to time when audio should fade, instead of a fixed timer that either cuts early or plays for hours.</span><span class="status-chip" style="background:rgba(167, 139, 250,0.12); color:#A78BFA; border:1px solid rgba(167, 139, 250,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#A78BFA;">Stress Regulation Tracking</span><span class="product-desc">Measures whether a practice moved someone, and how far &mdash; making a wellbeing routine something you can evaluate rather than assume.</span><span class="status-chip" style="background:rgba(167, 139, 250,0.12); color:#A78BFA; border:1px solid rgba(167, 139, 250,0.3); margin-top:6px;">Proposed</span></li></ul>
+          </div>
+        </div>
+      </div>
+<div class="research-card" data-aos="fade-up"
+        style="background: rgba(255, 0, 255,0.05); border: 1px solid rgba(255, 0, 255,0.3);
+               border-radius: 24px; padding: 3rem; position: relative; overflow: hidden; margin-bottom: 2.25rem;">
+        <div style="position:absolute; top:0; left:0; right:0; height:4px;
+             background: linear-gradient(90deg, #FF00FF, rgba(255,255,255,0.15));"></div>
+        <div class="row align-items-start">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <p class="domain-label" style="color:#FF00FF;">CLINICAL DIRECTION</p>
+            <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.75rem; line-height:1.3;">Clinical &amp; Mental Health Research</h2>
+            <span class="domain-tag" style="background:rgba(255, 0, 255,0.15); color:#FF00FF;
+              border:1px solid rgba(255, 0, 255,0.35);">QVM &rarr; CLINICAL</span>
+            <p style="color:rgba(255,255,255,0.82); line-height:1.8; font-size:1rem;">Neurological and psychiatric conditions unfold over months and years, but the measurements taken along the way sit in unconnected documents. A state model turns that scatter into a trajectory: where a person&rsquo;s dynamics sat at each visit, and how far they have moved since. This is research infrastructure for clinicians and researchers, not a diagnostic device.</p>
+            <div class="building-box" style="border-left:3px solid #FF00FF; background:rgba(255,255,255,0.04);
+                 padding:1.25rem 1.4rem; border-radius:0 10px 10px 0; margin-top:1.5rem;">
+              <p class="building-label" style="color:#FF00FF;">The question we are answering</p>
+              <p style="margin:0; color:rgba(255,255,255,0.82); font-size:0.97rem; line-height:1.75;">Whether departures from a personal baseline, measured in the model&rsquo;s own components, track clinical change more sensitively than the summary scores currently used. We are seeking collaborators with longitudinal recording data.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:2px;
+               color:rgba(255,255,255,0.45); margin-bottom:1rem; font-weight:600;">Research products</p>
+            <ul class="research-list" style="color:#FF00FF;"><li><span class="product-name" style="color:#FF00FF;">Longitudinal State Record</span><span class="product-desc">A person&rsquo;s cortical dynamics tracked across visits, so change is measured against their own history rather than a population norm.</span><span class="status-chip" style="background:rgba(255, 0, 255,0.12); color:#FF00FF; border:1px solid rgba(255, 0, 255,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#FF00FF;">Perturbation Atlas</span><span class="product-desc">A catalogue of how specific conditions displace healthy dynamics &mdash; the clinical mirror of the learning atlas, built from the same measurements.</span><span class="status-chip" style="background:rgba(255, 0, 255,0.12); color:#FF00FF; border:1px solid rgba(255, 0, 255,0.3); margin-top:6px;">Proposed</span></li><li><span class="product-name" style="color:#FF00FF;">Neuromodulation Planning</span><span class="product-desc">Framing a candidate intervention as the inverse of a measured displacement, so a proposal can be examined before it reaches a person.</span><span class="status-chip" style="background:rgba(255, 0, 255,0.12); color:#FF00FF; border:1px solid rgba(255, 0, 255,0.3); margin-top:6px;">Early research</span></li></ul>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+
+      
+      <div class="investor-section-premium" style="background:#151b3b; padding: 76px 0 60px;">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
+            <div class="col-lg-9">
+              <p class="domain-label" style="color:#00e676;">HOW IT WORKS</p>
+              <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.8rem;">What Superlearning actually means</h2>
+              <p style="color:rgba(255,255,255,0.82); font-size:1.05rem; line-height:1.8; margin:0;">
+              Not learning faster by trying harder. Superlearning is the idea that if you can see the state a brain
+              is in, you can stop guessing when it is ready to take on more &mdash; and stop pushing when it is not.
+              The QVM is what makes that state visible.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="glass-card h-100" style="border-color:rgba(0, 242, 254,0.25); padding:1.9rem;">
+                <div style="color:#00f2fe; font-weight:700; font-size:0.7rem; letter-spacing:2px;
+                  text-transform:uppercase; margin-bottom:0.7rem;">Step 1 &middot; QVM</div>
+                <h4 style="color:#fff; font-size:1.08rem; margin:0 0 0.6rem;">Build the baseline</h4>
+                <p style="margin:0; color:rgba(255,255,255,0.8); font-size:0.96rem; line-height:1.7;">
+                The QVM learns a model of one learner&rsquo;s own dynamics from their recordings. Their baseline,
+                not a population average.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="glass-card h-100" style="border-color:rgba(0, 230, 118,0.25); padding:1.9rem;">
+                <div style="color:#00e676; font-weight:700; font-size:0.7rem; letter-spacing:2px;
+                  text-transform:uppercase; margin-bottom:0.7rem;">Step 2 &middot; Measure</div>
+                <h4 style="color:#fff; font-size:1.08rem; margin:0 0 0.6rem;">Locate them today</h4>
+                <p style="margin:0; color:rgba(255,255,255,0.8); font-size:0.96rem; line-height:1.7;">
+                Where do today&rsquo;s dynamics sit relative to that baseline? Engaged and stretched, or past the
+                point of absorbing anything?</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="glass-card h-100" style="border-color:rgba(0, 230, 118,0.25); padding:1.9rem;">
+                <div style="color:#00e676; font-weight:700; font-size:0.7rem; letter-spacing:2px;
+                  text-transform:uppercase; margin-bottom:0.7rem;">Step 3 &middot; Decide</div>
+                <h4 style="color:#fff; font-size:1.08rem; margin:0 0 0.6rem;">Choose what comes next</h4>
+                <p style="margin:0; color:rgba(255,255,255,0.8); font-size:0.96rem; line-height:1.7;">
+                Harder material, consolidation, or stop for the day &mdash; chosen from measured state rather than
+                from how many questions were answered correctly.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="glass-card h-100" style="border-color:rgba(167, 139, 250,0.25); padding:1.9rem;">
+                <div style="color:#A78BFA; font-weight:700; font-size:0.7rem; letter-spacing:2px;
+                  text-transform:uppercase; margin-bottom:0.7rem;">Step 4 &middot; Restore</div>
+                <h4 style="color:#fff; font-size:1.08rem; margin:0 0 0.6rem;">Recover deliberately</h4>
+                <p style="margin:0; color:rgba(255,255,255,0.8); font-size:0.96rem; line-height:1.7;">
+                Consolidation is part of learning, not a gap in it. The same state reading drives rest, sleep, and
+                stress regulation.</p>
+              </div>
+            </div>
+          </div>
+          <p style="text-align:center; color:rgba(255,255,255,0.6); font-size:0.92rem; margin-top:1.6rem;">
+            Steps 1 and 2 are what the QVM does. Steps 3 and 4 are the research questions.</p>
+        </div>
+      </div>
+
+      <!------------Footer--------------------------------------------->
   <div class="site-footer"
     style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
     <div class="container">
@@ -260,7 +431,7 @@
         input.value = "";
       })
       .catch(function (err) {
-        note.innerText = "Something went wrong. Email contact@mindversecomputing.com instead.";
+        note.innerText = "Something went wrong. Please try the contact page instead.";
         console.error(err);
       })
       .finally(function () { btn.disabled = false; });

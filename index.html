@@ -3,7 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Mindverse Computing">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png">
@@ -44,9 +75,42 @@
   <link rel="stylesheet" href="css/site-additions.css">
 
   <title>Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data</title>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mindverse Computing",
+    "legalName": "Mindverse Computing LLC",
+    "url": "https://www.mindversecomputing.com/",
+    "logo": "https://www.mindversecomputing.com/images/newlogo.png",
+    "description": "Research company building the Quantum Virtual Mind (QVM) \u2014 a quantum-classical state model learned from brain-computer interface data, wrapped in a layer of specialist AI agents.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lynnwood",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://x.com/MindverseCom",
+      "https://www.linkedin.com/company/mindverse-computing",
+      "https://www.youtube.com/@mindversecomputing",
+      "https://www.facebook.com/MindverseComputing"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "research enquiries",
+      "url": "https://www.mindversecomputing.com/contact.html"
+    }
+  }
+  </script>
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
   <nav class="site-nav mb-5">
 
@@ -95,11 +159,55 @@
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">One state model. Two directions.</h2>
+        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">One state model. Three applications.</h2>
         <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">The <strong>Quantum Virtual Mind (QVM)</strong> learns the dynamics in a person&rsquo;s BCI recordings. Everything else is a question about how those dynamics depart from their own baseline &mdash; upward into learning, or downward into disorder.</p>
-      </div><div class="row"><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="glass-card h-100" style="border-color: rgba(0, 242, 254,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00f2fe,rgba(0, 242, 254,0.25));"></div><i class="uil uil-brain" style="font-size:2.2rem;color:#00f2fe;margin-bottom:1rem;display:block;"></i><div style="color:#00f2fe;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">The core &middot; in development</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Quantum Virtual Mind (QVM)</h4><p class="glass-card-description">The quantum&ndash;classical core: an executable state model of the dynamics a brain&ndash;computer interface can see. Wrapped in a layer of specialist AI agents, it becomes an end-to-end stack.</p><a href="platform.html" style="color:#00f2fe;font-weight:600;font-size:0.92rem;">See the platform &rarr;</a></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="glass-card h-100" style="border-color: rgba(0, 230, 118,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,rgba(0, 230, 118,0.25));"></div><i class="uil uil-graduation-cap" style="font-size:2.2rem;color:#00e676;margin-bottom:1rem;display:block;"></i><div style="color:#00e676;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Superlearning</h4><p class="glass-card-description">A proposed approach to reading where a learner currently sits, and what they might be ready for next. Not yet built or tested.</p><a href="services.html#superlearning" style="color:#00e676;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(255, 0, 255,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF00FF,rgba(255, 0, 255,0.25));"></div><i class="uil uil-stethoscope" style="font-size:2.2rem;color:#FF00FF;margin-bottom:1rem;display:block;"></i><div style="color:#FF00FF;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Clinical direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Neurological Perturbation Studies</h4><p class="glass-card-description">A proposed approach to measuring how a condition moves a person away from their own healthy baseline. A research direction, not a result.</p><a href="services.html#clinical" style="color:#FF00FF;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div></div></div>
+      </div><div class="row"><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="glass-card h-100" style="border-color: rgba(0, 242, 254,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00f2fe,rgba(0, 242, 254,0.25));"></div><i class="uil uil-brain" style="font-size:2.2rem;color:#00f2fe;margin-bottom:1rem;display:block;"></i><div style="color:#00f2fe;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">The core &middot; in development</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Quantum Virtual Mind (QVM)</h4><p class="glass-card-description">The quantum&ndash;classical core: an executable state model of the dynamics a brain&ndash;computer interface can see. Wrapped in a layer of specialist AI agents, it becomes an end-to-end stack.</p><a href="platform.html" style="color:#00f2fe;font-weight:600;font-size:0.92rem;">See the platform &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="glass-card h-100" style="border-color: rgba(0, 230, 118,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,rgba(0, 230, 118,0.25));"></div><i class="uil uil-graduation-cap" style="font-size:2.2rem;color:#00e676;margin-bottom:1rem;display:block;"></i><div style="color:#00e676;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Superlearning</h4><p class="glass-card-description">A proposed approach to reading where a learner currently sits, and what they might be ready for next. Not yet built or tested.</p><a href="services.html#superlearning" style="color:#00e676;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(167, 139, 250,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#A78BFA,rgba(167, 139, 250,0.25));"></div><i class="uil uil-moon" style="font-size:2.2rem;color:#A78BFA;margin-bottom:1rem;display:block;"></i><div style="color:#A78BFA;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Restoration</h4><p class="glass-card-description">Guided meditation, sleep audio, and stress regulation selected from measured state rather than a preset track. The recovery half of learning.</p><a href="services.html" style="color:#A78BFA;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(255, 0, 255,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF00FF,rgba(255, 0, 255,0.25));"></div><i class="uil uil-stethoscope" style="font-size:2.2rem;color:#FF00FF;margin-bottom:1rem;display:block;"></i><div style="color:#FF00FF;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Clinical direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Neurological Perturbation Studies</h4><p class="glass-card-description">A proposed approach to measuring how a condition moves a person away from their own healthy baseline. A research direction, not a result.</p><a href="services.html#clinical" style="color:#FF00FF;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div></div></div>
   </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+  
+      <div class="investor-section-premium" style="background:#1B264F; padding: 60px 0 40px;">
+        <div class="container">
+          <div class="row justify-content-center text-center" style="margin-bottom:2.2rem;" data-aos="fade-up">
+            <div class="col-lg-8">
+              <p class="domain-label" style="color:#00f2fe;">WHERE THE WORK STANDS</p>
+              <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.6rem;">Measured, not projected</h2>
+              <p style="color:rgba(255,255,255,0.78); font-size:1rem; line-height:1.75; margin:0;">
+              Every number below is something we can point at today, not a forecast.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 242, 254,0.28); padding:2rem 1.5rem;">
+            <span class="highlight-number" style="color:#00f2fe; font-size:2.5rem;">1</span>
+            <div class="highlight-title" style="font-size:1.05rem;">Core model</div>
+            <p class="highlight-description" style="margin-bottom:0;">The Quantum Virtual Mind, built and benchmarked in house against a classical baseline on public EEG data.</p>
+          </div>
+        </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 242, 254,0.28); padding:2rem 1.5rem;">
+            <span class="highlight-number" style="color:#00f2fe; font-size:2.5rem;">8</span>
+            <div class="highlight-title" style="font-size:1.05rem;">Specialist agents</div>
+            <p class="highlight-description" style="margin-bottom:0;">Named roles across the lifecycle, from data access through to designing what to do next.</p>
+          </div>
+        </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 230, 118,0.28); padding:2rem 1.5rem;">
+            <span class="highlight-number" style="color:#00e676; font-size:2.5rem;">2</span>
+            <div class="highlight-title" style="font-size:1.05rem;">Research directions</div>
+            <p class="highlight-description" style="margin-bottom:0;">Superlearning and clinical research &mdash; the same perturbation measured in opposite directions.</p>
+          </div>
+        </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+          <div class="highlight-card text-center h-100" style="border-color:rgba(255, 0, 255,0.28); padding:2rem 1.5rem;">
+            <span class="highlight-number" style="color:#FF00FF; font-size:2.5rem;">3</span>
+            <div class="highlight-title" style="font-size:1.05rem;">Manuscripts</div>
+            <p class="highlight-description" style="margin-bottom:0;">In preparation, covering the foundation model, the healthy atlas, and the clinical record.</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
     <div class="container">
       <div class="text-center mb-5" data-aos="fade-up">
         <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">What the state model is, and is not</h2>
@@ -133,7 +241,117 @@
         <a href="services.html#evidence" style="color:#00f2fe; font-weight:600;">See where the work stands &rarr;</a>
       </div></div></div>
   </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 90px 0;">
+  
+      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #151b3b 100%); padding: 90px 0 70px;">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <p class="domain-label" style="color:#00f2fe;">RESEARCH ROADMAP</p>
+            <h2 class="section-title-glow" style="font-size:2.1rem; margin-bottom:1rem;">What exists, and what comes next</h2>
+            <p style="font-size:1.05rem; color:rgba(255,255,255,0.78); max-width:780px; margin:0 auto; line-height:1.75;">
+            Sequenced by what each stage depends on. Restoration comes first because consumer distribution already
+            exists and the bar for a useful signal is lowest; clinical work comes last because it needs years of
+            longitudinal data before anything can be claimed.</p>
+          </div>
+          <div class="timeline-container" style="position:relative; max-width:1150px; margin:56px auto 0; padding:0 20px;">
+            <!-- Line sits BELOW the 80px circles and above the year labels, matching the
+                 sample's 98px placement. Circles occupy 0-80px; labels start at 114px. -->
+            <div class="timeline-line" style="position:absolute; top:98px; left:20px; right:20px; height:2px;
+              background:rgba(0,242,254,0.18); transform:translateY(-50%); z-index:1;"></div>
+            <div class="timeline-glow-line" id="timeline-glow-line" style="position:absolute; top:98px; left:20px;
+              width:0; height:5px; background:linear-gradient(90deg, rgba(0,242,254,0.9), rgba(255,255,255,0.85));
+              transform:translateY(-50%); z-index:2; box-shadow:0 0 18px rgba(0,242,254,0.7);
+              border-radius:3px; transition:width 2s ease-in-out;"></div>
+            <div class="timeline-nodes" style="display:flex; justify-content:space-between; align-items:flex-start;
+              position:relative; z-index:3; gap:10px;">
+              <div class="timeline-node" data-year="2025" data-aos="fade-up" data-aos-delay="100"
+            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
+            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 242, 254,0.1);
+              border:3px solid rgba(0, 242, 254,0.8); border-radius:50%; display:flex; align-items:center;
+              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
+              box-shadow:0 0 30px rgba(0, 242, 254,0.35);">
+              <i class="uil uil-processor" style="font-size:2.1rem; color:#00f2fe;"></i>
+              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
+                background:rgba(0, 242, 254,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
+            </div>
+            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00f2fe;
+              text-shadow:0 0 20px rgba(0, 242, 254,0.5); opacity:1;">2025</div>
+            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00f2fe;
+              text-align:center; line-height:1.35;">Digital Twin<br>Prototype</div>
+            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
+              text-align:center; line-height:1.45;">Classical&ndash;quantum core<br>built and benchmarked</div>
+          </div><div class="timeline-node" data-year="2026" data-aos="fade-up" data-aos-delay="200"
+            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
+            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 242, 254,0.1);
+              border:3px solid rgba(0, 242, 254,0.8); border-radius:50%; display:flex; align-items:center;
+              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
+              box-shadow:0 0 30px rgba(0, 242, 254,0.35);">
+              <i class="uil uil-robot" style="font-size:2.1rem; color:#00f2fe;"></i>
+              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
+                background:rgba(0, 242, 254,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
+            </div>
+            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00f2fe;
+              text-shadow:0 0 20px rgba(0, 242, 254,0.5); opacity:1;">2026</div>
+            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00f2fe;
+              text-align:center; line-height:1.35;">Agentic Layer</div>
+            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
+              text-align:center; line-height:1.45;">Specialist agents<br>under construction</div>
+          </div><div class="timeline-node" data-year="2027" data-aos="fade-up" data-aos-delay="300"
+            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
+            <div class="node-circle" style="width:80px; height:80px; background:rgba(167, 139, 250,0.1);
+              border:3px solid rgba(167, 139, 250,0.8); border-radius:50%; display:flex; align-items:center;
+              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
+              box-shadow:0 0 30px rgba(167, 139, 250,0.35);">
+              <i class="uil uil-moon" style="font-size:2.1rem; color:#A78BFA;"></i>
+              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
+                background:rgba(167, 139, 250,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
+            </div>
+            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#A78BFA;
+              text-shadow:0 0 20px rgba(167, 139, 250,0.5); opacity:0.55;">2027</div>
+            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#A78BFA;
+              text-align:center; line-height:1.35;">Restoration</div>
+            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
+              text-align:center; line-height:1.45;">Meditation, sleep,<br>stress regulation &mdash; target</div>
+          </div><div class="timeline-node" data-year="2028" data-aos="fade-up" data-aos-delay="400"
+            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
+            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 230, 118,0.1);
+              border:3px solid rgba(0, 230, 118,0.8); border-radius:50%; display:flex; align-items:center;
+              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
+              box-shadow:0 0 30px rgba(0, 230, 118,0.35);">
+              <i class="uil uil-graduation-cap" style="font-size:2.1rem; color:#00e676;"></i>
+              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
+                background:rgba(0, 230, 118,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
+            </div>
+            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00e676;
+              text-shadow:0 0 20px rgba(0, 230, 118,0.5); opacity:0.55;">2028</div>
+            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00e676;
+              text-align:center; line-height:1.35;">Superlearning</div>
+            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
+              text-align:center; line-height:1.45;">Readiness and<br>learning-track design &mdash; target</div>
+          </div><div class="timeline-node" data-year="2030" data-aos="fade-up" data-aos-delay="500"
+            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
+            <div class="node-circle" style="width:80px; height:80px; background:rgba(255, 0, 255,0.1);
+              border:3px solid rgba(255, 0, 255,0.8); border-radius:50%; display:flex; align-items:center;
+              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
+              box-shadow:0 0 30px rgba(255, 0, 255,0.35);">
+              <i class="uil uil-stethoscope" style="font-size:2.1rem; color:#FF00FF;"></i>
+              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
+                background:rgba(255, 0, 255,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
+            </div>
+            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#FF00FF;
+              text-shadow:0 0 20px rgba(255, 0, 255,0.5); opacity:0.55;">2030</div>
+            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#FF00FF;
+              text-align:center; line-height:1.35;">Clinical Research</div>
+            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
+              text-align:center; line-height:1.45;">Longitudinal trajectories<br>and perturbation studies &mdash; target</div>
+          </div>
+            </div>
+          </div>
+          <p style="text-align:center; color:rgba(255,255,255,0.55); font-size:0.9rem; margin-top:52px;">
+            Dates from 2027 onward are targets for research programmes still at proposal stage, not delivery commitments.</p>
+        </div>
+      </div>
+
+      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 90px 0;">
     <div class="container"><div class="text-center" data-aos="fade-up">
       <h2 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1rem;">Working on brains, learning, or neurological care?</h2>
       <p style="color:rgba(255,255,255,0.82);max-width:620px;margin:0 auto 2rem; line-height:1.75">We are looking for research
@@ -290,11 +508,53 @@
         input.value = "";
       })
       .catch(function (err) {
-        note.innerText = "Something went wrong. Email contact@mindversecomputing.com instead.";
+        note.innerText = "Something went wrong. Please try the contact page instead.";
         console.error(err);
       })
       .finally(function () { btn.disabled = false; });
   });
+})();
+</script>
+
+<script>
+(function () {
+  var glow = document.getElementById('timeline-glow-line');
+  var nodes = document.querySelectorAll('.timeline-node');
+  if (!glow || !nodes.length) return;
+
+  document.querySelectorAll('.node-circle').forEach(function (c) {
+    var g = c.querySelector('.node-glow');
+    c.addEventListener('mouseenter', function () {
+      c.style.transform = 'scale(1.12)';
+      if (g) g.style.opacity = '1';
+    });
+    c.addEventListener('mouseleave', function () {
+      c.style.transform = 'scale(1)';
+      if (g) g.style.opacity = '0';
+    });
+  });
+
+  // Respect users who have asked for reduced motion.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    glow.style.transition = 'none';
+    glow.style.width = 'calc(100% - 40px)';
+    return;
+  }
+
+  var step = 0;
+  function advance() {
+    step = (step + 1) % (nodes.length + 1);
+    glow.style.width = (step / nodes.length * 100) + '%';
+    setTimeout(advance, step === 0 ? 2000 : 2800);
+  }
+  var started = false;
+  function maybeStart() {
+    if (started) return;
+    var box = glow.getBoundingClientRect();
+    if (box.top < window.innerHeight && box.bottom > 0) { started = true; advance(); }
+  }
+  window.addEventListener('scroll', maybeStart, { passive: true });
+  maybeStart();
 })();
 </script>
 </body>

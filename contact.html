@@ -3,7 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Mindverse Computing">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.png">
@@ -47,6 +78,11 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
   <nav class="site-nav mb-5">
 
@@ -74,14 +110,14 @@
       <div class="text-center mb-5" data-aos="fade-up">
         <h1 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">What can we help with?</h1>
         <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">We are a small research team and we read everything.</p>
-      </div><div class="row"><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-microscope" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Research collaboration</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Academic groups with recording data who want a more interpretable description of what it contains. We are looking for collaborators to test whether the approach works.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-graduation-cap" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">Education pilot</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Learning platforms and training programmes interested in shaping the Superlearning proposal into a first pilot.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 0, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-stethoscope" style="font-size:1.8rem;color: #FF66FF;"></i></div><h4 style="color:#FF00FF;font-size:1.183rem;margin:0;">Clinical research</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Neurology departments and clinical research groups with longitudinal recording data who would consider a joint feasibility study.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-chart-growth" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Investment</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Investors who want to look closely at the science. Bring a technical advisor &mdash; we would welcome the scrutiny.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-file-alt" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Ask for the drafts</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Researchers and prospective partners can ask for the current manuscript drafts. All three are currently in preparation.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 255, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-comment-alt-message" style="font-size:1.8rem;color:rgba(255,255,255,0.7);"></i></div><h4 style="color:rgba(255,255,255,0.7);font-size:1.183rem;margin:0;">Something else</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Press, partnerships, or a question that does not fit the boxes above. Tell us what you are working on.</p></div></div></div></div>
+      </div><div class="row"><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-microscope" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Research collaboration</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Academic groups with recording data who want a more interpretable description of what it contains. We are looking for collaborators to test whether the approach works.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-graduation-cap" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">Education pilot</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Learning platforms and training programmes who want to explore whether reading cortical state improves on answer-based assessment. We are looking for a design partner for the first study &mdash; early partners shape what gets built.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(167, 139, 250, 0.05); border: 1px solid rgba(167, 139, 250, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(167, 139, 250,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-moon" style="font-size:1.8rem;color: #A78BFA;"></i></div><h4 style="color:#A78BFA;font-size:1.183rem;margin:0;">Wellbeing product</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Meditation, sleep, or stress apps who want a signal beyond self-report. We are looking for a partner to test whether state-selected guidance beats a fixed programme &mdash; you bring distribution and content, we bring the state reading.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 0, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-stethoscope" style="font-size:1.8rem;color: #FF66FF;"></i></div><h4 style="color:#FF00FF;font-size:1.183rem;margin:0;">Clinical research</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Neurology and psychiatry groups with longitudinal recording data and an interest in whether model-based trajectories track clinical change more sensitively than current summary scores. Collaboration, not a service contract.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-chart-growth" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Investment</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">We are at the research-to-product stage: the core model is built and benchmarked, three manuscripts are in preparation, and the applications are moving into development. Happy to walk through what exists and what does not.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-file-alt" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Ask for the drafts</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">The three manuscripts are in preparation and not yet public. If you are a researcher in a relevant area and want to read a draft, ask &mdash; including the benchmark write-up with its mixed verdict reported in full.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 255, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-comment-alt-message" style="font-size:1.8rem;color:rgba(255,255,255,0.7);"></i></div><h4 style="color:rgba(255,255,255,0.7);font-size:1.183rem;margin:0;">Something else</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Hardware makers, funders, potential collaborators, or anyone who thinks we have got something wrong. We are a small research team and we read everything that arrives.</p></div></div></div></div>
   </div>
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
     <div class="container"><div class="row align-items-start">
       <div class="col-lg-5 mb-4" data-aos="fade-right">
         <h2 class="section-title-glow" style="font-size:1.775rem;text-align:left;margin-bottom:1rem;">Tell us what you are working on</h2>
         <p style="color:rgba(255,255,255,0.82); line-height:1.75">The more context you give us, the more useful our reply will be. If you
-        have recording data, tell us what kind and roughly how much.</p><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-envelope" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Email</h4></div><p style="margin:0 0 1.4rem;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;"><span style="color:rgba(255,255,255,.55);">[ add contact address ]</span></p><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-map-marker" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Location</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Lynnwood, WA-98087, USA<br><span style="font-size:0.866rem;color:rgba(255,255,255,.55);">We work with partners and researchers worldwide.</span></p></div></div></div>
+        have recording data, tell us what kind and roughly how much.</p><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-envelope" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Email</h4></div><p style="margin:0 0 1.4rem;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;"><span data-cloak-email="link" data-cloak-color="#00f2fe"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-map-marker" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Location</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Lynnwood, WA-98087, USA<br><span style="font-size:0.866rem;color:rgba(255,255,255,.55);">We work with partners and researchers worldwide.</span></p></div></div></div>
       <div class="col-lg-7 mb-4" data-aos="fade-left"><div class="glass-card" style="padding:2.25rem;">
         <form id="contact-form" novalidate>
           <div class="field"><label for="cf-name">Full name</label>
@@ -91,6 +127,7 @@
           <div class="field"><label for="cf-subject">What is this about?</label>
             <select id="cf-subject" name="subject">
               <option>Research collaboration</option><option>Education pilot</option>
+              <option value="Wellbeing product">Wellbeing product</option>
               <option>Clinical research</option><option>Investment</option>
               <option>Ask for the drafts</option><option>Something else</option></select></div>
           <div class="field"><label for="cf-message">Message</label>
@@ -99,7 +136,7 @@
           <div id="form-message" role="status" aria-live="polite"
             style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;"></div>
           <p style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;">
-            Prefer email? Write to <a href="mailto:contact@mindversecomputing.com" style="color:#00f2fe;">contact@mindversecomputing.com</a>.</p>
+            Prefer email? Write to <span data-cloak-email="link" data-cloak-color="#00f2fe"><noscript>the address on our contact card</noscript></span>.</p>
         </form></div></div></div></div>
   </div>
   <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 70px 0;">
@@ -251,7 +288,7 @@
         input.value = "";
       })
       .catch(function (err) {
-        note.innerText = "Something went wrong. Email contact@mindversecomputing.com instead.";
+        note.innerText = "Something went wrong. Please use the contact form instead.";
         console.error(err);
       })
       .finally(function () { btn.disabled = false; });
@@ -289,11 +326,34 @@
         form.reset();
       })
       .catch(function (err) {
-        note.innerHTML = 'Something went wrong. Please email ' +
-          '<a href="mailto:contact@mindversecomputing.com" style="color:#00f2fe;">contact@mindversecomputing.com</a> instead.';
+        var a = 'contact' + String.fromCharCode(64) + 'mindversecomputing.com';
+        note.innerHTML = 'Something went wrong. Please try again, or write to ' +
+          '<a href="mail' + 'to:' + a + '" style="color:#00f2fe;">' + a + '</a>.';
         console.error(err);
       })
       .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+
+<script>
+// Assemble the contact address at runtime so it is not present as plain text
+// in the served HTML. Elements opt in with data-cloak-email.
+(function () {
+  var u = 'contact', d = 'mindversecomputing' + '.' + 'com';
+  var addr = u + String.fromCharCode(64) + d;
+  document.querySelectorAll('[data-cloak-email]').forEach(function (el) {
+    var mode = el.getAttribute('data-cloak-email');
+    if (mode === 'link') {
+      var a = document.createElement('a');
+      a.href = 'mail' + 'to:' + addr;
+      a.textContent = addr;
+      a.style.color = el.getAttribute('data-cloak-color') || '#00f2fe';
+      el.textContent = '';
+      el.appendChild(a);
+    } else {
+      el.textContent = addr;
+    }
   });
 })();
 </script>
