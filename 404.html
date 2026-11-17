@@ -1,327 +1,291 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!-- Shared measurement: consent defaults must precede both Google loaders. -->
-    <script id="site-tag-bootstrap" data-google-tag="GT-K8DQBD5J" data-tag-manager="GTM-5FLHSQXH">
-      (() => {
-        window.dataLayer = window.dataLayer || [];
-        window.gtag =
-          window.gtag ||
-          function () {
-            window.dataLayer.push(arguments);
-          };
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied',
-          analytics_storage: 'denied',
-        });
 
-        // Local files and development hosts must not create production analytics.
-        if (!['mindversecomputing.com', 'www.mindversecomputing.com'].includes(location.hostname))
-          return;
-        const { googleTag, tagManager } = document.currentScript.dataset;
-        // Contact-page query strings can contain free-text topics; omit them.
-        let referrer = '';
-        try {
-          const previous = new URL(document.referrer);
-          referrer = previous.origin + previous.pathname;
-        } catch {}
-        gtag('set', {
-          page_location: location.origin + location.pathname,
-          page_referrer: referrer,
-        });
-        gtag('js', new Date());
-        gtag('config', googleTag);
+<head>
+<meta charset="utf-8">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
 
-        const google = document.createElement('script');
-        google.async = true;
-        google.src = 'https://www.googletagmanager.com/gtag/js?id=' + googleTag;
-        document.head.appendChild(google);
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
 
-        window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-        const manager = document.createElement('script');
-        manager.async = true;
-        manager.src = 'https://www.googletagmanager.com/gtm.js?id=' + tagManager;
-        document.head.appendChild(manager);
-      })();
-    </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Mindverse Computing">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#090c10" />
-    <meta name="author" content="Mindverse Computing" />
-    <meta name="robots" content="noindex,follow" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <title>Page Not Found — Mindverse Computing</title>
-    <meta
-      name="description"
-      content="Return to Mindverse Computing and explore Physics AI for complex systems."
-    />
-    <link rel="canonical" href="https://www.mindversecomputing.com/404.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mindverse Computing" />
-    <meta property="og:title" content="Page Not Found" />
-    <meta
-      property="og:description"
-      content="Return to Mindverse Computing and explore Physics AI for complex systems."
-    />
-    <meta property="og:url" content="https://www.mindversecomputing.com/404.html" />
-    <meta
-      property="og:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta property="og:image:width" content="1536" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:image:alt" content="Representative fluid-dynamics research illustration" />
-    <meta name="twitter:site" content="@MindverseX" />
-    <meta name="twitter:creator" content="@MindverseX" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Page Not Found" />
-    <meta
-      name="twitter:description"
-      content="Return to Mindverse Computing and explore Physics AI for complex systems."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta name="twitter:image:alt" content="Representative fluid-dynamics research illustration" />
-    <link rel="icon" href="images/favicon-32.png?v=22af50e72d9c" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/integrated-ai.css?v=119dcbf0f9f0" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Mindverse Computing",
-        "url": "https://www.mindversecomputing.com/",
-        "logo": "https://www.mindversecomputing.com/images/brand-mark.png",
-        "description": "Physics AI for complex systems through hybrid modeling, physics-informed surrogates, and quantum state research.",
-        "legalName": "Mindverse Computing LLC",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lynnwood",
-          "addressRegion": "WA",
-          "addressCountry": "US"
-        },
-        "sameAs": [
-          "https://x.com/MindverseX",
-          "https://www.linkedin.com/company/mindverse-computing",
-          "https://www.youtube.com/@mindversecomputing",
-          "https://www.facebook.com/MindverseComputing"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "research enquiries",
-          "url": "https://www.mindversecomputing.com/contact.html"
-        }
-      }
-    </script>
-    <script defer src="js/site-analytics.js?v=10ef5643d00f"></script>
-    <script defer src="js/subscription-service.js?v=9a629299a9fb"></script>
-    <script defer src="js/integrated-ai.js?v=f52344d3e0be"></script>
-    <base href="/" />
-  </head>
-  <body>
-    <!-- Google Tag Manager fallback retained from the previous website. -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-        title="Google Tag Manager"
-        aria-hidden="true"
-      ></iframe>
-    </noscript>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-          ><img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" /><span
-            class="brand-name"
-            >Mindverse Computing</span
-          ></a
-        ><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-          Menu +
-        </button>
-        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-          <a href="platform.html">Platform</a>
-          <details class="domain-menu">
-            <summary>Domains</summary>
-            <div class="domain-dropdown">
-              <span class="domain-category">Physics AI</span
-              ><a href="platform.html#fluid-dynamics"
-                ><span class="dot" style="--accent: var(--fluid)" aria-hidden="true"></span>Fluid
-                Dynamics</a
-              ><a href="platform.html#plasma-dynamics"
-                ><span class="dot" style="--accent: var(--plasma)" aria-hidden="true"></span>Plasma
-                Dynamics</a
-              ><span class="domain-category">Quantum AI</span
-              ><a href="platform.html#quantum-matter"
-                ><span class="dot" style="--accent: var(--matter)" aria-hidden="true"></span>Quantum
-                Matter</a
-              ><a href="platform.html#omics"
-                ><span class="dot" style="--accent: var(--omics)" aria-hidden="true"></span>Quantum
-                Virtual Omics</a
-              ><a href="platform.html#mind"
-                ><span class="dot" style="--accent: var(--mind)" aria-hidden="true"></span>Quantum
-                Virtual Mind</a
-              ><span class="domain-category">Quantum Finance</span
-              ><a href="platform.html#finance"
-                ><span class="dot" style="--accent: var(--finance)" aria-hidden="true"></span
-                >Quantum Virtual Finance</a
-              >
-            </div>
-          </details>
-          <a href="services.html">Applications</a><a href="research.html">Research</a>
-          <details class="domain-menu resources-menu">
-            <summary>Resources</summary>
-            <div class="domain-dropdown">
-              <a href="planning.html">Research roadmap</a
-              ><a href="workshops.html">Workshops & learning</a
-              ><a href="market.html">Application focus</a><a href="invest.html">Company & vision</a>
-            </div>
-          </details>
-          <a href="contact.html" class="nav-contact">Contact ↗</a>
-        </nav>
+  <link rel="canonical" href="https://www.mindversecomputing.com/">
+  <meta name="description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
+  <meta name="robots" content="noindex" />
+
+  <meta property="og:title" content="Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data" />
+  <meta property="og:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
+  <meta property="og:url" content="https://www.mindversecomputing.com/" />
+  <meta property="og:site_name" content="Mindverse Computing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/newlogo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data" />
+  <meta name="twitter:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/investor-enhancements.css">
+  <link rel="stylesheet" href="css/home-custom.css">
+  <link rel="stylesheet" href="css/site-additions.css">
+
+  <title>Page not found — Mindverse Computing</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <nav class="site-nav mb-5">
+
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="index.html" class="logo menu-absolute m-0">
+            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
+              height="50" />
+            <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a> 
+
+        </div>
       </div>
-    </header>
-    <main id="main">
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow">Page not found</p>
-          <h1>Return to<br />the science.</h1>
-          <p class="lead">
-            The requested page could not be found. Explore our platform, applications, or research
-            roadmap.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="index.html"
-              >Back to Mindverse<span class="arrow" aria-hidden="true">↗</span></a
-            ><a class="text-link" href="planning.html"
-              >Explore the roadmap<span class="arrow" aria-hidden="true">↗</span></a
-            >
+    </div>
+  </nav>
+
+  <div class="investor-section-premium page-head" id="home"
+    style="background: #151b3b; padding: 150px 0 60px;">
+    <div class="container">
+      <div class="row"><div class="col-lg-9">
+        <h1 class="fresh-title page-title">Page not found</h1>
+        <p class="page-sub">That link does not lead anywhere on this site. It may be from an older version
+        &mdash; we recently consolidated several subdomains into this one.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 80px 0 100px;">
+    <div class="container">
+      <div class="row justify-content-center"><div class="col-lg-10">
+        <h3 style="color:#fff;font-size:1.32rem;margin-bottom:1.6rem;">Where you might be headed</h3>
+        <ul class="research-list" style="font-size:1rem;">
+          <li><a href="index.html" style="color:#00f2fe;font-weight:600;">Home</a> &mdash; what we build</li>
+          <li><a href="platform.html" style="color:#00f2fe;font-weight:600;">Platform</a> &mdash; how the twin and the agent layer work</li>
+          <li><a href="services.html" style="color:#00f2fe;font-weight:600;">Services</a> &mdash; our research directions and where the evidence stands</li>
+          <li><a href="market.html" style="color:#00f2fe;font-weight:600;">Market</a> &mdash; who this is for</li>
+          <li><a href="investors.html" style="color:#00f2fe;font-weight:600;">Investors</a> &mdash; the investment case</li>
+          <li><a href="contact.html" style="color:#00f2fe;font-weight:600;">Contact</a> &mdash; get in touch</li>
+        </ul>
+      </div></div>
+    </div>
+  </div>
+
+  <!------------Footer--------------------------------------------->
+  <div class="site-footer"
+    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- About and Social -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
+            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
+            state model &mdash; wrapped in agentic workflows.
+            An early-stage research company; everything here is research, not a medical device.</p>
+          </div>
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <section class="newsletter" aria-labelledby="newsletter-title">
-          <div>
-            <p class="eyebrow">Research updates</p>
-            <h2 id="newsletter-title">Follow the research.</h2>
-            <p>Occasional updates on research, publications, and workshops.</p>
-          </div>
-          <form id="footer-subscribe-form" aria-label="Research newsletter signup">
-            <fieldset disabled>
-              <legend class="visually-hidden">Research newsletter signup</legend>
-              <label for="subscribe-email">Email address</label>
-              <div class="newsletter-input">
-                <input
-                  id="subscribe-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  maxlength="180"
-                  placeholder="you@example.com"
-                  required
-                /><button type="submit">Subscribe <span aria-hidden="true">↗</span></button>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
+            and what we publish. No marketing.</p>
+            <form id="footer-subscribe-form" novalidate>
+              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
+                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+                <input name="email" id="footer-email-input" type="email" required
+                  placeholder="Enter your email" autocomplete="email"
+                  style="flex:1; min-width:190px; background:#fff; color:#222;
+                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
+                  padding:10px 20px; font-size:0.977rem;">
+                <button type="submit" class="btn btn-primary"
+                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
               </div>
-            </fieldset>
-            <p id="subscribe-message" class="form-help" role="status" aria-live="polite"></p>
-            <noscript><p class="form-help">Please enable JavaScript to subscribe.</p></noscript>
-          </form>
-        </section>
-        <div class="footer-main">
-          <div class="footer-brand">
-            <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-              ><img src="images/brand-mark.png?v=42b4e7ed02aa" alt="" width="39" height="39" /><span
-                class="brand-name"
-                >Mindverse Computing</span
-              ></a
-            >
-            <p>
-              Physics AI for complex systems. Hybrid models, scientific insight, and new
-              computational possibilities.
-            </p>
-          </div>
-          <div class="footer-column">
-            <h2>Physics AI</h2>
-            <a href="platform.html#fluid-dynamics">Fluid Dynamics</a
-            ><a href="platform.html#plasma-dynamics">Plasma Dynamics</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum AI</h2>
-            <a href="platform.html#quantum-matter">Quantum Matter</a
-            ><a href="platform.html#omics">Quantum Virtual Omics</a
-            ><a href="platform.html#mind">Quantum Virtual Mind</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum Finance</h2>
-            <a href="platform.html#finance">Quantum Virtual Finance</a>
-          </div>
-          <div class="footer-column">
-            <h2>Explore</h2>
-            <a href="platform.html">Platform</a><a href="services.html">Applications</a
-            ><a href="research.html">Research & methods</a
-            ><a href="planning.html">Research roadmap</a
-            ><a href="workshops.html">Workshops & learning</a
-            ><a href="invest.html">Company & vision</a><a href="contact.html">Contact</a>
+            </form>
+            <div id="subscribe-message" role="status" aria-live="polite"
+              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>© <span data-year>2026</span> Mindverse Computing. All rights reserved.</p>
-          <p>Lynnwood, Washington, USA</p>
-          <nav class="footer-social" aria-label="Social media">
-            <a
-              href="https://x.com/MindverseX"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.2-8.3L1 2h6.4l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.5 3.9H4.7L17.8 20Z"
-                /></svg
-              ><span>X</span></a
-            ><a
-              href="https://www.linkedin.com/company/mindverse-computing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.1c0-1.2-.2-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.8 2 3.8 4.6V19Z"
-                /></svg
-              ><span>LinkedIn</span></a
-            ><a
-              href="https://www.youtube.com/@mindversecomputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31.3 31.3 0 0 0-.5 5 31.3 31.3 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31.3 31.3 0 0 0 .5-5 31.3 31.3 0 0 0-.5-5ZM9.7 15.3V8.7l6 3.3-6 3.3Z"
-                /></svg
-              ><span>YouTube</span></a
-            ><a
-              href="https://www.facebook.com/MindverseComputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M24 12A12 12 0 1 0 10.1 23.9v-8.4h-3V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-1.9.9-1.9 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"
-                /></svg
-              ><span>Facebook</span></a
-            >
-          </nav>
+
+
+        <!-- The platform -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">The platform</h3>
+            <ul class="list-unstyled links">
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
+              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
+              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
+              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research directions -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
+            <ul class="list-unstyled links">
+              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-lg-8">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75;">
+            Research and development notice: our platforms are experimental research tools for academic
+            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
+            regulated service. Three manuscripts are currently in preparation.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75">
+            &copy; 2026 Mindverse Computing. All Rights Reserved.
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/investor-effects.js"></script>
+
+<script>
+(function () {
+  var form = document.getElementById("footer-subscribe-form");
+  if (!form) return;
+  var input = document.getElementById("footer-email-input");
+  var note  = document.getElementById("subscribe-message");
+  var btn   = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = (input.value || "").trim();
+    if (!email || email.indexOf("@") < 1) {
+      note.innerText = "Please enter a valid email address.";
+      return;
+    }
+    btn.disabled = true;
+    note.innerText = "Subscribing\u2026";
+    var data = new FormData();
+    data.append("email", email);
+    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
+      .then(function (r) { return r.text(); })
+      .then(function () {
+        note.innerText = "Thanks \u2014 you are subscribed.";
+        input.value = "";
+      })
+      .catch(function (err) {
+        note.innerText = "Something went wrong. Please try the contact page instead.";
+        console.error(err);
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+
 </html>

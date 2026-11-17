@@ -1,439 +1,360 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!-- Shared measurement: consent defaults must precede both Google loaders. -->
-    <script id="site-tag-bootstrap" data-google-tag="GT-K8DQBD5J" data-tag-manager="GTM-5FLHSQXH">
-      (() => {
-        window.dataLayer = window.dataLayer || [];
-        window.gtag =
-          window.gtag ||
-          function () {
-            window.dataLayer.push(arguments);
-          };
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied',
-          analytics_storage: 'denied',
-        });
 
-        // Local files and development hosts must not create production analytics.
-        if (!['mindversecomputing.com', 'www.mindversecomputing.com'].includes(location.hostname))
-          return;
-        const { googleTag, tagManager } = document.currentScript.dataset;
-        // Contact-page query strings can contain free-text topics; omit them.
-        let referrer = '';
-        try {
-          const previous = new URL(document.referrer);
-          referrer = previous.origin + previous.pathname;
-        } catch {}
-        gtag('set', {
-          page_location: location.origin + location.pathname,
-          page_referrer: referrer,
-        });
-        gtag('js', new Date());
-        gtag('config', googleTag);
+<head>
+  <meta charset="utf-8">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
 
-        const google = document.createElement('script');
-        google.async = true;
-        google.src = 'https://www.googletagmanager.com/gtag/js?id=' + googleTag;
-        document.head.appendChild(google);
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
 
-        window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-        const manager = document.createElement('script');
-        manager.async = true;
-        manager.src = 'https://www.googletagmanager.com/gtm.js?id=' + tagManager;
-        document.head.appendChild(manager);
-      })();
-    </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Mindverse Computing">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#090c10" />
-    <meta name="author" content="Mindverse Computing" />
-    <meta
-      name="robots"
-      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
-    />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <title>Contact — Mindverse Computing</title>
-    <meta
-      name="description"
-      content="Discuss a scientific application, research collaboration, workshop, or partnership with Mindverse Computing."
-    />
-    <link rel="canonical" href="https://www.mindversecomputing.com/contact.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mindverse Computing" />
-    <meta property="og:title" content="Contact" />
-    <meta
-      property="og:description"
-      content="Discuss a scientific application, research collaboration, workshop, or partnership with Mindverse Computing."
-    />
-    <meta property="og:url" content="https://www.mindversecomputing.com/contact.html" />
-    <meta
-      property="og:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta property="og:image:width" content="1536" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:image:alt" content="Representative fluid-dynamics research illustration" />
-    <meta name="twitter:site" content="@MindverseX" />
-    <meta name="twitter:creator" content="@MindverseX" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Contact" />
-    <meta
-      name="twitter:description"
-      content="Discuss a scientific application, research collaboration, workshop, or partnership with Mindverse Computing."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta name="twitter:image:alt" content="Representative fluid-dynamics research illustration" />
-    <link rel="icon" href="images/favicon-32.png?v=22af50e72d9c" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/integrated-ai.css?v=119dcbf0f9f0" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Mindverse Computing",
-        "url": "https://www.mindversecomputing.com/",
-        "logo": "https://www.mindversecomputing.com/images/brand-mark.png",
-        "description": "Physics AI for complex systems through hybrid modeling, physics-informed surrogates, and quantum state research.",
-        "legalName": "Mindverse Computing LLC",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lynnwood",
-          "addressRegion": "WA",
-          "addressCountry": "US"
-        },
-        "sameAs": [
-          "https://x.com/MindverseX",
-          "https://www.linkedin.com/company/mindverse-computing",
-          "https://www.youtube.com/@mindversecomputing",
-          "https://www.facebook.com/MindverseComputing"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "research enquiries",
-          "url": "https://www.mindversecomputing.com/contact.html"
-        }
-      }
-    </script>
-    <script defer src="js/contact-service.js?v=ccd3914915b8"></script>
-    <script defer src="js/site-analytics.js?v=10ef5643d00f"></script>
-    <script defer src="js/subscription-service.js?v=9a629299a9fb"></script>
-    <script defer src="js/integrated-ai.js?v=f52344d3e0be"></script>
-  </head>
-  <body>
-    <!-- Google Tag Manager fallback retained from the previous website. -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-        title="Google Tag Manager"
-        aria-hidden="true"
-      ></iframe>
-    </noscript>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-          ><img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" /><span
-            class="brand-name"
-            >Mindverse Computing</span
-          ></a
-        ><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-          Menu +
-        </button>
-        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-          <a href="platform.html">Platform</a>
-          <details class="domain-menu">
-            <summary>Domains</summary>
-            <div class="domain-dropdown">
-              <span class="domain-category">Physics AI</span
-              ><a href="platform.html#fluid-dynamics"
-                ><span class="dot" style="--accent: var(--fluid)" aria-hidden="true"></span>Fluid
-                Dynamics</a
-              ><a href="platform.html#plasma-dynamics"
-                ><span class="dot" style="--accent: var(--plasma)" aria-hidden="true"></span>Plasma
-                Dynamics</a
-              ><span class="domain-category">Quantum AI</span
-              ><a href="platform.html#quantum-matter"
-                ><span class="dot" style="--accent: var(--matter)" aria-hidden="true"></span>Quantum
-                Matter</a
-              ><a href="platform.html#omics"
-                ><span class="dot" style="--accent: var(--omics)" aria-hidden="true"></span>Quantum
-                Virtual Omics</a
-              ><a href="platform.html#mind"
-                ><span class="dot" style="--accent: var(--mind)" aria-hidden="true"></span>Quantum
-                Virtual Mind</a
-              ><span class="domain-category">Quantum Finance</span
-              ><a href="platform.html#finance"
-                ><span class="dot" style="--accent: var(--finance)" aria-hidden="true"></span
-                >Quantum Virtual Finance</a
-              >
-            </div>
-          </details>
-          <a href="services.html">Applications</a><a href="research.html">Research</a>
-          <details class="domain-menu resources-menu">
-            <summary>Resources</summary>
-            <div class="domain-dropdown">
-              <a href="planning.html">Research roadmap</a
-              ><a href="workshops.html">Workshops & learning</a
-              ><a href="market.html">Application focus</a><a href="invest.html">Company & vision</a>
-            </div>
-          </details>
-          <a href="contact.html" class="nav-contact" aria-current="page">Contact ↗</a>
-        </nav>
+  <link rel="canonical" href="https://www.mindversecomputing.com/contact.html">
+  <meta name="description" content="Get in touch about research collaboration, an education pilot, clinical research, investment, or to ask for the current manuscript drafts." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <meta property="og:title" content="Contact — Mindverse Computing" />
+  <meta property="og:description" content="Get in touch about research collaboration, an education pilot, clinical research, investment, or to ask for the current manuscript drafts." />
+  <meta property="og:url" content="https://www.mindversecomputing.com/contact.html" />
+  <meta property="og:site_name" content="Mindverse Computing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/newlogo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Mindverse Computing" />
+  <meta name="twitter:description" content="Get in touch about research collaboration, an education pilot, clinical research, investment, or to ask for the current manuscript drafts." />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/investor-enhancements.css">
+  <link rel="stylesheet" href="css/home-custom.css">
+  <link rel="stylesheet" href="css/site-additions.css">
+
+  <title>Contact — Mindverse Computing</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <nav class="site-nav mb-5">
+
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="index.html" class="logo menu-absolute m-0">
+            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
+              height="50" />
+            <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li class="active"><a href="contact.html">Contact</a></li></ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a> 
+
+        </div>
       </div>
-    </header>
-    <main id="main">
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow">Connect with Mindverse</p>
-          <h1>Start with<br />your research question.</h1>
-          <p class="lead">
-            Discuss a scientific application, research collaboration, learning track, or partnership
-            with our team.
+    </div>
+  </nav>
+  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 100px;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h1 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">What can we help with?</h1>
+        <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">We are a small research team and we read everything.</p>
+      </div><div class="row"><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-microscope" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Research collaboration</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Academic groups with recording data who want a more interpretable description of what it contains. We are looking for collaborators to test whether the approach works.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-graduation-cap" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">Education pilot</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Learning platforms and training programmes who want to explore whether reading cortical state improves on answer-based assessment. We are looking for a design partner for the first study &mdash; early partners shape what gets built.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(167, 139, 250, 0.05); border: 1px solid rgba(167, 139, 250, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(167, 139, 250,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-moon" style="font-size:1.8rem;color: #A78BFA;"></i></div><h4 style="color:#A78BFA;font-size:1.183rem;margin:0;">Wellbeing product</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Meditation, sleep, or stress apps who want a signal beyond self-report. We are looking for a partner to test whether state-selected guidance beats a fixed programme &mdash; you bring distribution and content, we bring the state reading.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 0, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-stethoscope" style="font-size:1.8rem;color: #FF66FF;"></i></div><h4 style="color:#FF00FF;font-size:1.183rem;margin:0;">Clinical research</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Neurology and psychiatry groups with longitudinal recording data and an interest in whether model-based trajectories track clinical change more sensitively than current summary scores. Collaboration, not a service contract.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-chart-growth" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Investment</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">We are at the research-to-product stage: the core model is built and benchmarked, three manuscripts are in preparation, and the applications are moving into development. Happy to walk through what exists and what does not.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-file-alt" style="font-size:1.8rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Ask for the drafts</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">The three manuscripts are in preparation and not yet public. If you are a researcher in a relevant area and want to read a draft, ask &mdash; including the benchmark write-up with its mixed verdict reported in full.</p></div></div><div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="impact-card-cyan" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 255, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-comment-alt-message" style="font-size:1.8rem;color:rgba(255,255,255,0.7);"></i></div><h4 style="color:rgba(255,255,255,0.7);font-size:1.183rem;margin:0;">Something else</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Hardware makers, funders, potential collaborators, or anyone who thinks we have got something wrong. We are a small research team and we read everything that arrives.</p></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+    <div class="container"><div class="row align-items-start">
+      <div class="col-lg-5 mb-4" data-aos="fade-right">
+        <h2 class="section-title-glow" style="font-size:1.775rem;text-align:left;margin-bottom:1rem;">Tell us what you are working on</h2>
+        <p style="color:rgba(255,255,255,0.82); line-height:1.75">The more context you give us, the more useful our reply will be. If you
+        have recording data, tell us what kind and roughly how much.</p><div class="impact-card-cyan" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-envelope" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Email</h4></div><p style="margin:0 0 1.4rem;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;"><span data-cloak-email="link" data-cloak-color="#00f2fe" data-cloak-text="Write to us &rarr;"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-map-marker" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;">Location</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Lynnwood, WA-98087, USA<br><span style="font-size:0.866rem;color:rgba(255,255,255,.55);">We work with partners and researchers worldwide.</span></p></div></div></div>
+      <div class="col-lg-7 mb-4" data-aos="fade-left"><div class="glass-card" style="padding:2.25rem;">
+        <form id="contact-form" novalidate>
+          <div class="field"><label for="cf-name">Full name</label>
+            <input id="cf-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="field"><label for="cf-email">Email address</label>
+            <input id="cf-email" name="email" type="email" placeholder="you@institution.edu" autocomplete="email" required></div>
+          <div class="field"><label for="cf-subject">What is this about?</label>
+            <select id="cf-subject" name="subject">
+              <option>Research collaboration</option><option>Education pilot</option>
+              <option value="Wellbeing product">Wellbeing product</option>
+              <option>Clinical research</option><option>Investment</option>
+              <option>Ask for the drafts</option><option>Something else</option></select></div>
+          <div class="field"><label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Tell us about your work and what you are looking for." required></textarea></div>
+          <button class="btn btn-primary" style="width:100%;" type="submit">Send message</button>
+          <div id="form-message" role="status" aria-live="polite"
+            style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;"></div>
+          <p style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:14px 0 0;text-align:center;line-height:1.75;">
+            Prefer email? <span data-cloak-email="link" data-cloak-color="#00f2fe" data-cloak-text="Open your mail client &rarr;"><noscript>Use the form above &mdash; it reaches the same inbox.</noscript></span></p>
+        </form></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 70px 0;">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">About Mindverse Computing</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">We develop the agentic stack of quantum digital twin learned from BCI data &mdash; a full-stack platform that reconstructs an executable quantum-classical state model and routes it into agentic workflows. Our aim is to help research teams understand how learning and disorder move the dynamics a brain&ndash;computer interface can see.</p></div><div class="building-box" style="background: rgba(255, 255, 255, 0.06); border-left: 3px solid rgba(255,255,255,0.6); border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: rgba(255,255,255,0.82); font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Research and development notice</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Our platforms are experimental research tools for academic collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, healthcare services, or any regulated service. All work is developed using public, synthetic, or anonymised research data.</p></div></div></div></div>
+  </div>
+
+  <!------------Footer--------------------------------------------->
+  <div class="site-footer"
+    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- About and Social -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
+            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
+            state model &mdash; wrapped in agentic workflows.
+            An early-stage research company; everything here is research, not a medical device.</p>
+          </div>
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
+            and what we publish. No marketing.</p>
+            <form id="footer-subscribe-form" novalidate>
+              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
+                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+                <input name="email" id="footer-email-input" type="email" required
+                  placeholder="Enter your email" autocomplete="email"
+                  style="flex:1; min-width:190px; background:#fff; color:#222;
+                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
+                  padding:10px 20px; font-size:0.977rem;">
+                <button type="submit" class="btn btn-primary"
+                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
+              </div>
+            </form>
+            <div id="subscribe-message" role="status" aria-live="polite"
+              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
+          </div>
+        </div>
+
+
+        <!-- The platform -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">The platform</h3>
+            <ul class="list-unstyled links">
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
+              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
+              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
+              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research directions -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
+            <ul class="list-unstyled links">
+              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-lg-8">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75;">
+            Research and development notice: our platforms are experimental research tools for academic
+            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
+            regulated service. Three manuscripts are currently in preparation.
           </p>
         </div>
-      </section>
-      <section class="section">
-        <div class="container contact-grid">
-          <div class="contact-intro">
-            <p class="eyebrow">A focused first conversation</p>
-            <h2>From an idea<br />to a useful next step.</h2>
-            <p>
-              Tell us about the system you want to explore, the reference data available, and the
-              result you would like to evaluate.
-            </p>
-            <div class="contact-facts">
-              <span>Lynnwood, Washington, USA</span
-              ><span>Research collaboration · Applications · Workshops</span>
-            </div>
-            <div class="inquiry-routes" aria-label="Choose an inquiry type">
-              <a href="contact.html?intent=Application#application-form"
-                ><strong>Application discussions</strong><span>Explore a modeling problem.</span></a
-              ><a href="contact.html?intent=Research#application-form"
-                ><strong>Research collaboration</strong
-                ><span>Define a reference comparison.</span></a
-              ><a href="contact.html?intent=Workshop#application-form"
-                ><strong>Workshops & learning</strong><span>Shape a learning track.</span></a
-              ><a href="contact.html?intent=Company#application-form"
-                ><strong>Company & partnerships</strong><span>Discuss a shared direction.</span></a
-              >
-            </div>
-            <div class="discussion-checklist">
-              <h3>Helpful context</h3>
-              <ul>
-                <li>The domain and scientific question</li>
-                <li>Available data or reference calculations</li>
-                <li>The quantities and comparisons that matter</li>
-              </ul>
-            </div>
-          </div>
-          <form class="contact-form" id="application-form">
-            <fieldset class="draft-fields" disabled>
-              <legend class="form-title">Send an inquiry</legend>
-              <div class="form-grid">
-                <div class="form-field">
-                  <label for="name">Full name</label
-                  ><input id="name" name="name" autocomplete="name" required maxlength="120" />
-                </div>
-                <div class="form-field">
-                  <label for="email">Email address</label
-                  ><input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    required
-                    maxlength="180"
-                  />
-                </div>
-                <div class="form-field full">
-                  <label for="organization">Organization <span>Optional</span></label
-                  ><input
-                    id="organization"
-                    name="organization"
-                    autocomplete="organization"
-                    maxlength="160"
-                  />
-                </div>
-                <div class="form-field">
-                  <label for="intent">Inquiry type</label
-                  ><select id="intent" name="intent" required>
-                    <option value="Application">Application discussion</option>
-                    <option value="Research">Research collaboration</option>
-                    <option value="Workshop">Workshop inquiry</option>
-                    <option value="Company">Company & partnerships</option>
-                  </select>
-                </div>
-                <div class="form-field">
-                  <label for="domain">Research domain</label
-                  ><select id="domain" name="domain" required>
-                    <option value="">Select a domain</option>
-                    <option>Fluid Dynamics</option>
-                    <option>Plasma Dynamics</option>
-                    <option>Quantum Matter</option>
-                    <option>Quantum Virtual Omics</option>
-                    <option>Quantum Virtual Mind</option>
-                    <option>Quantum Virtual Finance</option>
-                    <option>Shared modeling methods</option>
-                  </select>
-                </div>
-                <div class="form-field full">
-                  <label for="message">Your question and desired outcome</label
-                  ><textarea
-                    id="message"
-                    name="message"
-                    required
-                    maxlength="6000"
-                    placeholder="What system would you like to model, and how would you evaluate a useful result?"
-                  ></textarea>
-                </div>
-              </div>
-              <button class="button" type="submit">
-                Send inquiry <span class="arrow" aria-hidden="true">↗</span>
-              </button>
-            </fieldset>
-            <p class="form-help">We’ll use the details you provide to respond to your inquiry.</p>
-            <noscript
-              ><p class="form-help">Please enable JavaScript to use the contact form.</p></noscript
-            >
-            <div
-              class="contact-status"
-              id="contact-status"
-              role="status"
-              aria-live="polite"
-              tabindex="-1"
-            ></div>
-            <button class="copy-button" id="copy-inquiry" type="button" hidden>
-              Copy your message
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <section class="newsletter" aria-labelledby="newsletter-title">
-          <div>
-            <p class="eyebrow">Research updates</p>
-            <h2 id="newsletter-title">Follow the research.</h2>
-            <p>Occasional updates on research, publications, and workshops.</p>
-          </div>
-          <form id="footer-subscribe-form" aria-label="Research newsletter signup">
-            <fieldset disabled>
-              <legend class="visually-hidden">Research newsletter signup</legend>
-              <label for="subscribe-email">Email address</label>
-              <div class="newsletter-input">
-                <input
-                  id="subscribe-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  maxlength="180"
-                  placeholder="you@example.com"
-                  required
-                /><button type="submit">Subscribe <span aria-hidden="true">↗</span></button>
-              </div>
-            </fieldset>
-            <p id="subscribe-message" class="form-help" role="status" aria-live="polite"></p>
-            <noscript><p class="form-help">Please enable JavaScript to subscribe.</p></noscript>
-          </form>
-        </section>
-        <div class="footer-main">
-          <div class="footer-brand">
-            <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-              ><img src="images/brand-mark.png?v=42b4e7ed02aa" alt="" width="39" height="39" /><span
-                class="brand-name"
-                >Mindverse Computing</span
-              ></a
-            >
-            <p>
-              Physics AI for complex systems. Hybrid models, scientific insight, and new
-              computational possibilities.
-            </p>
-          </div>
-          <div class="footer-column">
-            <h2>Physics AI</h2>
-            <a href="platform.html#fluid-dynamics">Fluid Dynamics</a
-            ><a href="platform.html#plasma-dynamics">Plasma Dynamics</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum AI</h2>
-            <a href="platform.html#quantum-matter">Quantum Matter</a
-            ><a href="platform.html#omics">Quantum Virtual Omics</a
-            ><a href="platform.html#mind">Quantum Virtual Mind</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum Finance</h2>
-            <a href="platform.html#finance">Quantum Virtual Finance</a>
-          </div>
-          <div class="footer-column">
-            <h2>Explore</h2>
-            <a href="platform.html">Platform</a><a href="services.html">Applications</a
-            ><a href="research.html">Research & methods</a
-            ><a href="planning.html">Research roadmap</a
-            ><a href="workshops.html">Workshops & learning</a
-            ><a href="invest.html">Company & vision</a><a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© <span data-year>2026</span> Mindverse Computing. All rights reserved.</p>
-          <p>Lynnwood, Washington, USA</p>
-          <nav class="footer-social" aria-label="Social media">
-            <a
-              href="https://x.com/MindverseX"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.2-8.3L1 2h6.4l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.5 3.9H4.7L17.8 20Z"
-                /></svg
-              ><span>X</span></a
-            ><a
-              href="https://www.linkedin.com/company/mindverse-computing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.1c0-1.2-.2-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.8 2 3.8 4.6V19Z"
-                /></svg
-              ><span>LinkedIn</span></a
-            ><a
-              href="https://www.youtube.com/@mindversecomputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31.3 31.3 0 0 0-.5 5 31.3 31.3 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31.3 31.3 0 0 0 .5-5 31.3 31.3 0 0 0-.5-5ZM9.7 15.3V8.7l6 3.3-6 3.3Z"
-                /></svg
-              ><span>YouTube</span></a
-            ><a
-              href="https://www.facebook.com/MindverseComputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M24 12A12 12 0 1 0 10.1 23.9v-8.4h-3V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-1.9.9-1.9 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"
-                /></svg
-              ><span>Facebook</span></a
-            >
-          </nav>
+        <div class="col-lg-4 text-lg-right">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75">
+            &copy; 2026 Mindverse Computing. All Rights Reserved.
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/investor-effects.js"></script>
+
+<script>
+(function () {
+  var form = document.getElementById("footer-subscribe-form");
+  if (!form) return;
+  var input = document.getElementById("footer-email-input");
+  var note  = document.getElementById("subscribe-message");
+  var btn   = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = (input.value || "").trim();
+    if (!email || email.indexOf("@") < 1) {
+      note.innerText = "Please enter a valid email address.";
+      return;
+    }
+    btn.disabled = true;
+    note.innerText = "Subscribing\u2026";
+    var data = new FormData();
+    data.append("email", email);
+    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
+      .then(function (r) { return r.text(); })
+      .then(function () {
+        note.innerText = "Thanks \u2014 you are subscribed.";
+        input.value = "";
+      })
+      .catch(function (err) {
+        note.innerText = "Something went wrong. Please use the contact form instead.";
+        console.error(err);
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+  var note = document.getElementById("form-message");
+  var btn  = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name    = document.getElementById("cf-name").value.trim();
+    var email   = document.getElementById("cf-email").value.trim();
+    var subject = document.getElementById("cf-subject").value;
+    var message = document.getElementById("cf-message").value.trim();
+    if (!name || !email || email.indexOf("@") < 1 || !message) {
+      note.innerText = "Please fill in your name, a valid email, and a message.";
+      return;
+    }
+    btn.disabled = true;
+    note.innerText = "Sending\u2026";
+    var data = new FormData();
+    data.append("name", name);
+    data.append("email", email);
+    data.append("subject", subject);
+    data.append("message", message);
+    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
+      .then(function (r) { return r.text(); })
+      .then(function () {
+        note.innerText = "Thanks \u2014 your message has been sent. We will be in touch.";
+        form.reset();
+      })
+      .catch(function (err) {
+        var a = 'contact' + String.fromCharCode(64) + 'mindversecomputing.com';
+        note.innerHTML = 'Something went wrong. Please try again, or ' +
+          '<a href="mail' + 'to:' + a + '" style="color:#00f2fe;">email us directly</a>.';
+        console.error(err);
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+
+<script>
+// The contact address is never written into the page as readable text and never
+// appears in the served HTML. A mailto: link is assembled at runtime so clicking
+// "Email us" opens the visitor's mail client pre-addressed, while the address
+// itself stays out of the page for scrapers and casual readers alike.
+(function () {
+  var u = 'contact', d = 'mindversecomputing' + '.' + 'com';
+  var addr = u + String.fromCharCode(64) + d;
+  document.querySelectorAll('[data-cloak-email]').forEach(function (el) {
+    var a = document.createElement('a');
+    a.href = 'mail' + 'to:' + addr;
+    a.textContent = el.getAttribute('data-cloak-text') || 'Email us';
+    a.style.color = el.getAttribute('data-cloak-color') || '#00f2fe';
+    a.setAttribute('aria-label', 'Open your email client to write to us');
+    el.textContent = '';
+    el.appendChild(a);
+  });
+})();
+</script>
+</body>
+
 </html>

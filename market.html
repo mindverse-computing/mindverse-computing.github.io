@@ -1,427 +1,302 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!-- Shared measurement: consent defaults must precede both Google loaders. -->
-    <script id="site-tag-bootstrap" data-google-tag="GT-K8DQBD5J" data-tag-manager="GTM-5FLHSQXH">
-      (() => {
-        window.dataLayer = window.dataLayer || [];
-        window.gtag =
-          window.gtag ||
-          function () {
-            window.dataLayer.push(arguments);
-          };
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied',
-          analytics_storage: 'denied',
-        });
 
-        // Local files and development hosts must not create production analytics.
-        if (!['mindversecomputing.com', 'www.mindversecomputing.com'].includes(location.hostname))
-          return;
-        const { googleTag, tagManager } = document.currentScript.dataset;
-        // Contact-page query strings can contain free-text topics; omit them.
-        let referrer = '';
-        try {
-          const previous = new URL(document.referrer);
-          referrer = previous.origin + previous.pathname;
-        } catch {}
-        gtag('set', {
-          page_location: location.origin + location.pathname,
-          page_referrer: referrer,
-        });
-        gtag('js', new Date());
-        gtag('config', googleTag);
+<head>
+  <meta charset="utf-8">
+  
+  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
+       before a choice is recorded. (The sample loaded this after the tags on
+       some pages; corrected here.) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
 
-        const google = document.createElement('script');
-        google.async = true;
-        google.src = 'https://www.googletagmanager.com/gtag/js?id=' + googleTag;
-        document.head.appendChild(google);
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'GT-K8DQBD5J');
+  </script>
 
-        window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-        const manager = document.createElement('script');
-        manager.async = true;
-        manager.src = 'https://www.googletagmanager.com/gtm.js?id=' + tagManager;
-        document.head.appendChild(manager);
-      })();
-    </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
+  <!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Mindverse Computing">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#090c10" />
-    <meta name="author" content="Mindverse Computing" />
-    <meta
-      name="robots"
-      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
-    />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <title>Application Focus — Mindverse Computing</title>
-    <meta
-      name="description"
-      content="Research applications for engineering, materials, fusion, computational biology, neural systems, and quantitative finance."
-    />
-    <link rel="canonical" href="https://www.mindversecomputing.com/market.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mindverse Computing" />
-    <meta property="og:title" content="Application Focus" />
-    <meta
-      property="og:description"
-      content="Research applications for engineering, materials, fusion, computational biology, neural systems, and quantitative finance."
-    />
-    <meta property="og:url" content="https://www.mindversecomputing.com/market.html" />
-    <meta
-      property="og:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta property="og:image:width" content="1536" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:image:alt" content="Representative fluid-dynamics research illustration" />
-    <meta name="twitter:site" content="@MindverseX" />
-    <meta name="twitter:creator" content="@MindverseX" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Application Focus" />
-    <meta
-      name="twitter:description"
-      content="Research applications for engineering, materials, fusion, computational biology, neural systems, and quantitative finance."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.mindversecomputing.com/images/physics/fluid-dynamics.jpg"
-    />
-    <meta name="twitter:image:alt" content="Representative fluid-dynamics research illustration" />
-    <link rel="icon" href="images/favicon-32.png?v=22af50e72d9c" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/integrated-ai.css?v=119dcbf0f9f0" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Mindverse Computing",
-        "url": "https://www.mindversecomputing.com/",
-        "logo": "https://www.mindversecomputing.com/images/brand-mark.png",
-        "description": "Physics AI for complex systems through hybrid modeling, physics-informed surrogates, and quantum state research.",
-        "legalName": "Mindverse Computing LLC",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lynnwood",
-          "addressRegion": "WA",
-          "addressCountry": "US"
-        },
-        "sameAs": [
-          "https://x.com/MindverseX",
-          "https://www.linkedin.com/company/mindverse-computing",
-          "https://www.youtube.com/@mindversecomputing",
-          "https://www.facebook.com/MindverseComputing"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "research enquiries",
-          "url": "https://www.mindversecomputing.com/contact.html"
-        }
-      }
-    </script>
-    <script defer src="js/site-analytics.js?v=10ef5643d00f"></script>
-    <script defer src="js/subscription-service.js?v=9a629299a9fb"></script>
-    <script defer src="js/integrated-ai.js?v=f52344d3e0be"></script>
-  </head>
-  <body>
-    <!-- Google Tag Manager fallback retained from the previous website. -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-        title="Google Tag Manager"
-        aria-hidden="true"
-      ></iframe>
-    </noscript>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-          ><img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" /><span
-            class="brand-name"
-            >Mindverse Computing</span
-          ></a
-        ><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-          Menu +
-        </button>
-        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-          <a href="platform.html">Platform</a>
-          <details class="domain-menu">
-            <summary>Domains</summary>
-            <div class="domain-dropdown">
-              <span class="domain-category">Physics AI</span
-              ><a href="platform.html#fluid-dynamics"
-                ><span class="dot" style="--accent: var(--fluid)" aria-hidden="true"></span>Fluid
-                Dynamics</a
-              ><a href="platform.html#plasma-dynamics"
-                ><span class="dot" style="--accent: var(--plasma)" aria-hidden="true"></span>Plasma
-                Dynamics</a
-              ><span class="domain-category">Quantum AI</span
-              ><a href="platform.html#quantum-matter"
-                ><span class="dot" style="--accent: var(--matter)" aria-hidden="true"></span>Quantum
-                Matter</a
-              ><a href="platform.html#omics"
-                ><span class="dot" style="--accent: var(--omics)" aria-hidden="true"></span>Quantum
-                Virtual Omics</a
-              ><a href="platform.html#mind"
-                ><span class="dot" style="--accent: var(--mind)" aria-hidden="true"></span>Quantum
-                Virtual Mind</a
-              ><span class="domain-category">Quantum Finance</span
-              ><a href="platform.html#finance"
-                ><span class="dot" style="--accent: var(--finance)" aria-hidden="true"></span
-                >Quantum Virtual Finance</a
-              >
-            </div>
-          </details>
-          <a href="services.html">Applications</a><a href="research.html">Research</a>
-          <details class="domain-menu resources-menu">
-            <summary>Resources</summary>
-            <div class="domain-dropdown">
-              <a href="planning.html">Research roadmap</a
-              ><a href="workshops.html">Workshops & learning</a
-              ><a href="market.html" aria-current="page">Application focus</a
-              ><a href="invest.html">Company & vision</a>
-            </div>
-          </details>
-          <a href="contact.html" class="nav-contact">Contact ↗</a>
-        </nav>
+  <link rel="canonical" href="https://www.mindversecomputing.com/market.html">
+  <meta name="description" content="One market entered in three places: neuroscience research tools, education and training, then clinical research." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <meta property="og:title" content="Market — Mindverse Computing" />
+  <meta property="og:description" content="One market entered in three places: neuroscience research tools, education and training, then clinical research." />
+  <meta property="og:url" content="https://www.mindversecomputing.com/market.html" />
+  <meta property="og:site_name" content="Mindverse Computing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/newlogo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Market — Mindverse Computing" />
+  <meta name="twitter:description" content="One market entered in three places: neuroscience research tools, education and training, then clinical research." />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/investor-enhancements.css">
+  <link rel="stylesheet" href="css/home-custom.css">
+  <link rel="stylesheet" href="css/site-additions.css">
+
+  <title>Market — Mindverse Computing</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <nav class="site-nav mb-5">
+
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="index.html" class="logo menu-absolute m-0">
+            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
+              height="50" />
+            <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li class="active"><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a> 
+
+        </div>
       </div>
-    </header>
-    <main id="main">
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow">Application focus</p>
-          <h1>Different communities.<br />Specific modeling needs.</h1>
-          <p class="lead">
-            Organize potential research contexts across the six domains, without assuming that a
-            shared method transfers unchanged between them.
+    </div>
+  </nav>
+  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 100px;">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
+      <h1 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">One market, entered in three places</h1>
+      <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">We are not spreading across unrelated industries. Every
+      route below sells the same stack &mdash; the Quantum Virtual Mind (QVM) and its agent layer &mdash; to people who work with the same recordings.</p></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">Sequenced by difficulty, not by size</h2>
+        
+      </div><div class="row"><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="glass-card h-100" style="border-color: rgba(0, 242, 254,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00f2fe,rgba(0, 242, 254,0.25));"></div><i class="uil uil-microscope" style="font-size:2.2rem;color:#00f2fe;margin-bottom:1rem;display:block;"></i><div style="color:#00f2fe;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">First</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Neuroscience research tools</h4><p class="glass-card-description">Research groups already hold BCI recordings and already want a more interpretable description of what they contain.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(167, 139, 250,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#A78BFA,rgba(167, 139, 250,0.25));"></div><i class="uil uil-moon" style="font-size:2.2rem;color:#A78BFA;margin-bottom:1rem;display:block;"></i><div style="color:#A78BFA;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Second</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Wellbeing and recovery</h4><p class="glass-card-description">Meditation, sleep, and stress apps already have consumer distribution and already want a signal beyond self-report. The shortest path from a state reading to something a user notices.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="glass-card h-100" style="border-color: rgba(0, 230, 118,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,rgba(0, 230, 118,0.25));"></div><i class="uil uil-graduation-cap" style="font-size:2.2rem;color:#00e676;margin-bottom:1rem;display:block;"></i><div style="color:#00e676;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Third</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Education and training</h4><p class="glass-card-description">Learning platforms and high-stakes training &mdash; aviation, surgery, defence &mdash; where knowing whether a skill has consolidated has real value.</p></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(255, 0, 255,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF00FF,rgba(255, 0, 255,0.25));"></div><i class="uil uil-stethoscope" style="font-size:2.2rem;color:#FF00FF;margin-bottom:1rem;display:block;"></i><div style="color:#FF00FF;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Fourth</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Clinical research</h4><p class="glass-card-description">Neurology and psychiatry groups working on conditions that unfold over months and years, where a static record serves clinicians worst.</p></div></div></div><div class="row justify-content-center mt-3"><div class="col-lg-10"><div style="background: rgba(255, 0, 255, 0.06); border: 1px solid rgba(255, 0, 255, 0.28); border-radius: 16px; padding: 2.25rem;"><h4 style="color: #FF00FF; font-size:1.201rem; margin-bottom: 1.25rem;">Why this order</h4><ul class="research-list" style="font-size: 0.97rem; margin-top: 0;"><li><strong>Research first</strong> &mdash; short sales cycle, no regulatory pathway, and the customers are best placed to test whether the science holds up</li><li><strong>Wellbeing second</strong> &mdash; consumer distribution already exists, and the bar for a useful signal is lower than in a clinical setting</li><li><strong>Education third</strong> &mdash; budgets exist today, no clinical approval needed, works with hardware learners already own</li><li><strong>Clinical fourth</strong> &mdash; the largest opportunity and the slowest; approach it once validation exists</li></ul></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
+    <div class="container"><div class="row">
+      <div class="col-lg-6 mb-4" data-aos="fade-right">
+        <h2 class="section-title-glow" style="font-size:1.684rem;text-align:left;margin-bottom:1rem;">Interpretation, not acquisition</h2>
+        <p style="color:rgba(255,255,255,0.82); line-height:1.75">Brain-recording hardware has improved steadily and become cheaper.
+        Research headsets are commonplace, clinical systems well established, consumer devices shipping in volume.</p>
+        <p style="color:rgba(255,255,255,0.82); line-height:1.75">What has not kept pace is interpretation. Most analysis still produces
+        labels &mdash; attention high, fatigue detected &mdash; without an account of what changed or what would help.
+        The volume of recorded neural data is growing faster than anyone&rsquo;s ability to explain it.</p><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Where we sit</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">That gap is our market. We do not compete with device makers; we aim to make their output more useful.</p></div></div>
+      <div class="col-lg-6 mb-4" data-aos="fade-left">
+        <h2 class="section-title-glow" style="font-size:1.684rem;text-align:left;margin-bottom:1rem;">Shared recordings, shared model, shared agents</h2>
+        <p style="color:rgba(255,255,255,0.82); line-height:1.75">A company spread across finance, materials, and biology cannot compound
+        &mdash; market ticks and molecular simulations have nothing to say to each other.</p>
+        <p style="color:rgba(255,255,255,0.82); line-height:1.75">Recordings from a learning study and from a clinical study are the same
+        modality, the same preprocessing, the same model structure, plausibly the same ethics framework.</p><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">The machinery is shared by design</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Characterising a healthy departure from baseline and characterising a clinical one are the same operation. <a href="platform.html" style="color:#00f2fe;">See the comparison &rarr;</a></p></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">Target segments</h2>
+        
+      </div><div class="row"><div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-microscope" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">Neuroscience research groups</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Labs with existing recording data who want an interpretable, longitudinal description of brain state that holds up across a multi-year study. Their difficulty is not collecting signal &mdash; it is that a summary score computed at visit one is not comparable to the same score at visit twelve. A model fitted to the person makes those visits commensurable.</p></div></div><div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-processor" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">BCI hardware and platform companies</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Device makers who have solved acquisition and now need something to say about what the signal means. The interpretation layer is where their product differentiates, and it is the part least served by existing tooling. We are a layer behind their product, not a competitor to it.</p></div></div><div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-graduation-cap" style="font-size:1.8rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.183rem;margin:0;">Education and training platforms</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Learning platforms and high-stakes training programmes &mdash; aviation, surgery, defence &mdash; where knowing whether a skill has actually consolidated carries real cost if you get it wrong. Answer-based assessment tells you after the fact; state-based assessment is the open question we are researching.</p></div></div><div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 2rem; height: 100%;"><div style="display:flex; align-items:center; margin-bottom:1.25rem;"><div style="width:56px;height:56px;background:rgba(255, 0, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.25rem;flex:none;"><i class="uil uil-stethoscope" style="font-size:1.8rem;color: #FF66FF;"></i></div><h4 style="color:#FF00FF;font-size:1.183rem;margin:0;">Clinical research and neurology</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.008rem;">Neurology and psychiatry research groups working on conditions that unfold over months and years, where a static record serves clinicians worst. The value is a trajectory measured against the person&rsquo;s own earlier state rather than a population norm. Research infrastructure, not a diagnostic device.</p></div></div></div></div>
+  </div>
+  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 70px 0;">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="building-box" style="background: rgba(255, 255, 255, 0.06); border-left: 3px solid rgba(255,255,255,0.6); border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: rgba(255,255,255,0.82); font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">On market sizing</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Detailed sizing, pricing, and revenue modelling are shared with qualified investors on request rather than posted here. We would rather walk you through the assumptions than post a headline number.</p></div></div></div></div>
+  </div>
+
+  <!------------Footer--------------------------------------------->
+  <div class="site-footer"
+    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
+    <div class="container">
+      <div class="row">
+
+        <!-- About and Social -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
+            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
+            state model &mdash; wrapped in agentic workflows.
+            An early-stage research company; everything here is research, not a medical device.</p>
+          </div>
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
+              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="widget mb-4">
+            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
+            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
+            and what we publish. No marketing.</p>
+            <form id="footer-subscribe-form" novalidate>
+              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
+                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+                <input name="email" id="footer-email-input" type="email" required
+                  placeholder="Enter your email" autocomplete="email"
+                  style="flex:1; min-width:190px; background:#fff; color:#222;
+                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
+                  padding:10px 20px; font-size:0.977rem;">
+                <button type="submit" class="btn btn-primary"
+                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
+              </div>
+            </form>
+            <div id="subscribe-message" role="status" aria-live="polite"
+              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
+          </div>
+        </div>
+
+
+        <!-- The platform -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">The platform</h3>
+            <ul class="list-unstyled links">
+              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
+              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
+              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
+              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research directions -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
+            <ul class="list-unstyled links">
+              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
+                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
+              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="widget">
+            <h3 style="color: white; font-size:1.11rem;">Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
+              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
+              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
+        <div class="col-lg-8">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75;">
+            Research and development notice: our platforms are experimental research tools for academic
+            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
+            regulated service. Three manuscripts are currently in preparation.
           </p>
         </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="domain-grid">
-            <article class="research-card fluid" data-domain="fluid">
-              <p class="eyebrow">01 / Fluid Dynamics</p>
-              <h3>Aerospace, automotive, and thermal engineering research teams.</h3>
-              <p>Aircraft aerodynamics · Automotive aerodynamics · High-speed aerospace flows</p>
-              <a class="text-link" href="services.html#fluid-dynamics"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-            <article class="research-card plasma" data-domain="plasma">
-              <p class="eyebrow">02 / Plasma Dynamics</p>
-              <h3>Fusion, plasma-process, and charged-system research teams.</h3>
-              <p>Tokamak plasma · Pulsed FRC compression · Plasma processing</p>
-              <a class="text-link" href="services.html#plasma-dynamics"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-            <article class="research-card matter" data-domain="matter">
-              <p class="eyebrow">03 / Quantum Matter</p>
-              <h3>Quantum chemistry, condensed matter, and materials research teams.</h3>
-              <p>Battery materials · Semiconductors &amp; thin films · Catalysts &amp; synthesis</p>
-              <a class="text-link" href="services.html#quantum-matter"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-            <article class="research-card omics" data-domain="omics">
-              <p class="eyebrow">04 / Quantum Virtual Omics</p>
-              <h3>Computational biology, multi-omics, and translational research teams.</h3>
-              <p>Cellular response · Compound screening · Biomarker research</p>
-              <a class="text-link" href="services.html#omics-applications"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-            <article class="research-card mind" data-domain="mind">
-              <p class="eyebrow">05 / Quantum Virtual Mind</p>
-              <h3>Computational neuroscience and neural-interface research teams.</h3>
-              <p>
-                Neural &amp; cognitive states · Adaptive neurofeedback · Neural interface research
-              </p>
-              <a class="text-link" href="services.html#mind-applications"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-            <article class="research-card finance" data-domain="finance">
-              <p class="eyebrow">06 / Quantum Virtual Finance</p>
-              <h3>Quantitative finance, market-risk, and optimization research teams.</h3>
-              <p>Market regimes &amp; risk · Portfolio optimization · Strategy evaluation</p>
-              <a class="text-link" href="services.html#finance-applications"
-                >Explore application questions<span class="arrow" aria-hidden="true">↗</span></a
-              >
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="section workflow">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Fit criteria</p>
-              <h2>A useful application<br />starts with a reference.</h2>
-            </div>
-            <p>
-              Prioritize questions with available inputs, a defined comparison, and an outcome that
-              can be evaluated.
-            </p>
-          </div>
-          <div class="research-grid">
-            <article class="research-card">
-              <h3>Defined system</h3>
-              <p>Specify geometry, operating regime, cohort, recording task, or market universe.</p>
-            </article>
-            <article class="research-card">
-              <h3>Usable evidence</h3>
-              <p>
-                Document data provenance, preparation, access, and a meaningful reference method.
-              </p>
-            </article>
-            <article class="research-card">
-              <h3>Bounded objective</h3>
-              <p>
-                State the quantity to predict or optimize and the conditions under which it would be
-                useful.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="cta-section">
-        <div class="container cta-inner">
-          <div>
-            <p class="eyebrow">Work with Mindverse</p>
-            <h2>A complex system.<br />A focused research question.</h2>
-            <p>
-              Tell us what you want to model, which inputs you have, and what a useful comparison
-              would look like.
-            </p>
-          </div>
-          <a class="button" href="contact.html"
-            >Start a conversation<span class="arrow" aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <section class="newsletter" aria-labelledby="newsletter-title">
-          <div>
-            <p class="eyebrow">Research updates</p>
-            <h2 id="newsletter-title">Follow the research.</h2>
-            <p>Occasional updates on research, publications, and workshops.</p>
-          </div>
-          <form id="footer-subscribe-form" aria-label="Research newsletter signup">
-            <fieldset disabled>
-              <legend class="visually-hidden">Research newsletter signup</legend>
-              <label for="subscribe-email">Email address</label>
-              <div class="newsletter-input">
-                <input
-                  id="subscribe-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  maxlength="180"
-                  placeholder="you@example.com"
-                  required
-                /><button type="submit">Subscribe <span aria-hidden="true">↗</span></button>
-              </div>
-            </fieldset>
-            <p id="subscribe-message" class="form-help" role="status" aria-live="polite"></p>
-            <noscript><p class="form-help">Please enable JavaScript to subscribe.</p></noscript>
-          </form>
-        </section>
-        <div class="footer-main">
-          <div class="footer-brand">
-            <a class="brand" href="index.html" aria-label="Mindverse Computing home"
-              ><img src="images/brand-mark.png?v=42b4e7ed02aa" alt="" width="39" height="39" /><span
-                class="brand-name"
-                >Mindverse Computing</span
-              ></a
-            >
-            <p>
-              Physics AI for complex systems. Hybrid models, scientific insight, and new
-              computational possibilities.
-            </p>
-          </div>
-          <div class="footer-column">
-            <h2>Physics AI</h2>
-            <a href="platform.html#fluid-dynamics">Fluid Dynamics</a
-            ><a href="platform.html#plasma-dynamics">Plasma Dynamics</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum AI</h2>
-            <a href="platform.html#quantum-matter">Quantum Matter</a
-            ><a href="platform.html#omics">Quantum Virtual Omics</a
-            ><a href="platform.html#mind">Quantum Virtual Mind</a>
-          </div>
-          <div class="footer-column">
-            <h2>Quantum Finance</h2>
-            <a href="platform.html#finance">Quantum Virtual Finance</a>
-          </div>
-          <div class="footer-column">
-            <h2>Explore</h2>
-            <a href="platform.html">Platform</a><a href="services.html">Applications</a
-            ><a href="research.html">Research & methods</a
-            ><a href="planning.html">Research roadmap</a
-            ><a href="workshops.html">Workshops & learning</a
-            ><a href="invest.html">Company & vision</a><a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© <span data-year>2026</span> Mindverse Computing. All rights reserved.</p>
-          <p>Lynnwood, Washington, USA</p>
-          <nav class="footer-social" aria-label="Social media">
-            <a
-              href="https://x.com/MindverseX"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.2-8.3L1 2h6.4l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.5 3.9H4.7L17.8 20Z"
-                /></svg
-              ><span>X</span></a
-            ><a
-              href="https://www.linkedin.com/company/mindverse-computing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.1c0-1.2-.2-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.8 2 3.8 4.6V19Z"
-                /></svg
-              ><span>LinkedIn</span></a
-            ><a
-              href="https://www.youtube.com/@mindversecomputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31.3 31.3 0 0 0-.5 5 31.3 31.3 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31.3 31.3 0 0 0 .5-5 31.3 31.3 0 0 0-.5-5ZM9.7 15.3V8.7l6 3.3-6 3.3Z"
-                /></svg
-              ><span>YouTube</span></a
-            ><a
-              href="https://www.facebook.com/MindverseComputing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
-                <path
-                  d="M24 12A12 12 0 1 0 10.1 23.9v-8.4h-3V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-1.9.9-1.9 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"
-                /></svg
-              ><span>Facebook</span></a
-            >
-          </nav>
+        <div class="col-lg-4 text-lg-right">
+          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75">
+            &copy; 2026 Mindverse Computing. All Rights Reserved.
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/investor-effects.js"></script>
+
+<script>
+(function () {
+  var form = document.getElementById("footer-subscribe-form");
+  if (!form) return;
+  var input = document.getElementById("footer-email-input");
+  var note  = document.getElementById("subscribe-message");
+  var btn   = form.querySelector('button[type="submit"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = (input.value || "").trim();
+    if (!email || email.indexOf("@") < 1) {
+      note.innerText = "Please enter a valid email address.";
+      return;
+    }
+    btn.disabled = true;
+    note.innerText = "Subscribing\u2026";
+    var data = new FormData();
+    data.append("email", email);
+    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
+      .then(function (r) { return r.text(); })
+      .then(function () {
+        note.innerText = "Thanks \u2014 you are subscribed.";
+        input.value = "";
+      })
+      .catch(function (err) {
+        note.innerText = "Something went wrong. Please try the contact page instead.";
+        console.error(err);
+      })
+      .finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+
 </html>
