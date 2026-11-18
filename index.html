@@ -1,562 +1,713 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Archived Google measurement: consent defaults precede both tag loaders. -->
+    <script id="google-tag-consent">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      });
+      gtag('js', new Date());
+      gtag('config', 'GT-K8DQBD5J');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+    <script id="google-tag-manager">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');
+    </script>
 
-<head>
-  <meta charset="utf-8">
-  
-  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
-       before a choice is recorded. (The sample loaded this after the tags on
-       some pages; corrected here.) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#090c10" />
+    <meta name="author" content="Mindverse Computing" />
+    <title>
+      The agentic stack of quantum digital twin learned from BCI data — Mindverse Computing
+    </title>
+    <link rel="canonical" href="https://www.mindversecomputing.com/" />
+    <meta property="og:url" content="https://www.mindversecomputing.com/" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta name="twitter:image:alt" content="Representative BCI research illustration" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
-  <script>
-    gtag('js', new Date());
-    gtag('config', 'GT-K8DQBD5J');
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start': new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
-  <!-- End Google Tag Manager -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Mindverse Computing">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="shortcut icon" href="images/favicon.png">
-
-  <link rel="canonical" href="https://www.mindversecomputing.com/">
-  <meta name="description" content="A full-stack platform that ingests brain-computer interface data, reconstructs the <strong>Quantum Virtual Mind (QVM)</strong> &mdash; an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-
-  <meta property="og:title" content="Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data" />
-  <meta property="og:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
-  <meta property="og:url" content="https://www.mindversecomputing.com/" />
-  <meta property="og:site_name" content="Mindverse Computing" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/newlogo.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data" />
-  <meta name="twitter:description" content="A full-stack platform that ingests brain-computer interface data, reconstructs an executable quantum-classical state model, and routes that state into agentic workflows. A twin of the dynamics a BCI can see — not a replica of the biological brain." />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
-    rel="stylesheet">
-
-
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/investor-enhancements.css">
-  <link rel="stylesheet" href="css/home-custom.css">
-  <link rel="stylesheet" href="css/site-additions.css">
-
-  <title>Mindverse Computing — The agentic stack of quantum digital twin learned from BCI data</title>
+    <meta
+      name="description"
+      content="Agentome combines structure-preserving Large Physics Models with continual personalization, backend automation and frontend guidance for BCI applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mindverse Computing" />
+    <meta
+      property="og:title"
+      content="The agentic stack of quantum digital twin learned from BCI data"
+    />
+    <meta
+      property="og:description"
+      content="Agentome combines structure-preserving Large Physics Models with continual personalization, backend automation and frontend guidance for BCI applications."
+    />
+    <meta
+      property="og:image"
+      content="https://www.mindversecomputing.com/images/bci-network-brain-v3.jpg"
+    />
+    <meta property="og:image:alt" content="Representative BCI research illustration" />
+    <meta name="twitter:site" content="@MindverseX" />
+    <meta name="twitter:creator" content="@MindverseX" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="The agentic stack of quantum digital twin learned from BCI data"
+    />
+    <meta
+      name="twitter:description"
+      content="Agentome combines structure-preserving Large Physics Models with continual personalization, backend automation and frontend guidance for BCI applications."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.mindversecomputing.com/images/bci-network-brain-v3.jpg"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
+    <link rel="icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/bci.css?v=34e85ce8aa33" />
+    <script defer src="js/subscription-service.js?v=e72dae06c1a8"></script>
+    <script defer src="js/bci.js?v=897f381e2ff5"></script>
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Mindverse Computing",
-    "legalName": "Mindverse Computing LLC",
-    "url": "https://www.mindversecomputing.com/",
-    "logo": "https://www.mindversecomputing.com/images/newlogo.png",
-    "description": "Research company building the Quantum Virtual Mind (QVM) \u2014 a quantum-classical state model learned from brain-computer interface data, wrapped in a layer of specialist AI agents.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lynnwood",
-      "addressRegion": "WA",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://x.com/MindverseCom",
-      "https://www.linkedin.com/company/mindverse-computing",
-      "https://www.youtube.com/@mindversecomputing",
-      "https://www.facebook.com/MindverseComputing"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "research enquiries",
-      "url": "https://www.mindversecomputing.com/contact.html"
-    }
-  }
-  </script>
-</head>
-
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-  <nav class="site-nav mb-5">
-
-    <div class="sticky-nav js-sticky-header">
-      <div class="container position-relative">
-        <div class="site-navigation text-center">
-          <a href="index.html" class="logo menu-absolute m-0">
-            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
-              height="50" />
-            <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.mindversecomputing.com/#organization",
+        "name": "Mindverse Computing",
+        "legalName": "Mindverse Computing LLC",
+        "url": "https://www.mindversecomputing.com/",
+        "logo": "https://www.mindversecomputing.com/images/brand-mark.png",
+        "description": "Mindverse Computing is developing Agentome: physics-based neural models with continual personalization, backend orchestration and frontend guidance for BCI applications.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lynnwood",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://x.com/MindverseX",
+          "https://www.linkedin.com/company/mindverse-computing",
+          "https://www.youtube.com/@mindversecomputing",
+          "https://www.facebook.com/MindverseComputing"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "research enquiries",
+          "url": "https://www.mindversecomputing.com/contact.html"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager noscript fallback, restored from the archived site. -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title="Google Tag Manager"
+        aria-hidden="true"
+      ></iframe>
+    </noscript>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Mindverse Computing home">
+          <img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" />
+          <span class="brand-name">Mindverse Computing</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          Menu +
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="platform.html">Platform</a>
+          <details class="domain-menu">
+            <summary>Applications</summary>
+            <div class="domain-dropdown">
+              <a href="services.html#superlearning">
+                <span class="dot" style="--accent: var(--learning)" aria-hidden="true"> </span
+                >Superlearning</a
+              >
+              <a href="services.html#restoration">
+                <span class="dot" style="--accent: var(--restoration)" aria-hidden="true"> </span
+                >Restoration & Creative Wellbeing</a
+              >
+              <a href="services.html#clinical">
+                <span class="dot" style="--accent: var(--clinical)" aria-hidden="true"> </span
+                >Mental Health & Neurological Research</a
+              >
+              <a href="services.html">All research use cases <span aria-hidden="true">↗</span> </a>
+            </div>
+          </details>
+          <a href="market.html">Market</a>
+          <details class="domain-menu resources-menu">
+            <summary>Research</summary>
+            <div class="domain-dropdown">
+              <a href="platform.html#stack">The four layers<span aria-hidden="true">↗</span> </a>
+              <a href="platform.html#core">The LPM family<span aria-hidden="true">↗</span></a>
+              <a href="platform.html#continual"
+                >Continual personalization<span aria-hidden="true">↗</span></a
+              >
+              <a href="platform.html#agents"
+                >Backend & frontend agents<span aria-hidden="true">↗</span>
+              </a>
+              <a href="services.html#evidence"
+                >Research evidence<span aria-hidden="true">↗</span>
+              </a>
+              <a href="index.html#roadmap"
+                >Development roadmap<span aria-hidden="true">↗</span>
+              </a>
+              <a href="investors.html">Investors<span aria-hidden="true">↗</span> </a>
+              <a href="services.html#manuscripts"
+                >Manuscripts & methods<span aria-hidden="true">↗</span></a
+              >
+              <a href="contact.html?subject=Ask+for+the+drafts#contact-form"
+                >Request manuscript drafts<span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </details>
+          <a class="nav-contact" href="contact.html"
+            >Let’s talk <span aria-hidden="true">↗</span>
           </a>
-
-          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li class="active"><a href="index.html">Home</a></li><li><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
-
-          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-            <span></span>
-          </a> 
-
-        </div>
+        </nav>
       </div>
-    </div>
-  </nav>
-
-  
-  <div class="fresh-hero" id="home">
-    <div class="container">
-      <div class="row align-items-stretch" style="min-height: calc(100vh - 48px);">
-        <div class="col-lg-6 text-left d-flex flex-column justify-content-center" style="padding: 60px 0;">
-          <h1 class="fresh-title" data-aos="fade-right" data-aos-delay="100">The agentic stack of<br>quantum digital twin<br>learned from BCI data</h1>
-          <p class="fresh-description text-white" data-aos="fade-right" data-aos-delay="220"
-            style="margin-bottom: 2rem; color: rgba(255,255,255,0.82) !important; font-size:1.071rem; line-height:1.75; max-width: 760px;">
-            Build on the full-stack platform that ingests brain&ndash;computer interface data streams, reconstructs an <strong>executable quantum-classical state model</strong>, and routes that state into agentic workflows that generate hypotheses, triage risks, and recommend next actions &mdash; for learning, and for neurological disorder research.
-          </p>
-          <div class="hero-buttons" data-aos="fade-right" data-aos-delay="300"><a href="platform.html" class="btn btn-primary btn-explore-qdt">Explore the platform</a><a href="services.html" class="btn btn-secondary btn-applications">Research products</a></div>
-        </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-center">
-          <div class="home-visual-column" data-aos="fade-left" data-aos-delay="400" style="width:100%; height:100%;">
-            <div class="brain-network-visual" id="brain-network-container">
-              <div class="brain-glow-center"></div>
+    </header>
+    <main id="main">
+      <section class="hero bci-hero" id="home" aria-labelledby="hero-title">
+        <div class="container bci-hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Agentome · Continual Large Physics Models</p>
+            <h1 id="hero-title">
+              The agentic stack of <span>quantum digital twin learned from BCI data</span>
+            </h1>
+            <p class="lead">
+              Build on full stack platform for a classical–quantum hybrid digital twin, powered by
+              structure-preserving Large Physics Models (LPMs) that track neural states and forecast
+              neural-field dynamics, with continual personalization from incoming brain–computer
+              interface recordings — to support learning, focus, meditation, music, art, and
+              restoration, alongside mental-health and neurological research workflows.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="platform.html"
+                >Explore the platform<span class="arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link" href="services.html"
+                >Explore applications<span class="arrow" aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
+          <div class="hero-art">
+            <img
+              id="hero-image"
+              src="images/bci-network-brain-v3.jpg?v=4b59e6b560ad"
+              alt="Representative human brain formed from silver-blue neural fibers and nodes, with EEG-like recording traces"
+              width="1536"
+              height="1024"
+              fetchpriority="high"
+            />
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">One state model. Three applications.</h2>
-        <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">The <strong>Quantum Virtual Mind (QVM)</strong> learns the dynamics in a person&rsquo;s BCI recordings. Everything else is a question about how those dynamics depart from their own baseline &mdash; upward into learning, or downward into disorder.</p>
-      </div><div class="row"><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="glass-card h-100" style="border-color: rgba(0, 242, 254,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00f2fe,rgba(0, 242, 254,0.25));"></div><i class="uil uil-brain" style="font-size:2.2rem;color:#00f2fe;margin-bottom:1rem;display:block;"></i><div style="color:#00f2fe;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">The core &middot; in development</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Quantum Virtual Mind (QVM)</h4><p class="glass-card-description">The quantum&ndash;classical core: an executable state model of the dynamics a brain&ndash;computer interface can see. Wrapped in a layer of specialist AI agents, it becomes an end-to-end stack.</p><a href="platform.html" style="color:#00f2fe;font-weight:600;font-size:0.92rem;">See the platform &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="glass-card h-100" style="border-color: rgba(0, 230, 118,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,rgba(0, 230, 118,0.25));"></div><i class="uil uil-graduation-cap" style="font-size:2.2rem;color:#00e676;margin-bottom:1rem;display:block;"></i><div style="color:#00e676;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Superlearning</h4><p class="glass-card-description">A proposed approach to reading where a learner currently sits, and what they might be ready for next. Not yet built or tested.</p><a href="services.html#superlearning" style="color:#00e676;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(167, 139, 250,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#A78BFA,rgba(167, 139, 250,0.25));"></div><i class="uil uil-moon" style="font-size:2.2rem;color:#A78BFA;margin-bottom:1rem;display:block;"></i><div style="color:#A78BFA;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Healthy direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Restoration</h4><p class="glass-card-description">Guided meditation, sleep audio, and stress regulation selected from measured state rather than a preset track. The recovery half of learning.</p><a href="services.html" style="color:#A78BFA;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div><div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300"><div class="glass-card h-100" style="border-color: rgba(255, 0, 255,0.25); padding: 2.25rem; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF00FF,rgba(255, 0, 255,0.25));"></div><i class="uil uil-stethoscope" style="font-size:2.2rem;color:#FF00FF;margin-bottom:1rem;display:block;"></i><div style="color:#FF00FF;font-weight:700;font-size:0.724rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;">Clinical direction &middot; proposal</div><h4 class="glass-card-title" style="font-size:1.229rem;margin-bottom:0.75rem;">Neurological Perturbation Studies</h4><p class="glass-card-description">A proposed approach to measuring how a condition moves a person away from their own healthy baseline. A research direction, not a result.</p><a href="services.html#clinical" style="color:#FF00FF;font-weight:600;font-size:0.92rem;">See the research &rarr;</a></div></div></div></div>
-  </div>
-  
-      <div class="investor-section-premium" style="background:#1B264F; padding: 60px 0 40px;">
+        <div class="hero-bottom">
+          <div class="container hero-control-row">
+            <div class="hero-switches">
+              <a class="scene-button" href="platform.html#core">
+                <span>01 / THE MODELS</span>Continual LPMs ↗</a
+              >
+              <a class="scene-button" href="platform.html#agents">
+                <span>02 / THE AGENTS</span>Backend + frontend ↗</a
+              >
+              <a class="scene-button" href="services.html">
+                <span>03 / THE QUESTIONS</span>Three programmes ↗</a
+              >
+            </div>
+            <p class="hero-caption">
+              Conceptual state-model illustration<br />Not a measured result
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-border bci-overview"
+        id="bci-overview"
+        aria-labelledby="bci-overview-title"
+      >
         <div class="container">
-          <div class="row justify-content-center text-center" style="margin-bottom:2.2rem;" data-aos="fade-up">
-            <div class="col-lg-8">
-              <p class="domain-label" style="color:#00f2fe;">WHERE THE WORK STANDS</p>
-              <h2 style="color:#fff; font-size:1.72rem; margin:0 0 0.6rem;">Measured, not projected</h2>
-              <p style="color:rgba(255,255,255,0.78); font-size:1rem; line-height:1.75; margin:0;">
-              Every number below is something we can point at today, not a forecast.</p>
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">The core and its applications</p>
+              <h2 id="bci-overview-title">One model family. Three application programmes.</h2>
             </div>
+            <p>
+              Agentome connects a core family of Large Physics Models to two agent layers. Three
+              proposed programmes explore how personalized models and guided experiences could
+              support users and researchers.
+            </p>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
-          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 242, 254,0.28); padding:2rem 1.5rem;">
-            <span class="highlight-number" style="color:#00f2fe; font-size:2.5rem;">1</span>
-            <div class="highlight-title" style="font-size:1.05rem;">Core model</div>
-            <p class="highlight-description" style="margin-bottom:0;">The Quantum Virtual Mind, built and benchmarked in house against a classical baseline on public EEG data.</p>
-          </div>
-        </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
-          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 242, 254,0.28); padding:2rem 1.5rem;">
-            <span class="highlight-number" style="color:#00f2fe; font-size:2.5rem;">8</span>
-            <div class="highlight-title" style="font-size:1.05rem;">Specialist agents</div>
-            <p class="highlight-description" style="margin-bottom:0;">Named roles across the lifecycle, from data access through to designing what to do next.</p>
-          </div>
-        </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
-          <div class="highlight-card text-center h-100" style="border-color:rgba(0, 230, 118,0.28); padding:2rem 1.5rem;">
-            <span class="highlight-number" style="color:#00e676; font-size:2.5rem;">2</span>
-            <div class="highlight-title" style="font-size:1.05rem;">Research directions</div>
-            <p class="highlight-description" style="margin-bottom:0;">Superlearning and clinical research &mdash; the same perturbation measured in opposite directions.</p>
-          </div>
-        </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
-          <div class="highlight-card text-center h-100" style="border-color:rgba(255, 0, 255,0.28); padding:2rem 1.5rem;">
-            <span class="highlight-number" style="color:#FF00FF; font-size:2.5rem;">3</span>
-            <div class="highlight-title" style="font-size:1.05rem;">Manuscripts</div>
-            <p class="highlight-description" style="margin-bottom:0;">In preparation, covering the foundation model, the healthy atlas, and the clinical record.</p>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">What the state model is, and is not</h2>
-        
-      </div>
-      <div class="row">
-        <div class="col-lg-6 mb-4" data-aos="fade-right"><div style="background: rgba(0, 242, 254, 0.06); border: 1px solid rgba(0, 242, 254, 0.28); border-radius: 16px; padding: 2.25rem;"><h4 style="color: #00f2fe; font-size:1.201rem; margin-bottom: 1.25rem;">What it is</h4><ul class="research-list" style="font-size: 0.97rem; margin-top: 0;"><li>A model learned from brain&ndash;computer interface recordings</li><li>A twin of the dynamics those recordings contain</li><li>Physically consistent by construction</li><li>Something you can question, not just read</li></ul></div></div>
-        <div class="col-lg-6 mb-4" data-aos="fade-left"><div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 16px; padding: 2.25rem;"><h4 style="color: rgba(255,255,255,0.75); font-size:1.201rem; margin-bottom: 1.25rem;">What it is not</h4><ul class="research-list" style="font-size: 0.97rem; margin-top: 0;"><li>Not a replica of a biological brain</li><li>Not a model of neurons or consciousness</li><li>Not a medical device or diagnostic tool</li><li>Not a demonstrated quantum speed-up</li></ul></div></div>
-      </div>
-      <div class="text-center mt-4"><a href="platform.html" class="btn btn-secondary">How it works</a></div></div>
-  </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container"><div class="row align-items-center">
-      <div class="col-lg-6 mb-4" data-aos="fade-right">
-        <div class="glass-card" style="padding:2.25rem;">
-          <p style="font-size:0.938rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;margin-bottom:1.25rem; line-height:1.75">
-            Early benchmark &mdash; in-house</p>
-          <div class="stat-row"><span class="k">Recovering real physical wiring</span><span class="v win">Ours leads</span></div>
-          <div class="stat-row"><span class="k">Physical consistency</span><span class="v win">Both, exactly</span></div>
-          <div class="stat-row"><span class="k">Short-term signal prediction</span><span class="v lose">Conventional leads</span></div>
-          <div class="stat-row"><span class="k">Fine-grained rhythm detail</span><span class="v lose">Conventional leads</span></div>
-          <p style="font-size:0.938rem;color:rgba(255,255,255,0.82);margin:1.25rem 0 0; line-height:1.75">Public brain-recording data. Full detail in the manuscripts, in preparation.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 mb-4" data-aos="fade-left">
-        <h2 class="section-title-glow" style="font-size:1.729rem;text-align:left;margin-bottom:1rem;">
-          Early results, and what we are building on them</h2>
-        <p style="color:rgba(255,255,255,0.82); line-height:1.75">We put the state model head to head with a conventional method on public
-        brain-recording data. It recovered real physical structure markedly better, and held physical consistency
-        exactly &mdash; while conventional methods still lead on short-horizon signal prediction.</p><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Where this sits</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">This is an early in-house benchmark and the first of a planned series. Three manuscripts are in preparation, and independent replication on larger cohorts is the next milestone.</p></div>
-        <a href="services.html#evidence" style="color:#00f2fe; font-weight:600;">See where the work stands &rarr;</a>
-      </div></div></div>
-  </div>
-  
-      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #151b3b 100%); padding: 90px 0 70px;">
-        <div class="container">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <p class="domain-label" style="color:#00f2fe;">RESEARCH ROADMAP</p>
-            <h2 class="section-title-glow" style="font-size:2.1rem; margin-bottom:1rem;">What exists, and what comes next</h2>
-            <p style="font-size:1.05rem; color:rgba(255,255,255,0.78); max-width:780px; margin:0 auto; line-height:1.75;">
-            Sequenced by what each stage depends on. Restoration comes first because consumer distribution already
-            exists and the bar for a useful signal is lowest; clinical work comes last because it needs years of
-            longitudinal data before anything can be claimed.</p>
-          </div>
-          <div class="timeline-container" style="position:relative; max-width:1150px; margin:56px auto 0; padding:0 20px;">
-            <!-- Line sits BELOW the 80px circles and above the year labels, matching the
-                 sample's 98px placement. Circles occupy 0-80px; labels start at 114px. -->
-            <div class="timeline-line" style="position:absolute; top:98px; left:20px; right:20px; height:2px;
-              background:rgba(0,242,254,0.18); transform:translateY(-50%); z-index:1;"></div>
-            <div class="timeline-glow-line" id="timeline-glow-line" style="position:absolute; top:98px; left:20px;
-              width:0; height:5px; background:linear-gradient(90deg, rgba(0,242,254,0.9), rgba(255,255,255,0.85));
-              transform:translateY(-50%); z-index:2; box-shadow:0 0 18px rgba(0,242,254,0.7);
-              border-radius:3px; transition:width 2s ease-in-out;"></div>
-            <div class="timeline-nodes" style="display:flex; justify-content:space-between; align-items:flex-start;
-              position:relative; z-index:3; gap:10px;">
-              <div class="timeline-node" data-year="2025" data-aos="fade-up" data-aos-delay="100"
-            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
-            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 242, 254,0.1);
-              border:3px solid rgba(0, 242, 254,0.8); border-radius:50%; display:flex; align-items:center;
-              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
-              box-shadow:0 0 30px rgba(0, 242, 254,0.35);">
-              <i class="uil uil-processor" style="font-size:2.1rem; color:#00f2fe;"></i>
-              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
-                background:rgba(0, 242, 254,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00f2fe;
-              text-shadow:0 0 20px rgba(0, 242, 254,0.5); opacity:1;">2025</div>
-            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00f2fe;
-              text-align:center; line-height:1.35;">Digital Twin<br>Prototype</div>
-            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
-              text-align:center; line-height:1.45;">Classical&ndash;quantum core<br>built and benchmarked</div>
-          </div><div class="timeline-node" data-year="2026" data-aos="fade-up" data-aos-delay="200"
-            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
-            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 242, 254,0.1);
-              border:3px solid rgba(0, 242, 254,0.8); border-radius:50%; display:flex; align-items:center;
-              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
-              box-shadow:0 0 30px rgba(0, 242, 254,0.35);">
-              <i class="uil uil-robot" style="font-size:2.1rem; color:#00f2fe;"></i>
-              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
-                background:rgba(0, 242, 254,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00f2fe;
-              text-shadow:0 0 20px rgba(0, 242, 254,0.5); opacity:1;">2026</div>
-            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00f2fe;
-              text-align:center; line-height:1.35;">Agentic Layer</div>
-            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
-              text-align:center; line-height:1.45;">Specialist agents<br>under construction</div>
-          </div><div class="timeline-node" data-year="2027" data-aos="fade-up" data-aos-delay="300"
-            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
-            <div class="node-circle" style="width:80px; height:80px; background:rgba(167, 139, 250,0.1);
-              border:3px solid rgba(167, 139, 250,0.8); border-radius:50%; display:flex; align-items:center;
-              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
-              box-shadow:0 0 30px rgba(167, 139, 250,0.35);">
-              <i class="uil uil-moon" style="font-size:2.1rem; color:#A78BFA;"></i>
-              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
-                background:rgba(167, 139, 250,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#A78BFA;
-              text-shadow:0 0 20px rgba(167, 139, 250,0.5); opacity:0.55;">2027</div>
-            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#A78BFA;
-              text-align:center; line-height:1.35;">Restoration</div>
-            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
-              text-align:center; line-height:1.45;">Meditation, sleep,<br>stress regulation &mdash; target</div>
-          </div><div class="timeline-node" data-year="2028" data-aos="fade-up" data-aos-delay="400"
-            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
-            <div class="node-circle" style="width:80px; height:80px; background:rgba(0, 230, 118,0.1);
-              border:3px solid rgba(0, 230, 118,0.8); border-radius:50%; display:flex; align-items:center;
-              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
-              box-shadow:0 0 30px rgba(0, 230, 118,0.35);">
-              <i class="uil uil-graduation-cap" style="font-size:2.1rem; color:#00e676;"></i>
-              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
-                background:rgba(0, 230, 118,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#00e676;
-              text-shadow:0 0 20px rgba(0, 230, 118,0.5); opacity:0.55;">2028</div>
-            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#00e676;
-              text-align:center; line-height:1.35;">Superlearning</div>
-            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
-              text-align:center; line-height:1.45;">Readiness and<br>learning-track design &mdash; target</div>
-          </div><div class="timeline-node" data-year="2030" data-aos="fade-up" data-aos-delay="500"
-            style="flex:1; display:flex; flex-direction:column; align-items:center; position:relative;">
-            <div class="node-circle" style="width:80px; height:80px; background:rgba(255, 0, 255,0.1);
-              border:3px solid rgba(255, 0, 255,0.8); border-radius:50%; display:flex; align-items:center;
-              justify-content:center; position:relative; transition:all 0.4s ease; cursor:pointer;
-              box-shadow:0 0 30px rgba(255, 0, 255,0.35);">
-              <i class="uil uil-stethoscope" style="font-size:2.1rem; color:#FF00FF;"></i>
-              <div class="node-glow" style="position:absolute; width:100%; height:100%; border-radius:50%;
-                background:rgba(255, 0, 255,0.3); filter:blur(20px); opacity:0; transition:opacity 0.4s ease;"></div>
-            </div>
-            <div class="node-year" style="margin-top:34px; font-size:1.45rem; font-weight:700; color:#FF00FF;
-              text-shadow:0 0 20px rgba(255, 0, 255,0.5); opacity:0.55;">2030</div>
-            <div class="node-label" style="margin-top:8px; font-size:0.94rem; font-weight:600; color:#FF00FF;
-              text-align:center; line-height:1.35;">Clinical Research</div>
-            <div class="node-subtitle" style="margin-top:5px; font-size:0.82rem; color:rgba(255,255,255,0.55);
-              text-align:center; line-height:1.45;">Longitudinal trajectories<br>and perturbation studies &mdash; target</div>
-          </div>
-            </div>
-          </div>
-          <p style="text-align:center; color:rgba(255,255,255,0.55); font-size:0.9rem; margin-top:52px;">
-            Dates from 2027 onward are targets for research programmes still at proposal stage, not delivery commitments.</p>
-        </div>
-      </div>
-
-      <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 90px 0;">
-    <div class="container"><div class="text-center" data-aos="fade-up">
-      <h2 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1rem;">Working on brains, learning, or neurological care?</h2>
-      <p style="color:rgba(255,255,255,0.82);max-width:620px;margin:0 auto 2rem; line-height:1.75">We are looking for research
-      collaborators, a first education pilot partner, and investors who want to look closely at the science.</p>
-      <div class="hero-buttons" style="justify-content:center;">
-        <a href="contact.html" class="btn btn-primary">Get in touch</a>
-        <a href="investors.html" class="btn btn-secondary">Investment case</a>
-      </div></div></div>
-  </div>
-
-  <!------------Footer--------------------------------------------->
-  <div class="site-footer"
-    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
-    <div class="container">
-      <div class="row">
-
-        <!-- About and Social -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="widget mb-4">
-            <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
-            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
-            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
-            state model &mdash; wrapped in agentic workflows.
-            An early-stage research company; everything here is research, not a medical device.</p>
-          </div>
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Connect</h3>
-            <ul class="list-unstyled social">
-              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="widget mb-4">
-            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
-            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
-            and what we publish. No marketing.</p>
-            <form id="footer-subscribe-form" novalidate>
-              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
-                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
-                <input name="email" id="footer-email-input" type="email" required
-                  placeholder="Enter your email" autocomplete="email"
-                  style="flex:1; min-width:190px; background:#fff; color:#222;
-                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
-                  padding:10px 20px; font-size:0.977rem;">
-                <button type="submit" class="btn btn-primary"
-                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
+          <div class="domain-grid bci-overview-grid">
+            <article class="domain-card qvm" data-bci-overview="agentome">
+              <div class="domain-number">
+                <span>01 / The integrated platform</span
+                ><span class="dot" aria-hidden="true"></span>
               </div>
-            </form>
-            <div id="subscribe-message" role="status" aria-live="polite"
-              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
+              <a class="domain-image" href="platform.html#stack" aria-label="Explore Agentome">
+                <img
+                  src="images/bci-network-brain-v3.jpg?v=4b59e6b560ad"
+                  alt="Representative digital-twin illustration using a silver-blue network brain and recording traces"
+                  width="1536"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <h3>Agentome</h3>
+              <p>
+                Structure-preserving Large Physics Models (LPMs) form the core. Continual
+                personalization connects incoming BCI data to backend automation and frontend agents
+                that support each user’s goals.
+              </p>
+              <div class="domain-labels">THE PLATFORM / IN DEVELOPMENT</div>
+              <a class="text-link" href="platform.html#stack"
+                >Explore the platform<span class="arrow" aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="domain-card learning" data-bci-overview="superlearning">
+              <div class="domain-number">
+                <span>02 / Learning & readiness</span>
+                <span class="dot" aria-hidden="true"> </span>
+              </div>
+              <a
+                class="domain-image"
+                href="services.html#superlearning"
+                aria-label="Explore Superlearning"
+              >
+                <img
+                  src="images/programme-superlearning-v6.svg?v=aeb7bb667c16"
+                  alt="Synthetic neural signal aligned to Read, Practice, and Recall task periods."
+                  width="1200"
+                  height="750"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <h3>Superlearning</h3>
+              <p>
+                A planned frontend guide for learning and focus, informed by personal neural-state
+                estimates, task history, and user goals. Test lesson pacing and break suggestions
+                against independently measured learning outcomes.
+              </p>
+              <div class="domain-labels">HEALTHY DIRECTION / PROPOSAL</div>
+              <a class="text-link" href="services.html#superlearning"
+                >Explore the research<span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </article>
+            <article class="domain-card restoration" data-bci-overview="restoration">
+              <div class="domain-number">
+                <span>03 / Recovery & wellbeing</span>
+                <span class="dot" aria-hidden="true"> </span>
+              </div>
+              <a
+                class="domain-image"
+                href="services.html#restoration"
+                aria-label="Explore Restoration"
+              >
+                <img
+                  src="images/programme-restoration-v6.svg?v=e8d508184608"
+                  alt="Illustrative daily activity profile showing sleep, daytime activity, and wind-down periods."
+                  width="1200"
+                  height="750"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <h3>Restoration</h3>
+              <p>
+                Explore guided meditation, personalized music, creative art, sleep, and restoration.
+                Frontend agents would combine user preferences with evaluated model outputs to
+                propose sessions for study.
+              </p>
+              <div class="domain-labels">HEALTHY DIRECTION / PROPOSAL</div>
+              <a class="text-link" href="services.html#restoration"
+                >Explore the research<span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </article>
+            <article class="domain-card clinical" data-bci-overview="neurological">
+              <div class="domain-number">
+                <span>04 / Neurological research</span>
+                <span class="dot" aria-hidden="true"> </span>
+              </div>
+              <a
+                class="domain-image"
+                href="services.html#clinical"
+                aria-label="Explore Mental Health and Neurological Research"
+              >
+                <img
+                  src="images/programme-clinical-v6.svg?v=167df4a52b62"
+                  alt="Three synthetic recording visits linked to versioned personal models on a common timeline."
+                  width="1200"
+                  height="750"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <h3>Mental Health & Neurological Research</h3>
+              <p>
+                Support investigators with longitudinal records, model comparisons, and
+                evidence-linked hypotheses for mental-health and neurological research, using
+                independently assessed study outcomes.
+              </p>
+              <div class="domain-labels">CLINICAL DIRECTION / PROPOSAL</div>
+              <a class="text-link" href="services.html#clinical"
+                >Explore the research<span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </article>
           </div>
         </div>
-
-
-        <!-- The platform -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">The platform</h3>
-            <ul class="list-unstyled links">
-              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
-              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
-              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
-              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
-            </ul>
+      </section>
+      <section class="section" id="agentome-experience">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">The Agentome experience</p>
+              <h2>Track the present.<br />Personalize over time.</h2>
+            </div>
+            <p>
+              Our Large Physics Models (LPMs) describe neural dynamics. Continual LPMs (cLPMs) are
+              the planned personalized versions updated from incoming recordings, with evaluation
+              before an update is accepted.
+            </p>
+          </div>
+          <div class="agentome-duo">
+            <article class="research-card">
+              <span class="tag">Backend agents / in development</span>
+              <h3>Autonomous behind the scenes</h3>
+              <p>
+                Manage recording quality, data preparation, training, evaluation, deployment, and
+                monitoring within agreed settings. The aim is for users to take part without
+                manually operating the modeling infrastructure.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Frontend agents / in development</span>
+              <h3>Personalized guidance for users</h3>
+              <p>
+                Help users set goals, understand model-informed suggestions, choose sessions, and
+                give feedback. Guidance spans learning, focus, meditation, music, art, and
+                restoration; research workflows retain investigator review.
+              </p>
+            </article>
+          </div>
+          <a class="text-link" href="platform.html#continual"
+            >Explore continual personalization <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="section workflow">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Where the work stands</p>
+              <h2>A model family.<br />An integrated platform in development.</h2>
+            </div>
+            <p>
+              Core model research includes an internally reported state-model prototype. Continual
+              personalization and both agent layers need model-specific and workflow-specific
+              evaluation. Application studies remain proposals.
+            </p>
+          </div>
+          <div class="bci-facts">
+            <div>
+              <strong>3</strong>
+              <h3>Core models</h3>
+              <p>
+                One structure-preserving LPM family for neural-state tracking and neural-field
+                forecasting, with model-specific evaluation.
+              </p>
+            </div>
+            <div>
+              <strong>2</strong>
+              <h3>Agent layers</h3>
+              <p>
+                Backend orchestration for data and models; frontend support and application
+                guidance. Integrated workflows are in development.
+              </p>
+            </div>
+            <div>
+              <strong>3</strong>
+              <h3>Application programmes</h3>
+              <p>
+                Nine proposed use cases across Superlearning, Restoration, and Mental Health &
+                Neurological Research.
+              </p>
+            </div>
+          </div>
+          <a class="text-link" href="services.html#evidence"
+            >Read the evidence and its limits<span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split-section">
+          <div>
+            <p class="eyebrow">A precise modeling scope</p>
+            <h2>A twin of recorded<br />dynamics.</h2>
+            <p>
+              We use “digital twin” to mean a fitted model of recorded dynamics, tied to its input
+              recordings and model version. A comparison across sessions must account for recording
+              quality, acquisition changes, and task context.
+            </p>
+          </div>
+          <div class="scope-comparison">
+            <div>
+              <h3>What the model represents</h3>
+              <ul>
+                <li>Dynamics fitted to a person’s recordings and model version</li>
+                <li>Changes relative to their own baseline</li>
+                <li>Named model parameters a researcher can inspect</li>
+                <li>Tracking and forecasting checked separately on held-out data</li>
+              </ul>
+            </div>
+            <div>
+              <h3>What that does not establish</h3>
+              <ul>
+                <li>A replica of a biological brain</li>
+                <li>A model of consciousness</li>
+                <li>A diagnostic or treatment device</li>
+                <li>A demonstrated quantum speedup</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <!-- Research directions -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
-            <ul class="list-unstyled links">
-              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
-                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
-              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
-                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
-              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
-            </ul>
+      </section>
+      <section class="section section-border" id="roadmap">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Development milestones</p>
+              <h2>Advance when the evidence supports it.</h2>
+            </div>
+            <p>
+              These are development stages, not launch dates. Each stage calls for a concrete
+              research artifact or a predefined comparison.
+            </p>
+          </div>
+          <ol class="milestone-grid bci-roadmap">
+            <li class="milestone">
+              <div class="milestone-marker">
+                <span>01</span><span class="milestone-line"></span>
+              </div>
+              <h3>Core prototype</h3>
+              <p class="milestone-subtitle">Internally reported</p>
+              <p>
+                Document state tracking and neural-field forecasting separately, including the
+                internally reported prototype and its evaluation scope.
+              </p>
+            </li>
+            <li class="milestone">
+              <div class="milestone-marker">
+                <span>02</span><span class="milestone-line"></span>
+              </div>
+              <h3>Reproducible evaluation</h3>
+              <p class="milestone-subtitle">Next evidence milestone</p>
+              <p>
+                Document the dataset, preprocessing, baselines, held-out split, metrics, and failure
+                cases in a reviewable benchmark report.
+              </p>
+            </li>
+            <li class="milestone">
+              <div class="milestone-marker">
+                <span>03</span><span class="milestone-line"></span>
+              </div>
+              <h3>Integrated Agentome prototype</h3>
+              <p class="milestone-subtitle">In development</p>
+              <p>
+                Connect continual model updates, backend operations, and frontend guidance. Evaluate
+                update acceptance, deployment rollback, tool errors, and the usefulness of
+                explanations.
+              </p>
+            </li>
+            <li class="milestone">
+              <div class="milestone-marker">
+                <span>04</span><span class="milestone-line"></span>
+              </div>
+              <h3>Partner comparisons</h3>
+              <p class="milestone-subtitle">Proposed studies</p>
+              <p>
+                Test learning and wellbeing use cases against task-history policies or fixed
+                guidance using predefined outcomes.
+              </p>
+            </li>
+            <li class="milestone">
+              <div class="milestone-marker">
+                <span>05</span><span class="milestone-line"></span>
+              </div>
+              <h3>Longitudinal studies</h3>
+              <p class="milestone-subtitle">Collaboration sought</p>
+              <p>
+                Evaluate cross-visit model comparisons with acquisition controls and independently
+                assessed study outcomes.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Collaborate with Mindverse</p>
+            <h2>Bring a dataset.<br />Define a comparison.</h2>
+            <p>
+              Describe your recordings, study question, and current analysis baseline. We can
+              discuss a scoped comparison and the evidence it would need.
+            </p>
+          </div>
+          <a class="button" href="contact.html"
+            >Start a conversation<span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <section class="newsletter" aria-labelledby="newsletter-title">
+          <div>
+            <p class="eyebrow">Research updates</p>
+            <h2 id="newsletter-title">Follow the work.</h2>
+            <p>Occasional updates on research and publications.</p>
+          </div>
+          <form id="footer-subscribe-form">
+            <fieldset disabled>
+              <legend class="sr-only">Research newsletter signup</legend>
+              <label for="newsletter-email">Email address</label>
+              <div class="newsletter-fields">
+                <input
+                  id="newsletter-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                  maxlength="180"
+                />
+                <button type="submit">Subscribe <span aria-hidden="true">↗</span></button>
+              </div>
+            </fieldset>
+            <p id="subscribe-message" class="form-help" role="status" aria-live="polite"></p>
+            <noscript>
+              <p class="form-help">Enable JavaScript to subscribe.</p>
+            </noscript>
+          </form>
+        </section>
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="Mindverse Computing home">
+              <img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" />
+              <span class="brand-name">Mindverse Computing</span>
+            </a>
+            <p>
+              Agentome combines structure-preserving Large Physics Models with continual
+              personalization, backend orchestration, and frontend guidance for learning,
+              restoration, and research.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h2>The platform</h2>
+            <a href="platform.html">How it works</a>
+            <a href="platform.html#stack">The four layers</a>
+            <a href="platform.html#agents">Backend & frontend agents</a>
+            <a href="services.html#evidence">Research evidence</a>
+          </div>
+          <div class="footer-column">
+            <h2>Research directions</h2>
+            <a href="services.html#superlearning">Superlearning</a>
+            <a href="services.html#restoration">Restoration & Creative Wellbeing</a>
+            <a href="services.html#clinical">Mental Health & Neurological Research</a>
+          </div>
+          <div class="footer-column">
+            <h2>Company</h2>
+            <a href="market.html">Market</a>
+            <a href="investors.html">Investors</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html?subject=Ask+for+the+drafts#contact-form">Request drafts</a>
+            <a class="contact-inquiry-link" href="contact.html#contact-form">Send an inquiry ↗</a>
           </div>
         </div>
-
-        <!-- Company -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Company</h3>
-            <ul class="list-unstyled links">
-              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
-              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
-              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
-              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
-            </ul>
-          </div>
+        <p class="footer-notice">
+          Model research is ongoing. Continual personalization and integrated Agentome workflows are
+          in development; application programmes are proposals. Illustrations are synthetic. This
+          site does not offer diagnosis or treatment.
+        </p>
+        <div class="footer-bottom">
+          <p>© <span data-year>2026</span> Mindverse Computing. All rights reserved.</p>
+          <p>Lynnwood, Washington, USA</p>
+          <nav class="footer-social" aria-label="Social media">
+            <a
+              href="https://x.com/MindverseX"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.2-8.3L1 2h6.4l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.5 3.9H4.7L17.8 20Z"
+                /></svg
+              ><span>X</span></a
+            ><a
+              href="https://www.linkedin.com/company/mindverse-computing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.1c0-1.2-.2-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.8 2 3.8 4.6V19Z"
+                /></svg
+              ><span>LinkedIn</span></a
+            ><a
+              href="https://www.youtube.com/@mindversecomputing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31.3 31.3 0 0 0-.5 5 31.3 31.3 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31.3 31.3 0 0 0 .5-5 31.3 31.3 0 0 0-.5-5ZM9.7 15.3V8.7l6 3.3-6 3.3Z"
+                /></svg
+              ><span>YouTube</span></a
+            ><a
+              href="https://www.facebook.com/MindverseComputing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M24 12A12 12 0 1 0 10.1 23.9v-8.4h-3V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-1.9.9-1.9 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"
+                /></svg
+              ><span>Facebook</span></a
+            >
+          </nav>
         </div>
-
       </div>
-
-      <!-- Footer Bottom -->
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
-        <div class="col-lg-8">
-          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75;">
-            Research and development notice: our platforms are experimental research tools for academic
-            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
-            regulated service. Three manuscripts are currently in preparation.
-          </p>
-        </div>
-        <div class="col-lg-4 text-lg-right">
-          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75">
-            &copy; 2026 Mindverse Computing. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/investor-effects.js"></script>
-  <script src="js/brain-network.js"></script>
-
-<script>
-(function () {
-  var form = document.getElementById("footer-subscribe-form");
-  if (!form) return;
-  var input = document.getElementById("footer-email-input");
-  var note  = document.getElementById("subscribe-message");
-  var btn   = form.querySelector('button[type="submit"]');
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var email = (input.value || "").trim();
-    if (!email || email.indexOf("@") < 1) {
-      note.innerText = "Please enter a valid email address.";
-      return;
-    }
-    btn.disabled = true;
-    note.innerText = "Subscribing\u2026";
-    var data = new FormData();
-    data.append("email", email);
-    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
-      .then(function (r) { return r.text(); })
-      .then(function () {
-        note.innerText = "Thanks \u2014 you are subscribed.";
-        input.value = "";
-      })
-      .catch(function (err) {
-        note.innerText = "Something went wrong. Please try the contact page instead.";
-        console.error(err);
-      })
-      .finally(function () { btn.disabled = false; });
-  });
-})();
-</script>
-
-<script>
-(function () {
-  var glow = document.getElementById('timeline-glow-line');
-  var nodes = document.querySelectorAll('.timeline-node');
-  if (!glow || !nodes.length) return;
-
-  document.querySelectorAll('.node-circle').forEach(function (c) {
-    var g = c.querySelector('.node-glow');
-    c.addEventListener('mouseenter', function () {
-      c.style.transform = 'scale(1.12)';
-      if (g) g.style.opacity = '1';
-    });
-    c.addEventListener('mouseleave', function () {
-      c.style.transform = 'scale(1)';
-      if (g) g.style.opacity = '0';
-    });
-  });
-
-  // Respect users who have asked for reduced motion.
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    glow.style.transition = 'none';
-    glow.style.width = 'calc(100% - 40px)';
-    return;
-  }
-
-  var step = 0;
-  function advance() {
-    step = (step + 1) % (nodes.length + 1);
-    glow.style.width = (step / nodes.length * 100) + '%';
-    setTimeout(advance, step === 0 ? 2000 : 2800);
-  }
-  var started = false;
-  function maybeStart() {
-    if (started) return;
-    var box = glow.getBoundingClientRect();
-    if (box.top < window.innerHeight && box.bottom > 0) { started = true; advance(); }
-  }
-  window.addEventListener('scroll', maybeStart, { passive: true });
-  maybeStart();
-})();
-</script>
-</body>
-
+    </footer>
+  </body>
 </html>

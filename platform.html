@@ -1,353 +1,1017 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Archived Google measurement: consent defaults precede both tag loaders. -->
+    <script id="google-tag-consent">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      });
+      gtag('js', new Date());
+      gtag('config', 'GT-K8DQBD5J');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
+    <script id="google-tag-manager">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');
+    </script>
 
-<head>
-  <meta charset="utf-8">
-  
-  <!-- Consent Mode defaults — must run BEFORE any tag so nothing fires
-       before a choice is recorded. (The sample loaded this after the tags on
-       some pages; corrected here.) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#090c10" />
+    <meta name="author" content="Mindverse Computing" />
+    <title>Agentome · Continual Large Physics Models — Mindverse Computing</title>
+    <link rel="canonical" href="https://www.mindversecomputing.com/platform.html" />
+    <meta property="og:url" content="https://www.mindversecomputing.com/platform.html" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta name="twitter:image:alt" content="Representative BCI research illustration" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-K8DQBD5J"></script>
-  <script>
-    gtag('js', new Date());
-    gtag('config', 'GT-K8DQBD5J');
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start': new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5FLHSQXH');</script>
-  <!-- End Google Tag Manager -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Mindverse Computing">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="shortcut icon" href="images/favicon.png">
-
-  <link rel="canonical" href="https://www.mindversecomputing.com/platform.html">
-  <meta name="description" content="Four layers from electrode to recommendation: signal ingestion, the executable state model, the multi-agent layer, and the applications built on top." />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-
-  <meta property="og:title" content="Platform — Mindverse Computing" />
-  <meta property="og:description" content="Four layers from electrode to recommendation: signal ingestion, the executable state model, the multi-agent layer, and the applications built on top." />
-  <meta property="og:url" content="https://www.mindversecomputing.com/platform.html" />
-  <meta property="og:site_name" content="Mindverse Computing" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/newlogo.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Platform — Mindverse Computing" />
-  <meta name="twitter:description" content="Four layers from electrode to recommendation: signal ingestion, the executable state model, the multi-agent layer, and the applications built on top." />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
-    rel="stylesheet">
-
-
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/investor-enhancements.css">
-  <link rel="stylesheet" href="css/home-custom.css">
-  <link rel="stylesheet" href="css/site-additions.css">
-
-  <title>Platform — Mindverse Computing</title>
-</head>
-
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-  <nav class="site-nav mb-5">
-
-    <div class="sticky-nav js-sticky-header">
-      <div class="container position-relative">
-        <div class="site-navigation text-center">
-          <a href="index.html" class="logo menu-absolute m-0">
-            <img src="images/newlogo.png" alt="Mindverse Computing Logo" title="Mindverse Computing" width="50"
-              height="50" />
-            <span class="nav-brand-text d-none d-lg-inline-block">MINDVERSE COMPUTING</span>
+    <meta
+      name="description"
+      content="Explore Agentome: structure-preserving Large Physics Models, continual BCI personalization, backend orchestration and frontend guidance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mindverse Computing" />
+    <meta property="og:title" content="Agentome · Continual Large Physics Models" />
+    <meta
+      property="og:description"
+      content="Explore Agentome: structure-preserving Large Physics Models, continual BCI personalization, backend orchestration and frontend guidance."
+    />
+    <meta
+      property="og:image"
+      content="https://www.mindversecomputing.com/images/bci-network-brain-v3.jpg"
+    />
+    <meta property="og:image:alt" content="Representative BCI research illustration" />
+    <meta name="twitter:site" content="@MindverseX" />
+    <meta name="twitter:creator" content="@MindverseX" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Agentome · Continual Large Physics Models" />
+    <meta
+      name="twitter:description"
+      content="Explore Agentome: structure-preserving Large Physics Models, continual BCI personalization, backend orchestration and frontend guidance."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.mindversecomputing.com/images/bci-network-brain-v3.jpg"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
+    <link rel="icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/bci.css?v=34e85ce8aa33" />
+    <script defer src="js/subscription-service.js?v=e72dae06c1a8"></script>
+    <script defer src="js/bci.js?v=897f381e2ff5"></script>
+    <script defer src="js/agentome-diagram.js?v=c5a97bfe031a"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.mindversecomputing.com/#organization",
+        "name": "Mindverse Computing",
+        "legalName": "Mindverse Computing LLC",
+        "url": "https://www.mindversecomputing.com/",
+        "logo": "https://www.mindversecomputing.com/images/brand-mark.png",
+        "description": "Mindverse Computing is developing Agentome: physics-based neural models with continual personalization, backend orchestration and frontend guidance for BCI applications.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lynnwood",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://x.com/MindverseX",
+          "https://www.linkedin.com/company/mindverse-computing",
+          "https://www.youtube.com/@mindversecomputing",
+          "https://www.facebook.com/MindverseComputing"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "research enquiries",
+          "url": "https://www.mindversecomputing.com/contact.html"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager noscript fallback, restored from the archived site. -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHSQXH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title="Google Tag Manager"
+        aria-hidden="true"
+      ></iframe>
+    </noscript>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Mindverse Computing home">
+          <img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" />
+          <span class="brand-name">Mindverse Computing</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          Menu +
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="platform.html" aria-current="page">Platform</a>
+          <details class="domain-menu">
+            <summary>Applications</summary>
+            <div class="domain-dropdown">
+              <a href="services.html#superlearning">
+                <span class="dot" style="--accent: var(--learning)" aria-hidden="true"> </span
+                >Superlearning</a
+              >
+              <a href="services.html#restoration">
+                <span class="dot" style="--accent: var(--restoration)" aria-hidden="true"> </span
+                >Restoration & Creative Wellbeing</a
+              >
+              <a href="services.html#clinical">
+                <span class="dot" style="--accent: var(--clinical)" aria-hidden="true"> </span
+                >Mental Health & Neurological Research</a
+              >
+              <a href="services.html">All research use cases <span aria-hidden="true">↗</span> </a>
+            </div>
+          </details>
+          <a href="market.html">Market</a>
+          <details class="domain-menu resources-menu">
+            <summary>Research</summary>
+            <div class="domain-dropdown">
+              <a href="platform.html#stack">The four layers<span aria-hidden="true">↗</span> </a>
+              <a href="platform.html#core">The LPM family<span aria-hidden="true">↗</span></a>
+              <a href="platform.html#continual"
+                >Continual personalization<span aria-hidden="true">↗</span></a
+              >
+              <a href="platform.html#agents"
+                >Backend & frontend agents<span aria-hidden="true">↗</span>
+              </a>
+              <a href="services.html#evidence"
+                >Research evidence<span aria-hidden="true">↗</span>
+              </a>
+              <a href="index.html#roadmap"
+                >Development roadmap<span aria-hidden="true">↗</span>
+              </a>
+              <a href="investors.html">Investors<span aria-hidden="true">↗</span> </a>
+              <a href="services.html#manuscripts"
+                >Manuscripts & methods<span aria-hidden="true">↗</span></a
+              >
+              <a href="contact.html?subject=Ask+for+the+drafts#contact-form"
+                >Request manuscript drafts<span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </details>
+          <a class="nav-contact" href="contact.html"
+            >Let’s talk <span aria-hidden="true">↗</span>
           </a>
-
-          <ul class="js-clone-nav d-none d-lg-inline-block site-menu"><li><a href="index.html">Home</a></li><li class="active"><a href="platform.html">Platform</a></li><li><a href="services.html">Services</a></li><li><a href="market.html">Market</a></li><li><a href="investors.html">Investors</a></li><li><a href="contact.html">Contact</a></li></ul>
-
-          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-            <span></span>
-          </a> 
-
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero with-art">
+        <div class="hero-art">
+          <img
+            src="images/bci-network-brain-v3.jpg?v=4b59e6b560ad"
+            alt="Representative human brain formed from silver-blue neural fibers and nodes, with EEG-like recording traces"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+          />
         </div>
-      </div>
-    </div>
-  </nav>
-  <div class="investor-section-premium" id="home" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 130px 0 100px;">
-        <div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center" data-aos="fade-up">
-          <h1 class="section-title-glow" style="font-size:2.002rem;margin-bottom:1.2rem;">A signal is not an explanation</h1>
-          <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">Most tools handle brain data by
-          learning statistical patterns: this pattern usually means attention, that one usually means fatigue. That works
-          until it matters. A pattern-matcher can flag that something looks different today &mdash; it cannot say what
-          changed, whether it means anything for this person, or what would help.</p>
-          <p style="color:rgba(255,255,255,0.82);font-size:1.071rem; line-height:1.75">Our answer has two halves that
-          only work together: the <strong>Quantum Virtual Mind (QVM)</strong> &mdash; a quantum&ndash;classical model of
-          the dynamics themselves &mdash; and a layer of specialist AI agents wrapped around it. The QVM supplies a
-          state you can interrogate; the agents do the work of getting data to it and turning its answers into
-          something actionable. Neither is the product on its own.</p>
-        </div></div>
-        <div class="row justify-content-center mt-4"><div class="col-lg-9" data-aos="fade-up">
-          <div style="background: rgba(0, 242, 254, 0.06); border: 1px solid rgba(0, 242, 254, 0.28); border-radius: 16px; padding: 2.25rem;">
-            <h4 style="color: #00f2fe; font-size:1.201rem; margin-bottom: 1.25rem; text-align:center;">What the Quantum Virtual Mind gives you instead</h4>
-            <ul class="research-list" style="font-size: 0.97rem; margin-top: 0;">
-              <li>Which component of the dynamics changed, not just that something did</li>
-              <li>A comparison against the person&rsquo;s own baseline, not a population average</li>
-              <li>An answer you can interrogate and audit</li>
-              <li>Behaviour that stays physically possible by construction</li>
-            </ul>
-          </div>
-        </div></div>
-        </div>
-      </div>
-  <div class="investor-section-premium" id="stack" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">Four layers: the QVM at the core, agents around it</h2>
-        
-      </div><div class="row justify-content-center"><div class="col-lg-10"><div style="background: rgba(255,255,255,0.04); border:1px solid rgba(0, 242, 254,0.22); border-radius:16px; padding:1.6rem 1.9rem; margin-bottom:0.8rem; transition: all 0.4s ease;"><div style="display:flex; align-items:flex-start; gap:1.2rem;"><span class="layer-n">1</span><div style="flex:1;"><h4 style="color:#fff;font-size:1.165rem;margin:0 0 0.4em;">Signal ingestion</h4><p style="margin:0;font-size:0.997rem;color:rgba(255,255,255,0.82);line-height:1.75;">Live and recorded BCI streams from standard equipment. Rhythms and inter-region coupling extracted continuously, with each subject building their own history rather than matching a population template.</p></div><span style="font-size:0.664rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;white-space:nowrap;padding-top:0.4rem;">Data</span></div></div><div class="stack-arrow">&#9660;</div><div style="background: rgba(255,255,255,0.04); border:1px solid rgba(0, 242, 254,0.22); border-radius:16px; padding:1.6rem 1.9rem; margin-bottom:0.8rem; transition: all 0.4s ease;"><div style="display:flex; align-items:flex-start; gap:1.2rem;"><span class="layer-n">2</span><div style="flex:1;"><h4 style="color:#fff;font-size:1.165rem;margin:0 0 0.4em;">The Quantum Virtual Mind (QVM)</h4><p style="margin:0;font-size:0.997rem;color:rgba(255,255,255,0.82);line-height:1.75;">The core. Those dynamics reconstructed as an executable quantum-classical state model: how activity routes through the network, where it dissipates, how the whole settles. Built so physical consistency holds by construction.</p></div><span style="font-size:0.664rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;white-space:nowrap;padding-top:0.4rem;">Twin</span></div></div><div class="stack-arrow">&#9660;</div><div style="background: rgba(255,255,255,0.04); border:1px solid rgba(0, 242, 254,0.22); border-radius:16px; padding:1.6rem 1.9rem; margin-bottom:0.8rem; transition: all 0.4s ease;"><div style="display:flex; align-items:flex-start; gap:1.2rem;"><span class="layer-n">3</span><div style="flex:1;"><h4 style="color:#fff;font-size:1.165rem;margin:0 0 0.4em;">The multi-agent layer around the QVM</h4><p style="margin:0;font-size:0.997rem;color:rgba(255,255,255,0.82);line-height:1.75;">Specialist agents work the whole lifecycle &mdash; accessing data, engineering it, developing and checking the model, running perturbation studies, and designing what to do next.</p></div><span style="font-size:0.664rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;white-space:nowrap;padding-top:0.4rem;">Agentic</span></div></div><div class="stack-arrow">&#9660;</div><div style="background: rgba(255,255,255,0.04); border:1px solid rgba(0, 242, 254,0.22); border-radius:16px; padding:1.6rem 1.9rem; margin-bottom:0.8rem; transition: all 0.4s ease;"><div style="display:flex; align-items:flex-start; gap:1.2rem;"><span class="layer-n">4</span><div style="flex:1;"><h4 style="color:#fff;font-size:1.165rem;margin:0 0 0.4em;">Applications</h4><p style="margin:0;font-size:0.997rem;color:rgba(255,255,255,0.82);line-height:1.75;">Superlearning reads the healthy direction toward capacity, restoration reads it back toward a settled baseline, and the disorder-studies programme reads the clinical one. Both are proposed applications designed to write an auditable state record.</p></div><span style="font-size:0.664rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#00f2fe;white-space:nowrap;padding-top:0.4rem;">Proposed</span></div></div></div></div></div>
-  </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10" data-aos="fade-up">
-          <h2 class="section-title-glow" style="font-size:1.911rem;text-align:left;margin-bottom:1.2rem;">A twin of the data, not of the brain</h2>
-          <p style="color:rgba(255,255,255,0.82);font-size:1.103rem; line-height:1.75">A BCI recording is a narrow window: a few dozen
-          channels of electrical activity summarising the collective behaviour of many millions of cells. The model
-          captures what appears in that window &mdash; the rhythms, the couplings, and how they evolve &mdash;
-          faithfully enough to be interrogated, and scoped precisely enough that every claim we make about it is
-          testable.</p>
-          <div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Why the smaller claim is the stronger one</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">A model of the biological brain would be unfalsifiable at present. A model of BCI dynamics can be tested against held-out recordings, compared against conventional methods, and shown to be wrong. We prefer the version that can be checked.</p></div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-shield-check" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;line-height:1.25;">Physically consistent by construction</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Real systems cannot spontaneously gain energy; they settle rather than explode. A model merely fitted to data can violate that and still look plausible. Ours is built so those rules hold automatically &mdash; structural, not a penalty that can be overwhelmed, and enforced at every stage of training.</p></div></div>
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.9rem 2rem;"><div style="display:flex; align-items:center; margin-bottom:1.1rem;"><div style="width:52px;height:52px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:1.1rem;flex:none;"><i class="uil uil-eye" style="font-size:1.7rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.183rem;margin:0;line-height:1.25;">Interpretable components</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:1.029rem;">Dynamics are described as named parts &mdash; the balance between excitation and inhibition, delays on long-range connections, the strength of particular hubs. When something changes, the model says which part changed: a researcher can interpret that, and a reviewer can audit it.</p></div></div>
-      </div>
-    </div>
-  </div><div class="investor-section-premium" id="agents" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">Agents work the whole lifecycle</h2>
-        <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">Not a recommendation engine bolted onto a finished model &mdash; specialists operating at every stage.</p>
-      </div><div class="row"><div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.5rem 1.6rem;"><div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.75rem;"><div style="width:40px;height:40px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-database" style="font-size:1.3rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.09rem;margin:0;line-height:1.25;">1. Data access</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.977rem;">Finding recordings, checking consent and provenance, and tracking which subject and session every file belongs to. Unglamorous, and the stage where most downstream errors originate.</p></div></div><div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.5rem 1.6rem;"><div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.75rem;"><div style="width:40px;height:40px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-sliders-v" style="font-size:1.3rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.09rem;margin:0;line-height:1.25;">2. Data engineering</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.977rem;">Cleaning, aligning, and conditioning signal so a model sees comparable input across sessions. Each subject accumulates their own history rather than being matched to a population template.</p></div></div><div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="240"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.5rem 1.6rem;"><div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.75rem;"><div style="width:40px;height:40px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-brain" style="font-size:1.3rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.09rem;margin:0;line-height:1.25;">3. Model development</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.977rem;">Fitting the state model to a person, then checking it &mdash; against held-out data, against physical constraints, and against the simpler baseline that might explain the result just as well.</p></div></div><div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.5rem 1.6rem;"><div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.75rem;"><div style="width:40px;height:40px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-flask" style="font-size:1.3rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.09rem;margin:0;line-height:1.25;">4. Perturbation study</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.977rem;">Measuring how far a state has moved from that person&rsquo;s baseline, in which component, and in which direction. The same operation serves the learning, restoration, and clinical questions.</p></div></div><div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.5rem 1.6rem;"><div style="display:flex;align-items:center;gap:0.85rem;margin-bottom:0.75rem;"><div style="width:40px;height:40px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-compass" style="font-size:1.3rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.09rem;margin:0;line-height:1.25;">5. Design &amp; recommend</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.977rem;">Turning a measured displacement into a proposal: a learning track, or a candidate intervention. Presented as an argument a person can interrogate, with its reasoning attached.</p></div></div></div><div class="row justify-content-center"><div class="col-lg-10" data-aos="fade-up"><h3 style="color:#fff;font-size:1.32rem;margin-bottom:0.8rem;">Eight specialists share that work</h3><p style="color:rgba(255,255,255,0.82);font-size:1.071rem;margin-bottom:2.2rem; line-height:1.75">Each owns one part of the lifecycle and each can be inspected on its own. Six work every subject; two are direction-specific &mdash; one for learning, one for clinical research.</p></div></div><div class="row"><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-database" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Data steward</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Tracks where every recording came from, what consent covers it, and which studies may use it. Refuses a request that would pull data outside its permitted scope, and keeps the provenance chain attached to the model so any later result can be traced back to its source.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-sliders-v" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Signal engineer</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Harmonises recordings made on different equipment, at different sampling rates, with different electrode layouts. Flags sessions too noisy to use rather than quietly passing them through, so a poor recording never becomes a confident-looking result.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-brain" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Model builder</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Fits the state model to a subject&rsquo;s recordings and reports fit quality honestly &mdash; including when the data will not support a model at all. A refusal here is a feature: a twin fitted to insufficient data is worse than no twin.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-flask" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Perturbation analyst</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Probes how the model responds when something changes &mdash; a learning session, a medication, the passage of months. Quantifies the departure from that person&rsquo;s own baseline and identifies which components moved.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 230, 118, 0.05); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 230, 118,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-graduation-cap" style="font-size:1.55rem;color:#00e676;"></i></div><h4 style="color:#00e676;font-size:1.128rem;margin:0;line-height:1.25;">Track designer</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Reads the healthy direction. Turns a learner&rsquo;s current position into a sequence: what to study next, at what difficulty, and when to stop for the day. Every recommendation carries the evidence that produced it.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(255, 0, 255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-stethoscope" style="font-size:1.55rem;color:#FF00FF;"></i></div><h4 style="color:#FF00FF;font-size:1.128rem;margin:0;line-height:1.25;">Intervention planner</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Reads the clinical direction. Ranks candidate approaches for a researcher to evaluate, each with its reasoning and its uncertainty stated. Proposes; it never prescribes.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-shield-check" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Consistency checker</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Cross-examines the other agents. Where two reach different conclusions from the same model, it surfaces the disagreement rather than picking a winner &mdash; a split verdict is information, not a fault to be hidden.</p></div></div><div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="160"><div class="impact-card-cyan h-100" style="background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 16px; padding: 1.8rem 1.9rem;"><div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.9rem;"><div style="width:48px;height:48px;background:rgba(0, 242, 254,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;"><i class="uil uil-file-alt" style="font-size:1.55rem;color:#00f2fe;"></i></div><h4 style="color:#00f2fe;font-size:1.128rem;margin:0;line-height:1.25;">Record keeper</h4></div><p style="margin:0;color:rgba(255,255,255,0.82);line-height:1.75;font-size:0.997rem;">Writes the audit trail: what was tried, what moved, what was advised, and on what evidence. This is what makes the output reviewable by a clinician, an ethics board, or a regulator months later.</p></div></div></div><div class="row justify-content-center mt-2"><div class="col-lg-10"><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">The agents advise. People decide.</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Nothing in this layer acts autonomously on a person. Its output is an argument presented to a researcher, educator, or clinician &mdash; with the evidence attached and the dissenting view included. Because every agent reads the same physically consistent model, none can build an argument on an impossible brain state.</p></div></div></div></div>
-  </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #151b3b 0%, #1B264F 100%); padding: 100px 0;">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title-glow" style="font-size:2.275rem; margin-bottom: 1rem;">One proposed stack, three questions</h2>
-        <p style="font-size:1.103rem; color: rgba(255,255,255,0.82); max-width: 760px; margin: 0 auto; line-height:1.75">The three applications are proposals, and by design they are not separate products sharing a codebase.</p>
-      </div><div class="mwrap"><table class="matrix">
-        <thead><tr><th>Agent capability</th><th class="learn">Superlearning &mdash; healthy</th>
-          <th class="rest">Restoration &mdash; recovery</th> <th class="dis">Clinical &mdash; disorder studies</th></tr></thead>
-        <tbody>
-          <tr><th>Data access</th><td>Learner sessions, consented through the platform they already use.</td>
-              <td>Everyday sessions on consumer hardware, opted into by the person themselves.</td>
-            <td>Longitudinal clinical recordings, under protocol and ethical approval.</td></tr>
-          <tr><th>Data engineering</th><td>Short, frequent sessions on consumer hardware.</td>
-              <td>Short recordings in unstructured settings &mdash; at home, at the end of a day.</td>
-            <td>Sparse visits recorded years apart on different clinical systems.</td></tr>
-          <tr><th>Model development</th><td>A twin per learner, refitted as they progress.</td>
-              <td>A twin at the person&rsquo;s settled baseline, held as the target to return to.</td>
-            <td>A twin at the person&rsquo;s healthy baseline, held as reference.</td></tr>
-          <tr><th>Perturbation study</th><td>Which changes move this learner forward, and how far they have moved.</td>
-              <td>Which practices actually move this person toward that baseline, and how long it holds.</td>
-            <td>Which changes characterise this condition, and how far it has moved them.</td></tr>
-          <tr><th>Design &amp; recommendation</th><td>The next thing to study, and when.</td>
-              <td>Which session to run now, and how long to let it play.</td>
-            <td>Candidate approaches worth investigating, ranked with reasoning.</td></tr>
-          <tr><th>Record keeping</th><td>A learning record: what was tried, what moved, what was advised.</td>
-              <td>A record of what was practised and what settled, kept by the person.</td>
-            <td>The same trail, auditable by a clinical researcher.</td></tr>
-        </tbody></table></div><div class="row justify-content-center mt-4"><div class="col-lg-10"><div class="building-box" style="background: rgba(0, 242, 254, 0.06); border-left: 3px solid #00f2fe; border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: #00f2fe; font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Read the perturbation row again</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">Learning and disorder are the same measurement &mdash; a departure from the person&rsquo;s own baseline &mdash; distinguished only by direction and by whether you want to encourage it or reverse it. That is why one stack is designed to serve both.</p></div></div></div></div>
-  </div>
-  <div class="investor-section-premium" style="background: linear-gradient(180deg, #1B264F 0%, #0f1629 100%); padding: 70px 0;">
-    <div class="container"><div class="row justify-content-center"><div class="col-lg-10"><div class="building-box" style="background: rgba(255, 255, 255, 0.06); border-left: 3px solid rgba(255,255,255,0.6); border-radius: 0 16px 16px 0; padding: 1.75rem 2rem; margin: 1.5rem 0;"><p class="building-label" style="color: rgba(255,255,255,0.82); font-size:0.938rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.8rem; line-height:1.75">Where the work stands</p><p style="margin:0; color: rgba(255,255,255,0.82); line-height:1.75;">The state model is built and benchmarked in house, with manuscripts in preparation and wider validation underway. The agent layer is specified and being built. All three applications are proposals described here as designed, not as shipped. Nothing in this stack is a medical device.</p></div></div></div></div>
-  </div>
-
-  <!------------Footer--------------------------------------------->
-  <div class="site-footer"
-    style="background: linear-gradient(180deg, #0f1629 0%, #0c1226 100%); border-top: 1px solid rgba(0, 242, 254, 0.15); color: rgba(255,255,255,0.7); padding: 60px 0 30px;">
-    <div class="container">
-      <div class="row">
-
-        <!-- About and Social -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="widget mb-4">
-            <h3 style="color: white; font-size:1.11rem;">Mindverse Computing</h3>
-            <p style="line-height:1.75; font-size:0.977rem;">The agentic stack of quantum digital twin learned
-            from BCI&nbsp;data &mdash; the Quantum Virtual Mind (QVM) &mdash; an executable quantum-classical
-            state model &mdash; wrapped in agentic workflows.
-            An early-stage research company; everything here is research, not a medical device.</p>
-          </div>
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Connect</h3>
-            <ul class="list-unstyled social">
-              <li><a href="https://x.com/MindverseCom" target="_blank" rel="noopener noreferrer" aria-label="X"><span class="icon-twitter" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.linkedin.com/company/mindverse-computing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.youtube.com/@mindversecomputing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube" style="color: #00f2fe;"></span></a></li>
-              <li><a href="https://www.facebook.com/MindverseComputing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="icon-facebook" style="color: #00f2fe;"></span></a></li>
-            </ul>
+        <div class="container">
+          <p class="eyebrow">Agentome / Continual Large Physics Models</p>
+          <h1>Physics models at the core.<br />Agents end to end.</h1>
+          <p class="lead">
+            Agentome integrates structure-preserving Large Physics Models (LPMs) with backend agents
+            that manage the technical workflow and frontend agents that support users. Incoming BCI
+            recordings would continually personalize the core models, connecting state tracking and
+            neural-field forecasting to guided applications. The integrated platform is in
+            development.
+          </p>
+          <div class="subnav">
+            <a href="#stack">The four layers ↓</a>
+            <a href="#core">The LPM family ↓</a>
+            <a href="#continual">Continual personalization ↓</a>
+            <a href="#technical-scope">Inputs & outputs ↓</a>
+            <a href="#agents">Backend & frontend agents ↓</a>
+            <a href="#applications">Compare applications ↓</a>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="widget mb-4">
-            <h3 style="color: white; font-size:1.11rem;">Join our newsletter</h3>
-            <p style="line-height:1.75; font-size:0.977rem;">Occasional updates on our research
-            and what we publish. No marketing.</p>
-            <form id="footer-subscribe-form" novalidate>
-              <div class="form-group" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:0;">
-                <label for="footer-email-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
-                <input name="email" id="footer-email-input" type="email" required
-                  placeholder="Enter your email" autocomplete="email"
-                  style="flex:1; min-width:190px; background:#fff; color:#222;
-                  border:1px solid rgba(255,255,255,0.2); border-radius:50px;
-                  padding:10px 20px; font-size:0.977rem;">
-                <button type="submit" class="btn btn-primary"
-                  style="padding:10px 24px; border-radius:50px; white-space:nowrap;">Subscribe</button>
+      </section>
+      <section class="section architecture-section" id="stack">
+        <div class="container architecture-grid">
+          <div class="architecture-intro">
+            <p class="eyebrow">Four connected layers</p>
+            <h2>From BCI data<br />to guided experiences.</h2>
+            <p>
+              Agentome is the integrated platform: a continual physics-model core wrapped by backend
+              orchestration and frontend guidance. Model research, automation, and application
+              benefit have separate evaluation requirements.
+            </p>
+            <span class="tag">Architecture / in development</span>
+          </div>
+          <div class="architecture-stack">
+            <details class="architecture-layer" name="bci-architecture" open>
+              <summary>
+                <span class="layer-index">01</span><span class="layer-title">Data foundation</span
+                ><span class="layer-symbol" aria-hidden="true"></span>
+              </summary>
+              <div class="layer-body">
+                <h3>Start with traceable recordings.</h3>
+                <p>
+                  Ingest BCI recordings, channel definitions, sampling rate, session context, and
+                  permitted uses. Backend agents would prepare signals and flag unusable data before
+                  it reaches a model. Live-stream and equipment compatibility require their own
+                  evaluation.
+                </p>
+                <p class="layer-output">
+                  <strong>Intended output</strong>Quality-checked recordings and their provenance.
+                </p>
               </div>
-            </form>
-            <div id="subscribe-message" role="status" aria-live="polite"
-              style="margin-top:10px; color:rgba(255,255,255,0.82); font-size:0.938rem;"></div>
+            </details>
+            <details class="architecture-layer" name="bci-architecture">
+              <summary>
+                <span class="layer-index">02</span
+                ><span class="layer-title">Continual LPM core</span
+                ><span class="layer-symbol" aria-hidden="true"></span>
+              </summary>
+              <div class="layer-body">
+                <h3>Track states. Forecast dynamics.</h3>
+                <p>
+                  The structure-preserving LPM family supports neural-state tracking and exploration
+                  of future neural-field dynamics. Personal model versions would be updated from
+                  incoming data and accepted only after defined quality and evaluation checks.
+                </p>
+                <p class="layer-output">
+                  <strong>Intended output</strong>Versioned state estimates, forecasts, and
+                  evaluation records.
+                </p>
+              </div>
+            </details>
+            <details class="architecture-layer" name="bci-architecture">
+              <summary>
+                <span class="layer-index">03</span
+                ><span class="layer-title">Backend orchestration</span
+                ><span class="layer-symbol" aria-hidden="true"></span>
+              </summary>
+              <div class="layer-body">
+                <h3>Operate the infrastructure autonomously.</h3>
+                <p>
+                  Agents would coordinate data management, training, evaluation, deployment, and
+                  monitoring within an agreed configuration. Failed checks retain the previous
+                  accepted version and create a reviewable exception. Users need not manually run
+                  the technical pipeline.
+                </p>
+                <p class="layer-output">
+                  <strong>Intended output</strong>A managed model lifecycle with logs and recovery
+                  paths.
+                </p>
+              </div>
+            </details>
+            <details class="architecture-layer" name="bci-architecture">
+              <summary>
+                <span class="layer-index">04</span
+                ><span class="layer-title">Frontend guidance & applications</span
+                ><span class="layer-symbol" aria-hidden="true"></span>
+              </summary>
+              <div class="layer-body">
+                <h3>Help people use the models.</h3>
+                <p>
+                  Frontend agents would explain outputs, answer support questions, guide sessions,
+                  and collect goals and feedback. They connect evaluated model outputs to learning,
+                  focus, meditation, music, art, restoration, and investigator-led research.
+                </p>
+                <p class="layer-output">
+                  <strong>Intended output</strong>Personalized suggestions and application records
+                  for evaluation.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-
-
-        <!-- The platform -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">The platform</h3>
-            <ul class="list-unstyled links">
-              <li><a href="platform.html" style="color: rgba(255,255,255,0.6);">How it works</a></li>
-              <li><a href="platform.html#stack" style="color: rgba(255,255,255,0.6);">The four layers</a></li>
-              <li><a href="platform.html#agents" style="color: rgba(255,255,255,0.6);">The agent layer</a></li>
-              <li><a href="services.html#evidence" style="color: rgba(255,255,255,0.6);">Where the evidence stands</a></li>
-            </ul>
+      </section>
+      <section class="section workflow" id="core">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">The core model family</p>
+              <h2>Large Physics Models.<br />Personal neural dynamics.</h2>
+            </div>
+            <p>
+              Structure-preserving Large Physics Models (LPMs) learn neural dynamics while retaining
+              specified physical structure and constraints. The family combines neural-state
+              tracking with classical and quantum–classical forecasting, personalized from BCI
+              recordings.
+            </p>
           </div>
-        </div>
-
-        <!-- Research directions -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Research directions</h3>
-            <ul class="list-unstyled links">
-              <li><a href="services.html#superlearning" style="color: #00e676;">Superlearning</a>
-                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
-              <li><a href="services.html#clinical" style="color: #FF00FF;">Neurological studies</a>
-                <span style="color: rgba(255,255,255,0.35); font-size:0.785rem;">&nbsp;proposal</span></li>
-              <li><a href="services.html" style="color: rgba(255,255,255,0.6);">All research products</a></li>
-            </ul>
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="tag">State tracking / research</span>
+              <h3>NeuroPhasor</h3>
+              <p>
+                Track phase, frequency, and evolving neural-state features from BCI recordings.
+                Evaluate the reliability of those estimates before interpreting them as a mental
+                state. Tracking the present is distinct from predicting future dynamics.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Classical forecasting / research</span>
+              <h3>Classical Virtual Mind (CVM)</h3>
+              <p>
+                A classical structure-preserving Large Physics Model for learning neural-field
+                dynamics and exploring future trajectories. Evaluate forecasts on later, held-out
+                recordings using an explicit horizon, personal baseline, and conventional
+                comparison.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Quantum–classical forecasting / prototype research</span>
+              <h3>Quantum Virtual Mind (QVM)</h3>
+              <p>
+                A hybrid classical–quantum structure-preserving Large Physics Model for dissipative
+                neural dynamics, including measurement-induced nonlinearity. An internal prototype
+                is reported; its full benchmark is not published here. Quantum simulation does not
+                imply quantum effects in brain tissue.
+              </p>
+            </article>
           </div>
-        </div>
-
-        <!-- Company -->
-        <div class="col-lg-2 col-md-6 mb-4">
-          <div class="widget">
-            <h3 style="color: white; font-size:1.11rem;">Company</h3>
-            <ul class="list-unstyled links">
-              <li><a href="market.html" style="color: rgba(255,255,255,0.6);">Market</a></li>
-              <li><a href="investors.html" style="color: rgba(255,255,255,0.6);">Investors</a></li>
-              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Contact</a></li>
-              <li><a href="contact.html" style="color: rgba(255,255,255,0.6);">Ask for the drafts</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
-        <div class="col-lg-8">
-          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75;">
-            Research and development notice: our platforms are experimental research tools for academic
-            collaboration and proof-of-concept study. We do not provide medical diagnoses, treatment, or any
-            regulated service. Three manuscripts are currently in preparation.
+          <p class="note">
+            A digital twin is a versioned model of recorded dynamics. Model constraints,
+            physiological interpretation, forecasting accuracy, and application benefit require
+            separate evidence. No quantum computational advantage is claimed here.
           </p>
         </div>
-        <div class="col-lg-4 text-lg-right">
-          <p style="color: rgba(255,255,255,0.82); font-size:0.938rem; margin: 0; line-height:1.75">
-            &copy; 2026 Mindverse Computing. All Rights Reserved.
+      </section>
+      <section class="section section-border" id="continual">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Continual personalization / in development</p>
+              <h2>An evolving personal model.<br />A traceable version history.</h2>
+            </div>
+            <p>
+              Continual Large Physics Models (cLPMs) are the intended personalized versions of the
+              LPM family. New recordings would support repeated adaptation to a person over time; an
+              incoming session does not automatically authorize deployment of an updated model.
+            </p>
+          </div>
+          <ol class="technology-path continual-path">
+            <li>
+              <span>01 / CONTINUAL CYCLE</span>
+              <h3>Receive recordings</h3>
+              <p>Attach the person, session, task context, permissions, and acquisition history.</p>
+            </li>
+            <li>
+              <span>02 / CONTINUAL CYCLE</span>
+              <h3>Check signal quality</h3>
+              <p>Identify artifacts, missing channels, and acquisition drift before training.</p>
+            </li>
+            <li>
+              <span>03 / CONTINUAL CYCLE</span>
+              <h3>Update a candidate</h3>
+              <p>
+                Adapt a personal model from eligible past recordings; retain the previous accepted
+                version.
+              </p>
+            </li>
+            <li>
+              <span>04 / CONTINUAL CYCLE</span>
+              <h3>Evaluate the update</h3>
+              <p>
+                Compare tracking and forecast quality with frozen baselines and untouched later
+                sessions; check regressions and forgetting.
+              </p>
+            </li>
+            <li>
+              <span>05 / CONTINUAL CYCLE</span>
+              <h3>Deploy and monitor</h3>
+              <p>
+                Promote an accepted version, log its evaluation, monitor drift, and retain a
+                rollback path.
+              </p>
+            </li>
+          </ol>
+          <p class="note">
+            Backend agents would coordinate this cycle. Update cadence, acceptance criteria, and
+            review requirements belong to the deployment configuration. Research comparisons retain
+            frozen model versions so adaptation does not obscure what was measured.
           </p>
         </div>
+      </section>
+      <section class="section section-border" id="technical-scope">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Technical scope</p>
+              <h2>Defined inputs.<br />Reviewable outputs.</h2>
+            </div>
+            <p>
+              Agentome connects recordings, personal model versions, and application context. Its
+              public description concerns modeling principles and planned workflows; equipment
+              support and operational capability must be evaluated for each integration.
+            </p>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="tag">Inputs</span>
+              <h3>BCI recordings + user context</h3>
+              <p>
+                Channel definitions, sampling rate, preprocessing history, session identifiers, and
+                task annotations where available. Goals, preferences, and optional feedback guide
+                proposed frontend experiences.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Core model outputs</span>
+              <h3>State estimates + future trajectories</h3>
+              <p>
+                Tracking features, forecast trajectories at stated horizons, fit errors, and
+                evaluated uncertainty where available. Every output remains linked to its model
+                version and recording context.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Agent outputs / planned</span>
+              <h3>Operational logs + guided sessions</h3>
+              <p>
+                Backend agents retain training, evaluation, deployment, and monitoring records.
+                Frontend agents provide explanations, proposed sessions, and feedback records for
+                user or investigator review.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Shared research capabilities</p>
+              <h2>One model core.<br />Many testable questions.</h2>
+            </div>
+            <p>
+              Agentome reuses the modeling lifecycle across application programmes while retaining
+              the context and evaluation required for each study.
+            </p>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="tag">Continual core / in development</span>
+              <h3>Personal model registry</h3>
+              <p>
+                Keep personal LPM versions, data lineage, evaluation reports, and approved
+                deployment records together.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Agentome / in development</span>
+              <h3>Two coordinated agent layers</h3>
+              <p>
+                Backend agents operate the pipeline; frontend agents help users and investigators
+                work with its evaluated outputs.
+              </p>
+            </article>
+            <article class="research-card">
+              <span class="tag">Research / in development</span>
+              <h3>Perturbation Engine</h3>
+              <p>
+                Compare model-parameter changes and candidate trajectories. A simulated response
+                remains a model result whose biological interpretation needs separate evidence.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section workflow" id="agents">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Agentome / two agent layers</p>
+              <h2>Autonomous operations.<br />Supportive user experiences.</h2>
+            </div>
+            <p>
+              These planned roles connect the core LPM family to end-to-end applications. Users
+              contribute recordings, goals, preferences, and feedback; backend agents are intended
+              to handle the technical work within configured limits. Integrated operation and
+              frontend usefulness remain to be evaluated.
+            </p>
+          </div>
+          <figure
+            class="agentome-architecture"
+            id="agentome-architecture"
+            aria-labelledby="agentome-architecture-caption"
+          >
+            <div
+              class="agentome-diagram-controls"
+              role="group"
+              aria-label="Explore Agentome layers"
+            >
+              <button type="button" data-agentome-layer="all" aria-pressed="true">
+                Whole stack
+              </button>
+              <button type="button" data-agentome-layer="core" aria-pressed="false">
+                LPM core
+              </button>
+              <button type="button" data-agentome-layer="backend" aria-pressed="false">
+                Backend
+              </button>
+              <button type="button" data-agentome-layer="frontend" aria-pressed="false">
+                Frontend
+              </button>
+              <button type="button" data-agentome-expand aria-pressed="false">
+                Enlarge diagram +
+              </button>
+            </div>
+            <div
+              class="agentome-architecture-visual"
+              data-agentome-viewport
+              tabindex="0"
+              role="region"
+              aria-label="Interactive Agentome diagram; select dots or use the role selector"
+            >
+              <svg
+                class="agentome-stack-map"
+                data-agentome-canvas
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-110 -130 1120 1050"
+                role="group"
+                aria-labelledby="agentome-stack-title agentome-stack-description"
+              >
+                <title id="agentome-stack-title">
+                  Agentome: LPM core, backend agents, and frontend agents
+                </title>
+                <desc id="agentome-stack-description">
+                  Three concentric layers inside a thin, triple-line stepped enclosure, with
+                  dot-and-label agents connected by parallel right-angle traces. Select a model or
+                  agent to inspect its role and connections.
+                </desc>
+              </svg>
+            </div>
+            <figcaption id="agentome-architecture-caption" class="agentome-diagram-inspector">
+              <label class="agentome-role-label" for="agentome-role-selector">Explore a role</label>
+              <select id="agentome-role-selector" data-agentome-selector>
+                <option value="">Choose a model, agent, or users</option>
+              </select>
+              <div class="agentome-diagram-selection" aria-live="polite" aria-atomic="true">
+                <p class="eyebrow" data-agentome-badge>The integrated stack</p>
+                <h3 data-agentome-title>Agentome</h3>
+                <p data-agentome-description>
+                  A personal LPM core, autonomous backend operations, and frontend agents supporting
+                  users. Select a dot or name to explore its role.
+                </p>
+                <a class="text-link" data-agentome-detail href="#agents"
+                  >Explore the roles below ↘</a
+                >
+              </div>
+              <p class="agentome-map-help">
+                Select a dot or name to highlight its connections. Parallel traces represent
+                communication between layers.
+              </p>
+              <p class="agentome-expand-help">
+                The enlarged diagram can be scrolled horizontally on smaller screens.
+              </p>
+              <p class="agentome-map-status">Conceptual architecture / in development</p>
+              <noscript
+                ><p>
+                  Enable JavaScript to explore the diagram, or
+                  <a href="#backend-agents">read the backend</a> and
+                  <a href="#frontend-agents">frontend roles</a> below.
+                </p></noscript
+              >
+            </figcaption>
+          </figure>
+          <div class="agent-group" id="backend-agents">
+            <h3>Backend agents</h3>
+            <p>
+              Manage data, train and evaluate models, organize deployments, and monitor operation
+              behind the scenes.
+            </p>
+            <div class="agent-grid">
+              <details class="agent-card" id="agent-data-steward">
+                <summary>
+                  <span class="agent-index">01</span><span>Data steward</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Manage recording provenance, consent scope, permitted uses, and subject/session
+                  identity.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-signal-engineer">
+                <summary>
+                  <span class="agent-index">02</span><span>Signal engineer</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Prepare signals, harmonize acquisition metadata, and flag artifacts or missing
+                  data.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-model-builder">
+                <summary>
+                  <span class="agent-index">03</span><span>Model builder</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Train and continually adapt candidate personal LPM versions using eligible
+                  recordings.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-perturbation-analyst">
+                <summary>
+                  <span class="agent-index">04</span><span>Perturbation analyst</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Compare trajectories, reference states, and parameter sensitivity, retaining
+                  uncertainty and assumptions.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-consistency-checker">
+                <summary>
+                  <span class="agent-index">05</span><span>Consistency checker</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Check evaluation criteria, regressions, conflicting interpretations, and
+                  unsupported conclusions.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-record-keeper">
+                <summary>
+                  <span class="agent-index">06</span><span>Record keeper</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Organize datasets, experiments, model versions, evaluations, and review decisions.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-deployment-coordinator">
+                <summary>
+                  <span class="agent-index">07</span><span>Deployment coordinator</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Promote accepted versions, organize serving configurations, and retain rollback
+                  paths.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-monitoring-agent">
+                <summary>
+                  <span class="agent-index">08</span><span>Monitoring agent</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Watch data quality, acquisition drift, model performance, and deployment health;
+                  route exceptions for review.
+                </p>
+              </details>
+            </div>
+          </div>
+          <div class="agent-group" id="frontend-agents">
+            <h3>Frontend agents</h3>
+            <p>
+              Support people directly and guide downstream experiences using evaluated outputs,
+              preferences, and application context.
+            </p>
+            <div class="agent-grid">
+              <details class="agent-card" id="agent-user-support-guide">
+                <summary>
+                  <span class="agent-index">01</span><span>User support guide</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Help users get started, explain available outputs and limitations, collect goals
+                  and preferences, and support questions throughout a session.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-track-designer">
+                <summary>
+                  <span class="agent-index">02</span><span>Track designer</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Guide learning and focus sessions, propose pacing and breaks, and connect each
+                  suggestion to task history and evaluated model outputs.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-creative-restoration-guide">
+                <summary>
+                  <span class="agent-index">03</span><span>Creative & restoration guide</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Support meditation, personalized music, art, and restorative sessions using user
+                  preferences and optional feedback.
+                </p>
+              </details>
+              <details class="agent-card" id="agent-intervention-planner">
+                <summary>
+                  <span class="agent-index">04</span><span>Intervention planner</span
+                  ><span class="agent-symbol" aria-hidden="true"></span>
+                </summary>
+                <p>
+                  Help investigators organize mental-health and neurological research questions,
+                  candidate comparisons, and evidence-linked proposals for review.
+                </p>
+              </details>
+            </div>
+          </div>
+          <div class="human-review">
+            <h3>Technical autonomy. Clear user control.</h3>
+            <p>
+              The goal is to remove manual pipeline operation from the user experience. People
+              retain control over participation, goals, and session choices. Investigator-led
+              research retains review of evidence and proposed actions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split-section">
+          <div>
+            <p class="eyebrow">The Agentome lifecycle</p>
+            <h2>Personalize the core.<br />Guide the next session.</h2>
+          </div>
+          <div class="editorial-list">
+            <article class="editorial-item">
+              <span class="index">01</span>
+              <div>
+                <h3>Access the data</h3>
+                <p>
+                  Identify recordings, permissions, study context, and subject/session
+                  relationships.
+                </p>
+              </div>
+            </article>
+            <article class="editorial-item">
+              <span class="index">02</span>
+              <div>
+                <h3>Engineer the signals</h3>
+                <p>
+                  Clean and align recordings while tracking differences in equipment and
+                  acquisition.
+                </p>
+              </div>
+            </article>
+            <article class="editorial-item">
+              <span class="index">03</span>
+              <div>
+                <h3>Reconstruct and check the twin</h3>
+                <p>
+                  Update the relevant personal LPM, evaluate tracking and forecasting on untouched
+                  recordings, and retain accepted versions with their reports.
+                </p>
+              </div>
+            </article>
+            <article class="editorial-item">
+              <span class="index">04</span>
+              <div>
+                <h3>Study the perturbation</h3>
+                <p>
+                  Estimate departures from the reference state, including uncertainty about which
+                  components moved.
+                </p>
+              </div>
+            </article>
+            <article class="editorial-item">
+              <span class="index">05</span>
+              <div>
+                <h3>Generate, review, and record a proposal</h3>
+                <p>
+                  Frontend agents explain evaluated outputs, propose a learning, focus, creative, or
+                  restoration session, or help an investigator frame a study. Feedback informs later
+                  candidate updates; preserve the supporting model version and reasoning.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-border" id="applications">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">One Agentome platform, three programmes</p>
+              <h2>A shared lifecycle.<br />Different study designs.</h2>
+            </div>
+          </div>
+          <div
+            class="comparison"
+            role="region"
+            aria-label="BCI application workflow comparison"
+            tabindex="0"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Superlearning</th>
+                  <th scope="col">Restoration</th>
+                  <th scope="col">Clinical research</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Data access</th>
+                  <td>Consented learner sessions and task context.</td>
+                  <td>Opt-in sessions around meditation, music, art, sleep, or restoration.</td>
+                  <td>Longitudinal recordings under an appropriate research protocol.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Data engineering</th>
+                  <td>Short, repeated sessions with learning annotations.</td>
+                  <td>Recordings from less structured everyday settings.</td>
+                  <td>Sparse visits across equipment and acquisition changes.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Model reference</th>
+                  <td>A personal model refitted as sessions accumulate.</td>
+                  <td>A reference state for examining settling and recovery.</td>
+                  <td>A participant’s own earlier recordings and study context.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Perturbation question</th>
+                  <td>Which changes relate to readiness or consolidation?</td>
+                  <td>Which practices relate to a persistent state change?</td>
+                  <td>Which components change across visits or conditions?</td>
+                </tr>
+                <tr>
+                  <th scope="row">Proposed output</th>
+                  <td>Guided learning or focus sessions for evaluation.</td>
+                  <td>Meditation, music, art, or recovery session proposals.</td>
+                  <td>A longitudinal description or research hypothesis.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Record keeping</th>
+                  <td>What was studied and how the model changed.</td>
+                  <td>What was practised and what was observed.</td>
+                  <td>A reviewable trail of visits, models, and analyses.</td>
+                </tr>
+              </tbody>
+              <caption>
+                Proposed workflows. Shared modeling machinery does not replace programme-specific
+                evaluation.
+              </caption>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Collaborate with Mindverse</p>
+            <h2>Bring a dataset.<br />Define a comparison.</h2>
+            <p>
+              Describe your recordings, study question, and current analysis baseline. We can
+              discuss a scoped comparison and the evidence it would need.
+            </p>
+          </div>
+          <a class="button" href="contact.html"
+            >Start a conversation<span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <section class="newsletter" aria-labelledby="newsletter-title">
+          <div>
+            <p class="eyebrow">Research updates</p>
+            <h2 id="newsletter-title">Follow the work.</h2>
+            <p>Occasional updates on research and publications.</p>
+          </div>
+          <form id="footer-subscribe-form">
+            <fieldset disabled>
+              <legend class="sr-only">Research newsletter signup</legend>
+              <label for="newsletter-email">Email address</label>
+              <div class="newsletter-fields">
+                <input
+                  id="newsletter-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                  maxlength="180"
+                />
+                <button type="submit">Subscribe <span aria-hidden="true">↗</span></button>
+              </div>
+            </fieldset>
+            <p id="subscribe-message" class="form-help" role="status" aria-live="polite"></p>
+            <noscript>
+              <p class="form-help">Enable JavaScript to subscribe.</p>
+            </noscript>
+          </form>
+        </section>
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="Mindverse Computing home">
+              <img src="images/brand-mark.png?v=42b4e7ed02aa" width="39" height="39" alt="" />
+              <span class="brand-name">Mindverse Computing</span>
+            </a>
+            <p>
+              Agentome combines structure-preserving Large Physics Models with continual
+              personalization, backend orchestration, and frontend guidance for learning,
+              restoration, and research.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h2>The platform</h2>
+            <a href="platform.html">How it works</a>
+            <a href="platform.html#stack">The four layers</a>
+            <a href="platform.html#agents">Backend & frontend agents</a>
+            <a href="services.html#evidence">Research evidence</a>
+          </div>
+          <div class="footer-column">
+            <h2>Research directions</h2>
+            <a href="services.html#superlearning">Superlearning</a>
+            <a href="services.html#restoration">Restoration & Creative Wellbeing</a>
+            <a href="services.html#clinical">Mental Health & Neurological Research</a>
+          </div>
+          <div class="footer-column">
+            <h2>Company</h2>
+            <a href="market.html">Market</a>
+            <a href="investors.html">Investors</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html?subject=Ask+for+the+drafts#contact-form">Request drafts</a>
+            <a class="contact-inquiry-link" href="contact.html#contact-form">Send an inquiry ↗</a>
+          </div>
+        </div>
+        <p class="footer-notice">
+          Model research is ongoing. Continual personalization and integrated Agentome workflows are
+          in development; application programmes are proposals. Illustrations are synthetic. This
+          site does not offer diagnosis or treatment.
+        </p>
+        <div class="footer-bottom">
+          <p>© <span data-year>2026</span> Mindverse Computing. All rights reserved.</p>
+          <p>Lynnwood, Washington, USA</p>
+          <nav class="footer-social" aria-label="Social media">
+            <a
+              href="https://x.com/MindverseX"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.2-8.3L1 2h6.4l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.5 3.9H4.7L17.8 20Z"
+                /></svg
+              ><span>X</span></a
+            ><a
+              href="https://www.linkedin.com/company/mindverse-computing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5ZM8 19H5V9h3v10ZM6.5 7.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-5.1c0-1.2-.2-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.8 2 3.8 4.6V19Z"
+                /></svg
+              ><span>LinkedIn</span></a
+            ><a
+              href="https://www.youtube.com/@mindversecomputing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M23 7a3 3 0 0 0-2.1-2.1C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7a31.3 31.3 0 0 0-.5 5 31.3 31.3 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5A3 3 0 0 0 23 17a31.3 31.3 0 0 0 .5-5 31.3 31.3 0 0 0-.5-5ZM9.7 15.3V8.7l6 3.3-6 3.3Z"
+                /></svg
+              ><span>YouTube</span></a
+            ><a
+              href="https://www.facebook.com/MindverseComputing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false">
+                <path
+                  d="M24 12A12 12 0 1 0 10.1 23.9v-8.4h-3V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-1.9.9-1.9 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12Z"
+                /></svg
+              ><span>Facebook</span></a
+            >
+          </nav>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/investor-effects.js"></script>
-
-<script>
-(function () {
-  var form = document.getElementById("footer-subscribe-form");
-  if (!form) return;
-  var input = document.getElementById("footer-email-input");
-  var note  = document.getElementById("subscribe-message");
-  var btn   = form.querySelector('button[type="submit"]');
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var email = (input.value || "").trim();
-    if (!email || email.indexOf("@") < 1) {
-      note.innerText = "Please enter a valid email address.";
-      return;
-    }
-    btn.disabled = true;
-    note.innerText = "Subscribing\u2026";
-    var data = new FormData();
-    data.append("email", email);
-    fetch("https://script.google.com/macros/s/AKfycbyMOuZ-fyRw1w7wyqUb4kydViXYUa2k1f41DxeShzBUr5xaNU4V5J8yPOgeX-8z8I9dmA/exec", { method: "POST", body: data })
-      .then(function (r) { return r.text(); })
-      .then(function () {
-        note.innerText = "Thanks \u2014 you are subscribed.";
-        input.value = "";
-      })
-      .catch(function (err) {
-        note.innerText = "Something went wrong. Please try the contact page instead.";
-        console.error(err);
-      })
-      .finally(function () { btn.disabled = false; });
-  });
-})();
-</script>
-</body>
-
+    </footer>
+  </body>
 </html>
