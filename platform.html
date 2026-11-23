@@ -79,10 +79,10 @@
     <link rel="icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/bci.css?v=34e85ce8aa33" />
+    <link rel="stylesheet" href="css/bci.css?v=e929326fc24c" />
     <script defer src="js/subscription-service.js?v=e72dae06c1a8"></script>
     <script defer src="js/bci.js?v=897f381e2ff5"></script>
-    <script defer src="js/agentome-diagram.js?v=c5a97bfe031a"></script>
+    <script defer src="js/agentome-diagram.js?v=a97578e57362"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -585,8 +585,9 @@
                 >
               </div>
               <p class="agentome-map-help">
-                Select a dot or name to highlight its connections. Parallel traces represent
-                communication between layers.
+                Select the LPM core to send a signal through the backend and frontend agents.
+                Select Users &amp; investigators to trace the return path. Select an agent to see
+                its role and partners.
               </p>
               <p class="agentome-expand-help">
                 The enlarged diagram can be scrolled horizontally on smaller screens.
@@ -817,64 +818,66 @@
               <h2>A shared lifecycle.<br />Different study designs.</h2>
             </div>
           </div>
-          <div
-            class="comparison"
-            role="region"
-            aria-label="BCI application workflow comparison"
-            tabindex="0"
-          >
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Stage</th>
-                  <th scope="col">Superlearning</th>
-                  <th scope="col">Restoration</th>
-                  <th scope="col">Clinical research</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Data access</th>
-                  <td>Consented learner sessions and task context.</td>
-                  <td>Opt-in sessions around meditation, music, art, sleep, or restoration.</td>
-                  <td>Longitudinal recordings under an appropriate research protocol.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Data engineering</th>
-                  <td>Short, repeated sessions with learning annotations.</td>
-                  <td>Recordings from less structured everyday settings.</td>
-                  <td>Sparse visits across equipment and acquisition changes.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Model reference</th>
-                  <td>A personal model refitted as sessions accumulate.</td>
-                  <td>A reference state for examining settling and recovery.</td>
-                  <td>A participant’s own earlier recordings and study context.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Perturbation question</th>
-                  <td>Which changes relate to readiness or consolidation?</td>
-                  <td>Which practices relate to a persistent state change?</td>
-                  <td>Which components change across visits or conditions?</td>
-                </tr>
-                <tr>
-                  <th scope="row">Proposed output</th>
-                  <td>Guided learning or focus sessions for evaluation.</td>
-                  <td>Meditation, music, art, or recovery session proposals.</td>
-                  <td>A longitudinal description or research hypothesis.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Record keeping</th>
-                  <td>What was studied and how the model changed.</td>
-                  <td>What was practised and what was observed.</td>
-                  <td>A reviewable trail of visits, models, and analyses.</td>
-                </tr>
-              </tbody>
-              <caption>
-                Proposed workflows. Shared modeling machinery does not replace programme-specific
-                evaluation.
-              </caption>
-            </table>
+          <div class="comparison">
+            <div
+              class="comparison-scroll"
+              role="region"
+              aria-label="BCI application workflow comparison"
+              tabindex="0"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Stage</th>
+                    <th scope="col">Superlearning</th>
+                    <th scope="col">Restoration</th>
+                    <th scope="col">Clinical research</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Data access</th>
+                    <td>Consented learner sessions and task context.</td>
+                    <td>Opt-in sessions around meditation, music, art, sleep, or restoration.</td>
+                    <td>Longitudinal recordings under an appropriate research protocol.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Data engineering</th>
+                    <td>Short, repeated sessions with learning annotations.</td>
+                    <td>Recordings from less structured everyday settings.</td>
+                    <td>Sparse visits across equipment and acquisition changes.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Model reference</th>
+                    <td>A personal model refitted as sessions accumulate.</td>
+                    <td>A reference state for examining settling and recovery.</td>
+                    <td>A participant’s own earlier recordings and study context.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Perturbation question</th>
+                    <td>Which changes relate to readiness or consolidation?</td>
+                    <td>Which practices relate to a persistent state change?</td>
+                    <td>Which components change across visits or conditions?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Proposed output</th>
+                    <td>Guided learning or focus sessions for evaluation.</td>
+                    <td>Meditation, music, art, or recovery session proposals.</td>
+                    <td>A longitudinal description or research hypothesis.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Record keeping</th>
+                    <td>What was studied and how the model changed.</td>
+                    <td>What was practised and what was observed.</td>
+                    <td>A reviewable trail of visits, models, and analyses.</td>
+                  </tr>
+                </tbody>
+                <caption>
+                  Proposed workflows. Shared modeling machinery does not replace programme-specific
+                  evaluation.
+                </caption>
+              </table>
+            </div>
           </div>
         </div>
       </section>

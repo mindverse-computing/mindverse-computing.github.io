@@ -32,9 +32,9 @@
       layer: 'backend',
       x: 515,
       y: 198,
-      tx: 515,
-      ty: 225,
-      anchor: 'middle',
+      tx: 487,
+      ty: 240,
+      anchor: 'start',
       description:
         'Keep recording provenance, permitted uses, and subject/session identity attached to the data.',
     },
@@ -45,8 +45,8 @@
       layer: 'backend',
       x: 607,
       y: 290,
-      tx: 635,
-      ty: 275,
+      tx: 628,
+      ty: 289,
       anchor: 'start',
       description:
         'Organize datasets, experiments, model versions, evaluation reports, and review decisions.',
@@ -58,8 +58,8 @@
       layer: 'backend',
       x: 607,
       y: 420,
-      tx: 635,
-      ty: 405,
+      tx: 628,
+      ty: 408,
       anchor: 'start',
       description:
         'Train and continually adapt candidate personal models from eligible recordings.',
@@ -71,9 +71,9 @@
       layer: 'backend',
       x: 515,
       y: 512,
-      tx: 515,
-      ty: 545,
-      anchor: 'middle',
+      tx: 487,
+      ty: 464,
+      anchor: 'start',
       description:
         'Prepare recordings, harmonize acquisition metadata, and flag artifacts or missing data.',
     },
@@ -84,9 +84,9 @@
       layer: 'backend',
       x: 385,
       y: 512,
-      tx: 385,
-      ty: 545,
-      anchor: 'middle',
+      tx: 413,
+      ty: 464,
+      anchor: 'end',
       description:
         'Watch recording quality, acquisition drift, model performance, and deployment health.',
     },
@@ -97,8 +97,8 @@
       layer: 'backend',
       x: 293,
       y: 420,
-      tx: 265,
-      ty: 405,
+      tx: 272,
+      ty: 408,
       anchor: 'end',
       description:
         'Promote accepted versions, organize serving configurations, and retain rollback paths.',
@@ -110,8 +110,8 @@
       layer: 'backend',
       x: 293,
       y: 290,
-      tx: 265,
-      ty: 275,
+      tx: 272,
+      ty: 289,
       anchor: 'end',
       description:
         'Compare trajectories, personal references, and parameter sensitivity with assumptions retained.',
@@ -123,9 +123,9 @@
       layer: 'backend',
       x: 385,
       y: 198,
-      tx: 385,
-      ty: 225,
-      anchor: 'middle',
+      tx: 413,
+      ty: 240,
+      anchor: 'end',
       description:
         'Check evaluation criteria, regressions, competing interpretations, and unsupported conclusions.',
     },
@@ -136,8 +136,8 @@
       layer: 'frontend',
       x: 669,
       y: 136,
-      tx: 696,
-      ty: 122,
+      tx: 692,
+      ty: 95,
       anchor: 'start',
       description:
         'Help users get started, explain outputs, answer questions, and collect goals and preferences.',
@@ -149,8 +149,8 @@
       layer: 'frontend',
       x: 669,
       y: 574,
-      tx: 696,
-      ty: 560,
+      tx: 702,
+      ty: 601,
       anchor: 'start',
       description:
         'Guide learning and focus sessions, explaining pacing and break choices using task history and evaluated outputs.',
@@ -162,8 +162,8 @@
       layer: 'frontend',
       x: 231,
       y: 574,
-      tx: 204,
-      ty: 560,
+      tx: 198,
+      ty: 601,
       anchor: 'end',
       description:
         'Support meditation, personalized music, art, and restorative sessions with user preferences and feedback.',
@@ -175,8 +175,8 @@
       layer: 'frontend',
       x: 231,
       y: 136,
-      tx: 204,
-      ty: 122,
+      tx: 208,
+      ty: 95,
       anchor: 'end',
       description:
         'Help investigators organize mental-health and neurological research comparisons and evidence-linked proposals.',
@@ -203,8 +203,7 @@
   const coreRoutes = {
     'data-steward': [
       [515, 198],
-      [515, 240],
-      [474, 240],
+      [474, 198],
       [474, 274],
     ],
     'record-keeper': [
@@ -221,14 +220,12 @@
     ],
     'signal-engineer': [
       [515, 512],
-      [515, 470],
-      [474, 470],
+      [474, 512],
       [474, 436],
     ],
     'monitoring-agent': [
       [385, 512],
-      [385, 470],
-      [426, 470],
+      [426, 512],
       [426, 436],
     ],
     'deployment-coordinator': [
@@ -245,8 +242,7 @@
     ],
     'consistency-checker': [
       [385, 198],
-      [385, 240],
-      [426, 240],
+      [426, 198],
       [426, 274],
     ],
   };
@@ -273,8 +269,8 @@
       points: [
         [669, 136],
         [690, 136],
-        [690, 253],
-        [607, 253],
+        [690, 260],
+        [607, 260],
         [607, 290],
       ],
     },
@@ -284,8 +280,8 @@
       points: [
         [669, 574],
         [690, 574],
-        [690, 457],
-        [607, 457],
+        [690, 450],
+        [607, 450],
         [607, 420],
       ],
     },
@@ -317,8 +313,8 @@
       points: [
         [231, 574],
         [210, 574],
-        [210, 457],
-        [293, 457],
+        [210, 450],
+        [293, 450],
         [293, 420],
       ],
     },
@@ -328,8 +324,8 @@
       points: [
         [231, 136],
         [210, 136],
-        [210, 253],
-        [293, 253],
+        [210, 260],
+        [293, 260],
         [293, 290],
       ],
     },
@@ -433,6 +429,92 @@
     );
     parent.appendChild(text);
   }
+  // Signals use the centerline between the existing paired circuit traces.
+  const signals = element('g', { class: 'agentome-signals', 'aria-hidden': 'true' });
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let flowFrame = null;
+
+  function clearFlow() {
+    if (flowFrame !== null) cancelAnimationFrame(flowFrame);
+    flowFrame = null;
+    root.classList.remove('is-flowing');
+    signals.replaceChildren();
+    nodeElements.forEach((group) => group.classList.remove('is-flow-lit'));
+    edgeElements.forEach(({ item }) => item.classList.remove('is-flow-route'));
+  }
+
+  function startFlow(source) {
+    const layers = source === 'core'
+      ? ['core', 'backend', 'frontend']
+      : ['users', 'frontend', 'backend', 'core'];
+    const stages = layers.slice(1).map((toLayer, index) => {
+      const fromLayer = layers[index];
+      const routes = [];
+      const arrivals = new Set();
+      for (const { item, edge } of edgeElements) {
+        const from = byId.get(edge.from).layer;
+        const to = byId.get(edge.to).layer;
+        const forward = from === fromLayer && to === toLayer;
+        if (!forward && !(to === fromLayer && from === toLayer)) continue;
+        const points = forward ? edge.points : [...edge.points].reverse();
+        routes.push({ item, points: points.map(([x, y]) => x + ',' + y).join(' ') });
+        arrivals.add(forward ? edge.to : edge.from);
+      }
+      const duration = fromLayer === 'users' ? 1400 : 850;
+      return { routes, arrivals, duration };
+    });
+
+    function light(id) {
+      nodeElements.get(id).classList.add('is-flow-lit');
+    }
+    light(source);
+    if (reducedMotion.matches) {
+      for (const { routes, arrivals } of stages) {
+        routes.forEach(({ item }) => item.classList.add('is-flow-route'));
+        arrivals.forEach(light);
+      }
+      return;
+    }
+
+    root.classList.add('is-flowing');
+    let index = 0;
+    let departAt = performance.now() + 280;
+    let packets = null;
+
+    function tick(now) {
+      if (now >= departAt) {
+        if (index === stages.length) {
+          clearFlow();
+          return;
+        }
+        const stage = stages[index];
+        if (!packets) {
+          packets = stage.routes.map(({ points }) => {
+            const trail = element('polyline', { class: 'agentome-signal-trail', points, pathLength: 100 });
+            const head = element('polyline', { class: 'agentome-signal-head', points, pathLength: 100 });
+            signals.append(trail, head);
+            return { trail, head };
+          });
+        }
+        const distance = 100 * Math.min(1, (now - departAt) / stage.duration);
+        for (const { trail, head } of packets) {
+          trail.setAttribute('stroke-dashoffset', 12 - distance);
+          head.setAttribute('stroke-dashoffset', 2 - distance);
+        }
+        if (distance === 100) {
+          stage.routes.forEach(({ item }) => item.classList.add('is-flow-route'));
+          stage.arrivals.forEach(light);
+          signals.replaceChildren();
+          packets = null;
+          index++;
+          departAt = now + (index === stages.length ? 950 : 240);
+        }
+      }
+      flowFrame = requestAnimationFrame(tick);
+    }
+    flowFrame = requestAnimationFrame(tick);
+  }
+
   function redrawState() {
     const emphasis = hovered || selected;
     nodeElements.forEach((item, id) => {
@@ -453,6 +535,7 @@
     });
   }
   function showLayer(next) {
+    clearFlow();
     layer = next;
     selected = null;
     hovered = null;
@@ -472,6 +555,7 @@
   function selectNode(id) {
     const node = byId.get(id);
     if (!node) return;
+    clearFlow();
     selected = id;
     hovered = null;
     layer = 'all';
@@ -481,6 +565,22 @@
     );
     title.textContent = node.title;
     description.textContent = node.description;
+    if (node.layer === 'backend' || node.layer === 'frontend') {
+      // Cross-layer wires are stored from the frontend agent to its backend partner.
+      const frontend = node.layer === 'frontend';
+      const partners = edges
+        .filter(edge => frontend ? edge.from === id && byId.get(edge.to).layer === 'backend'
+                                : edge.to === id && byId.get(edge.from).layer === 'frontend')
+        .map(edge => byId.get(frontend ? edge.to : edge.from).title);
+      const contacts = document.createElement('span');
+      contacts.className = 'agentome-role-contacts';
+      const heading = document.createElement('strong');
+      heading.textContent = frontend ? 'Backend partners' : 'Frontend contact';
+      const names = document.createElement('span');
+      names.textContent = partners.join(' · ');
+      contacts.append(heading, names);
+      description.appendChild(contacts);
+    }
     badge.textContent =
       node.layer === 'core'
         ? 'Model core'
@@ -500,6 +600,12 @@
           ? 'Explore frontend support ↘'
           : 'Open full role ↘';
     redrawState();
+    if (id === 'core' || id === 'users') {
+      description.textContent += id === 'core'
+        ? ' The signal travels from the core through backend agents to frontend agents.'
+        : ' The signal travels through frontend agents, then backend agents, and reaches the core.';
+      startFlow(id);
+    }
   }
   // The reference uses narrow necks with wider, returned T-shaped caps on all four sides.
   const enclosure = element('g', { class: 'agentome-enclosure', 'aria-hidden': 'true' });
@@ -585,11 +691,33 @@
     [330, 'frontend'],
     [210, 'backend'],
     [85, 'core'],
-  ].forEach(([radius, name]) =>
-    background.appendChild(
-      element('circle', { cx: 450, cy: 355, r: radius, class: 'agentome-ring ' + name })
-    )
-  );
+  ].forEach(([radius, name]) => {
+    const ring = element('circle', { cx: 450, cy: 355, r: radius, class: 'agentome-ring ' + name });
+    if (name === 'backend') {
+      // Keep the layer tint continuous and leave a gap in its outline beside each side label.
+      const maskId = root.id + '-backend-label-clearance';
+      const bounds = { x: 230, y: 135, width: 440, height: 440 };
+      const mask = element('mask', { id: maskId, maskUnits: 'userSpaceOnUse', ...bounds });
+      mask.appendChild(element('rect', { ...bounds, fill: 'white' }));
+      const sideRoles = ['record-keeper', 'model-builder', 'deployment-coordinator', 'perturbation-analyst'];
+      for (const id of sideRoles) {
+        const node = byId.get(id);
+        const left = node.anchor === 'start' ? node.tx - 5 : node.tx - 125;
+        mask.appendChild(element('rect', {
+          x: left, y: node.ty - 22, width: 130, height: 55, fill: 'black',
+        }));
+      }
+      const defs = element('defs');
+      defs.appendChild(mask);
+      background.appendChild(defs);
+      background.appendChild(element('circle', {
+        cx: 450, cy: 355, r: radius, class: 'agentome-ring backend backend-fill',
+      }));
+      ring.setAttribute('class', 'agentome-ring backend backend-outline');
+      ring.setAttribute('mask', 'url(#' + maskId + ')');
+    }
+    background.appendChild(ring);
+  });
   svg.appendChild(background);
   const wiring = element('g', { 'aria-hidden': 'true' });
   edges.forEach((edge) => {
@@ -632,7 +760,7 @@
     wiring.appendChild(group);
     edgeElements.push({ item: group, edge });
   });
-  svg.appendChild(wiring);
+  svg.append(wiring, signals);
   const captions = element('g', { class: 'agentome-circuit-labels', 'aria-hidden': 'true' });
   const labelPaths = element('defs');
   function circularLayerLabel(radius, name, id, color) {
@@ -665,6 +793,10 @@
       'data-node-id': node.id,
     });
     group.appendChild(element('title', {}, node.title));
+    group.appendChild(element('circle', {
+      cx: node.x, cy: node.y, r: node.layer === 'core' ? 85 : 12,
+      class: 'agentome-node-aura', 'aria-hidden': 'true',
+    }));
     if (node.layer === 'core') {
       group.appendChild(element('circle', { cx: 450, cy: 355, r: 85, class: 'agentome-core-hit' }));
       label(group, 450, 350, ['LPMs'], { class: 'agentome-core-name' });
@@ -731,6 +863,22 @@
         0,
         (svg.getBoundingClientRect().width - viewport.clientWidth) / 2
       );
+  });
+  // Touch uses :active during contact. Only a hovering pointer should keep the boundary lit.
+  root.addEventListener('pointerenter', (event) => {
+    if (event.pointerType !== 'touch') root.classList.add('has-hover-pointer');
+  });
+  root.addEventListener('pointerleave', (event) => {
+    if (event.pointerType !== 'touch') root.classList.remove('has-hover-pointer');
+  });
+  reducedMotion.addEventListener('change', () => {
+    if (selected === 'core' || selected === 'users') {
+      clearFlow();
+      startFlow(selected);
+    }
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) clearFlow();
   });
   showLayer('all');
 })();

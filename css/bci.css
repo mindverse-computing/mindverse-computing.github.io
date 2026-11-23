@@ -12,6 +12,7 @@
   --learning: #f0b76f;
   --restoration: #bca4ff;
   --clinical: #7ed9e7;
+  --panel-inset: clamp(16px, 1.5vw, 24px);
   --max: 1320px;
   --gutter: clamp(22px, 5vw, 80px);
 }
@@ -810,7 +811,7 @@ li + li {
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 20px;
-  padding: 30px 0;
+  padding: 30px var(--panel-inset);
   border-bottom: 1px solid var(--line);
 }
 .editorial-item .index {
@@ -884,8 +885,11 @@ li + li {
   font-size: 14px;
 }
 .comparison {
-  overflow-x: auto;
+  min-width: 0;
   border: 1px solid var(--line);
+}
+.comparison-scroll {
+  overflow-x: auto;
 }
 .comparison table {
   border-collapse: collapse;
@@ -1780,7 +1784,7 @@ li + li {
   gap: 22px;
   list-style: none;
   cursor: pointer;
-  padding: 28px 0;
+  padding: 28px var(--panel-inset);
   transition: color 0.2s;
 }
 .architecture-layer summary::-webkit-details-marker {
@@ -1811,7 +1815,7 @@ li + li {
   content: '−';
 }
 .layer-body {
-  padding: 4px 0 32px 39px;
+  padding: 4px var(--panel-inset) 32px 39px;
 }
 .layer-body h3 {
   font-size: 22px;
@@ -1859,6 +1863,7 @@ li + li {
 }
 .milestone {
   min-width: 0;
+  padding: var(--panel-inset);
   margin: 0 !important;
   display: flex;
   flex-direction: column;
@@ -2079,13 +2084,13 @@ li + li {
   }
   .architecture-layer summary {
     gap: 16px;
-    padding: 23px 0;
+    padding-block: 23px;
   }
   .layer-title {
     font-size: 23px;
   }
   .layer-body {
-    padding: 0 0 25px 31px;
+    padding: 0 var(--panel-inset) 25px 31px;
   }
   .layer-body h3 {
     font-size: 21px;
@@ -2371,7 +2376,7 @@ li + li {
 .technology-path li {
   margin: 0;
   min-width: 0;
-  padding-top: 25px;
+  padding: 25px var(--panel-inset) var(--panel-inset);
   border-top: 1px solid var(--line);
 }
 .technology-path li > span {
@@ -2551,7 +2556,7 @@ li + li {
 }
 .usecase-card-art figcaption {
   position: static;
-  padding: 10px 14px;
+  padding: 10px var(--panel-inset);
   background: #0b121b;
   border-top: 1px solid #ffffff16;
   color: #c1cbd6;
@@ -2704,6 +2709,10 @@ body.image-open {
   padding-top: 32px;
   margin-bottom: 35px;
 }
+.bci-facts > div {
+  padding: var(--panel-inset);
+  padding-block-start: max(20px, var(--panel-inset));
+}
 .bci-facts strong {
   font-family: 'Space Grotesk', Arial, sans-serif;
   font-size: 62px;
@@ -2727,7 +2736,7 @@ body.image-open {
 }
 .scope-comparison > div {
   border-top: 1px solid var(--line);
-  padding-top: 24px;
+  padding: 24px var(--panel-inset) var(--panel-inset);
 }
 .scope-comparison h3 {
   font-size: 24px;
@@ -2762,7 +2771,7 @@ body.image-open {
   align-items: center;
   list-style: none;
   cursor: pointer;
-  padding: 24px 0;
+  padding: 24px var(--panel-inset);
   font-family: 'Space Grotesk', Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -2790,13 +2799,12 @@ body.image-open {
 }
 .agent-card > p {
   font-size: 14px;
-  padding-left: 32px;
-  padding-bottom: 20px;
+  padding: 0 var(--panel-inset) 20px 32px;
   margin-bottom: 0;
 }
 .human-review {
   margin-top: 40px;
-  padding: 28px 0 0;
+  padding: 28px var(--panel-inset) var(--panel-inset);
   border-top: 1px solid var(--line);
   max-width: 900px;
 }
@@ -2823,7 +2831,7 @@ body.image-open {
 }
 .programme-question {
   border-left: 1px solid var(--accent);
-  padding: 15px 0 15px 30px;
+  padding: var(--panel-inset) var(--panel-inset) var(--panel-inset) 30px;
 }
 .programme-question h3 {
   font-family: 'DM Sans', Arial, sans-serif;
@@ -2964,7 +2972,7 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr auto;
   border-top: 1px solid var(--line);
-  padding: 17px 0;
+  padding: 17px var(--panel-inset);
   gap: 5px 15px;
 }
 .contact-routes strong {
@@ -2993,7 +3001,7 @@ button:disabled {
 .contact-grid .contact-intro h2 {
   font-size: 40px;
 }
-.comparison:focus-visible {
+.comparison-scroll:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 6px;
 }
@@ -3043,6 +3051,9 @@ button:disabled {
   .programme-question {
     max-width: 750px;
   }
+  .comparison {
+    padding-inline: var(--panel-inset);
+  }
   .comparison table {
     min-width: 620px;
   }
@@ -3083,7 +3094,7 @@ button:disabled {
     margin-bottom: 35px;
   }
   .programme-question {
-    padding: 8px 0 8px 21px;
+    padding-left: 21px;
   }
   .programme-question p {
     font-size: 15px;
@@ -3489,6 +3500,9 @@ button:disabled {
 
 /* Native interactive Agentome map: compact labels and parallel circuit traces. */
 .agentome-architecture {
+  --map-accent: #82d9ed;
+  --map-light: #c7eff7;
+  --map-surface: #08131e;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
   align-items: center;
@@ -3500,7 +3514,14 @@ button:disabled {
   padding: clamp(18px, 2.2vw, 32px);
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: #08131e;
+  background: var(--map-surface);
+  transition: border-color 400ms ease, box-shadow 400ms ease;
+}
+.agentome-architecture:is(.has-hover-pointer, :active, :has(:focus-visible), .is-flowing) {
+  border-color: color-mix(in srgb, var(--map-accent) 65%, var(--map-surface));
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--map-accent) 24%, transparent),
+    0 15px 50px color-mix(in srgb, var(--map-accent) 40%, transparent);
 }
 .agentome-diagram-controls {
   grid-column: 1 / -1;
@@ -3523,6 +3544,10 @@ button:disabled {
   border-color: #82d9ed;
   background: #82d9ed12;
 }
+.agentome-architecture :is(button, select, [data-agentome-viewport]):focus-visible {
+  outline: 2px solid var(--map-accent);
+  outline-offset: 3px;
+}
 .agentome-diagram-controls [data-agentome-expand] {
   margin-left: auto;
 }
@@ -3539,13 +3564,20 @@ button:disabled {
 }
 .agentome-enclosure {
   pointer-events: none;
+  opacity: 0.22;
+  transition: opacity 320ms ease-out, filter 320ms ease-out;
+}
+.agentome-architecture:is(.has-hover-pointer, :active, :has(:focus-visible), .is-flowing)
+  .agentome-enclosure {
+  opacity: 1;
+  filter: drop-shadow(0 0 1.5px var(--map-accent)) drop-shadow(0 0 5px var(--map-accent));
+  transition-duration: 100ms;
 }
 .agentome-enclosure-trace {
   fill: none;
-  stroke: #e8f0f5;
+  stroke: var(--map-accent);
   stroke-width: 0.65;
   stroke-linejoin: miter;
-  opacity: 0.22;
   vector-effect: non-scaling-stroke;
 }
 .agentome-ring {
@@ -3559,6 +3591,8 @@ button:disabled {
   fill: #13223a66;
   stroke: #94baff66;
 }
+.agentome-ring.backend-fill { stroke: none; }
+.agentome-ring.backend-outline { fill: none; }
 .agentome-ring.core {
   fill: #0d3044;
   stroke: #82d9ed;
@@ -3584,6 +3618,55 @@ button:disabled {
 }
 .agentome-circuit-trace.is-muted {
   opacity: 0.12;
+}
+/* Keep moving packets independent of hover dimming and the wires' click targets. */
+.agentome-signals,
+.agentome-node-aura {
+  pointer-events: none;
+}
+.agentome-signals polyline {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.agentome-signal-trail {
+  stroke: var(--map-accent);
+  stroke-width: 5;
+  stroke-dasharray: 12 112;
+  filter: drop-shadow(0 0 4px var(--map-accent));
+}
+.agentome-signal-head {
+  stroke: white;
+  stroke-width: 4;
+  stroke-dasharray: 2 102;
+}
+.agentome-circuit-trace.is-flow-route {
+  opacity: 1;
+}
+.agentome-circuit-trace.is-flow-route .agentome-wire {
+  opacity: 0.78;
+  stroke: var(--map-accent);
+  stroke-width: 1.6;
+}
+.agentome-node-aura {
+  fill: var(--map-accent);
+  fill-opacity: 0.24;
+  stroke: var(--map-light);
+  stroke-width: 3;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+.agentome-circuit-node.is-flow-lit .agentome-node-aura {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px var(--map-accent));
+}
+.agentome-circuit-node.is-flow-lit .agentome-agent-dot {
+  fill: white;
+}
+@media (prefers-reduced-motion: reduce) {
+  .agentome-architecture,
+  .agentome-node-aura,
+  .agentome-enclosure { transition: none; }
 }
 .agentome-circuit-node {
   cursor: pointer;
@@ -3704,6 +3787,15 @@ button:disabled {
   font-size: 15px;
   line-height: 1.7;
 }
+.agentome-role-contacts {
+  display: grid;
+  gap: 3px;
+  margin-top: 12px;
+}
+.agentome-role-contacts strong {
+  color: var(--map-light);
+  font-size: 0.875rem;
+}
 .agentome-diagram-selection .text-link {
   font-size: 12px;
 }
@@ -3770,4 +3862,51 @@ button:disabled {
 .agentome-circuit-node.users.is-selected .agentome-users-label {
   fill: #fff;
   filter: drop-shadow(0 0 3px #a2e1c580);
+}
+
+/* Archive-style edge light and outer halo, tinted by the programme's existing accent. */
+:where(
+  .domain-card,
+  .research-card,
+  .usecase-card,
+  .programme-question,
+  .architecture-layer,
+  .agent-card,
+  .human-review,
+  .technology-path > li,
+  .editorial-item,
+  .milestone,
+  .bci-facts > div,
+  .scope-comparison > div,
+  .comparison,
+  .bci-hero .hero-art,
+  .contact-routes > a,
+  .contact-form,
+  .newsletter-fields
+) {
+  --card-accent: var(--accent, var(--blue));
+  --card-glow:
+    inset 0 0 0 1px color-mix(in srgb, var(--card-accent) 80%, transparent),
+    inset 0 0 36px color-mix(in srgb, var(--card-accent) 9%, transparent),
+    0 0 12px color-mix(in srgb, var(--card-accent) 25%, transparent),
+    0 18px 60px color-mix(in srgb, var(--card-accent) 44%, transparent);
+  transition: box-shadow 400ms ease;
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: var(--card-glow);
+    }
+  }
+
+  &:focus-visible,
+  &:has(:focus-visible) {
+    box-shadow: var(--card-glow);
+  }
+}
+
+#backend-agents .agent-card {
+  --card-accent: #94baff;
+}
+#frontend-agents .agent-card {
+  --card-accent: #a2e1c5;
 }

@@ -85,7 +85,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32.png?v=22af50e72d9c" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/bci.css?v=34e85ce8aa33" />
+    <link rel="stylesheet" href="css/bci.css?v=e929326fc24c" />
     <script defer src="js/subscription-service.js?v=e72dae06c1a8"></script>
     <script defer src="js/bci.js?v=897f381e2ff5"></script>
     <script type="application/ld+json">
@@ -978,90 +978,92 @@
               so it does not establish comparative performance.
             </p>
           </div>
-          <div
-            class="comparison"
-            role="region"
-            aria-label="Current evidence and evaluation requirements"
-            tabindex="0"
-          >
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Area</th>
-                  <th scope="col">Current record</th>
-                  <th scope="col">Evidence needed</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Neural-state tracking</th>
-                  <td>Core model research; no tracking benchmark published on this site.</td>
-                  <td>
-                    Recording protocol, state-feature definition, version, repeatability,
-                    signal-quality controls, and independent labels for any mental-state
-                    interpretation.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Neural-field forecasting</th>
-                  <td>
-                    Structure-preserving LPM research; an internal state-model prototype comparison
-                    is reported qualitatively.
-                  </td>
-                  <td>
-                    Model-specific datasets, versions, forecast horizons, untouched future sessions,
-                    conventional baselines, forecast error, and failure cases.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Continual adaptation / cLPMs</th>
-                  <td>Personalization lifecycle in development.</td>
-                  <td>
-                    Chronological evaluation without future-data leakage, frozen-model comparisons,
-                    forgetting and drift tests, update acceptance criteria, and rollback records.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Backend automation</th>
-                  <td>Planned operational roles; integrated orchestration in development.</td>
-                  <td>
-                    End-to-end task success, tool errors, exception handling, model lineage,
-                    deployment recovery, and the manual effort required.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Frontend guidance</th>
-                  <td>Proposed user support and guided application workflows.</td>
-                  <td>
-                    Explanation accuracy, usability, user control, unsupported suggestions, and
-                    value beyond goals, preferences, and task history alone.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Application benefit</th>
-                  <td>Proposed studies and synthetic illustrations.</td>
-                  <td>
-                    Prospective comparisons with independent learning, sleep, wellbeing, or
-                    study-specific outcomes.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Quantum computation</th>
-                  <td>
-                    A hybrid simulation research direction; no hardware benchmark or speedup result
-                    presented here.
-                  </td>
-                  <td>
-                    A defined computational task, execution backend, resource budget, and fair
-                    classical comparison before claiming an advantage.
-                  </td>
-                </tr>
-              </tbody>
-              <caption>
-                Model fit, physiological interpretation, and application benefit are separate
-                questions. A benchmark on one does not validate the others.
-              </caption>
-            </table>
+          <div class="comparison">
+            <div
+              class="comparison-scroll"
+              role="region"
+              aria-label="Current evidence and evaluation requirements"
+              tabindex="0"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Area</th>
+                    <th scope="col">Current record</th>
+                    <th scope="col">Evidence needed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Neural-state tracking</th>
+                    <td>Core model research; no tracking benchmark published on this site.</td>
+                    <td>
+                      Recording protocol, state-feature definition, version, repeatability,
+                      signal-quality controls, and independent labels for any mental-state
+                      interpretation.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Neural-field forecasting</th>
+                    <td>
+                      Structure-preserving LPM research; an internal state-model prototype comparison
+                      is reported qualitatively.
+                    </td>
+                    <td>
+                      Model-specific datasets, versions, forecast horizons, untouched future sessions,
+                      conventional baselines, forecast error, and failure cases.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Continual adaptation / cLPMs</th>
+                    <td>Personalization lifecycle in development.</td>
+                    <td>
+                      Chronological evaluation without future-data leakage, frozen-model comparisons,
+                      forgetting and drift tests, update acceptance criteria, and rollback records.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Backend automation</th>
+                    <td>Planned operational roles; integrated orchestration in development.</td>
+                    <td>
+                      End-to-end task success, tool errors, exception handling, model lineage,
+                      deployment recovery, and the manual effort required.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Frontend guidance</th>
+                    <td>Proposed user support and guided application workflows.</td>
+                    <td>
+                      Explanation accuracy, usability, user control, unsupported suggestions, and
+                      value beyond goals, preferences, and task history alone.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Application benefit</th>
+                    <td>Proposed studies and synthetic illustrations.</td>
+                    <td>
+                      Prospective comparisons with independent learning, sleep, wellbeing, or
+                      study-specific outcomes.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Quantum computation</th>
+                    <td>
+                      A hybrid simulation research direction; no hardware benchmark or speedup result
+                      presented here.
+                    </td>
+                    <td>
+                      A defined computational task, execution backend, resource budget, and fair
+                      classical comparison before claiming an advantage.
+                    </td>
+                  </tr>
+                </tbody>
+                <caption>
+                  Model fit, physiological interpretation, and application benefit are separate
+                  questions. A benchmark on one does not validate the others.
+                </caption>
+              </table>
+            </div>
           </div>
           <p class="note">
             Fitted coupling and delay terms are model quantities. This page does not claim recovery
